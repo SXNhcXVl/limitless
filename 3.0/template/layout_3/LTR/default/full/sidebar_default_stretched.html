@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../../../global_assets/js/plugins/ui/prism.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-lg navbar-dark navbar-static">
+		<div class="d-flex flex-1 d-lg-none">
+			<button type="button" class="navbar-toggler sidebar-mobile-main-toggle">
+				<i class="icon-transmission"></i>
+			</button>
+			<button data-target="#navbar_search" type="button" class="navbar-toggler" data-toggle="collapse">
+				<i class="icon-search4"></i>
+			</button>
+		</div>
+
+		<div class="navbar-brand text-center text-lg-left">
+			<a href="index.html" class="d-inline-block">
+				<img src="../../../../global_assets/images/logo_light.png" class="d-none d-sm-block" alt="">
+				<img src="../../../../global_assets/images/logo_icon_light.png" class="d-sm-none" alt="">
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse order-2 order-lg-1" id="navbar_search">
+			<div class="navbar-search d-flex align-items-center py-3 py-lg-0">
+				<div class="form-group-feedback form-group-feedback-left flex-grow-1">
+					<input type="text" class="form-control" placeholder="Search">
+					<div class="form-control-feedback">
+						<i class="icon-search4 text-white opacity-50"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="order-1 order-lg-2 d-flex flex-1 flex-lg-0 justify-content-end align-items-center">
+			<span class="badge badge-success d-none d-lg-inline-block mr-3">Active</span>
+
+			<ul class="navbar-nav flex-row align-items-center h-100">
+				<li class="nav-item nav-item-dropdown-lg dropdown">
+					<a href="#" class="navbar-nav-link navbar-nav-link-toggler" data-toggle="modal" data-target="#notifications">
+						<i class="icon-bell2"></i>
+						<span class="badge badge-warning badge-pill">3</span>
+					</a>
+				</li>
+
+				<li class="nav-item nav-item-dropdown-lg dropdown dropdown-user h-100">
+					<a href="#" class="navbar-nav-link navbar-nav-link-toggler dropdown-toggle d-inline-flex align-items-center h-100" data-toggle="dropdown">
+						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-pill" height="34" alt="">
+						<span class="d-none d-lg-inline-block ml-2">Victoria</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right wmin-lg-250 py-2">
+						<div class="dropdown-item d-flex py-2">
+							<div class="flex-1">
+								<div class="font-weight-semibold">Account summary</div>
+								<span class="text-muted font-size-sm">Profile, overview</span>
+							</div>
+							<span class="btn btn-dark-100 btn-icon btn-sm text-body border-transparent rounded-pill ml-1">
+								<i class="icon-arrow-right8"></i>
+							</span>
+						</div>
+
+						<div class="dropdown-item d-flex py-2">
+							<div class="flex-1">
+								<div class="font-weight-semibold">Privacy</div>
+								<span class="text-muted font-size-sm">Access, permissions</span>
+							</div>
+							<span class="btn btn-dark-100 btn-icon btn-sm text-body border-transparent rounded-pill ml-1">
+								<i class="icon-arrow-right8"></i>
+							</span>
+						</div>
+
+						<div class="dropdown-item d-flex py-2">
+							<div class="flex-1">
+								<div class="font-weight-semibold">Payments</div>
+								<span class="text-muted font-size-sm">Expenses, subscription</span>
+							</div>
+							<span class="btn btn-dark-100 btn-icon btn-sm text-body border-transparent rounded-pill ml-1">
+								<i class="icon-arrow-right8"></i>
+							</span>
+						</div>
+
+						<div class="dropdown-item d-flex py-2">
+							<div class="flex-1">
+								<div class="font-weight-semibold">Settings</div>
+								<span class="text-muted font-size-sm">Security, app config</span>
+							</div>
+							<span class="btn btn-dark-100 btn-icon btn-sm text-body border-transparent rounded-pill ml-1">
+								<i class="icon-arrow-right8"></i>
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page header -->
+	<div class="page-header">
+		<div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline border-bottom">
+			<div class="d-flex">
+				<div class="breadcrumb">
+					<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+					<a href="#" class="breadcrumb-item">Sidebars</a>
+					<span class="breadcrumb-item active">Default stretched</span>
+				</div>
+
+				<a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+			</div>
+
+			<div class="header-elements d-none">
+				<div class="breadcrumb justify-content-center">
+					<a href="#" class="breadcrumb-elements-item">
+						<i class="icon-comment-discussion mr-2"></i>
+						Support
+					</a>
+
+					<div class="breadcrumb-elements-item dropdown p-0">
+						<a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-gear mr-2"></i>
+							Settings
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
+							<a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
+							<a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
+							<div class="dropdown-divider"></div>
+							<a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-header-content header-elements-lg-inline">
+			<div class="page-title d-flex">
+				<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Sidebars</span> - Default Stretched</h4>
+				<a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+			</div>
+
+			<div class="header-elements d-none mb-3 mb-lg-0">
+				<div class="d-flex justify-content-center">
+					<a href="#" class="btn btn-link btn-float text-body"><i class="icon-bars-alt text-indigo"></i> <span>Statistics</span></a>
+					<a href="#" class="btn btn-link btn-float text-body"><i class="icon-calculator text-indigo"></i> <span>Invoices</span></a>
+					<a href="#" class="btn btn-link btn-float text-body"><i class="icon-calendar5 text-indigo"></i> <span>Schedule</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Page content -->
+	<div class="page-content pt-0">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- Header -->
+				<div class="sidebar-section sidebar-header">
+					<div class="sidebar-section-body d-flex align-items-center justify-content-center pb-0">
+						<h6 class="sidebar-resize-hide flex-1 mb-0">Navigation</h6>
+						<div>
+							<button type="button" class="btn btn-outline-light text-body border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+								<i class="icon-transmission"></i>
+							</button>
+
+							<button type="button" class="btn btn-outline-light text-body border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+								<i class="icon-cross2"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- /header -->
+
+
+				<!-- User menu -->
+				<div class="sidebar-section sidebar-user">
+					<div class="sidebar-section-body d-flex justify-content-center">
+						<a href="#">
+							<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" alt="">
+						</a>
+
+						<div class="sidebar-resize-hide flex-1 ml-3">
+							<div class="font-weight-semibold">Victoria Baker</div>
+							<div class="font-size-sm line-height-sm text-muted">
+								Senior developer
+							</div>
+						</div>
+					</div>
+				</div>					
+				<!-- /user menu -->
+
+				
+				<!-- Main navigation -->
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header pt-0"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">
+								<i class="icon-home4"></i>
+								<span>
+									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
+								</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/index.html" class="nav-link">Default layout</a></li>
+								<li class="nav-item"><a href="../../../../layout_2/LTR/default/full/index.html" class="nav-link">Layout 2</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link active">Layout 3</a></li>
+								<li class="nav-item"><a href="../../../../layout_4/LTR/default/full/index.html" class="nav-link">Layout 4</a></li>
+								<li class="nav-item"><a href="../../../../layout_5/LTR/default/full/index.html" class="nav-link">Layout 5</a></li>
+								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link">Layout 6</a></li>
+								<li class="nav-item"><a href="../../../../layout_7/LTR/default/full/index.html" class="nav-link disabled">Layout 7 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>
+								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">Material</a></li>
+								<li class="nav-item"><a href="../../../LTR/dark/full/index.html" class="nav-link">Dark</a></li>
+								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="../seed/layout_navbar_fixed.html" class="nav-link">Fixed navbar</a></li>
+								<li class="nav-item"><a href="../seed/layout_navbar_hideable.html" class="nav-link">Hideable navbar</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="../seed/layout_no_header.html" class="nav-link">No header</a></li>
+								<li class="nav-item"><a href="../seed/layout_no_footer.html" class="nav-link">No footer</a></li>
+								<li class="nav-item"><a href="../seed/layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="../seed/layout_2_sidebars_1_side.html" class="nav-link">2 sidebars on 1 side</a></li>
+								<li class="nav-item"><a href="../seed/layout_2_sidebars_2_sides.html" class="nav-link">2 sidebars on 2 sides</a></li>
+								<li class="nav-item"><a href="../seed/layout_3_sidebars.html" class="nav-link">3 sidebars</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="../seed/layout_boxed_page.html" class="nav-link">Boxed page</a></li>
+								<li class="nav-item"><a href="../seed/layout_boxed_content.html" class="nav-link">Boxed content</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<!-- /main -->
+
+						<!-- Layout -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
+								<li class="nav-item"><a href="layout_navbar_fixed_main.html" class="nav-link">Fixed navbar</a></li>
+								<li class="nav-item"><a href="layout_navbar_hideable_main.html" class="nav-link">Hideable navbar</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="layout_no_header.html" class="nav-link">No header</a></li>
+								<li class="nav-item"><a href="layout_no_footer.html" class="nav-link">No footer</a></li>
+								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
+								<li class="nav-item"><a href="layout_footer_hideable.html" class="nav-link">Hideable footer</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="layout_2_sidebars_1_side.html" class="nav-link">2 sidebars on 1 side</a></li>
+								<li class="nav-item"><a href="layout_2_sidebars_2_sides.html" class="nav-link">2 sidebars on 2 sides</a></li>
+								<li class="nav-item"><a href="layout_3_sidebars.html" class="nav-link">3 sidebars</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="layout_boxed_page.html" class="nav-link">Boxed page</a></li>
+								<li class="nav-item"><a href="layout_boxed_content.html" class="nav-link">Boxed content</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu nav-item-open nav-item-expanded">
+							<a href="#" class="nav-link"><i class="icon-indent-decrease2"></i> <span>Sidebars</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Sidebars">
+								<li class="nav-item nav-item-submenu nav-item-open nav-item-expanded">
+									<a href="#" class="nav-link">Main sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_default_resizable.html" class="nav-link">Resizable</a></li>
+										<li class="nav-item"><a href="sidebar_default_resized.html" class="nav-link">Resized</a></li>
+										<li class="nav-item"><a href="sidebar_default_hideable.html" class="nav-link">Hideable</a></li>
+										<li class="nav-item"><a href="sidebar_default_hidden.html" class="nav-link">Hidden</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_default_stretched.html" class="nav-link active">Stretched</a></li>
+										<li class="nav-item"><a href="sidebar_default_color_dark.html" class="nav-link">Dark color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Secondary sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_secondary_hideable.html" class="nav-link">Hideable</a></li>
+										<li class="nav-item"><a href="sidebar_secondary_hidden.html" class="nav-link">Hidden</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_secondary_stretched.html" class="nav-link">Stretched</a></li>
+										<li class="nav-item"><a href="sidebar_secondary_color_dark.html" class="nav-link">Dark color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Right sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_right_hideable.html" class="nav-link">Hideable</a></li>
+										<li class="nav-item"><a href="sidebar_right_hidden.html" class="nav-link">Hidden</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_right_stretched.html" class="nav-link">Stretched</a></li>
+										<li class="nav-item"><a href="sidebar_right_color_dark.html" class="nav-link">Dark color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="sidebar_components.html" class="nav-link">Sidebar components</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-menu3"></i> <span>Navbars</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Navbars">
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Single navbar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="navbar_single_top_static.html" class="nav-link">Top static</a></li>
+										<li class="nav-item"><a href="navbar_single_top_fixed.html" class="nav-link">Top fixed</a></li>
+										<li class="nav-item"><a href="navbar_single_bottom_static.html" class="nav-link">Bottom static</a></li>
+										<li class="nav-item"><a href="navbar_single_bottom_fixed.html" class="nav-link">Bottom fixed</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Multiple navbars</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="navbar_multiple_top_static.html" class="nav-link">Top static</a></li>
+										<li class="nav-item"><a href="navbar_multiple_top_fixed.html" class="nav-link">Top fixed</a></li>
+										<li class="nav-item"><a href="navbar_multiple_bottom_static.html" class="nav-link">Bottom static</a></li>
+										<li class="nav-item"><a href="navbar_multiple_bottom_fixed.html" class="nav-link">Bottom fixed</a></li>
+										<li class="nav-item"><a href="navbar_multiple_top_bottom.html" class="nav-link">Top and bottom</a></li>
+										<li class="nav-item"><a href="navbar_multiple_secondary_sticky.html" class="nav-link">Secondary sticky</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Content navbar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="navbar_component_single.html" class="nav-link">Single navbar</a></li>
+										<li class="nav-item"><a href="navbar_component_multiple.html" class="nav-link">Multiple navbars</a></li>
+									</ul>
+								</li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="navbar_colors.html" class="nav-link">Color options</a></li>
+								<li class="nav-item"><a href="navbar_sizes.html" class="nav-link">Sizing options</a></li>
+								<li class="nav-item"><a href="navbar_hideable.html" class="nav-link">Hide on scroll</a></li>
+								<li class="nav-item"><a href="navbar_components.html" class="nav-link">Navbar components</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-sort"></i> <span>Vertical navigation</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Vertical navigation">
+								<li class="nav-item"><a href="navigation_vertical_collapsible.html" class="nav-link">Collapsible menu</a></li>
+								<li class="nav-item"><a href="navigation_vertical_accordion.html" class="nav-link">Accordion menu</a></li>
+								<li class="nav-item"><a href="navigation_vertical_bordered.html" class="nav-link">Bordered navigation</a></li>
+								<li class="nav-item"><a href="navigation_vertical_right_icons.html" class="nav-link">Right icons</a></li>
+								<li class="nav-item"><a href="navigation_vertical_badges.html" class="nav-link">Badges</a></li>
+								<li class="nav-item"><a href="navigation_vertical_disabled.html" class="nav-link">Disabled items</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-transmission"></i> <span>Horizontal navigation</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Horizontal navigation">
+								<li class="nav-item"><a href="navigation_horizontal_click.html" class="nav-link">Submenu on click</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_hover.html" class="nav-link">Submenu on hover</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_elements.html" class="nav-link">With custom elements</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_tabs.html" class="nav-link">Tabbed navigation</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_disabled.html" class="nav-link">Disabled navigation links</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_mega.html" class="nav-link">Horizontal mega menu</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Menu levels</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
+								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-IE"></i> Second level</a></li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-firefox"></i> Second level with child</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="#" class="nav-link"><i class="icon-android"></i> Third level</a></li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#" class="nav-link"><i class="icon-apple2"></i> Third level with child</a>
+											<ul class="nav nav-group-sub">
+												<li class="nav-item"><a href="#" class="nav-link"><i class="icon-html5"></i> Fourth level</a></li>
+												<li class="nav-item"><a href="#" class="nav-link"><i class="icon-css3"></i> Fourth level</a></li>
+											</ul>
+										</li>
+										<li class="nav-item"><a href="#" class="nav-link"><i class="icon-windows"></i> Third level</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
+							</ul>
+						</li>
+						<!-- /layout -->
+							
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Content area -->
+			<div class="content">
+
+				<!-- Info alert -->
+				<div class="alert alert-info bg-white alert-styled-left alert-arrow-left alert-dismissible">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+					<h6 class="alert-heading font-weight-semibold mb-1">Stretched sidebar</h6>
+					By default, all sidebars take 100% of content height. To give them 100% of document height, remove <code>.align-self-start</code> class from sidebar container 
+			    </div>
+			    <!-- /info alert -->
+
+
+				<!-- Sidebars overview -->
+				<div class="card">
+					<div class="card-header">
+						<h5 class="card-title">Sidebars overview</h5>
+					</div>
+
+					<div class="card-body">
+						<p class="mb-3">Sidebar - vertical area that displays onscreen and presents widget components and website navigation menu in a text-based hierarchical form. All sidebars are css-driven - just add one of css classes to the <code>.sidebar</code> container, and sidebar will change its width and color. No js, css only. Although sidebar type is based on css, buttons do their job with JS - they switch necessary classes in <code>.sidebar</code> container. Below you'll find summarized tables with all available <code>button</code> and <code>sidebar</code> container classes. By default, the template includes 6 different sidebar types and combinations:</p>
+
+						<div class="mb-3">
+							<h6 class="font-weight-semibold">1. Default sidebar</h6>
+							<p>Default template sidebar has <code>300px</code> (~18.75rem) width, aligned to the left (to the right in RTL version) and has dark blue background color. All navigation levels are based on accordion <strong>or</strong> collapsible functionality, open on click. Supports 2 versions: fixed (default) and static (in static layout only). Both versions use default browser sidebars, but support custom scrollbars such as <code>perfect scrollbar</code> component.</p>
+						</div>
+
+						<div class="mb-3">
+							<h6 class="font-weight-semibold">2. Mini sidebar</h6>
+							<p>Mini sidebar has <code>56px</code> width, which is calculated dynamically (icon size + double padding). No text in parent level of menu items, aligned to the left (to the right in RTL version) and has dark blue background color. Sidebar changes the width on hover, no additional changes. It is <strong>required</strong> to add <code>.sidebar-main-resized</code> class to the <code>.sidebar</code> container if you want to have it collapsed by default. This class is responsible for sidebar width and main navigation. By default all components except main navigation are hidden in mini sidebar. Can be used with main sidebar only.</p>
+						</div>
+
+						<div class="mb-3">
+							<h6 class="font-weight-semibold">3. Secondary sidebar</h6>
+							<p>Main sidebar has <code>300px</code> width or <code>56px</code> (if <code>.sidebar-main-resized</code> class added). Secondary sidebar has the same fixed width of <code>300px</code>, which is similar to default and right sidebars, so different sidebar components can be placed to all sidebar types. Main and secondary sidebars can contain any content - menu, navigation, buttons, lists, tabs etc. Secondary sidebar can be either collapsed or hidden.</p>
+						</div>
+
+						<div class="mb-3">
+							<h6 class="font-weight-semibold">4. Right sidebar</h6>
+							<p>Right sidebar layout includes additional sidebar displayed on the right (left in RTL direction) side. It is displayed as an additional component with 100% height, similar to other sidebars. Right sidebar is visible by default, but can be collapsed or hidden.</p>
+						</div>
+
+						<div class="mb-3">
+							<h6 class="font-weight-semibold">5. Right/Secondary sidebars</h6>
+							<p>Secondary and Right sidebars can be used together, so basically it is a 4 column layout. The width of any sidebar doesn't affect other layout columns, they all have independent width controls. Refer to the table below for more information.</p>
+						</div>
+
+						<div class="mb-3">
+							<h6 class="font-weight-semibold">6. Content (component) sidebar</h6>
+							<p>Usually sidebar is not a part of content and mainly used for navigation. Limitless allows you to use sidebar outside and inside content area. Content sidebar isn't based on grid and has the same width as other sidebars, this means all sidebar components can be placed inside content sidebar. Supports left and right positioning and can be either stretched to fill all available height or height that depends on sidebar content height.</p>
+						</div>
+					</div>
+				</div>
+				<!-- /sidebars overview -->
+
+
+				<!-- Button classes -->
+				<div class="card">
+					<div class="card-header">
+						<h5 class="card-title">Button classes</h5>
+					</div>
+
+					<div class="card-body">
+						<h6 class="font-weight-semibold">Overview</h6>
+						<p class="mb-3">This table displays all optional <code>button</code> classes, responsible for the sidebar appearance. Depending on the sidebar type, add one of these classes to any button or link and this element will handle sidebar control. Multiple controls are also available - add as many sidebar controls as you wish. Please note: these classes don't change sidebar markup, only CSS rules.</p>
+						<div class="table-responsive mb-4">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th style="width: 300px;">Button class</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code>.sidebar-main-resize</code></td>
+										<td>Resizable sidebar. Changes main sidebar width from default to mini. This button is added to all pages by default.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-main-toggle</code></td>
+										<td>Collapses/expands and/or hides/shows <code>main</code> sidebar. Used mostly in dual sidebar type to hide main sidebar.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-right-toggle</code></td>
+										<td>Toggles right sidebar - if right sidebar is shown, main sidebar width remains the same, whether it's in default or mini mode.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-secondary-toggle</code></td>
+										<td>Hides/shows or collapses/expands <code>secondary</code> sidebar. Secondary sidebar supports only toggle functionality and always has fixed width of <code>300px</code>.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-component-toggle</code></td>
+										<td>Hides/shows <code>content</code> sidebars. Content sidebars aren't connected with other sidebars, so this is the only button that controls their visibility.</td>
+									</tr>
+									<tr class="table-border-solid">
+										<td><code>.sidebar-mobile-main-toggle</code></td>
+										<td>Toggles <code>main</code> sidebar on mobile - slides from left to right.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-mobile-secondary-toggle</code></td>
+										<td>Toggles <code>secondary</code> sidebar on mobile - slides from left to right.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-mobile-right-toggle</code></td>
+										<td>Toggles <code>right</code> sidebar on mobile - slides from right to left.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-mobile-component-toggle</code></td>
+										<td>Toggles <code>content</code> sidebar on mobile - has full width by default, has no animation.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h6 class="font-weight-semibold">Example Markup</h6>
+						<p>Default placement of sidebar control buttons is sidebar header:</p>
+						<pre class="language-markup mb-3" data-line="15-17">
+							<code>
+								&lt;!-- Main sidebar -->
+								&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+									&lt;!-- Sidebar content -->
+									&lt;div class="sidebar-content">
+
+										&lt;!-- Header -->
+										&lt;div class="sidebar-main-header sidebar-section">
+											&lt;div class="sidebar-section-body d-flex align-items-center"> 
+												&lt;h5 class="sidebar-main-title mb-0">Navigation&lt;/h5>
+												&lt;div class="ml-auto">
+													&lt;button type="button" class="[button classes]">
+														&lt;i class="icon-transmission">&lt;/i>
+													&lt;/button>
+												&lt;/div>
+											&lt;/div>
+										&lt;/div>
+										&lt;!-- /header -->
+
+										[other content]
+
+									&lt;/div>
+									&lt;!-- /sidebar content -->
+
+								&lt;/div>
+								&lt;!-- /main sidebar -->
+							</code>
+						</pre>
+
+						<p>Here is an example of button inside navbar:</p>
+						<pre class="language-markup mb-3" data-line="7-9">
+							<code>
+								&lt;!-- Navbar placement -->
+								&lt;div class="navbar navbar-expand navbar-dark">
+									&lt;div class="navbar-brand">...&lt;/div>
+
+									&lt;ul class="navbar-nav">
+										&lt;li class="nav-item">
+											&lt;a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle">
+												&lt;i class="icon-menu">&lt;/i>
+											&lt;/a>
+										&lt;/li>
+										...
+									&lt;/ul>
+								&lt;/div>
+								&lt;!-- /navbar placement -->
+							</code>
+						</pre>
+					</div>
+				</div>
+				<!-- /button classes -->
+
+
+				<!-- Sidebar classes -->
+				<div class="card">
+					<div class="card-header">
+						<h5 class="card-title">Sidebar classes</h5>
+					</div>
+
+					<div class="card-body">
+						<h6 class="font-weight-semibold">Overview</h6>
+						<p class="mb-3">This table demonstrates all classes for <code>sidebar</code> container, responsible for the sidebar width and color. Almost all of these classes are mandatory, some of them are responsible for proper styling or have a specific code attached to this class (like <code>.sidebar-main</code> class, which has collapsible functionality). All classes can be combined depending on the type of sidebar:</p>
+						<div class="table-responsive mb-4">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th style="width: 300px">Body class</th>
+										<th>Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code>.sidebar</code></td>
+										<td>Default sidebar class, should be added in all layout types.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-main</code></td>
+										<td>Defines <strong>main</strong> sidebar. Mini sidebar (<code>.sidebar-main-resized</code> class) takes effect only if sidebar has <code>.sidebar-main</code> class. By default, all components except main navigation are hidden in mini sidebar.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-main-resized</code></td>
+										<td>Defines <strong>main</strong> sidebar in <code>collapsed</code> state</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-secondary</code></td>
+										<td>Defines <strong>secondary</strong> sidebar. Has fixed <code>270px</code> width and usually comes after main sidebar.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-secondary-collapsed</code></td>
+										<td>Defines <strong>secondary</strong> sidebar in <code>collapsed</code> state</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-right</code></td>
+										<td>Defines <strong>right</strong> sidebar. Has fixed <code>270px</code> width and appears on the right side from the main sidebar.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-right-collapsed</code></td>
+										<td>Defines <strong>right</strong> sidebar in <code>collapsed</code> state</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-component</code></td>
+										<td>This class is required in <strong>content</strong> (or component) sidebar. Also requires <code>.sidebar-component-left</code> or <code>.sidebar-component-right</code> classes for proper spacing.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-component-collapsed</code></td>
+										<td>Defines <strong>content</strong> sidebar in collapsed state</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-light</code></td>
+										<td>Defines <strong>light</strong> sidebar. This class can be applied to all sidebar types and positions.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-dark</code></td>
+										<td>Defines <strong>dark</strong> sidebar. This class can be applied to all sidebar types and positions. This class is also required for custom colors (see below).</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-dark.bg-*</code></td>
+										<td>Defines sidebar background color. According to the custom color system, sidebar background color can be changed to one of the available colors by adding a proper class to the main sidebar container.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-expand-[breakpoint]</code></td>
+										<td>This class specifies when sidebar needs to be collapsed, basically when sidebar switches to mobile mode. Breakpoint should always be similar to <strong>navbar</strong> breakpoint for proper matching. Available breakpoints are: xl, lg, md and sm. This class is required.</td>
+									</tr>
+									<tr>
+										<td><code>.sidebar-main-unfold</code></td>
+										<td>This class gets added when user hovers on mini sidebar. It controls resizable behaviour when main sidebar is collapsed. Has no effect on mobile since all sidebars on mobile have same width.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h6 class="font-weight-semibold">Example Markup</h6>
+						<p>Default left aligned sidebar markup:</p>
+						<pre class="language-markup mb-3" data-line="15">
+							<code>
+								&lt;!-- Default sidebar layout -->
+								&lt;body>
+
+									&lt;!-- Navbar -->
+									&lt;div class="navbar navbar-dark navbar-expand-lg">
+										...
+									&lt;/div>
+									&lt;!-- /navbar -->
+
+
+									&lt;!-- Page container -->
+									&lt;div class="page-content">
+
+										&lt;!-- Main sidebar -->
+										&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+											&lt;div class="sidebar-content">
+												...
+											&lt;/div>
+										&lt;/div>
+										&lt;!-- /main sidebar -->
+
+										&lt;!-- Main content -->
+										&lt;div class="content-wrapper">
+											...
+										&lt;/div>
+										&lt;!-- /main content -->
+
+									&lt;/div>
+									&lt;!-- /page content -->
+
+								&lt;/body>
+								&lt;!-- /default sidebar layout -->
+							</code>
+						</pre>
+
+						<p>Mini sidebar markup. The only difference is <code>.sidebar-main-resized</code> class:</p>
+						<pre class="language-markup mb-3" data-line="15">
+							<code>
+								&lt;!-- Mini sidebar layout -->
+								&lt;body>
+
+									&lt;!-- Navbar -->
+									&lt;div class="navbar navbar-dark navbar-expand-lg">
+										...
+									&lt;/div>
+									&lt;!-- /navbar -->
+
+
+									&lt;!-- Page container -->
+									&lt;div class="page-content">
+
+										&lt;!-- Main sidebar -->
+										&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg sidebar-main-resized">
+											&lt;div class="sidebar-content">
+												...
+											&lt;/div>
+										&lt;/div>
+										&lt;!-- /main sidebar -->
+
+										&lt;!-- Main content -->
+										&lt;div class="content-wrapper">
+											...
+										&lt;/div>
+										&lt;!-- /main content -->
+
+									&lt;/div>
+									&lt;!-- /page content -->
+
+								&lt;/body>
+								&lt;!-- /mini sidebar layout -->
+							</code>
+						</pre>
+					</div>
+				</div>
+				<!-- /sidebar classes -->
+
+			</div>
+			<!-- /content area -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+
+	<!-- Footer -->
+	<div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+		<div class="text-center d-lg-none w-100">
+			<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+				<i class="icon-unfold mr-2"></i>
+				Footer
+			</button>
+		</div>
+
+		<div class="navbar-collapse collapse" id="navbar-footer">
+			<span class="navbar-text">
+				&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="https://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+			</span>
+
+			<ul class="navbar-nav ml-lg-auto">
+				<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+				<li class="nav-item"><a href="https://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+				<li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /footer -->
+
+
+	<!-- Notifications -->
+	<div id="notifications" class="modal modal-right fade" tabindex="-1" aria-modal="true" role="dialog">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header bg-transparent border-0 align-items-center">
+					<h5 class="modal-title font-weight-semibold">Notifications</h5>
+					<button type="button" class="btn btn-icon btn-light btn-sm border-0 rounded-pill ml-auto" data-dismiss="modal"><i class="icon-cross2"></i></button>
+				</div>
+
+				<div class="modal-body p-0">
+					<div class="bg-light text-muted py-2 px-3">New notifications</div>
+					<div class="p-3">
+						<div class="d-flex mb-3">
+							<a href="#" class="mr-3">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+							</a>
+							<div class="flex-1">
+								<a href="#" class="font-weight-semibold">James</a> has completed the task <a href="#">Submit documents</a> from <a href="#">Onboarding</a> list
+
+								<div class="bg-light border rounded p-2 mt-2">
+									<label class="custom-control custom-checkbox custom-control-inline mx-1">
+										<input type="checkbox" class="custom-control-input" checked disabled>
+										<del class="custom-control-label">Submit personal documents</del>
+									</label>
+								</div>
+
+								<div class="font-size-sm text-muted mt-1">2 hours ago</div>
+							</div>
+						</div>
+
+						<div class="d-flex mb-3">
+							<a href="#" class="mr-3">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+							</a>
+							<div class="flex-1">
+								<a href="#" class="font-weight-semibold">Margo</a> was added to <span class="font-weight-semibold">Customer enablement</span> channel by <a href="#">William Whitney</a>
+
+								<div class="font-size-sm text-muted mt-1">3 hours ago</div>
+							</div>
+						</div>
+
+						<div class="d-flex">
+							<div class="mr-3">
+								<div class="bg-danger-100 text-danger rounded-pill">
+									<i class="icon-undo position-static p-2"></i>
+								</div>
+							</div>
+							<div class="flex-1">
+								Subscription <a href="#">#466573</a> from 10.12.2021 has been cancelled. Refund case <a href="#">#4492</a> created
+
+								<div class="font-size-sm text-muted mt-1">4 hours ago</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-light text-muted py-2 px-3">Older notifications</div>
+					<div class="p-3">
+						<div class="d-flex mb-3">
+							<a href="#" class="mr-3">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+							</a>
+							<div class="flex-1">
+								<a href="#" class="font-weight-semibold">Christine</a> commented on your community <a href="#">post</a> from 10.12.2021
+
+								<div class="font-size-sm text-muted mt-1">2 days ago</div>
+							</div>
+						</div>
+
+						<div class="d-flex mb-3">
+							<a href="#" class="mr-3">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+							</a>
+							<div class="flex-1">
+								<a href="#" class="font-weight-semibold">Mike</a> added 1 new file(s) to <a href="#">Product management</a> project
+
+								<div class="bg-light rounded p-2 mt-2">
+									<div class="d-flex align-items-center mx-1">
+										<div class="mr-2">
+											<i class="icon-file-pdf text-danger icon-2x position-static"></i>
+										</div>
+										<div class="flex-1">
+											new_contract.pdf
+											<div class="font-size-sm text-muted">112KB</div>
+										</div>
+										<div class="ml-2">
+											<a href="#" class="btn btn-dark-100 text-body btn-icon btn-sm border-transparent rounded-pill">
+												<i class="icon-arrow-down8"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="font-size-sm text-muted mt-1">1 day ago</div>
+							</div>
+						</div>
+
+						<div class="d-flex mb-3">
+							<div class="mr-3">
+								<div class="bg-success-100 text-success rounded-pill">
+									<i class="icon-calendar3 position-static p-2"></i>
+								</div>
+							</div>
+							<div class="flex-1">
+								All hands meeting will take place coming Thursday at 13:45. <a href="#">Add to calendar</a>
+
+								<div class="font-size-sm text-muted mt-1">2 days ago</div>
+							</div>
+						</div>
+
+						<div class="d-flex mb-3">
+							<a href="#" class="mr-3">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+							</a>
+							<div class="flex-1">
+								<a href="#" class="font-weight-semibold">Nick</a> requested your feedback and approval in support request <a href="#">#458</a>
+
+								<div class="font-size-sm text-muted mt-1">3 days ago</div>
+							</div>
+						</div>
+
+						<div class="d-flex">
+							<div class="mr-3">
+								<div class="bg-primary-100 text-primary rounded-pill">
+									<i class="icon-people position-static p-2"></i>
+								</div>
+							</div>
+							<div class="flex-1">
+								<span class="font-weight-semibold">HR department</span> requested you to complete internal survey by Friday
+
+								<div class="font-size-sm text-muted mt-1">3 days ago</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /notifications -->
+
+</body>
+</html>

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link active">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Migration to v4.0</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Migration guide -->
+							<div class="mb-3">
+								<h1 class="display-6 fw-bold">Migration guide</h1>
+
+								<div class="mb-3" id="overview">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">This page explains the migration process from version 3.0 to version 4.0. The biggest challenge here is Bootstrap v.5, since the library has been completely re-written from ground up with the goal to get rid of jQuery dependency and drop IE support. Besides that styling logic differs significantly and uses a new customization logic: main focus is SASS-to-CSS variables that was introduced in v.5. This led to changes in Limitless core to ensure consistency. Key highlights:</p>
+
+									<ul class="mb-3">
+										<li>Wide use of CSS variables</li>
+										<li>Vanilla JS</li>
+										<li>Advanced theming support and customization possibilities</li>
+										<li>SASS build process is now optional</li>
+										<li>etc</li>
+									</ul>
+
+									<p class="mb-3">Limitless layout and core also have some changes in the markup structure, styling is also based on CSS variables. Upgrade can take some time considering the number of changes, the process would normally look like this:</p>
+									<ol class="list">
+										<li>Replace CSS files, take the new one either from full version or from seed</li>
+										<li>Replace <code>bootstrap.bundle.min.js</code> file</li>
+										<li>Remove reference to jQuery if you don't use 3rd-party component that require it as dependency</li>
+										<li>Load "Inter" font family, default path is <code>"assets/fonts/inter/inter.css"</code></li>
+										<li>Remove reference to Icomoon icon set if you want to replace it with Phosphor icons</li>
+										<li>If yes, load <code>"assets/icons/phosphor/styles.min.css"</code> file and use <code>.ph-*</code> icon prefix instead of <code>.icon-*</code>. Refer to <a href="https://phosphoricons.com/" target="_blank">https://phosphoricons.com/</a>.</li>
+										<li>Update markup in your code, mainly relevant for Bootstrap components. Markup in all 3rd-party hasn't changed</li>
+										<li>Make updates in files listed below</li>
+										<li>If you need to customize CSS, do it either in SCSS files or create a new CSS file and override default CSS variables on :root or component level</li>
+										<li>If you customized previous version of Limitless, it's strongly recommended to update SCSS variables instead of CSS variables, compare old values to new values and make necessary corrections</li>
+										<li>Gulp SCSS compilation process hasn't changed much, the only difference is LibSass compiler (deprecated) that has been replaced with DartSass</li>
+										<li>You are done.</li>
+									</ol>
+								</div>
+
+								<div class="mb-3 pt-2" id="bootstrap">
+									<h3 class="fw-bold">Bootstrap</h3>
+									Bootstrap website has a very extensive <a href="https://getbootstrap.com/docs/5.2/migration/">migration guide</a> that explains all key differences between v4 and v5 up to the most recent one, including SASS, CSS, JS and other changes. Please refer to their guide for more information.
+								</div>
+
+								<div class="mb-3 pt-2" id="layout">
+									<h3 class="fw-bold">Layout</h3>
+									<p class="mb-3">Page layout remained almost the same in all layouts: page header, content containers and overall logic. The only difference would be breadcrumb line and page header components. Find comparison below.</p>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Page header</h5>
+										<div class="vstack gap-3">
+											<div>
+												<div class="mb-3">1. If page header has elements that collapse on mobile, toggler now uses regular button styles</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;a href="#" class="header-elements-toggle text-body d-lg-none">
+															&lt;i class="icon-more">&lt;/i>
+														&lt;/a>
+
+														&lt;!-- New markup -->
+														&lt;a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
+															&lt;i class="ph-caret-down collapsible-indicator ph-sm m-1">&lt;/i>
+														&lt;/a>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">2. <code>.header-elements-[breakpoint]-inline</code> in page header content container replaced with <code>.d-[breakpoint]-flex</code> utility class</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="page-header-content header-elements-lg-inline">
+
+														&lt;!-- New markup -->
+														&lt;div class="page-header-content d-lg-flex">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">3. <code>.header-elements</code> container is replaced with Bootstrap Collapse</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="header-elements d-none">
+
+														&lt;!-- New markup -->
+														&lt;div class="collapse d-lg-block my-lg-auto ms-lg-auto" id="page_header">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">4. Bottom border is removed from page header container, use <code>.border-bottom</code> or <code>.shadow</code> (default) utility classes</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="page-header page-header-light">
+
+														&lt;!-- New markup -->
+														&lt;div class="page-header page-header-light shadow">
+														// or
+														&lt;div class="page-header page-header-light border-bottom">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												5. Image backgrounds are not supported anymore
+											</div>
+
+											<div>
+												6. If page header has multiple direct child containers, use <code>.page-header-content</code> is required in all of them. They control internal padding
+											</div>
+
+											<div>
+												7. Breadcrumb line inside header also requres <code>.page-header-content</code> class
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Breadcrumb line</h5>
+										<div class="vstack gap-3">
+											<div>
+												<div class="mb-3">1. Custom <code>.breadcrumb-line</code> container classes are removed, now they inherit all styles from page header</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline">
+
+														&lt;!-- New markup -->
+														&lt;div class="page-header-content d-lg-flex border-top">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">2. Collapsible elements on the right hand side are also using Bootstrap Collapse instead of <code>.header-elements</code> container</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="header-elements d-none">
+
+														&lt;!-- New markup -->
+														&lt;div class="collapse d-lg-block ms-lg-auto" id="breadcrumb_elements">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">3. Header elements toggler has different styling and markup</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;a href="#" class="header-elements-toggle text-body d-lg-none">
+															&lt;i class="icon-more">&lt;/i>
+														&lt;/a>
+
+														&lt;!-- New markup -->
+														&lt;a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
+															&lt;i class="ph-caret-down collapsible-indicator ph-sm m-1">&lt;/i>
+														&lt;/a>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">4. Links on the right hand side don't require <code>.breadcrumb-elements-item</code> and <code>.breadcrumb</code> classes anymore, any text or button class can be used</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;a href="#" class="breadcrumb-elements-item">
+															&lt;i class="icon-comment-discussion mr-2">&lt;/i>
+															Support
+														&lt;/a>
+
+														&lt;!-- New markup -->
+														&lt;a href="#" class="d-flex align-items-center text-body py-2">
+															&lt;i class="ph-lifebuoy me-2">&lt;/i>
+															Support
+														&lt;/a>
+													</code>
+												</pre>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="core">
+									<h3 class="fw-bold">Core</h3>
+									<p class="mb-3">Container class names and structure remained the same, including sidebar, navbar and footer locations. Some minor changes are listed below.</p>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Assets</h5>
+										<div class="vstack gap-3">
+											<div>
+												<div class="mb-3">1. In <code>_layout.scss</code> import ordering is changed, header is loaded now before content</div>
+												<pre class="language-sass">
+													<code>
+														//
+														// Old version
+
+														// Content
+														@import "../layout/content";
+
+														// Header
+														@import "../layout/header";
+
+
+														//
+														// New version
+
+														// Header
+														@import "../layout/header";
+
+														// Content
+														@import "../layout/content";
+													</code>
+												</pre>
+											</div>
+
+											<div>2. <code>/global_assets/</code> folder renamed to <code>/assets/</code></div>
+											<div>3. Themes are removed from <code>/scss/</code> folder, dark theme is now integrated into the main set of SCSS files</div>
+											<div>4. <code>LTR | RTL</code> folders are removed. HTML files are similar in both versions, CSS files are located in <code>/ltr/</code> and <code>/rtl/</code> folders in layout's <code>/assets/</code> folder</div>
+											<div>5. <code>/plugins/</code> folder in <code>assets/js/</code> renamed to <code>/vendor/</code></div>
+											<div>6. <code>/utils/</code> folder in "scss" moved from "shared" 1 level up</div>
+											<div>7. Renamed <code>/demo_data/</code> to <code>/demo/</code> and re-structured files</div>
+											<div>8. Added new <code>/fonts/</code> folder to assets, "Inter" font files are stored there</div>
+											<div>9. <code>/assets/</code> folder now contains <code>/icons/</code> folder with a new "Phosphor" icon set. Moved from "global_assets/css" to "assets/"</div>
+											<div>10. gulpfile.js and package.json moved from <code>/template/</code> folder to <code>/template/utils/gulp/</code></div>
+											<div>11. Variables in <code>_variables-core.scss</code> and <code>_variables-custom.scss</code> have been either re-written or editted.</div>
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Sidebars</h5>
+										<div class="vstack gap-3">
+											<div>
+												<div class="mb-3">1. Light sidebar doesn't require <code>.sidebar-light</code> class anymore</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+
+														&lt;!-- New markup -->
+														&lt;div class="sidebar sidebar-main sidebar-expand-lg">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">2. Sidebar navigation - submenu containers don't require <code>.nav</code> and require <code>.collapse</code> for collapsed state and <code>.collapse.show</code> for expanded state</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;ul class="nav nav-group-sub">
+
+														&lt;!-- New markup -->
+														&lt;ul class="nav-group-sub collapse">
+														// or
+														&lt;ul class="nav-group-sub collapse show">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">3. "Right sidebar" is now called "End sidebar", use <code>.sidebar-right</code> to <code>.sidebar-end</code></div>
+												<pre class="language-markup mb-3">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="sidebar sidebar-end sidebar-expand-lg">
+
+														&lt;!-- New markup -->
+														&lt;div class="sidebar sidebar-end sidebar-expand-lg">
+													</code>
+												</pre>
+												<p class="mb-3">Same is applicable to toggle buttons:</p>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;button type="button" class="... sidebar-control sidebar-right-toggle">
+														&lt;button type="button" class="... sidebar-control sidebar-mobile-right-toggle">
+
+														&lt;!-- New markup -->
+														&lt;button type="button" class="... sidebar-control sidebar-end-toggle">
+														&lt;button type="button" class="... sidebar-control sidebar-mobile-end-toggle">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">4. Content sidebar doesn't require <code>.sidebar-component-left</code> and <code>.sidebar-component-start</code> classes</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="sidebar sidebar-light sidebar-component sidebar-component-left sidebar-expand-lg">
+														&lt;div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-lg">
+
+														&lt;!-- New markup -->
+														&lt;div class="sidebar sidebar-component sidebar-expand-lg border rounded shadow-sm">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">5. Content sidebar with sections doesn't require <code>.sidebar-sections</code></div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="sidebar sidebar-light sidebar-component sidebar-component-left sidebar-sections sidebar-expand-lg">
+
+														&lt;!-- New markup -->
+														&lt;div class="sidebar sidebar-component sidebar-expand-lg bg-transparent shadow-none">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">6. <code>.sidebar-section-header</code> doesn't include bottom border by default, use <code>.border-bottom</code> utility class</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="sidebar-section-header">
+
+														&lt;!-- New markup -->
+														&lt;div class="sidebar-section-header border-bottom">
+													</code>
+												</pre>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Navbars</h5>
+										<div class="vstack gap-3">
+											<div>
+												<div class="mb-3">1. Footer navbar requires <code>.navbar-footer</code> class if you use back-to-top button</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+
+														&lt;!-- New markup -->
+														&lt;div class="navbar navbar-sm navbar-footer border-top">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">2. Top and bottom navbars don't have borders, use <code>.border-top</code> or <code>.border-bottom</code> utility classes</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="navbar navbar-dark navbar-expand-lg navbar-static">
+
+														&lt;!-- New markup -->
+														&lt;div class="navbar navbar-dark navbar-expand-lg navbar-static border-bottom border-bottom-white border-opacity-10">
+													</code>
+												</pre>
+											</div>
+
+											<div>3. Navbars now have vertical padding by default. Edit <code>--navbar-padding-y</code> variable if you want to change it</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="components">
+									<h3 class="fw-bold">Components</h3>
+									<p>Markup of 3rd-party components hasn't changed, but using the files from v4.0 is strongly recommended, almost all of them have been updated to the most recent versions. All changes in Bootstrap components can be viewed and compared in <a href="https://getbootstrap.com/docs/5.2/migration/#components" target="_blank">Bootstrap migration guide</a>.</p>
+
+									<p class="mb-3">All widgets that use updated Bootstrap markup have been adjusted accordingly. Refer to examples available in the template. Some custom changes are listed below:</p>
+
+									<div class="mb-3 pt-2">
+										<div class="vstack gap-3">
+											<div>
+												<div class="mb-3">1. Title in card header doesn't use <code>.card-title</code>, use <code>.mb-0</code> instead</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="card">
+															&lt;div class="card-header">
+																&lt;h5 class="card-title">Card title&lt;/h5>
+															&lt;/div> 
+														&lt;/div>
+
+														&lt;!-- New markup -->
+														&lt;div class="card">
+															&lt;div class="card-header">
+																&lt;h5 class="mb-0">Card title&lt;/h5>
+															&lt;/div> 
+														&lt;/div>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">2. Card actions have been renamed</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="header-elements">
+															&lt;div class="list-icons">
+																&lt;a class="list-icons-item" data-action="collapse">&lt;/a>
+															&lt;/div>
+															&lt;div class="list-icons">
+																&lt;a class="list-icons-item" data-action="reload">&lt;/a>
+															&lt;/div>
+															&lt;div class="list-icons">
+																&lt;a class="list-icons-item" data-action="remove">&lt;/a>
+															&lt;/div>
+															&lt;div class="list-icons">
+																&lt;a class="list-icons-item" data-action="move">&lt;/a>
+															&lt;/div>
+															&lt;div class="list-icons">
+																&lt;a class="list-icons-item" data-action="fullscreen">&lt;/a>
+															&lt;/div>
+															&lt;div class="list-icons">
+																&lt;a href="#settings" class="list-icons-item" data-action="modal" data-toggle="modal">&lt;/a>
+															&lt;/div>
+														&lt;/div>
+
+														&lt;!-- New markup -->
+														&lt;div class="hstack gap-2 ms-auto">
+															&lt;a class="text-body" data-card-action="collapse">
+																&lt;i class="ph-caret-down">&lt;/i>
+															&lt;/a>
+															&lt;a class="text-body" data-card-action="reload">
+																&lt;i class="ph-arrows-clockwise">&lt;/i>
+															&lt;/a>
+															&lt;a class="text-body" data-card-action="remove">
+																&lt;i class="ph-x">&lt;/i>
+															&lt;/a>
+															&lt;a class="text-body cursor-move" data-card-action="sort">
+																&lt;i class="ph-arrows-out-cardinal">&lt;/i>
+															&lt;/a>
+															&lt;a class="text-body" data-card-action="fullscreen">
+																&lt;i class="ph-corners-out">&lt;/i>
+															&lt;/a>
+															&lt;a href="#settings" class="text-body" data-bs-toggle="modal">
+																&lt;i class="ph-gear">&lt;/i>
+															&lt;/a>
+														&lt;/div>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">3. Card header elements markup has changed</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="card-header header-elements-lg-inline">
+
+														&lt;!-- New markup -->
+														&lt;div class="card-header d-lg-flex align-items-lg-center">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">4. <code>.list-icons</code> styles have been removed, use <code>hstack</code> with text/link color classes instead</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+															&lt;div class="list-icons">
+																&lt;a class="list-icons-item">
+																	&lt;i class="icon-user">&lt;/i>
+																&lt;/a>
+															&lt;/div>
+
+														&lt;!-- New markup -->
+														&lt;div class="hstack gap-2">
+															&lt;a href="#" class="text-body">
+																&lt;i class="ph-user">&lt;/i>
+															&lt;/a>
+														&lt;/div>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">5. Use <code>.navbar-nav-link-icon</code> in navbar navigation if your link contains only an icon</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;a href="#" class="navbar-nav-link">
+															&lt;i class="icon-bell">&lt;/i>
+														&lt;/a>
+
+														&lt;!-- New markup -->
+														&lt;a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill">
+															&lt;i class="ph-bell">&lt;/i>
+														&lt;/a>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">6. Media list component markup replaced with flex utility classes</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;ul class="media-list">
+															&lt;li class="media">
+																&lt;div class="mr-3">
+																	&lt;a href="#">
+																		&lt;img src="user.jpg" class="rounded-circle" width="40" height="40" alt="">
+																	&lt;/a>
+																&lt;/div>
+
+																&lt;div class="media-body">
+																	&lt;a href="#" class="media-title d-block font-weight-semibold">Walking away fallaciously&lt;/a>
+																	Wise that some and before yellow thus yikes mandrill one luxuriantly other fashionably much
+																&lt;/div>
+															&lt;/li>
+														&lt;/ul>
+
+														&lt;!-- New markup -->
+														&lt;div class="d-flex mb-3">
+															&lt;a href="#" class="me-3">
+																&lt;img src="user.jpg" width="40" height="40" class="rounded-pill" alt="">
+															&lt;/a>
+															&lt;div class="flex-fill">
+																&lt;a href="#" class="fw-semibold">Walking away fallaciously&lt;/a>
+																Wise that some and before yellow thus yikes mandrill one luxuriantly other fashionably much
+															&lt;/div>
+														&lt;/div>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">7. Top and Bottom tabs renamed to overline and underline</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;ul class="nav nav-tabs nav-tabs-top">
+														&lt;ul class="nav nav-tabs nav-tabs-bottom">
+
+														&lt;!-- New markup -->
+														&lt;ul class="nav nav-tabs nav-tabs-overline">
+														&lt;ul class="nav nav-tabs nav-tabs-underline">
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">8. Alerts with icons have new markup</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="alert alert-primary alert-styled-left alert-dismissible">
+															&lt;button type="button" class="close" data-dismiss="alert">&lt;span>×&lt;/span>&lt;/button>
+															&lt;span class="font-weight-semibold">Morning!&lt;/span> We're glad to &lt;a href="#" class="alert-link">see you again&lt;/a> and wish you a nice day.
+														&lt;/div>
+
+														&lt;!-- New markup -->
+														&lt;div class="alert alert-primary alert-icon-start alert-dismissible fade show">
+															&lt;span class="alert-icon bg-primary text-white">
+																&lt;i class="ph-bell-ringing">&lt;/i>
+															&lt;/span>
+															&lt;span class="fw-semibold">Morning!&lt;/span> We're glad to &lt;a href="#" class="alert-link">see you again&lt;/a> and wish you a nice day.
+															&lt;button type="button" class="btn-close" data-bs-dismiss="alert">&lt;/button>
+														&lt;/div>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">9. New button style has been added - flat icon</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Flat button markup -->
+														&lt;button type="button" class="btn btn-flat-primary">Flat button&lt;/button>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">10. Labeled button got updated markup, <code>.btn-labeled-left</code> renamed to <code>btn-labeled-start</code> and <code>.btn-labeled-right</code> to <code>.btn-labeled-end</code></div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;button type="button" class="btn btn-primary btn-labeled btn-labeled-left">
+															&lt;b>&lt;i class="icon-reading">&lt;/i>&lt;/b>
+															Labeled
+														&lt;/button>
+
+														&lt;!-- New markup -->
+														&lt;button type="button" class="btn btn-primary btn-labeled btn-labeled-start">
+															&lt;span class="btn-labeled-icon bg-black bg-opacity-20">
+																&lt;i class="ph-check-square-offset">&lt;/i>
+															&lt;/span>
+															Labeled
+														&lt;/button>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">11. Markup of form controls with icon has been updated; <code>.form-group-feedback-left</code> renamed to <code>.form-control-feedback-start</code> and <code>.form-group-feedback-right</code> to <code>.form-control-feedback-end</code></div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;div class="form-group form-group-feedback form-group-feedback-left">
+															&lt;input type="text" class="form-control" placeholder="Left icon, input default">
+															&lt;div class="form-control-feedback">
+																&lt;i class="icon-droplets">&lt;/i>
+															&lt;/div>
+														&lt;/div>
+
+														&lt;!-- New markup -->
+														&lt;div class="form-control-feedback form-control-feedback-start mb-3">
+															&lt;input type="text" class="form-control" placeholder="Left icon, input default">
+															&lt;div class="form-control-feedback-icon">
+																&lt;i class="ph-at">&lt;/i>
+															&lt;/div>
+														&lt;/div>
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">12. Removed <code>.dropdown-content</code>, <code>.dropdown-content-header</code> and <code>.dropdown-content-body</code>, use <code>data-bs-auto-close="outside"</code> and padding utility classes instead</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">Menu&lt;/a>
+														&lt;div class="dropdown-menu dropdown-content">
+															&lt;div class="dropdown-content-body">
+																...
+															&lt;/div>
+														&lt;/div> 
+
+														&lt;!-- New markup -->
+														&lt;a href="#" class="navbar-nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Menu&lt;/a>
+														&lt;div class="dropdown-menu p-3">
+															...
+														&lt;/div> 
+													</code>
+												</pre>
+											</div>
+
+											<div>
+												<div class="mb-3">13. Removed all mega menu related classes: <code>.mega-menu-full</code> and <code>.mega-menu-left</code>, use <code>.start-*</code> and <code>.end-*</code> classes in dropdown container instead</div>
+												<pre class="language-markup">
+													<code>
+														&lt;!-- Old markup -->
+														&lt;li class="nav-item mega-menu-left">
+															&lt;a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">Left aligned&lt;/a>
+															&lt;div class="dropdown-menu dropdown-content w-xl-50">
+																...
+															&lt;/div>
+														&lt;/li> 
+
+														&lt;li class="nav-item mega-menu-left">
+															&lt;a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">Left aligned&lt;/a>
+															&lt;div class="dropdown-menu dropdown-content">
+																...
+															&lt;/div>
+														&lt;/li> 
+
+
+														&lt;!-- New markup -->
+														&lt;li class="nav-item dropdown">
+															&lt;a href="#" class="navbar-nav-link dropdown-toggle rounded" data-bs-toggle="dropdown">Left aligned&lt;/a>
+															&lt;div class="dropdown-menu wmin-xl-500">
+																...
+															&lt;/div>
+														&lt;/li>
+
+														&lt;li class="nav-item">
+															&lt;a href="#" class="navbar-nav-link dropdown-toggle rounded" data-bs-toggle="dropdown">Left aligned&lt;/a>
+															&lt;div class="dropdown-menu start-0 end-0 p-0 mx-xl-3">
+																...
+															&lt;/div>
+														&lt;/li>
+													</code>
+												</pre>
+											</div>
+
+											<div>14. Sliding panels in v3.0 were based on modal component, in v4.0 they are replaced with Offcanvas component that was released in Bootstrap v5.0</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /migration guide -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#overview" class="nav-link">Overview</a>
+								</li>
+								<li class="nav-item">
+									<a href="#bootstrap" class="nav-link">Bootstrap</a>
+								</li>
+								<li class="nav-item">
+									<a href="#layout" class="nav-link">Layout</a>
+								</li>
+								<li class="nav-item">
+									<a href="#core" class="nav-link">Core</a>
+								</li>
+								<li class="nav-item">
+									<a href="#components" class="nav-link">Components</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

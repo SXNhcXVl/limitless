@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+			<!-- App logo and controls -->
+			<div class="navbar navbar-dark bg-dark-100 navbar-static">
+				<div class="navbar-brand flex-fill wmin-0">
+					<a href="index.html" class="d-inline-block">
+						<img src="assets/images/logo_light.png" alt="">
+					</a>
+				</div>
+
+				<ul class="navbar-nav align-self-center ml-auto sidebar-resize-hide">
+					<li class="nav-item dropdown">
+						<button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+							<i class="icon-cross2"></i>
+						</button>
+					</li>
+				</ul>
+			</div>
+			<!-- /app logo and controls -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- Main navigation -->
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link active">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="d-flex d-lg-none">
+					<button type="button" class="navbar-toggler sidebar-mobile-main-toggle">
+						<i class="icon-paragraph-justify3"></i>
+					</button>
+
+					<button type="button" class="navbar-toggler sidebar-mobile-component-toggle">
+						<i class="icon-arrow-down8"></i>
+					</button>
+				</div>
+
+				<div class="d-flex align-items-center flex-1">
+					<div class="d-inline-flex align-items-center">
+						<div class="d-none d-lg-block">Version</div>
+						<span class="badge badge-pill badge-danger-100 text-danger ml-2">v3.0</span>
+					</div>
+
+					<ul class="navbar-nav flex-row ml-auto">
+                        <li class="nav-item">
+                            <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-toggler" target="_blank">
+                            	<i class="icon-bubbles4"></i>
+                                <span class="d-none d-lg-inline-block ml-2">Comments</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-toggler" target="_blank">
+                            	<i class="icon-bubble-lines3"></i>
+                                <span class="d-none d-lg-inline-block ml-2">Reviews</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-toggler" target="_blank">
+                            	<i class="icon-lifebuoy"></i>
+                                <span class="d-none d-lg-inline-block ml-2">Support</span>
+                            </a>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-spy="scroll" data-target=".sidebar-component" data-offset="100" data-method="offset">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title d-sm-flex align-items-sm-center py-3">
+							<h4><span class="font-weight-semibold">Docs</span> - Icons</h4>
+							<div class="mt-3 mt-sm-0 ml-0 ml-sm-auto">
+								<a href="https://demo.interface.club/limitless/" class="btn btn-dark btn-block" target="_blank">
+									Live preview
+									<i class="icon-new-tab2 ml-2"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+			
+
+				<!-- Content area -->
+				<div class="content pt-0">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="w-100 wmin-0 order-2 order-lg-1">
+
+							<!-- Icons overview -->
+							<div class="card" id="icons">
+								<div class="card-header">
+									<h5 class="card-title">Icons overview</h5>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="icons_overview">Overview</h5>
+										<p>Limitless includes 3 icon sets: Icomoon, Fontawesome and Material Design. Default icon set if <strong>Icomoon</strong>, which was hardcoded in previous versions and the process of replacing icon set was quite difficult. Starting from version 2.3, all icon styles have been converted into SCSS files and from now on can be easily changed directly in SCSS variables. Location of CSS files has been also changed.</p>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="icons_usage">Usage</h5>
+										<p class="mb-3">All icon sets have same installation process. All SCSS and CSS files have same names, the only difference is folder name that contains files. Installation process is the following:</p>
+										<ul class="list">
+											<li>First of all you need to adjust path to font files in <code>_variables.scss</code> located in <code>/global_assets/scss/shared/icons/[icon set name]/</code> folder. Open this file and change font path variables and/or change icon class prefix if necessary. This step is required <strong>only</strong> if you change file location.</li>
+											<li>Compile your SCSS files for icons. Generated CSS file is located in <code>/global_assets/css/icons/[icon set name]/</code> folder. This path can be also changed in gulpfile.js</li>
+											<li>Include <code>styles.min.css</code> in your <code>&lt;head></code> section on your page</li>
+											<li>You are done!</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="icons_icomoon">Icomoon set</h5>
+										<p class="mb-3">Icomoon is a custom icon set based on Icomoon Ultimate pack. By default it includes 1600+ icon, but this number was reduced and current set contains 1145 icons, all based on 16px grid. This means they look crisp and sharp in 16px (32px. 48px. 64px etc) size. Icon class names start with <code>.icon-</code> prefix.</p>
+
+										<p>SCSS files location: <code>/global_assets/scss/shared/icons/icomoon/</code></p>
+										<p class="mb-3">CSS files location: <code>/global_assets/css/icons/icomoon/</code></p>
+
+										Version 2.3 also includes <code>selection.json</code> file - you can use it for editing current icon set in <a href="https://icomoon.io/app/">Icomoon app</a> and generating a new icon set. Just import it in the app, select/unselect icons and generate a new font. Keep in mind that icon classes should have <code>icon-*</code> prefix.
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="icons_fa">Font Awesome icons</h5>
+										<p class="mb-3">Font Awesome set includes 1500+ icons from the latest version 5. This famous icon set also includes brand icons and come in 2 styles: regular and solid. Font Awesome icons are based on 14px grid and best font size for them is 14px (28px, 42px, 58px etc). This library is in active development and I'll be updating it on regular basis. Icon class names start with <code>.fa-</code> prefix and have additional class names: <strong>fab</strong> - brand icons, <strong>far</strong> - outline icons, <strong>fas</strong> - solid icons.</p>
+
+										<p>SCSS files location: <code>/global_assets/scss/shared/icons/fontawesome/</code></p>
+										<p>CSS files location: <code>/global_assets/css/icons/fontawesome/</code></p>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="icons_material">Material Design set</h5>
+										<p class="mb-3">Material Design icon is a part of Material design language created by Google a while ago. It includes 845 icons in a solid style. All icons are based on 24px grid, but they also look great in 16px and 20px sizes. Icon class names start with <code>.mi-</code> prefix.</p>
+
+										<p>SCSS files location: <code>/global_assets/scss/shared/icons/material/</code></p>
+										<p>CSS files location: <code>/global_assets/css/icons/material/</code></p>
+									</div>
+								</div>
+							</div>
+							<!-- /icons overview -->
+
+
+							<!-- Compiling SCSS files -->
+							<div class="card" id="compiling">
+								<div class="card-header">
+									<h5 class="card-title">Compiling SCSS files</h5>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="compiling_overview">Overview</h5>
+										<p>Starting from version 2.2 <code>gulpfile.js</code> includes a separate task for compiling icon sets, which is called <code>gulp icons</code>. First of all you need to look at <code>iconset</code> variable, which is also responsible for generated CSS paths. If you change variable to some other name, your CSS files will be automatically added to a folder with the same name. This is how it works. Just make sure you are using correct icon set name.</p>
+										<p>Icons have 2 global variables defined in <code>/global_assets/scss/_config.scss</code> file: <code>$icon-font-family</code> and <code>$icon-font-size</code>. Font family is very important one since it needs to match font family that is set in SCSS sources. Font size is less important, but still important - you can change it to whatever you want, but this change also requires some adjustments in other SCSS files where needed.</p>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="compiling_scss_files">SCSS files</h5>
+										<p>Each icon set includes 5 SCSS files:</p>
+										<ul class="list">
+											<li><code>_base.scss</code> - basic styles for icon classes</li>
+											<li><code>_icons.scss</code> - all icons</li>
+											<li><code>_mixins.scss</code> - set of mixins</li>
+											<li><code>_variables.scss</code> - core icon variables</li>
+											<li><code>/compile/_styles.scss</code> - imports all other files. This is the file you need to compile. If you change the name, gulp will change generated CSS name accordingly.</li>
+										</ul>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="font-weight-semibold" id="compiling_task">Gulp task</h5>
+										<p class="mb-3">For those who are familiar with Gulp, explanation is not necessary as it's very simple task. For other users here it is:</p>
+										<pre class="language-javascript mb-3">
+											<code>
+												// Variable
+												iconset = 'icomoon';        // 'icomoon' (default), 'fontawesome', 'material'
+
+
+												// Task
+												function icons() {
+												    return src('global_assets/scss/shared/icons/' + iconset + '/compile/*.scss')
+												        .pipe(compileSass())
+												        .pipe(postcss(processors))
+												        .pipe(minifyCss({
+												            level: {1: {specialComments: 0}}
+												        }))
+												        .pipe(rename({
+												            suffix: ".min"
+												        }))
+												        .pipe(dest('global_assets/css/icons/' + iconset));
+												}
+											</code>
+										</pre>
+										<ul class="list mb-3">
+											<li>First things first - grab SCSS files from icons location. All variables correspond to folder names where SCSS files are, so by setting e.g. <code>'material'</code> gulp will look for all files with .scss extension in <code>'global_assets/scss/shared/icons/material [according to variable]/compile/*.scss'</code>. That is why using correct values is important.</li>
+											<li><code>minifyCss</code> task compresses generated CSS and removes all comments</li>
+											<li><code>rename</code> says for itself - it adds <code>.min</code> suffix to generated CSS</li>
+											<li>And then places <code>styles.min.css</code> file in <code>/global_assets/css/icons/[icon set name]/</code> folder. Here logic is the same - <code>iconset</code> variable is basically folder name that contains generated CSS.</li>
+										</ul>
+
+										If you are not familiar with Gulp, take a look at <a href="base_scss_compile.html">Compiling SCSS</a> page. It includes detailed instructions for setting up gulp with all plugins and description of all other tasks.
+									</div>
+								</div>
+							</div>
+							<!-- /compiling SCSS files -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-lg sidebar-sticky order-1 order-lg-2 mb-3">
+							<div class="sidebar-content">
+								<div class="sidebar-section flex-1 overflow-auto">
+									<div class="sidebar-section-header">
+										<span class="font-weight-semibold my-1">On this page</span>
+										<div class="ml-auto">
+											<button type="button" class="btn btn-outline-light text-body border-transparent btn-icon btn-sm sidebar-mobile-component-toggle d-lg-none rounded-pill">
+												<i class="icon-cross2"></i>
+											</button>
+										</div>
+									</div>
+
+									<div class="sidebar-section-body py-2 my-1">
+										<ul class="nav list-scrollspy flex-column">
+											<li>
+												<a href="#icons" class="nav-link d-flex py-1 px-0">Icons</a>
+												<ul class="nav list-scrollspy flex-column">
+													<li>
+														<a href="#icons_overview" class="nav-link d-flex py-1 px-0">Overview</a>
+													</li>
+													<li>
+														<a href="#icons_usage" class="nav-link d-flex py-1 px-0">Usage</a>
+													</li>
+													<li>
+														<a href="#icons_icomoon" class="nav-link d-flex py-1 px-0">Icomoon set</a>
+													</li>
+													<li>
+														<a href="#icons_fa" class="nav-link d-flex py-1 px-0">Font Awesome set</a>
+													</li>
+													<li>
+														<a href="#icons_material" class="nav-link d-flex py-1 px-0">Material Design set</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#compiling" class="nav-link d-flex py-1 px-0">Compiling SCSS files</a>
+												<ul class="nav list-scrollspy flex-column">
+													<li>
+														<a href="#compiling_overview" class="nav-link d-flex py-1 px-0">Overview</a>
+													</li>
+													<li>
+														<a href="#compiling_scss_files" class="nav-link d-flex py-1 px-0">SCSS files</a>
+													</li>
+													<li>
+														<a href="#compiling_task" class="nav-link d-flex py-1 px-0">Gulp task</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+				            </div>
+						</div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /inner content -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="https://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold text-pink">
+								<i class="icon-cart2 mr-2"></i>
+								Purchase
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

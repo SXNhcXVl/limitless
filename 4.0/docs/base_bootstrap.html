@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link active">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Bootstrap</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Overview -->
+							<div class="mb-3" id="overview">
+								<h1 class="display-6 fw-bold">Bootstrap framework</h1>
+
+								<div class="mb-3 pt-2" id="overview_intro">
+									<h3 class="fw-bold">Overview</h3>
+
+									<p>Limitless web application kit is fully based on Bootstrap framework. It includes all native Bootstrap components, grid system, original markup (except a few components where markup was slightly modified) and native classes. It is also based on original Bootstrap SCSS files. Current Bootstrap version is <code>5.1.0</code>, the latest and the most stable at the moment.</p>
+									<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. The framework makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+									<p>Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries. With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome plugins written in pure JS with no dependencies.</p>
+									<p>Bootstrap framwork has a very extensive documentation with examples and clear explanation of all utilities, styling options and components. You can read them all on its <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank">official website</a>.</p>
+
+									<p class="mb-3">Bootstrap documentation available online on <a href="https://getbootstrap.com" target="_blank">Official Bootstrap website</a>. Below you can find different links and sources related to the framework:</p>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 350px;">Link</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></td>
+													<td>Official website</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/twbs/bootstrap" target="_blank">https://github.com/twbs/bootstrap</a></td>
+													<td>Github project</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/twbs/bootstrap/issues" target="_blank">https://github.com/twbs/bootstrap/issues</a></td>
+													<td>Issue tracker</td>
+												</tr>
+												<tr>
+													<td><a href="https://blog.getbootstrap.com/" target="_blank">https://blog.getbootstrap.com/</a></td>
+													<td>Blog</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="overview_components">
+									<h3 class="fw-bold">Bootstrap components</h3>
+									<p>Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more. Limitless template includes (almost) all of them:</p>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Component</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><span class="fw-medium">Accordion</span></td>
+													<td>Build vertically collapsing accordions in combination with our Collapse JavaScript plugin</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Alerts</span></td>
+													<td>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Badges</span></td>
+													<td>Small count and labeling component. Badges scale to match the size of the immediate parent element by using relative font sizing and <code>em</code> units</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Breadcrumbs</span></td>
+													<td>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Buttons</span></td>
+													<td>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Button dropdowns</span></td>
+													<td>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Button groups</span></td>
+													<td>Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Cards</span></td>
+													<td>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Carousel</span></td>
+													<td>A slideshow component for cycling through elements—images or slides of text—like a carousel.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Close button</span></td>
+													<td>A generic close button for dismissing content like modals and alerts.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Collapse</span></td>
+													<td>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Dropdowns</span></td>
+													<td>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Forms</span></td>
+													<td>Form control styles, layout options, and custom components for creating a wide variety of forms.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Input groups</span></td>
+													<td>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">List group</span></td>
+													<td>List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Modal</span></td>
+													<td>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Navbar</span></td>
+													<td>Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Navs and tabs</span></td>
+													<td>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. The base <code>.nav</code> component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Offcanvas</span></td>
+													<td>Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and our JavaScript plugin</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Pagination</span></td>
+													<td>Component for showing pagination to indicate a series of related content exists across multiple pages</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Placeholders</span></td>
+													<td>Use loading placeholders for your components or pages to indicate something may still be loading</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Popover</span></td>
+													<td>Add Bootstrap popovers, like those found in iOS, to any element on your site. Popovers rely on the 3rd party library <code>Popper.js</code> for positioning. You must include <code>popper.min.js</code> before <code>bootstrap.js</code> or use <code>bootstrap.bundle.min.js</code> which contains Popper.js in order for popovers to work!</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Progress bars</span></td>
+													<td>Custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Scrollspy</span></td>
+													<td>Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Spinners</span></td>
+													<td>Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Toasts</span></td>
+													<td>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Tooltips</span></td>
+													<td>Custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.</td>
+												</tr>
+												<tr>
+													<td><span class="fw-medium">Tables</span></td>
+													<td>Opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /overview -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Getting started -->
+							<div class="mb-3 pt-3" id="gs">
+								<h1 class="display-6 fw-bold">Getting started</h1>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">HTML5 doctype</h3>
+									<p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>
+
+									<pre>
+										<code class="language-markup">
+											&lt;!-- Markup -->
+											&lt;!DOCTYPE html>
+											&lt;html lang="en">
+											  ...
+											&lt;/html>
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Responsive meta tag</h3>
+									<p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head></code>.</p>
+
+									<pre>
+										<code class="language-markup">
+											&lt;!-- Meta tag -->
+											&lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Basic usage</h3>
+									<div class="mb-3">
+										<p>Copy-paste the stylesheet <code>&lt;link></code> into your <code>&lt;head></code> before all other stylesheets to load our CSS. File ordering matters:</p>
+
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Latest compiled and minified CSS -->
+												&lt;link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+												&lt;!-- Limitless overrides -->
+												&lt;link rel="stylesheet" href="assets/css/bootstrap_limitless.min.css">
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Many of our components require the use of JavaScript to function. Specifically, they require Popper.js, and our own JavaScript plugins. Place the following <code>&lt;script></code>s near the end of your pages, right before the closing <code>&lt;/body></code> tag to enable them:</p>
+
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Latest compiled and minified JavaScript -->
+												&lt;script src="../../../../global_assets/js/main/bootstrap.bundle.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<p>Now you are up and running. All template files <strong>MUST</strong> contain these 5 files in your page's <code>&lt;head></code> element. All other files are optional, except <code>app.js</code>, which contains template's JS base. You can add JS paths either in <code>&lt;head></code> or before <code>&lt;body></code> closing tag, it's up to you. Here is the list of Bootstrap components that require Javascript:</p>
+
+									<ul class="list">
+										<li>Alerts for dismissing</li>
+										<li>Buttons for toggling states and checkbox/radio functionality</li>
+										<li>Carousel for all slide behaviors, controls, and indicators</li>
+										<li>Collapse for toggling visibility of content</li>
+										<li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+										<li>Modals for displaying, positioning, and scroll behavior</li>
+										<li>Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors</li>
+										<li>Navs with the Tab plugin for toggling content panes</li>
+										<li>Offcanvases for displaying, positioning, and scroll behavior</li>
+										<li>Scrollspy for scroll behavior and navigation updates</li>
+										<li>Toasts for displaying and dismissing</li>
+										<li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+									</ul>
+								</div>
+							</div>
+							<!-- /getting started -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Grid system -->
+							<div class="mb-3 pt-3" id="grid">
+								<h1 class="display-6 fw-bold">Grid system</h1>
+								<p>Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+
+								<div class="mb-3 pt-2" id="grid_intro">
+									<h3 class="fw-bold">Introduction</h3>
+									<p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together. Here’s how it works</p>
+
+									<ul class="list mb-3">
+										<li>
+											<p><strong>Our grid supports six responsive breakpoints.</strong>  Breakpoints are based on <code>min-width</code> media queries, meaning they affect that breakpoint and all those above it (e.g., <code>.col-sm-4</code> applies to <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>). This means you can control container and column sizing and behavior by each breakpoint.</p>
+										</li>
+										<li>
+											<p><strong>Containers center and horizontally pad your content.</strong> Use <code>.container</code> for a responsive pixel width, <code>.container-fluid</code> for <code>width: 100%</code> across all viewports and devices, or a responsive container (e.g., <code>.container-md</code>) for a combination of fluid and pixel widths.</p>
+										</li>
+										<li>
+											<p><strong>Rows are wrappers for columns.</strong> Each column has horizontal <code>padding</code> (called a gutter) for controlling the space between them. This <code>padding</code> is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier classes to uniformly apply column sizing and gutter classes to change the spacing of your content.</p>
+										</li>
+										<li>
+											<p><strong>Columns are incredibly flexible.</strong> There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., <code>col-4</code> spans four). <code>width</code>s are set in percentages so you always have the same relative sizing.</p>
+										</li>
+										<li>
+											<p><strong>Gutters are also responsive and customizable.</strong> Gutter classes are available across all breakpoints, with all the same sizes as our margin and padding spacing. Change horizontal gutters with <code>.gx-*</code> classes, vertical gutters with <code>.gy-*</code>, or all gutters with <code>.g-*</code> classes. <code>.g-0</code> is also available to remove gutters.</p>
+										</li>
+										<li>
+											<p><strong>Sass variables, maps, and mixins power the grid.</strong> If you don’t want to use the predefined grid classes in Bootstrap, you can use our grid’s source Sass to create your own with more semantic markup. We also include some CSS custom properties to consume these Sass variables for even greater flexibility for you.</p>
+										</li>
+									</ul>
+
+									Be aware of the <a href="https://github.com/philipwalton/flexbugs" target="_blank">limitations and bugs around flexbox</a>, like the inability to use some HTML elements as flex containers.
+								</div>
+
+								<div class="mb-3 pt-2" id="grid_queries">
+									<h3 class="fw-bold">Media queries</h3>
+									<p class="mb-3">Since Bootstrap is developed to be mobile first, we use a handful of media queries to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
+
+									<div class="mb-4">
+										<h5 class="fw-semibold">Min-width</h5>
+										<p class="mb-3">Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.</p>
+										<pre class="language-scss mb-3">
+											<code>
+												// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+												@include media-breakpoint-up(sm) { ... }
+												@include media-breakpoint-up(md) { ... }
+												@include media-breakpoint-up(lg) { ... }
+												@include media-breakpoint-up(xl) { ... }
+												@include media-breakpoint-up(xxl) { ... }
+
+												// Usage
+
+												// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+												.custom-class {
+													display: none;
+												}
+												@include media-breakpoint-up(sm) {
+													.custom-class {
+														display: block;
+													}
+												}
+											</code>
+										</pre>
+
+										<p class="mb-3">These Sass mixins translate in our compiled CSS using the values declared in our Sass variables. For example:</p>
+										<pre class="language-scss">
+											<code>
+												// X-Small devices (portrait phones, less than 576px)
+												// No media query for `xs` since this is the default in Bootstrap
+
+												// Small devices (landscape phones, 576px and up)
+												@media (min-width: 576px) { ... }
+
+												// Medium devices (tablets, 768px and up)
+												@media (min-width: 768px) { ... }
+
+												// Large devices (desktops, 992px and up)
+												@media (min-width: 992px) { ... }
+
+												// X-Large devices (large desktops, 1200px and up)
+												@media (min-width: 1200px) { ... }
+
+												// XX-Large devices (larger desktops, 1400px and up)
+												@media (min-width: 1400px) { ... }
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="fw-semibold">Max-width</h5>
+										<p class="mb-3">We occasionally use media queries that go in the other direction (the given screen size or smaller):</p>
+										<pre class="language-scss mb-3">
+											<code>
+												// No media query necessary for xs breakpoint as it's effectively `@media (max-width: 0) { ... }`
+												@include media-breakpoint-down(sm) { ... }
+												@include media-breakpoint-down(md) { ... }
+												@include media-breakpoint-down(lg) { ... }
+												@include media-breakpoint-down(xl) { ... }
+												@include media-breakpoint-down(xxl) { ... }
+
+												// Example: Style from medium breakpoint and down
+												@include media-breakpoint-down(md) {
+													.custom-class {
+														display: block;
+													}
+												}
+											</code>
+										</pre>
+
+										<p class="mb-3">These mixins take those declared breakpoints, subtract .02px from them, and use them as our max-width values. For example:</p>
+										<pre class="language-scss">
+											<code>
+												// `xs` returns only a ruleset and no media query
+												// ... { ... }
+
+												// `sm` applies to x-small devices (portrait phones, less than 576px)
+												@media (max-width: 575.98px) { ... }
+
+												// `md` applies to small devices (landscape phones, less than 768px)
+												@media (max-width: 767.98px) { ... }
+
+												// `lg` applies to medium devices (tablets, less than 992px)
+												@media (max-width: 991.98px) { ... }
+
+												// `xl` applies to large devices (desktops, less than 1200px)
+												@media (max-width: 1199.98px) { ... }
+
+												// `xxl` applies to x-large devices (large desktops, less than 1400px)
+												@media (max-width: 1399.98px) { ... }
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="fw-semibold">Single breakpoint</h5>
+										<p class="mb-3">There are also media queries and mixins for targeting a single segment of screen sizes using the minimum and maximum breakpoint widths.</p>
+										<pre class="language-scss mb-3">
+											<code>
+												@include media-breakpoint-only(xs) { ... }
+												@include media-breakpoint-only(sm) { ... }
+												@include media-breakpoint-only(md) { ... }
+												@include media-breakpoint-only(lg) { ... }
+												@include media-breakpoint-only(xl) { ... }
+												@include media-breakpoint-only(xxl) { ... }
+											</code>
+										</pre>
+
+										<p class="mb-3">For example the <code>@include media-breakpoint-only(md) { ... }</code> will result in:</p>
+										<pre class="language-scss mb-3">
+											<code>
+												@media (min-width: 768px) and (max-width: 991.98px) { ... }
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-4">
+										<h5 class="fw-semibold">Between breakpoints</h5>
+										<p class="mb-3">Similarly, media queries may span multiple breakpoint widths:</p>
+										<pre class="language-scss mb-3">
+											<code>
+												@include media-breakpoint-between(md, xl) { ... }
+											</code>
+										</pre>
+
+										<p class="mb-3">Which results in:</p>
+										<pre class="language-scss mb-3">
+											<code>
+												// Example
+												// Apply styles starting from medium devices and up to extra large devices
+												@media (min-width: 768px) and (max-width: 1199.98px) { ... }
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="grid_options">
+									<h3 class="fw-bold">Grid options</h3>
+									<p>Bootstrap’s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follows:</p>
+
+									<ul class="list mb-3">
+										<li>Extra small (xs)</li>
+										<li>Small (sm)</li>
+										<li>Medium (md)</li>
+										<li>Large (lg)</li>
+										<li>Extra large (xl)</li>
+										<li>Extra extra large (xxl)</li>
+									</ul>
+
+									<p>As noted above, each of these breakpoints have their own container, unique class prefix, and modifiers. Here’s how the grid changes across these breakpoints:</p>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" scope="col"></th>
+													<th class="border-top-0" scope="col">
+														xs
+														<br>
+														<span class="fw-normal">&lt;576px</span>
+													</th>
+													<th scope="col">
+														sm
+														<br>
+														<span class="fw-normal">≥576px</span>
+													</th>
+													<th scope="col">
+														md
+														<br>
+														<span class="fw-normal">≥768px</span>
+													</th>
+													<th scope="col">
+														lg
+														<br>
+														<span class="fw-normal">≥992px</span>
+													</th>
+													<th scope="col">
+														xl
+														<br>
+														<span class="fw-normal">≥1200px</span>
+													</th>
+													<th scope="col">
+														xxl
+														<br>
+														<span class="fw-normal">≥1400px</span>
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th class="text-nowrap" scope="row">Container <code class="fw-normal">max-width</code></th>
+													<td>None (auto)</td>
+													<td>540px</td>
+													<td>720px</td>
+													<td>960px</td>
+													<td>1140px</td>
+													<td>1320px</td>
+												</tr>
+												<tr>
+													<th class="text-nowrap" scope="row">Class prefix</th>
+													<td><code>.col-</code></td>
+													<td><code>.col-sm-</code></td>
+													<td><code>.col-md-</code></td>
+													<td><code>.col-lg-</code></td>
+													<td><code>.col-xl-</code></td>
+													<td><code>.col-xxl-</code></td>
+												</tr>
+												<tr>
+													<th class="text-nowrap" scope="row"># of columns</th>
+													<td colspan="6">12</td>
+												</tr>
+												<tr>
+													<th class="text-nowrap" scope="row">Gutter width</th>
+													<td colspan="6">1.5rem (.75rem on left and right)</td>
+												</tr>
+												<tr>
+													<th class="text-nowrap" scope="row">Custom gutters</th>
+													<td colspan="6">Yes</td>
+												</tr>
+												<tr>
+													<th class="text-nowrap" scope="row">Nestable</th>
+													<td colspan="6">Yes</td>
+												</tr>
+												<tr>
+													<th class="text-nowrap" scope="row">Column ordering</th>
+													<td colspan="6">Yes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /grid system -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#overview" class="nav-link">Bootstrap</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#overview_intro" class="nav-link">Overview</a>
+										</li>
+										<li class="nav-item">
+											<a href="#overview_components" class="nav-link">Components</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="#gs" class="nav-link">Getting started</a>
+								</li>
+								<li class="nav-item">
+									<a href="#grid" class="nav-link">Grid system</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#grid_intro" class="nav-link">Introduction</a>
+										</li>
+										<li class="nav-item">
+											<a href="#grid_queries" class="nav-link">Media queries</a>
+										</li>
+										<li class="nav-item">
+											<a href="#grid_options" class="nav-link">Grid options</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

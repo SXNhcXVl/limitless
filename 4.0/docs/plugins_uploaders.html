@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse show">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link active">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Uploaders</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Dropzone -->
+							<div class="mb-3" id="dropzone">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Dropzone</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">dropzone.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">Dropzone.js is a light weight JavaScript library that turns an HTML element into a dropzone. This means that a user can drag and drop a file onto it, and the file gets uploaded to the server via AJAX. Dropzone does not handle your file uploads on the server. You have to implement the code to receive and store the file yourself.</p>
+
+									<p>Main features:</p>
+									<ul class="list">
+										<li>Image thumbnail previews. Simply register the callback <code>thumbnail(file, data)</code> and display the image wherever you like</li>
+										<li>Retina enabled</li>
+										<li>Multiple files and synchronous uploads</li>
+										<li>Progress updates</li>
+										<li>Support for large files</li>
+										<li>Complete theming. The look and feel of Dropzone is just the default theme. You
+										can define everything yourself by overwriting the default event listeners.</li>
+										<li>Well tested</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/uploaders/dropzone.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add form element with attributes:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Add form markup -->
+												&lt;form action="#" class="dropzone" id="dropzone_multiple">&lt;/form>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Multiple files
+												let dropzoneMultiple = new Dropzone("#dropzone_multiple", {
+													url: "#",
+													paramName: "file", // The name that will be used to transfer the file
+													dictDefaultMessage: 'Drop files to upload <div>or CLICK</div>',
+													maxFilesize: 0.1 // MB
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin options</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Option</th>
+													<th class="border-top-0">Default</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="2" class="tex-muted">Core options</th>
+												</tr>
+												<tr>
+													<td><code>url</code></td>
+													<td><code>null</code></td>
+													<td>Has to be specified on elements other than form (or when the form doesn't have an action attribute). You can also provide a function that will be called with files and must return the url (since v3.12.0)</td>
+												</tr>
+												<tr>
+													<td><code>method</code></td>
+													<td><code>"post"</code></td>
+													<td>Can be changed to <code>"put"</code> if necessary. You can also provide a function that will be called with files and must return the method (since v3.12.0).</td>
+												</tr>
+												<tr>
+													<td><code>withCredentials</code></td>
+													<td><code>false</code></td>
+													<td>Will be set on the XHRequest.</td>
+												</tr>
+												<tr>
+													<td><code>timeout</code></td>
+													<td><code>null</code></td>
+													<td>The timeout for the XHR requests in milliseconds (since v4.4.0). If set to null or 0, no timeout is going to be set.</td>
+												</tr>
+												<tr>
+													<td><code>parallelUploads</code></td>
+													<td><code>2</code></td>
+													<td>How many file uploads to process in parallel (See the Enqueuing file uploads documentation section for more info)</td>
+												</tr>
+												<tr>
+													<td><code>uploadMultiple</code></td>
+													<td><code>false</code></td>
+													<td>Whether to send multiple files in one request. If this it set to true, then the fallback file input element will have the multiple attribute as well. This option will also trigger additional events (like <code>processingmultiple</code>). See the events documentation section for more information.</td>
+												</tr>
+												<tr>
+													<td><code>chunking</code></td>
+													<td><code>false</code></td>
+													<td>Whether you want files to be uploaded in chunks to your server. This can't be used in combination with <code>uploadMultiple</code>. See [chunksUploaded](#config-chunksUploaded) for the callback to finalise an upload.</td>
+												</tr>
+												<tr>
+													<td><code>forceChunking</code></td>
+													<td><code>false</code></td>
+													<td>If <code>chunking</code> is enabled, this defines whether **every** file should be chunked, even if the file size is below <code>chunkSize</code>. This means, that the additional chunk form data will be submitted and the <code>chunksUploaded</code> callback will be invoked.</td>
+												</tr>
+												<tr>
+													<td><code>chunkSize</code></td>
+													<td><code>2000000</code></td>
+													<td>If <code>chunking</code> is <code>true</code>, then this defines the chunk size in bytes.</td>
+												</tr>
+												<tr>
+													<td><code>parallelChunkUploads</code></td>
+													<td><code>false</code></td>
+													<td>If <code>true</code>, the individual chunks of a file are being uploaded simultaneously.</td>
+												</tr>
+												<tr>
+													<td><code>retryChunks</code></td>
+													<td><code>false</code></td>
+													<td>Whether a chunk should be retried if it fails.</td>
+												</tr>
+												<tr>
+													<td><code>retryChunksLimit</code></td>
+													<td><code>3</code></td>
+													<td>If <code>retryChunks</code> is <code>true</code>, how many times should it be retried.</td>
+												</tr>
+												<tr>
+													<td><code>maxFilesize</code></td>
+													<td><code>256</code></td>
+													<td>The maximum filesize (in bytes) that is allowed to be uploaded.</td>
+												</tr>
+												<tr>
+													<td><code>paramName</code></td>
+													<td><code>"file"</code></td>
+													<td>The name of the file param that gets transferred. **NOTE**: If you have the option <code>uploadMultiple</code> set to <code>true</code>, then Dropzone will append [] to the name.</td>
+												</tr>
+												<tr>
+													<td><code>createImageThumbnails</code></td>
+													<td><code>true</code></td>
+													<td>Whether thumbnails for images should be generated</td>
+												</tr>
+												<tr>
+													<td><code>maxThumbnailFilesize</code></td>
+													<td><code>10</code></td>
+													<td>In MB. When the filename exceeds this limit, the thumbnail will not be generated.</td>
+												</tr>
+												<tr>
+													<td><code>thumbnailWidth</code></td>
+													<td><code>120</code></td>
+													<td>If <code>null</code>, the ratio of the image will be used to calculate it.</td>
+												</tr>
+												<tr>
+													<td><code>thumbnailHeight</code></td>
+													<td><code>120</code></td>
+													<td>The same as <code>thumbnailWidth</code>. If both are null, images will not be resized.</td>
+												</tr>
+												<tr>
+													<td><code>thumbnailMethod</code></td>
+													<td><code>"crop"</code></td>
+													<td>How the images should be scaled down in case both, <code>thumbnailWidth</code> and <code>thumbnailHeight</code> are provided. Can be either <code>contain</code> or <code>crop</code>.</td>
+												</tr>
+												<tr>
+													<td><code>resizeWidth</code></td>
+													<td><code>null</code></td>
+													<td>If set, images will be resized to these dimensions before being **uploaded**. If only one, <code>resizeWidth</code> **or** <code>resizeHeight</code> is provided, the original aspect ratio of the file will be preserved. The <code>options.transformFile</code> function uses these options, so if the transformFile function is overridden, these options don't do anything.</td>
+												</tr>
+												<tr>
+													<td><code>resizeHeight</code></td>
+													<td><code>null</code></td>
+													<td>See <code>resizeWidth</code>.</td>
+												</tr>
+												<tr>
+													<td><code>resizeMimeType</code></td>
+													<td><code>null</code></td>
+													<td>The mime type of the resized image (before it gets uploaded to the server). If <code>null</code> the original mime type will be used. To force jpeg, for example, use <code>image/jpeg</code>. See <code>resizeWidth</code> for more information.</td>
+												</tr>
+												<tr>
+													<td><code>resizeQuality</code></td>
+													<td><code>0.8</code></td>
+													<td>The quality of the resized images. See <code>resizeWidth</code>.</td>
+												</tr>
+												<tr>
+													<td><code>resizeMethod</code></td>
+													<td><code>"contain"</code></td>
+													<td>How the images should be scaled down in case both, <code>resizeWidth</code> and <code>resizeHeight</code> are provided. Can be either <code>contain</code> or <code>crop</code>.</td>
+												</tr>
+												<tr>
+													<td><code>filesizeBase</code></td>
+													<td><code>1000</code></td>
+													<td>The base that is used to calculate the **displayed** filesize. You can change this to 1024 if you would rather display kibibytes, mebibytes, etc... 1024 is technically incorrect, because 1024 bytes are 1 kibibyte not 1 kilobyte. You can change this to 1024 if you don't care about validity.</td>
+												</tr>
+												<tr>
+													<td><code>maxFiles</code></td>
+													<td><code>null</code></td>
+													<td>If not <code>null</code> defines how many files this Dropzone handles. If it exceeds, the event <code>maxfilesexceeded</code> will be called. The dropzone element gets the class <code>dz-max-files-reached</code> accordingly so you can provide visual feedback.</td>
+												</tr>
+												<tr>
+													<td><code>headers</code></td>
+													<td><code>null</code></td>
+													<td>An optional object to send additional headers to the server. Eg: <code>{ "My-Awesome-Header": "header value" }</code></td>
+												</tr>
+												<tr>
+													<td><code>clickable</code></td>
+													<td><code>true</code></td>
+													<td>If <code>true</code>, the dropzone element itself will be clickable, if <code>false</code> nothing will be clickable. You can also pass an HTML element, a CSS selector (for multiple elements) or an array of those. In that case, all of those elements will trigger an upload when clicked.</td>
+												</tr>
+												<tr>
+													<td><code>ignoreHiddenFiles</code></td>
+													<td><code>true</code></td>
+													<td>Whether hidden files in directories should be ignored.</td>
+												</tr>
+												<tr>
+													<td><code>acceptedFiles</code></td>
+													<td><code>null</code></td>
+													<td>The default implementation of <code>accept</code> checks the file's mime type or extension against this list. This is a comma separated list of mime types or file extensions. Eg.: <code>image/*,application/pdf,.psd</code>. If the Dropzone is <code>clickable</code> this option will also be used as [accept](https://developer.mozilla.org/en-US/docs/HTML/Element/input#attr-accept) parameter on the hidden file input as well.</td>
+												</tr>
+												<tr>
+													<td><code>autoProcessQueue</code></td>
+													<td><code>true</code></td>
+													<td>If <code>false</code>, files will be added to the queue but the queue will not be processed automatically. This can be useful if you need some additional user input before sending files (or if you want want all files sent at once). If you're ready to send the file simply call <code>myDropzone.processQueue()</code>.</td>
+												</tr>
+												<tr>
+													<td><code>autoQueue</code></td>
+													<td><code>true</code></td>
+													<td>If <code>false</code>, files added to the dropzone will not be queued by default. You'll have to call <code>enqueueFile(file)</code> manually.</td>
+												</tr>
+												<tr>
+													<td><code>addRemoveLinks</code></td>
+													<td><code>false</code></td>
+													<td>If <code>true</code>, this will add a link to every file preview to remove or cancel (if already uploading) the file. The <code>dictCancelUpload</code>, <code>dictCancelUploadConfirmation</code> and <code>dictRemoveFile</code> options are used for the wording.</td>
+												</tr>
+												<tr>
+													<td><code>previewsContainer</code></td>
+													<td><code>null</code></td>
+													<td>Defines where to display the file previews – if <code>null</code> the Dropzone element itself is used. Can be a plain <code>HTMLElement</code> or a CSS selector. The element should have the <code>dropzone-previews</code> class so the previews are displayed properly.</td>
+												</tr>
+												<tr>
+													<td><code>disablePreviews</code></td>
+													<td><code>false</code></td>
+													<td>Set this to <code>true</code> if you don't want previews to be shown.</td>
+												</tr>
+												<tr>
+													<td><code>hiddenInputContainer</code></td>
+													<td><code>"body"</code></td>
+													<td>This is the element the hidden input field (which is used when clicking on the dropzone to trigger file selection) will be appended to. This might be important in case you use frameworks to switch the content of your page. Can be a selector string, or an element directly.</td>
+												</tr>
+												<tr>
+													<td><code>capture</code></td>
+													<td><code>null</code></td>
+													<td>If <code>null</code>, no capture type will be specified If camera, mobile devices will skip the file selection and choose camera If microphone, mobile devices will skip the file selection and choose the microphone If camcorder, mobile devices will skip the file selection and choose the camera in video mode On apple devices multiple must be set to false. AcceptedFiles may need to be set to an appropriate mime type (e.g. "image/*", "audio/*", or "video/*").</td>
+												</tr>
+												<tr>
+													<td><code>renameFile</code></td>
+													<td><code>null</code></td>
+													<td>A function that is invoked before the file is uploaded to the server and renames the file. This function gets the <code>File</code> as argument and can use the <code>file.name</code>. The actual name of the file that gets used during the upload can be accessed through <code>file.upload.filename</code>.</td>
+												</tr>
+												<tr>
+													<td><code>forceFallback</code></td>
+													<td><code>false</code></td>
+													<td>If <code>true</code> the fallback will be forced. This is very useful to test your server implementations first and make sure that everything works as expected without dropzone if you experience problems, and to test how your fallbacks will look.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin events</h3>
+									<p>Do not overwrite those as configuration options, unless you know what you're doing:</p>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Event</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="2" class="text-muted">All of these receive the <code>event</code> as first parameter:</th>
+												</tr>
+												<tr>
+													<td><code>drop</code></td>
+													<td>The user dropped something onto the dropzone</td>
+												</tr>
+												<tr>
+													<td><code>dragstart</code></td>
+													<td>The user started to drag anywhere</td>
+												</tr>
+												<tr>
+													<td><code>dragend</code></td>
+													<td>Dragging has ended</td>
+												</tr>
+												<tr>
+													<td><code>dragenter</code></td>
+													<td>The user dragged a file onto the Dropzone</td>
+												</tr>
+												<tr>
+													<td><code>dragover</code></td>
+													<td>The user is dragging a file over the Dropzone</td>
+												</tr>
+												<tr>
+													<td><code>dragleave</code></td>
+													<td>The user dragged a file out of the Dropzone</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="text-muted">All of these receive the <code>file</code> as first parameter:</th>
+												</tr>
+												<tr>
+													<td><code>addedfile</code></td>
+													<td>When a file is added to the list</td>
+												</tr>
+												<tr>
+													<td><code>removedfile</code></td>
+													<td>Called whenever a file is removed from the list. You can listen to this and delete the file from your server if you want to</td>
+												</tr>
+												<tr>
+													<td><code>thumbnail</code></td>
+													<td>When the thumbnail has been generated. Receives the <code>dataUrl</code> as second parameter</td>
+												</tr>
+												<tr>
+													<td><code>error</code></td>
+													<td>An error occured. Receives the <code>errorMessage</code> as second parameter and if the error was due to the XMLHttpRequest the xhr object as third</td>
+												</tr>
+												<tr>
+													<td><code>processing</code></td>
+													<td>When a file gets processed (since there is a queue not all files are processed immediately)</td>
+												</tr>
+												<tr>
+													<td><code>uploadprogress</code></td>
+													<td>Gets called periodically whenever the file upload progress changes. Gets the progress parameter as second parameter which is a percentage (0-100) and the <code>bytesSent</code> parameter as third which is the number of the bytes that have been sent to the server. When an upload finishes dropzone ensures that <code>uploadprogress</code> will be called with a percentage of 100 at least once. <strong>Warning:</strong> This function can potentially be called with the same progress multiple times</td>
+												</tr>
+												<tr>
+													<td><code>sending</code></td>
+													<td>Called just before each file is sent. Gets the xhr object and the <code>formData</code> objects as second and third parameters, so you can modify them (for example to add a CSRF token) or add additional data</td>
+												</tr>
+												<tr>
+													<td><code>success</code></td>
+													<td>The file has been uploaded successfully. Gets the server response as second argument</td>
+												</tr>
+												<tr>
+													<td><code>complete</code></td>
+													<td>Called when the upload was either successful or erroneous</td>
+												</tr>
+												<tr>
+													<td><code>canceled</code></td>
+													<td>Called when a file upload gets canceled</td>
+												</tr>
+												<tr>
+													<td><code>maxfilesreached</code></td>
+													<td>Called when the number of files accepted reaches the <code>maxFiles</code> limit</td>
+												</tr>
+												<tr>
+													<td><code>maxfilesexceeded</code></td>
+													<td>Called for each file that has been rejected because the number of files exceeds the <code>maxFiles</code> limit</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="text-muted">All of these receive a list of files as first parameter and are only called if the <code>uploadMultiple</code> option is <code>true</code>:</th>
+												</tr>
+												<tr>
+													<td><code>processingmultiple</code></td>
+													<td>See <code>processing</code> for description</td>
+												</tr>
+												<tr>
+													<td><code>sendingmultiple</code></td>
+													<td>See <code>sending</code> for description</td>
+												</tr>
+												<tr>
+													<td><code>successmultiple</code></td>
+													<td>See <code>success</code> for description</td>
+												</tr>
+												<tr>
+													<td><code>completemultiple</code></td>
+													<td>See <code>complete</code> for description</td>
+												</tr>
+												<tr>
+													<td><code>canceledmultiple</code></td>
+													<td>See <code>canceled</code> for description</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="text-muted">Special events:</th>
+												</tr>
+												<tr>
+													<td><code>totaluploadprogress</code></td>
+													<td>Called with the total uploadProgress (0-100), the <code>totalBytes</code> and the <code>totalBytesSent</code>. This event can be used to show the overall upload progress of all files</td>
+												</tr>
+												<tr>
+													<td><code>reset</code></td>
+													<td>Called when all files in the list are removed and the dropzone is reset to initial state</td>
+												</tr>
+												<tr>
+													<td><code>queuecomplete</code></td>
+													<td>Called when all files in the queue finish uploading</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>dropzone.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/uploaders/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://www.dropzone.dev/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://docs.dropzone.dev/" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+														
+														<a href="https://github.com/dropzone/dropzone" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /dropzone -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Plupload -->
+							<div class="mb-3 pt-3" id="plupload">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Plupload</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/uploaders/plupload/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>Plupload is a cross-browser multi-runtime file uploading API. Basically, a set of tools that will help you to build a reliable and visually appealing file uploader in minutes.</p>
+
+									<p>Historically, Plupload comes from a dark and hostile age of no HTML5, hence all the alternative fallbacks, Silverlight and Java. It is meant to provide an API, that will work anywhere and in any case, in one way or another. While having very solid fallbacks, Plupload is built with the future of HTML5 in mind.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load jQuery -->
+												&lt;script src="assets/js/jquery/jquery.min.js">&lt;/script>
+
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/uploaders/plupload/plupload.full.min.js">&lt;/script>
+
+												&lt;!-- Load plugin extension -->
+												&lt;script src="assets/js/vendor/uploaders/plupload/plupload.queue.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add element with attributes:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- All runtimes example -->
+												&lt;div class="file-uploader">
+													&lt;p>Your browser doesn't have Flash installed.&lt;/p>
+												&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// All runtimes example
+												$(".file-uploader").pluploadQueue({
+												    runtimes: 'html5, html4,  Silverlight',
+												    url: 'assets/demo/data/uploader/plupload.json',
+												    chunk_size: '300Kb',
+												    unique_names: true,
+												    filters: {
+												        max_file_size: '300Kb',
+												        mime_types: [{
+												            title: "Image files",
+												            extensions: "jpg,gif,png"
+												        }]
+												    },
+												    resize: {
+												        width: 320,
+												        height: 240,
+												        quality: 90
+												    }
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plupload documentation</h3>
+									<p>Complete Plupload documentation can be found online on <a href="https://www.plupload.com/docs/" target="_blank">Official library website</a>. It's quite big, with a lot of <a href="https://www.plupload.com/docs/Options" target="_blank">options</a>, <a href="https://github.com/moxiecode/plupload/wiki/Uploader#events" target="_blank">events</a>, <a href="https://github.com/moxiecode/plupload/wiki/Uploader#methods" target="_blank">methods</a> and <a href="https://www.plupload.com/docs/File-Filters" target="_blank">file filters</a>. Also check out <a href="https://www.plupload.com/docs/Frequently-Asked-Questions" target="_blank">FAQ section</a> and <a href="https://www.plupload.com/docs/Plupload-in-Your-Language" target="_blank">translating options</a>.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>plupload.full.min.js, moxie.min.js, plupload.queue.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/uploaders/plupload/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://www.plupload.com/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://www.plupload.com/docs/" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+														
+														<a href="https://github.com/moxiecode/plupload" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /plupload -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Bootstrap file upload -->
+							<div class="mb-3 pt-3" id="fileinput">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Bootstrap file upload</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">fileinput.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									An enhanced HTML 5 file input for Bootstrap 3.x with file preview for various files, offers multiple selection, and more. The plugin allows you a simple way to setup an advanced file picker/upload control built to work specially with Bootstrap CSS3 styles. It enhances the file input functionality further, by offering support to preview a wide variety of files i.e. images, text, html, video, audio, flash, and objects. <br>In addition, it includes AJAX based uploads, dragging &amp; dropping files, viewing upload progress, and selectively previewing, adding, or deleting files.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load jQuery -->
+												&lt;script src="assets/js/jquery/jquery.min.js">&lt;/script>
+
+												&lt;!-- Load Bootstrap -->
+												&lt;script src="assets/js/bootstrap/bootstrap.bundle.min.js">&lt;/script>
+
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/uploaders/fileinput/fileinput.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add file input element with attributes:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Single file -->
+												&lt;input type="file" class="file-input">
+
+												&lt;!-- Multiple files -->											
+												&lt;input type="file" class="file-input" multiple="multiple">
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Basic setup
+												$('.file-input').fileinput({
+													browseLabel: 'Browse',
+													browseIcon: '&lt;i class="ph-file-plus me-2">&lt;/i>',
+													uploadIcon: '&lt;i class="ph-file-arrow-up me-2">&lt;/i>',
+													removeIcon: '&lt;i class="ph-x fs-base me-2">&lt;/i>',
+													layoutTemplates: {
+														icon: '&lt;i class="ph-check">&lt;/i>'
+													},
+													uploadClass: 'btn btn-light',
+													removeClass: 'btn btn-light',
+													initialCaption: "No file selected",
+													previewZoomButtonClasses: previewZoomButtonClasses,
+													previewZoomButtonIcons: previewZoomButtonIcons,
+													fileActionSettings: fileActionSettings
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Bootstrap file input documentation</h3>
+									<p>Complete BS file input documentation can be found online on <a href="https://plugins.krajee.com/file-input#usage-modes" target="_blank">Official library website</a>. It's quite big, with tons of <a href="https://plugins.krajee.com/file-input#options" target="_blank">options</a>, <a href="https://plugins.krajee.com/file-input#events" target="_blank">events</a>, <a href="https://plugins.krajee.com/file-input#methods" target="_blank">methods</a> and <a href="https://plugins.krajee.com/file-input#ajax-uploads" target="_blank">AJAX uploads options</a>.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive borde rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>fileinput.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/uploaders/fileinput/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://plugins.krajee.com/file-input" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://plugins.krajee.com/file-input#usage-modes" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+														
+														<a href="https://github.com/kartik-v/bootstrap-fileinput" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /bootstrap file upload -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#dropzone" class="nav-link">Dropzone</a>
+								</li>
+								<li class="nav-item">
+									<a href="#plupload" class="nav-link">Plupload</a>
+								</li>
+								<li class="nav-item">
+									<a href="#fileinput" class="nav-link">Bootstrap File Input</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

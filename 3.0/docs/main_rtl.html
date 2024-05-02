@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/jquery.min.js"></script>
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+			<!-- App logo and controls -->
+			<div class="navbar navbar-dark bg-dark-100 navbar-static">
+				<div class="navbar-brand flex-fill wmin-0">
+					<a href="index.html" class="d-inline-block">
+						<img src="assets/images/logo_light.png" alt="">
+					</a>
+				</div>
+
+				<ul class="navbar-nav align-self-center ml-auto sidebar-resize-hide">
+					<li class="nav-item dropdown">
+						<button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+							<i class="icon-cross2"></i>
+						</button>
+					</li>
+				</ul>
+			</div>
+			<!-- /app logo and controls -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- Main navigation -->
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link active">RTL layout</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Basic functionality</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav nav-group-sub" data-submenu-title="Plugins">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout options</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Other</div> <i class="icon-menu"></i></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /main navigation -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="d-flex d-lg-none">
+					<button type="button" class="navbar-toggler sidebar-mobile-main-toggle">
+						<i class="icon-paragraph-justify3"></i>
+					</button>
+
+					<button type="button" class="navbar-toggler sidebar-mobile-component-toggle">
+						<i class="icon-arrow-down8"></i>
+					</button>
+				</div>
+
+				<div class="d-flex align-items-center flex-1">
+					<div class="d-inline-flex align-items-center">
+						<div class="d-none d-lg-block">Version</div>
+						<span class="badge badge-pill badge-danger-100 text-danger ml-2">v3.0</span>
+					</div>
+
+					<ul class="navbar-nav flex-row ml-auto">
+                        <li class="nav-item">
+                            <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-toggler" target="_blank">
+                            	<i class="icon-bubbles4"></i>
+                                <span class="d-none d-lg-inline-block ml-2">Comments</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-toggler" target="_blank">
+                            	<i class="icon-bubble-lines3"></i>
+                                <span class="d-none d-lg-inline-block ml-2">Reviews</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-toggler" target="_blank">
+                            	<i class="icon-lifebuoy"></i>
+                                <span class="d-none d-lg-inline-block ml-2">Support</span>
+                            </a>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-spy="scroll" data-target=".sidebar-component" data-offset="100" data-method="offset">
+
+				<!-- Page header -->
+				<div class="page-header">
+					<div class="page-header-content">
+						<div class="page-title d-sm-flex align-items-sm-center py-3">
+							<h4><span class="font-weight-semibold">Docs</span> - RTL layout</h4>
+							<div class="mt-3 mt-sm-0 ml-0 ml-sm-auto">
+								<a href="https://demo.interface.club/limitless/" class="btn btn-dark btn-block" target="_blank">
+									Live preview
+									<i class="icon-new-tab2 ml-2"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+			
+
+				<!-- Content area -->
+				<div class="content pt-0">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="w-100 wmin-0 order-2 order-lg-1">
+
+							<!-- RTL layout -->
+							<div class="card" id="rtl">
+								<div class="card-header">
+									<h5 class="card-title">RTL layout overview</h5>
+								</div>
+
+								<div class="card-body">
+									<div class="mb-4">
+										<div class="mb-3">
+											<h6 class="font-weight-semibold" id="rtl_overview">Overview</h6>
+											<p>RTL layout - layout in right-to-left direction, where content displays from the right-hand side of a page and concludes on the left-hand side, such as in Arabic, Hebrew and Urdu. Other words - the whole page layout and content is mirrored. Limitless template supports RTL layout version in all available layout variations.</p>
+										</div>
+
+										<p class="text-muted font-size-sm">Screenshot of <code>RTL</code> folder</p>
+										<img src="assets/images/screenshots/u/folder_rtl.png" style="max-height: 250px;" alt="" class="img-thumbnail img-responsive">
+									</div>
+
+									<div class="mb-4">
+										<div class="mb-3">
+											<h6 class="font-weight-semibold" id="rtl_diff">The difference</h6>
+											<p>Both LTR and RTL versions use the same markup, class names and content ordering. The only difference is <code>dir="rtl"</code> attribute added to the <code>&lt;html></code> element of the page, which changes the direction and language code. Both LTR and RTL layouts are using the same set of SCSS files, with minor additions. CSS files with RTL styles are automatically generated by gulp task runner - first it compiles SCSS files to a normal LTR version, right after that it generates a new set of CSS files with RTL support where it replaces (mirrors) specific values in CSS properties.</p>
+
+											<p>The main benefit of this method - no need to store separate versions of SCSS files and update them manually, it saves a lot of time and makes updating process much faster. However, the only downside here is - it works only with Gulp. So if you have any questions about SCSS files compilation in RTL version - do not hesitate to contact me.</p>
+
+											<p>For those who don't know how to use gulp, please check <a href="base_scss_compile.html">this section</a> for step-by-step guide on how to set it up and running.</p>
+
+											<p>Also some of the plugins are modified in order to work with RTL direction, as well as demo pages. A couple of components, such as ION range slider and Datatable extensions don't support RTL at all due to the plugin logic, but ION range sliders will be fixed soon as far as I am aware. All other options and features are supported.</p>
+										</div>
+
+										<p>Example markup:</p>
+										<pre data-line="2">
+											<code class="language-markup">
+												&lt;!-- RTL layout -->
+												&lt;html lang="ar" dir="rtl">
+
+													&lt;!-- Page head -->
+													&lt;head>
+														...
+													&lt;/head>
+													&lt;!-- /page head -->
+
+
+													&lt;!-- Page body -->
+													&lt;body>
+
+														&lt;!-- Main navbar -->
+														&lt;div class="navbar navbar-dark navbar-expand-md">
+															...
+														&lt;/div>
+														&lt;!-- /main navbar -->
+
+
+														&lt;!-- Page content -->
+														&lt;div class="page-content">
+															...
+														&lt;/div>
+														&lt;!-- /page content -->
+
+													&lt;/body>
+													&lt;!-- /page body -->
+
+												&lt;/html>
+												&lt;!-- /RTL layout -->
+											</code>
+										</pre>
+									</div>
+
+									<div>
+										<h6 class="font-weight-semibold" id="rtl_bs">Bootstrap RTL</h6>
+										<p>By default, Bootstrap framework (version 4.*) doesn't support RTL direction. But fortunately it can be updated manually. Limitless template uses manually updated Bootstrap SCSS version, which is exactly the same as in LTR version, with exception of a few additional fixes. Table below contains files that belong to original Bootstrap SCSS files and have been modified:</p>
+
+										<div class="table-responsive mb-3">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th style="width: 250px">What</th>
+														<th>Where</th>
+														<th>Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><code>_tooltip.scss</code></td>
+														<td>/scss/_bootstrap/</td>
+														<td>Ignore arrow and tooltip positioning</td>
+													</tr>
+													<tr>
+														<td><code>_popovers.scss</code></td>
+														<td>/scss/_bootstrap/</td>
+														<td>Ignore arrow and popover positioning</td>
+													</tr>
+													<tr>
+														<td><code>_dropdown.scss</code></td>
+														<td>/scss/_bootstrap/</td>
+														<td>Ignore dropdown alignment</td>
+													</tr>
+													<tr>
+														<td><code>_progress.scss</code></td>
+														<td>/scss/_bootstrap/</td>
+														<td>Ignore animation direction</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<p>All other files are identical in both LTR and RTL versions.</p>
+									</div>
+								</div>
+							</div>
+							<!-- /RTL layout -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sidebar sidebar-light sidebar-component sidebar-component-right sidebar-expand-lg sidebar-sticky order-1 order-lg-2 mb-3">
+							<div class="sidebar-content">
+								<div class="sidebar-section flex-1 overflow-auto">
+									<div class="sidebar-section-header">
+										<span class="font-weight-semibold my-1">On this page</span>
+										<div class="ml-auto">
+											<button type="button" class="btn btn-outline-light text-body border-transparent btn-icon btn-sm sidebar-mobile-component-toggle d-lg-none rounded-pill">
+												<i class="icon-cross2"></i>
+											</button>
+										</div>
+									</div>
+
+									<div class="sidebar-section-body py-2 my-1">
+										<ul class="nav list-scrollspy flex-column">
+											<li>
+												<a href="#rtl_overview" class="nav-link d-flex py-1 px-0">RTL layout overview</a>
+											</li>
+											<li>
+												<a href="#rtl_diff" class="nav-link d-flex py-1 px-0">The difference</a>
+											</li>
+											<li>
+												<a href="#rtl_bs" class="nav-link d-flex py-1 px-0">Bootstrap RTL</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+				            </div>
+						</div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /inner content -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="https://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold text-pink">
+								<i class="icon-cart2 mr-2"></i>
+								Purchase
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

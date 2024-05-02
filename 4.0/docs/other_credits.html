@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link active">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Credits</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Credits -->
+							<div class="mb-3">
+								<h1 class="display-6 fw-bold" id="overview">Sources and credits</h1>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									Limitless web application kit includes a bunch of different components with options, libraries, plugins and extensions. Major part of these components are released under MIT license and can be used in both commercial and non-commercial projects. All rights belong to and are the property of their respective owners.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Components</h3>
+									<p class="mb-3">Below you'll find a list of libraries, components and extensions used in the template, with links to their websites with documentation and license information.</p>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead>
+												<tr>
+													<th class="border-top-0" style="width: 400px;">Category</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="2" class="table-light" id="libraries">Main libraries</th>
+												</tr>
+												<tr>
+													<td><a href="https://jquery.com/" target="_blank">https://jquery.com/</a></td>
+													<td>jQuery library</td>
+												</tr>
+												<tr>
+													<td><a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></td>
+													<td>Bootstrap library</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="forms">Forms</th>
+												</tr>
+												<tr>
+													<td><a href="https://www.jacklmoore.com/autosize/" target="_blank">https://www.jacklmoore.com/autosize/</a></td>
+													<td>Textarea autosize</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/maykinmedia/dual-listbox" target="_blank">https://github.com/maykinmedia/dual-listbox</a></td>
+													<td>Dual listbox plugin for multiple selects</td>
+												</tr>
+												<tr>
+													<td><a href="https://imask.js.org/" target="_blank">https://imask.js.org/</a></td>
+													<td>Masked inputs</td>
+												</tr>
+												<tr>
+													<td><a href="https://mimo84.github.io/bootstrap-maxlength/" target="_blank">https://mimo84.github.io/bootstrap-maxlength/</a></td>
+													<td>Bootstrap maxlength extension</td>
+												</tr>
+												<tr>
+													<td><a href="https://timseverien.com/projects/passy/" target="_blank">https://timseverien.com/projects/passy/</a></td>
+													<td>Passy password generator and checker</td>
+												</tr>
+												<tr>
+													<td><a href="https://tarekraafat.github.io/autoComplete.js/#/" target="_blank">https://tarekraafat.github.io/autoComplete.js/#/</a></td>
+													<td>Autocomplete library</td>
+												</tr>
+												<tr>
+													<td><a href="https://jqueryvalidation.org/" target="_blank">https://jqueryvalidation.org/</a></td>
+													<td>Form inputs validation</td>
+												</tr>
+												<tr>
+													<td><a href="https://openbase.com/js/tokenfield/documentation" target="_blank">https://openbase.com/js/tokenfield/documentation</a></td>
+													<td>Tokenfield tagging library</td>
+												</tr>
+												<tr>
+													<td><a href="https://www.jquery-steps.com/" target="_blank">https://www.jquery-steps.com/</a></td>
+													<td>Steps wizard</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="selects">Selects</th>
+												</tr>
+												<tr>
+													<td><a href="https://select2.github.io/" target="_blank">https://select2.github.io/</a></td>
+													<td>Select2 selects</td>
+												</tr>
+												<tr>
+													<td><a href="https://davidstutz.github.io/bootstrap-multiselect/" target="_blank">https://davidstutz.github.io/bootstrap-multiselect/</a></td>
+													<td>Bootstrap multiselect</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="editors">Editors</th>
+												</tr>
+												<tr>
+													<td><a href="https://ace.c9.io/#nav=about" target="_blank">https://ace.c9.io/#nav=about</a></td>
+													<td>Ace code editor</td>
+												</tr>
+												<tr>
+													<td><a href="https://quilljs.com/" target="_blank">https://quilljs.com/</a></td>
+													<td>Quill editor</td>
+												</tr>
+												<tr>
+													<td><a href="https://alex-d.github.io/Trumbowyg/" target="_blank">https://alex-d.github.io/Trumbowyg/</a></td>
+													<td>Trumbowyg editor</td>
+												</tr>
+												<tr>
+													<td><a href="https://ckeditor.com/" target="_blank">https://ckeditor.com/</a></td>
+													<td>CKEditor text editor</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="uploaders">Uploaders</th>
+												</tr>
+												<tr>
+													<td><a href="https://www.dropzonejs.com/" target="_blank">https://www.dropzonejs.com/</a></td>
+													<td>Dropzone single and multiple file uploader</td>
+												</tr>
+												<tr>
+													<td><a href="https://www.plupload.com/" target="_blank">https://www.plupload.com/</a></td>
+													<td>Plupload multiple file uploader</td>
+												</tr>
+												<tr>
+													<td><a href="https://plugins.krajee.com/file-input" target="_blank">https://plugins.krajee.com/file-input</a></td>
+													<td>Bootstrap file upload</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="extensions">Extensions</th>
+												</tr>
+												<tr>
+													<td><a href="https://julian.com/research/velocity/" target="_blank">https://julian.com/research/velocity/</a></td>
+													<td>Velocity animations</td>
+												</tr>
+												<tr>
+													<td><a href="https://prismjs.com/" target="_blank">https://prismjs.com/</a></td>
+													<td>Prism syntax highlighter</td>
+												</tr>
+												<tr>
+													<td><a href="https://momentjs.com/" target="_blank">https://momentjs.com/</a></td>
+													<td>Moment.js library</td>
+												</tr>
+												<tr>
+													<td><a href="https://i18next.com/" target="_blank">https://i18next.com/</a></td>
+													<td>i18next - internationalization library</td>
+												</tr>
+												<tr>
+													<td><a href="https://github.com/orangehill/bootstrap-session-timeout" target="_blank">https://github.com/orangehill/bootstrap-session-timeout</a></td>
+													<td>Session and idle timeout</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="notifications">Notifications</th>
+												</tr>
+												<tr>
+													<td><a href="https://bootboxjs.com/" target="_blank">https://bootboxjs.com/</a></td>
+													<td>Bootbox dialogs</td>
+												</tr>
+												<tr>
+													<td><a href="https://ned.im/noty/#/about" target="_blank">https://ned.im/noty/#/about</a></td>
+													<td>Noty notifications</td>
+												</tr>
+												<tr>
+													<td><a href="https://sweetalert2.github.io/" target="_blank">https://sweetalert2.github.io/</a></td>
+													<td>SweetAlert 2</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="pickers">Pickers</th>
+												</tr>
+												<tr>
+													<td><a href="https://bgrins.github.io/spectrum" target="_blank">https://bgrins.github.io/spectrum</a></td>
+													<td>Spectrum - color picker</td>
+												</tr>
+												<tr>
+													<td><a href="https://www.daterangepicker.com/" target="_blank">https://www.daterangepicker.com/</a></td>
+													<td>Date range picker</td>
+												</tr>
+												<tr>
+													<td><a href="https://mymth.github.io/vanillajs-datepicker/#/" target="_blank">https://mymth.github.io/vanillajs-datepicker/#/</a></td>
+													<td>Date picker</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="tables">Tables</th>
+												</tr>
+												<tr>
+													<td><a href="https://datatables.net/" target="_blank">https://datatables.net/</a></td>
+													<td>Data tables</td>
+												</tr>
+												<tr>
+													<td><a href="https://gridjs.io/" target="_blank">https://gridjs.io/</a></td>
+													<td>Grid.js library</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="ui">UI</th>
+												</tr>
+												<tr>
+													<td><a href="https://fooplugins.com/plugins/footable-jquery/" target="_blank">https://fooplugins.com/plugins/footable-jquery/</a></td>
+													<td>Fancy tree</td>
+												</tr>
+												<tr>
+													<td><a href="https://fullcalendar.io/" target="_blank">https://fullcalendar.io/</a></td>
+													<td>Full calendar</td>
+												</tr>
+												<tr>
+													<td><a href="https://wicky.nillia.ms/headroom.js/" target="_blank">https://wicky.nillia.ms/headroom.js/</a></td>
+													<td>Headroom.js library</td>
+												</tr>
+												<tr>
+													<td><a href="https://refreshless.com/nouislider/" target="_blank">https://refreshless.com/nouislider/</a></td>
+													<td>NoUI slider library</td>
+												</tr>
+												<tr>
+													<td><a href="https://fengyuanchen.github.io/cropper/" target="_blank">https://fengyuanchen.github.io/cropper/</a></td>
+													<td>Image cropper</td>
+												</tr>
+												<tr>
+													<td><a href="https://biati-digital.github.io/glightbox/" target="_blank">https://biati-digital.github.io/glightbox/</a></td>
+													<td>GLightbox</td>
+												</tr>
+												<tr>
+													<td><a href="https://markjs.io/" target="_blank">https://markjs.io/</a></td>
+													<td>Mark.js - highlighting extension</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light" id="visualization">Visualization</th>
+												</tr>
+												<tr>
+													<td><a href="https://echarts.apache.org/en/index.html" target="_blank">https://echarts.apache.org/en/index.html</a></td>
+													<td>ECharts maps</td>
+												</tr>
+												<tr>
+													<td><a href="https://d3js.org/" target="_blank">https://d3js.org/</a></td>
+													<td>D3.js library</td>
+												</tr>
+												<tr>
+													<td><a href="https://c3js.org/" target="_blank">https://c3js.org/</a></td>
+													<td>C3.js library</td>
+												</tr>
+												<tr>
+													<td><a href="https://echarts.apache.org/en/index.html" target="_blank">https://echarts.apache.org/en/index.html</a></td>
+													<td>Echarts library</td>
+												</tr>
+												<tr>
+													<td><a href="https://google-developers.appspot.com/chart/" target="_blank">https://google-developers.appspot.com/chart/</a></td>
+													<td>Google Charts library</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /credits -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#overview" class="nav-link">Overview</a>
+								</li>
+								<li class="nav-item">
+									<a href="#libraries" class="nav-link">Main libraries</a>
+								</li>
+								<li class="nav-item">
+									<a href="#forms" class="nav-link">Forms</a>
+								</li>
+								<li class="nav-item">
+									<a href="#selects" class="nav-link">Selects</a>
+								</li>
+								<li class="nav-item">
+									<a href="#editors" class="nav-link">Editors</a>
+								</li>
+								<li class="nav-item">
+									<a href="#uploaders" class="nav-link">Uploaders</a>
+								</li>
+								<li class="nav-item">
+									<a href="#extensions" class="nav-link">Extensions</a>
+								</li>
+								<li class="nav-item">
+									<a href="#notifications" class="nav-link">Notifications</a>
+								</li>
+								<li class="nav-item">
+									<a href="#pickers" class="nav-link">Pickers</a>
+								</li>
+								<li class="nav-item">
+									<a href="#tables" class="nav-link">Tables</a>
+								</li>
+								<li class="nav-item">
+									<a href="#ui" class="nav-link">UI</a>
+								</li>
+								<li class="nav-item">
+									<a href="#visualization" class="nav-link">Visualization</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

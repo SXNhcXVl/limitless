@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link active">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">CSS variables</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- CSS variables -->
+							<div id="css_vars">
+								<h1 class="display-6 fw-bold">CSS variables</h1>
+
+								<div class="mb-3 pt-2" id="css_vars_overview">
+									<div class="mb-3">
+										<h3 class="fw-bold">Overview</h3>
+										<p>Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., <code>--main-color: black;</code>) and are accessed using the <code>var()</code> function (e.g., <code>color: var(--main-color);</code>).</p>
+										<p>Limitless version 4.0 has been completely re-written to support CSS variables in all layouts, components and extensions. It also includes a logic of re-using global CSS variables in any 3rd party components that you might need to add in the future. CSS variables are used for the following properties in CSS:
+
+											<ul>
+												<li>background and text colors</li>
+												<li>margin</li>
+												<li>padding</li>
+												<li>size</li>
+												<li>font size</li>
+												<li>font family</li>
+												<li>line height</li>
+												<li>border radius</li>
+												<li>box shadow</li>
+											</ul>
+										</p>
+
+										<p>CSS variables simplify template customization that can be done at runtime and don't require SCSS build process. Deep customization still requires SCSS editing and values for CSS variables are coming from SCSS variables as they work in combination. Some examples of global CSS variables:</p>
+									</div>
+
+									<pre class="language-sass">
+										<code>
+											// Typography
+											--body-font-size-lg: 1rem;
+											--body-font-size-sm: 0.75rem;
+											--body-font-size-xs: 0.625rem;
+											--body-line-height-computed: calc(1375rem / 1000);
+											--body-line-height-lg: 1.375;
+											--body-line-height-sm: 1.8334;
+											--body-line-height-xs: 2.2;
+
+											// Spacing
+											--spacer-1: 0.3125rem;
+											--spacer-2: 0.625rem;
+											--spacer: 1.25rem;
+											--spacer-4: 1.875rem;
+											--spacer-5: 3.75rem;
+
+											// Border radius
+											--border-radius: 0.375rem;
+											--border-radius-sm: 0.25rem;
+											--border-radius-lg: 0.5rem;
+
+											// Box shadow
+											--box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.125);
+											--box-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+											--box-shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+											// Sizing
+											--icon-font-size: 1.25rem;
+											--icon-font-size-lg: 1.5rem;
+											--icon-font-size-sm: 1rem;
+
+											// Colors
+											--gray-100: #F9FAFB;
+											--gray-200: #F3F4F6;
+											--gray-300: #E5E7EB;
+											--gray-400: #D1D5DB;
+											--gray-500: #9CA3AF;
+											--gray-600: #6B7280;
+											--gray-700: #4B5563;
+											--gray-800: #374151;
+											--gray-900: #1F2937;
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-3" id="css_vars_logic">
+									<div class="mb-3">
+										<h3 class="fw-bold">The logic</h3>
+										<p>There are multiple approaches to implementing CSS variables, the most popular and the most meaningful is a combination of SCSS and CSS, where CSS var values are dynamically generated from SCSS variables. This method allows to use a full power of SASS (such as mixins, conditions, color functions etc etc) while using CSS vars as properties. For example:</p>
+									</div>
+
+									<pre class="language-sass mb-3">
+										<code>
+											// Define color using SASS color function
+											$yellow-100: tint-color($yellow, 90%);
+
+											// Use CSS variable in component
+											.element-container {
+
+												// Define CSS variable on component level	
+												--#{$prefix}element-color: #{$yellow-100};
+
+												// Use CSS variable in component
+												.element {
+													color: var(--#{$prefix}element-color);	
+												}
+											}
+										</code>
+									</pre>
+
+									<p>Bootstrap logic of CSS variables is somewhat strange - it includes a bunch of CSS variables on <code>:root</code> level and on component level, making it a bit hard to follow and customize. This means if I want to apply styles from default form <code>select</code> component to any select in any 3rd party component, I need to create the same set of CSS variables specifically this component, which increases bundle size. This concern was raised multiple times to Bootstrap dev team, but no changes planned in upcoming releases.</p>
+
+									<p>Another concern is about the level of customization. Originally the idea of introducing CSS vars was to allow users to change only colors/shapes/shadows/typography, but adding also spacing/sizing to the list leads to full layout shift, making SASS with its power almost useless. That is why Limitless core includes CSS variables only when it's necessary and all of them are linked to global vars on <code>:root</code> level.</p>
+
+									To follow the same approach Limitless also uses component-based configuration of CSS variables, but still has an option to jump from component styling to global styling with low-to-medium efforts.
+								</div>
+
+								<div class="mb-3 pt-3" id="css_vars_usage">
+									<h3 class="fw-bold">How to use</h3>
+									<div class="mb-4">
+										<p class="mb-3">In development environment, all CSS variables are stored in SCSS files: <code>_root.scss</code> file contains all global variables added to the root level, all Bootstrap-related and 3rd party components are stored in corresponding files. If you need to make a deep customization, you need to edit <code>_variables-core.scss</code> and <code>_variables-custom.scss</code> files. All values assigned to CSS variables are coming from there. For example:</p>
+
+										<pre class="language-sass mb-3">
+											<code>
+												// SCSS variables in _variables-core.scss
+												$input-color:         var(--#{$prefix}body-color);
+												$input-border-color:  var(--#{$prefix}gray-400);
+
+												// How it's used in _form-control.scss file
+												.form-control {
+													--#{$prefix}input-color: #{$input-color};
+													--#{$prefix}input-border-color: #{$input-border-color};
+
+													color: var(--#{$prefix}input-color);
+													border-color: var(--#{$prefix}input-border-color);
+												}
+											</code>
+										</pre>
+
+										Same logic is applicable to all components. It is recommended to make as less changes in component SCSS files as possible, instead if you need to change values, do it in 2 files with variables mentioned above.
+									</div>
+
+									<div class="mb-4" id="css_vars_usage_global">
+										<h5>Global CSS variables</h5>
+										If you need to style third-party components, you can re-use global CSS variables available in <code>:root</code> level. Here is a full list of available CSS variables:
+
+										<pre class="language-css mb-3">
+											<code>
+												:root,
+												[data-color-theme=light] {
+													--body-font-size-lg: 1rem;
+													--body-font-size-sm: 0.75rem;
+													--body-font-size-xs: 0.625rem;
+													--body-line-height-computed: calc(1375rem / 1000);
+													--body-line-height-lg: 1.375;
+													--body-line-height-sm: 1.8334;
+													--body-line-height-xs: 2.2;
+													--component-active-bg: #0c83ff;
+													--component-active-bg-rgb: 12, 131, 255;
+													--component-active-color: #fff;
+													--focus-ring-box-shadow: 0 0 0 0.125rem rgba(12, 131, 255, 0.25);
+													--spacer-1: 0.3125rem;
+													--spacer-2: 0.625rem;
+													--spacer: 1.25rem;
+													--spacer-4: 1.875rem;
+													--spacer-5: 3.75rem;
+													--icon-font-family: Phosphor;
+													--icon-font-size: 1.25rem;
+													--icon-font-size-lg: 1.5rem;
+													--icon-font-size-sm: 1rem;
+													--box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.125);
+													--box-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+													--box-shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.15);
+													--transition-base-timer: 0.15s;
+													--transition-collapse-timer: 0.3s;
+													--gray-100: #F9FAFB;
+													--gray-200: #F3F4F6;
+													--gray-300: #E5E7EB;
+													--gray-400: #D1D5DB;
+													--gray-500: #9CA3AF;
+													--gray-600: #6B7280;
+													--gray-700: #4B5563;
+													--gray-800: #374151;
+													--gray-900: #1F2937;
+													--indigo: #5C6BC0;
+													--purple: #8e70c1;
+													--pink: #f35c86;
+													--teal: #26A69A;
+													--yellow: #ffd648;
+													--primary: #0c83ff;
+													--secondary: #247297;
+													--success: #059669;
+													--info: #049aad;
+													--warning: #f58646;
+													--danger: #EF4444;
+													--light: #F3F4F6;
+													--dark: #252b36;
+													--black: #000;
+													--white: #fff;
+													--indigo-rgb: 92, 107, 192;
+													--purple-rgb: 142, 112, 193;
+													--pink-rgb: 243, 92, 134;
+													--teal-rgb: 38, 166, 154;
+													--yellow-rgb: 255, 214, 72;
+													--primary-rgb: 12, 131, 255;
+													--secondary-rgb: 36, 114, 151;
+													--success-rgb: 5, 150, 105;
+													--info-rgb: 4, 154, 173;
+													--warning-rgb: 245, 134, 70;
+													--danger-rgb: 239, 68, 68;
+													--light-rgb: 243, 244, 246;
+													--dark-rgb: 37, 43, 54;
+													--black-rgb: 0, 0, 0;
+													--white-rgb: 255, 255, 255;
+													--body-color-rgb: 31, 41, 55;
+													--body-bg-rgb: 241, 244, 249;
+													--font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+													--font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+													--gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+													--body-font-family: var(--font-sans-serif);
+													--body-font-size: 0.875rem;
+													--body-font-weight: 400;
+													--body-line-height: 1.5715;
+													--body-color: #1F2937;
+													--body-bg: #f1f4f9;
+													--border-width: 1px;
+													--border-style: solid;
+													--border-color: #D1D5DB;
+													--border-color-translucent: rgba(0, 0, 0, 0.125);
+													--border-radius: 0.375rem;
+													--border-radius-sm: 0.25rem;
+													--border-radius-lg: 0.5rem;
+													--border-radius-xl: 1rem;
+													--border-radius-2xl: 2rem;
+													--border-radius-pill: 50rem;
+													--link-color: #0c83ff;
+													--link-hover-color: #0962bf;
+													--code-color: #f35c86;
+													--highlight-bg: rgba(0, 0, 0, 0.15);
+												}
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-4" id="css_vars_usage_prefix">
+										<h5>Variable prefix</h5>
+										<p class="mb-3">In SCSS code all CSS variables have prefix addon, which looks like this - <code>--#{$prefix}input-color</code>. This option is coming from Bootstrap core, where default value is <code>bs-</code>. In Limitless this prefix is set to <code>null</code> to keep the code more readable. If you would like to set your custom prefix, you need to edit <code>$prefix</code> variable located in <code>_variables-core.scss</code> file.</p>
+
+										<pre class="language-sass mb-3">
+											<code>
+												// Variable in _variables-core.scss
+												$prefix: null;
+											</code>
+										</pre>
+
+										<strong>Note:</strong> it's highly recommended to use <code>#{$prefix}</code> in all your CSS variables.
+									</div>
+
+									<div id="css_vars_usage_editing">
+										<h5>Editing</h5>
+										<p>Using CSS variables as primary method in template styling allows to easily customize typography, colors, spacing and other properties on-the-fly simply by editing or overriding CSS variables that can be done in a separate <code>.css</code>. You can edit CSS variables using 2 different options:</p>
+
+										<ol class="list mb-3">
+											<li>
+												<strong class="d-block">Overriding CSS variables</strong>
+												This method doesn't require build process and works best if you are not planning to change too much in CSS and use all styles as is with some minor corrections.
+											</li>
+											<li>
+												<strong class="d-block">Editing SCSS sources</strong>
+												This method works best when you need to make lots of changes. It requires SCSS compilation.
+											</li>
+										</ol>
+
+										<pre class="language-sass mb-3">
+											<code>
+												// Variables in all.css file
+												--body-bg: #f1f4f9;
+												--body-bg-rgb: 241, 244, 249;
+
+												// Create a new CSS file, copy/paste variables that you want to edit
+												// and change values
+												--body-bg: #fff;
+												--body-bg-rgb: 255, 255, 255;
+											</code>
+										</pre>
+
+										<strong>Note:</strong> it's highly recommended to use <code>#{$prefix}</code> in all your CSS variables.
+									</div>
+								</div>
+							</div>
+							<!-- /CSS variables -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#css_vars_overview" class="nav-link">Overview</a>
+								</li>
+								<li class="nav-item">
+									<a href="#css_vars_logic" class="nav-link">Logic</a>
+								</li>
+								<li class="nav-item">
+									<a href="#css_vars_usage" class="nav-link">How to use</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#css_vars_usage_global" class="nav-link">Global CSS variables</a>
+										</li>
+										<li class="nav-item">
+											<a href="#css_vars_usage_prefix" class="nav-link">Prefix</a>
+										</li>
+										<li class="nav-item">
+											<a href="#css_vars_usage_editing" class="nav-link">Editing</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

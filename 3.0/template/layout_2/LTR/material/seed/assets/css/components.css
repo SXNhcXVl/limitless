@@ -1,0 +1,2283 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------------------------
+ *
+ *  # Components
+ *
+ *  Components import. Ordering matters. See _config.scss for more options
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Global configuration
+ *
+ *  Here you can change main theme, enable or disable certain components and
+ *  optional styles. This allows you to include only components that you need.
+ *
+ *  'true'  - enables component and includes it to main CSS file.
+ *  'false' - disables component and excludes it from main CSS file.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Custom Limitless functions
+ *
+ *  Utility mixins and functions for evalutating source code across our variables, maps, and mixins.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Custom template mixins
+ *
+ *  All custom mixins are prefixed with "ll-" to avoid conflicts
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Default Bootstrap variable overrides
+ *
+ *  Variables should follow the `$component-state-property-size` formula for
+ *  consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+ *  Also includes custom variables, all marked with "!default" flag.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Additional variables
+ *
+ *  Mainly 3rd party libraries and additional variables for default
+ *  Bootstrap components.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Mixins
+ *
+ *  Import Bootstrap mixins with overrides
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Buttons mixin
+ *
+ *  Override and extend default buttons mixin.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Caret mixin
+ *
+ *  Override and extend default cared mixin.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Background mixin
+ *
+ *  Override and extend default background mixin.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Flash of unstyled content (FOUC)
+ *
+ *  CSS fix for FOUC issue, which pops up in latest jQuery version. These styles
+ *  are optional, but enabled by default. Feel free to turn them off in configuration.
+ *
+ * ---------------------------------------------------------------------------- */
+input[type=text][data-fouc] {
+  height: calc(1.5715em + 1rem + 2px);
+  opacity: 0; }
+
+input[type=text].form-control-lg[data-fouc] {
+  height: calc(1.4667em + 1.25rem + 2px); }
+
+input[type=text].form-control-sm[data-fouc] {
+  height: calc(1.6924em + 0.75rem + 2px); }
+
+select[data-fouc]:not([aria-hidden=false]) {
+  height: calc(1.5715em + 1rem + 2px);
+  opacity: 0; }
+
+select.form-control-lg[data-fouc]:not([aria-hidden=false]) {
+  height: calc(1.4667em + 1.25rem + 2px); }
+
+select.form-control-sm[data-fouc]:not([aria-hidden=false]) {
+  height: calc(1.6924em + 0.75rem + 2px); }
+
+.wizard-form[data-fouc] {
+  opacity: 0; }
+  .wizard-form[data-fouc].wizard {
+    opacity: 1; }
+  .wizard-form[data-fouc]:not(.wizard) {
+    padding-top: 6.875rem;
+    padding-bottom: 3.75rem; }
+    .wizard-form[data-fouc]:not(.wizard) fieldset:not(:first-of-type),
+    .wizard-form[data-fouc]:not(.wizard) h6 {
+      display: none; }
+
+input[type=text].colorpicker-flat-full[data-fouc] {
+  height: 285px; }
+
+pre[data-fouc]:not(.ace_editor) {
+  height: 450px; }
+
+pre[data-fouc].ace_editor {
+  visibility: visible; }
+
+.noui-pips-height-helper:not(.noUi-target)[data-fouc] {
+  height: 2.6875rem; }
+
+.noui-pips-height-helper.noui-slider-lg:not(.noUi-target)[data-fouc] {
+  height: 2.8125rem; }
+
+.noui-pips-height-helper.noui-slider-sm:not(.noUi-target)[data-fouc] {
+  height: 2.5625rem; }
+
+.noui-vertical-height-helper:not(.noUi-target)[data-fouc] {
+  display: inline-block;
+  height: 10rem; }
+
+input[type=text].ion-height-helper[data-fouc] {
+  height: 2.75rem; }
+
+input[type=text].ion-pips-height-helper[data-fouc] {
+  height: 4.6875rem; }
+
+input[type=text].noui-height-helper:not(.noUi-target)[data-fouc] {
+  height: 0.3125rem; }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Pace. Default theme
+ *
+ *  Minimal preloader theme, used as a default theme
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Progress (loading) bars
+ *
+ *  Static demo of Pace themes. For demonstration purposes only. DO NOT use it in production
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Select2 selects
+*
+*  Styles for select2.js - custom select plugin
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Bootstrap multiselect
+*
+*  Styles for multiselect.js - custom multiple select plugin
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Passy
+*
+*  Styles for passy.min.js - password length checker and password generator
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Twiter Typeahead
+*
+*  Styles for typeahead.bundle.min.js - input suggestion engine
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Form Validation
+*
+*  Styles for validate.min.js - jQuery plugin for simple clientside form validation
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Floating labels
+*
+*  Styles for custom Floating Labels extensions
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Alpaca forms
+*
+*  Styles for alpaca.min.js - the easiest way to generate interactive HTML5 forms for web applications
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Tokenfield for Bootstrap
+*
+*  Styles for tokenfield.js - Advanced tagging/tokenizing plugin for Bootstrap
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Bootstrap tags input
+*
+*  Styles for tagsinput.js - tags input for Bootstrap
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Touchspin spinners
+*
+*  Styles for touchspin.min.js - spinner form control library
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Bootstrap Duallistbox
+ *
+ *  Styles for listbox.js - A responsive dual listbox widget optimized for Bootstrap
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Steps wizard
+*
+*  Styles for steps.min.js - An all-in-one wizard plugin that is extremely flexible, compact and feature-rich
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Summernote editor
+*
+*  Styles for summernote.min.js - super simple WYSIWYG Editor for Bootstrap framework
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Trumbowyg editor
+*
+*  Styles for trumbowyg.min.js - a lightweight WYSIWYG editor
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Ace code editor
+*
+*  Styles Ace - an embeddable code editor written in JavaScript
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Daterange picker
+*
+*  Date range picker component for Bootstrap
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Pick-a-date - Picker base
+*
+*  The mobile-friendly, responsive, and lightweight jQuery date & time input picker
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Pick-a-date - Date picker
+*
+*  The mobile-friendly, responsive, and lightweight jQuery date & time input picker
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Pick-a-date - Time picker
+*
+*  The mobile-friendly, responsive, and lightweight jQuery date & time input picker
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Spectrum color picker
+*
+*  Flexible and powerful jQuery colorpicker library
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Plupload multiple file uploader
+ *
+ *  Styles for plupload.min.js - multi runtime single and multiple file uploader
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Bootstrap file input
+ *
+ *  Styles for fileinput.min.js - an enhanced HTML 5 file input for Bootstrap
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Dropzone file uploader
+ *
+ *  Styles for dropzone.min.js - open source library that provides drag’n’drop file uploads with image previews
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Noty notifications
+*
+*  Styles for noty.min.js - A dependency-free notification library
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # PNotify notifications
+*
+*  Styles for pnotify.min.js - a flexible JavaScript notification plugin
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # jGrowl notifications
+*
+*  Styles for jgrowl.min.js - an unobtrusive notification system for web applications
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Sweet Alerts component
+*
+*  Styles for sweet_alert.min.js - notification library
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # jQuery UI slider pips
+ *
+ *  Styles for jQuery UI slider pips extension
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # NoUI slider
+ *
+ *  Styles for nouislider.min.js - range slider plugin
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # ION Range Slider
+*
+*  Styles for ion_rangeslider.min.js - range slider plugin
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # jQuery UI Interactions
+ *
+ *  Separate styles for jQuery UI library. Component's interactions
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # jQuery UI Widgets
+ *
+ *  Styles for jQuery UI widgets
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Ripple effect
+ *
+ *  Styles for material design ripple click effect
+ *
+ * ---------------------------------------------------------------------------- */
+.ripple-effect {
+  width: 0;
+  height: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  -webkit-animation: ripple-drop 0.5s cubic-bezier(0, 0, 0.3, 1);
+          animation: ripple-drop 0.5s cubic-bezier(0, 0, 0.3, 1); }
+
+.ripple-container {
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+
+.ripple-only-child.dropdown-toggle:after {
+  margin-left: 0; }
+
+@-webkit-keyframes ripple-drop {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0; } }
+
+@keyframes ripple-drop {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0; } }
+
+.btn:not(.btn-light):not(.btn-link):not(.bg-transparent):not([class*="-100"]):not(.btn-white):not(.btn-yellow):not(.btn-outline-light):not(.btn-outline-white) .ripple-effect,
+.ripple-light .ripple-effect,
+.sidebar-dark .btn-light-100 .ripple-effect,
+.sidebar-dark .btn-outline-light-100 .ripple-effect,
+.navbar-dark .btn-light-100 .ripple-effect,
+.navbar-dark .btn-outline-light-100 .ripple-effect,
+.nav-tabs-solid-custom .nav-link .ripple-effect,
+.list-group-custom .list-group-item-action .ripple-effect,
+.sidebar-dark .nav-link .ripple-effect,
+.sidebar-user-material-footer > a .ripple-effect,
+.sp-replacer[class*=bg-] .ripple-effect,
+.pagination-pager-linked .page-link .ripple-effect,
+.page-item.active .page-link .ripple-effect,
+.list-group-item-action.active .ripple-effect,
+.navbar-dark .navbar-nav-link .ripple-effect,
+.select2-results__option[aria-selected=true] .ripple-effect {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Prism
+ *
+ *  Styles for prism.min.js - lightweight, extensible syntax highlighter
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Slinky
+ *
+ *  Styles for slinky.min.js - animated multi level navigation
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Headroom
+ *
+ *  Styles for headroom.min.js - hides BS navbar component on page scroll
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Dragula - drag and drop library
+ *
+ *  Styles for Dragula Drag and drop plugin
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Floating action buttons
+*
+*  Styles for fab.min.js - material design floating action button with menu
+*
+* ---------------------------------------------------------------------------- */
+.fab-menu {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1029;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85); }
+  .page-header > .fab-menu {
+    bottom: -1.5rem; }
+  @media (min-width: 768px) {
+    .fab-menu {
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+
+.fab-menu-absolute {
+  position: absolute; }
+
+.fab-menu-fixed {
+  position: fixed;
+  z-index: 1030; }
+
+.content-wrapper > .fab-menu-top-left, .content-wrapper >
+.fab-menu-top-right {
+  top: -1.5rem; }
+
+.navbar > .fab-menu-top-left, .navbar >
+.fab-menu-top-right {
+  bottom: -1.5rem; }
+
+.fab-menu-bottom-left,
+.fab-menu-bottom-right {
+  bottom: 1.25rem;
+  transition: bottom ease-in-out 0.15s; }
+  .fab-menu-bottom-left.reached-bottom,
+  .fab-menu-bottom-right.reached-bottom {
+    bottom: 6.5rem; }
+  .navbar > .fab-menu-bottom-left, .navbar >
+  .fab-menu-bottom-right {
+    top: -1.5rem; }
+
+.fab-menu-top-right,
+.fab-menu-bottom-right {
+  right: 1.25rem; }
+
+.fab-menu-inner {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .fab-menu-inner > li {
+    display: block;
+    position: absolute;
+    top: 0.125rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 1.25rem;
+    margin-top: -1.25rem; }
+    .fab-menu-inner > li .btn {
+      border-width: 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+      .fab-menu-inner > li .btn:hover, .fab-menu-inner > li .btn:focus, .fab-menu-inner > li .btn.focus, .fab-menu-inner > li .btn:not(:disabled):not(.disabled):active, .fab-menu-inner > li .btn:not(:disabled):not(.disabled).active {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important; }
+    .fab-menu-inner > li .btn-float {
+      padding: 0;
+      width: 2.75rem;
+      height: 2.75rem; }
+      .fab-menu-inner > li .btn-float > i {
+        margin: 0.875rem; }
+    .fab-menu-inner > li .show > .btn-float.dropdown-toggle {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .fab-menu-inner > li .dropleft .btn:before,
+    .fab-menu-inner > li .dropleft .btn:after,
+    .fab-menu-inner > li .dropright .btn:before,
+    .fab-menu-inner > li .dropright .btn:after {
+      content: none; }
+    .fab-menu-inner > li .badge {
+      position: absolute;
+      top: 0.75rem;
+      right: -0.25rem; }
+    .fab-menu-inner > li .badge-mark {
+      top: 1.25rem;
+      right: 0rem; }
+    .fab-menu-bottom-left .fab-menu-inner > li,
+    .fab-menu-bottom-right .fab-menu-inner > li {
+      padding-top: 0;
+      margin-top: 0;
+      padding-bottom: 1.25rem;
+      margin-bottom: -1.25rem; }
+      .fab-menu-bottom-left .fab-menu-inner > li .badge,
+      .fab-menu-bottom-right .fab-menu-inner > li .badge {
+        top: -0.5rem; }
+      .fab-menu-bottom-left .fab-menu-inner > li .badge-mark,
+      .fab-menu-bottom-right .fab-menu-inner > li .badge-mark {
+        top: 0rem; }
+
+.fab-menu-btn {
+  z-index: 1031;
+  border-width: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .fab-menu-btn.btn-float {
+    padding: 1.5rem; }
+    .fab-menu-btn.btn-float > i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -0.5rem;
+      margin-left: -0.5rem; }
+  .fab-menu-btn:hover, .fab-menu-btn:focus, .fab-menu-btn:not(:disabled):not(.disabled):active, .fab-menu-btn:not(:disabled):not(.disabled).active, .fab-menu-btn:not(:disabled):not(.disabled):active:focus,
+  .fab-menu[data-fab-toggle="hover"]:hover .fab-menu-btn,
+  .fab-menu[data-fab-state="open"] .fab-menu-btn {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .fab-menu-btn:disabled, .fab-menu-btn.disabled {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.fab-icon-close,
+.fab-icon-open {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  transition: all ease-in-out 0.3s; }
+  .fab-menu[data-fab-toggle="hover"]:hover .fab-icon-close,
+  .fab-menu[data-fab-state="open"] .fab-icon-close, .fab-menu[data-fab-toggle="hover"]:hover
+  .fab-icon-open,
+  .fab-menu[data-fab-state="open"]
+  .fab-icon-open {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+.fab-menu[data-fab-toggle="hover"]:hover .fab-icon-open,
+.fab-menu[data-fab-state="open"] .fab-icon-open {
+  opacity: 0; }
+
+.fab-icon-close {
+  opacity: 0; }
+  .fab-menu[data-fab-toggle="hover"]:hover .fab-icon-close,
+  .fab-menu[data-fab-state="open"] .fab-icon-close {
+    opacity: 1; }
+
+.fab-menu .fab-menu-inner > li {
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease-in-out 0.3s; }
+  .fab-menu .fab-menu-inner > li:nth-child(1) {
+    transition-delay: 0.05s; }
+  .fab-menu .fab-menu-inner > li:nth-child(2) {
+    transition-delay: 0.1s; }
+  .fab-menu .fab-menu-inner > li:nth-child(3) {
+    transition-delay: 0.15s; }
+  .fab-menu .fab-menu-inner > li:nth-child(4) {
+    transition-delay: 0.2s; }
+  .fab-menu .fab-menu-inner > li:nth-child(5) {
+    transition-delay: 0.25s; }
+
+.fab-menu[data-fab-toggle="hover"]:hover .fab-menu-inner > li, .fab-menu[data-fab-state="open"] .fab-menu-inner > li {
+  visibility: visible;
+  opacity: 1; }
+
+.fab-menu-top[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(1), .fab-menu-top[data-fab-state="open"] .fab-menu-inner > li:nth-child(1),
+.fab-menu-top-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(1),
+.fab-menu-top-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(1),
+.fab-menu-top-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(1),
+.fab-menu-top-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(1) {
+  top: 4.25rem; }
+
+.fab-menu-top[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(2), .fab-menu-top[data-fab-state="open"] .fab-menu-inner > li:nth-child(2),
+.fab-menu-top-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(2),
+.fab-menu-top-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(2),
+.fab-menu-top-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(2),
+.fab-menu-top-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(2) {
+  top: 8.25rem; }
+
+.fab-menu-top[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(3), .fab-menu-top[data-fab-state="open"] .fab-menu-inner > li:nth-child(3),
+.fab-menu-top-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(3),
+.fab-menu-top-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(3),
+.fab-menu-top-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(3),
+.fab-menu-top-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(3) {
+  top: 12.25rem; }
+
+.fab-menu-top[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(4), .fab-menu-top[data-fab-state="open"] .fab-menu-inner > li:nth-child(4),
+.fab-menu-top-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(4),
+.fab-menu-top-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(4),
+.fab-menu-top-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(4),
+.fab-menu-top-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(4) {
+  top: 16.25rem; }
+
+.fab-menu-top[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(5), .fab-menu-top[data-fab-state="open"] .fab-menu-inner > li:nth-child(5),
+.fab-menu-top-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(5),
+.fab-menu-top-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(5),
+.fab-menu-top-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(5),
+.fab-menu-top-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(5) {
+  top: 20.25rem; }
+
+.fab-menu-bottom[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(1), .fab-menu-bottom[data-fab-state="open"] .fab-menu-inner > li:nth-child(1),
+.fab-menu-bottom-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(1),
+.fab-menu-bottom-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(1),
+.fab-menu-bottom-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(1),
+.fab-menu-bottom-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(1) {
+  top: -3.75rem; }
+
+.fab-menu-bottom[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(2), .fab-menu-bottom[data-fab-state="open"] .fab-menu-inner > li:nth-child(2),
+.fab-menu-bottom-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(2),
+.fab-menu-bottom-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(2),
+.fab-menu-bottom-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(2),
+.fab-menu-bottom-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(2) {
+  top: -7.75rem; }
+
+.fab-menu-bottom[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(3), .fab-menu-bottom[data-fab-state="open"] .fab-menu-inner > li:nth-child(3),
+.fab-menu-bottom-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(3),
+.fab-menu-bottom-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(3),
+.fab-menu-bottom-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(3),
+.fab-menu-bottom-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(3) {
+  top: -11.75rem; }
+
+.fab-menu-bottom[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(4), .fab-menu-bottom[data-fab-state="open"] .fab-menu-inner > li:nth-child(4),
+.fab-menu-bottom-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(4),
+.fab-menu-bottom-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(4),
+.fab-menu-bottom-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(4),
+.fab-menu-bottom-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(4) {
+  top: -15.75rem; }
+
+.fab-menu-bottom[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(5), .fab-menu-bottom[data-fab-state="open"] .fab-menu-inner > li:nth-child(5),
+.fab-menu-bottom-left[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(5),
+.fab-menu-bottom-left[data-fab-state="open"] .fab-menu-inner > li:nth-child(5),
+.fab-menu-bottom-right[data-fab-toggle="hover"]:hover .fab-menu-inner > li:nth-child(5),
+.fab-menu-bottom-right[data-fab-state="open"] .fab-menu-inner > li:nth-child(5) {
+  top: -19.75rem; }
+
+.fab-menu-inner div[data-fab-label]:after {
+  content: attr(data-fab-label);
+  position: absolute;
+  top: 50%;
+  margin-top: -0.375rem;
+  right: 4.125rem;
+  color: #fff;
+  background-color: #000;
+  padding: 0.375rem 0.75rem;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all ease-in-out 0.3s;
+  border-radius: 0.25rem; }
+  .fab-menu-bottom-left .fab-menu-inner div[data-fab-label]:after,
+  .fab-menu-bottom-right .fab-menu-inner div[data-fab-label]:after {
+    margin-top: -1.625rem; }
+
+.fab-menu-top-left .fab-menu-inner div[data-fab-label]:after,
+.fab-menu-bottom-left .fab-menu-inner div[data-fab-label]:after, .fab-menu-inner div[data-fab-label].fab-label-right:after {
+  right: auto;
+  left: 4.125rem; }
+
+.fab-menu[data-fab-toggle="hover"] .fab-menu-inner div[data-fab-label]:hover:after,
+.fab-menu[data-fab-state="open"] .fab-menu-inner div[data-fab-label]:hover:after {
+  visibility: visible;
+  opacity: 1; }
+
+.fab-menu-inner div[data-fab-label].fab-label-light:after {
+  background-color: #fff;
+  color: #333; }
+
+.fab-menu-inner div[data-fab-label].fab-label-visible:after {
+  visibility: visible;
+  opacity: 1; }
+
+/* ------------------------------------------------------------------------------
+*
+*  # Fancytree
+*
+*  Styles for fancytree_all.min.js - tree plugin for jQuery
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Ladda progress buttons
+ *
+ *  Styles for ladda.min.js - buttons with built-in loading indicators
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # FullCalendar
+ *
+ *  Styles for fullcalendar JS files - JavaScript event calendar
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Image cropper
+ *
+ *  Styles for cropper.min.js - a simple jQuery image cropping plugin
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # GLightbox - lightbox extension
+ *
+ *  Styles for glightbox.min.js - Mac-style "lightbox" plugin
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Footable
+ *
+ *  jQuery plugin that aims to make HTML tables on smaller devices look awesome.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Datatables library
+ *
+ *  Add advanced interaction controls to any HTML table
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Columns reorder
+ *
+ *  Easily modify the column order of a table through drop-and-drag of column headers
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Row Reorder extension
+ *
+ *  RowReorder adds the ability for rows in a DataTable to be reordered through
+ *  user interaction with the table.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Fixed columns
+ *
+ *  Extension that "freezes" in place the left most columns in a scrolling DataTable
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Autofill extension
+ *
+ *  Spreadsheets such as Excel and Google Docs have a very handy data duplication
+ *  option of an auto fill tool
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Select extension
+ *
+ *  Adds item selection capabilities to a DataTable
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Buttons extension
+ *
+ *  The Buttons extension for DataTables provides a common set of options, API
+ *  methods and styling to display buttons that will interact with a DataTable
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Key Table extension
+ *
+ *  KeyTable provides Excel like cell navigation on any table. Events (focus, blur,
+ *  action etc) can be assigned to individual cells, columns, rows or all cells.
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Datatables Scroller
+ *
+ *  Drawing the rows required for the current display only, for fast operation
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Responsive extension
+ *
+ *  Optimise the table's layout for different screen sizes through the dynamic 
+ *  insertion and removal of columns from the table
+ *
+ * ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Google Maps overrides
+*
+*  Override Google Maps default styles
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Vector maps
+*
+*  Vector map container, tooltip and zooming
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # Chart styling
+*
+*  Charts base - container and sizing setup
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # C3 charts
+*
+*  Styles for C3.js visualization library
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+*
+*  # D3.js library
+*
+*  Basic styles for D3.js visualization library
+*
+* ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------
+ *
+ *  # Ecommerce stuff
+ *
+ *  Styles for Ecommerce set of pages
+ *
+ * ---------------------------------------------------------------------------- */
+.color-selector-active {
+  position: relative; }
+  .color-selector-active i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.5rem;
+    margin-left: -0.5rem; }
+
+.pricing-table-price {
+  font-size: 2.625rem; }
+  .pricing-table-price > span {
+    font-size: 1.875rem; }
+
+.pricing-table-list li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .card[class*=bg-]:not(.bg-transparent):not(.bg-white):not(.bg-light) .pricing-table-list li {
+    border-bottom-color: rgba(255, 255, 255, 0.2); }
+
+.ribbon-container {
+  width: 6.5rem;
+  height: 6.625rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  right: -1px; }
+
+.ribbon {
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.6924;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.3125rem 0;
+  left: -0.6875rem;
+  top: 1.563rem;
+  width: 9.375rem;
+  z-index: 10;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Blog layouts
+ *
+ *  Blog layouts with various blog layouts
+ *
+ * ---------------------------------------------------------------------------- */
+.blog-horizontal .card-img-actions {
+  width: 100%; }
+  @media (min-width: 576px) {
+    .blog-horizontal .card-img-actions {
+      width: 45%;
+      float: left;
+      max-width: 25rem;
+      z-index: 10; } }
+
+@media (min-width: 576px) {
+  .blog-horizontal-xs .card-img-actions {
+    width: 35%;
+    max-width: 12.5rem; } }
+
+@media (min-width: 576px) {
+  .blog-horizontal-sm .card-img-actions {
+    width: 40%;
+    max-width: 18.75rem; } }
+
+@media (min-width: 576px) {
+  .blog-horizontal-lg .card-img-actions {
+    width: 50%;
+    max-width: 31.25rem; } }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Task manager
+ *
+ *  Styles related to task manager - detailed task, list and grid
+ *
+ * ---------------------------------------------------------------------------- */
+.timer-number {
+  font-size: 3rem;
+  line-height: 1; }
+
+.timer-dots {
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
+  line-height: 1; }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Mail list
+ *
+ *  Inbox page - list, read and write
+ *
+ * ---------------------------------------------------------------------------- */
+.table-inbox {
+  table-layout: fixed;
+  min-width: 768px; }
+  .table-inbox tr {
+    cursor: pointer;
+    transition: all ease-in-out 0.15s; }
+    @media (prefers-reduced-motion: reduce) {
+      .table-inbox tr {
+        transition: none; } }
+    .table-inbox tr:not([class*=bg-]) {
+      background-color: #fafafa; }
+    .table-inbox tr td:not(:first-child) {
+      padding-left: 0; }
+    .table-inbox tr.unread {
+      font-weight: 700; }
+      .table-inbox tr.unread:not([class*=bg-]) {
+        background-color: #fff; }
+
+.table-inbox-checkbox {
+  width: 3.75rem; }
+
+.table-inbox-star,
+.table-inbox-attachment {
+  width: 2.25rem; }
+
+.table-inbox-image {
+  width: 3.625rem; }
+
+.table-inbox-name {
+  width: 11.25rem; }
+
+@media (max-width: 767.98px) {
+  .table-inbox-subject {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+
+.table-inbox-message {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.table-inbox-time {
+  text-align: right;
+  width: 5rem; }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # User profile
+ *
+ *  Styles for all user profile layouts
+ *
+ * ---------------------------------------------------------------------------- */
+.profile-cover {
+  position: relative; }
+  .profile-cover .media {
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+    .profile-cover .media .btn {
+      box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5) !important; }
+    @media (min-width: 768px) {
+      .profile-cover .media {
+        bottom: 1.25rem;
+        -webkit-transform: none;
+                transform: none; } }
+  .profile-cover .media-body {
+    text-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5); }
+
+.profile-cover-img {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 21.88rem; }
+
+.profile-thumb img {
+  border: 3px solid #fff;
+  box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5);
+  width: 6.25rem;
+  height: 6.25rem; }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Login and related forms
+ *
+ *  Styles related to user login - logins, registration, password revovery, unlock etc.
+ *
+ * ---------------------------------------------------------------------------- */
+.login-cover {
+  background: url(../../../../../../global_assets/images/login_cover.jpg) no-repeat;
+  background-size: cover; }
+
+.login-form {
+  width: 100%; }
+  .login-form .nav-item:first-child .nav-link {
+    border-top-left-radius: calc(0.25rem - 1px); }
+  .login-form .nav-item:last-child .nav-link {
+    border-top-right-radius: calc(0.25rem - 1px); }
+  @media (min-width: 576px) {
+    .login-form {
+      width: 20rem; } }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Timeline
+ *
+ *  Styles for timeline in 3 layouts: left, right and centered
+ *
+ * ---------------------------------------------------------------------------- */
+.timeline {
+  position: relative; }
+  .timeline:before, .timeline:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #ccc;
+    z-index: 1;
+    width: 4px;
+    height: 4px;
+    border-radius: 50rem; }
+  .timeline:before {
+    top: -4px; }
+  .timeline:after {
+    bottom: -4px; }
+
+.timeline-container {
+  position: relative;
+  padding-top: 0.625rem;
+  margin-top: -0.625rem;
+  padding-bottom: 1px; }
+  .timeline-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background-color: #ccc;
+    height: 100%;
+    width: 2px; }
+
+.timeline-row {
+  position: relative; }
+
+.timeline-date {
+  text-align: center;
+  background-color: #eeeded;
+  position: relative;
+  z-index: 1;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem; }
+  .timeline-date:before, .timeline-date:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #ccc;
+    z-index: 1;
+    width: 4px;
+    height: 4px;
+    border-radius: 50rem; }
+  .timeline-date:before {
+    top: 0; }
+  .timeline-date:after {
+    bottom: 0; }
+  .card .timeline-date {
+    background-color: #fff; }
+
+.timeline-time {
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #eeeded;
+  position: relative;
+  margin-bottom: 1.25rem; }
+  .timeline-time:before, .timeline-time:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #ccc;
+    width: 4px;
+    height: 4px;
+    border-radius: 50rem; }
+  .timeline-time:before {
+    top: 0; }
+  .timeline-time:after {
+    bottom: 0; }
+  .card .timeline-time {
+    background-color: #fff; }
+  @media (min-width: 768px) {
+    .timeline-time:before, .timeline-time:after {
+      content: none; } }
+
+.timeline-icon {
+  margin: 0 auto 1.25rem auto;
+  background-color: #fff;
+  border: 4px solid #eeeded;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50rem; }
+  .card .timeline-icon {
+    border-color: #fff; }
+  .timeline-icon div {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    box-shadow: 0 0 0 2px #ccc inset;
+    border-radius: 50rem; }
+    .timeline-icon div[class*=bg-]:not(.bg-white):not(.bg-light):not(.bg-transparent) {
+      box-shadow: none; }
+    .timeline-icon div > i {
+      top: 0; }
+  .timeline-icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50rem; }
+
+@media (min-width: 768px) {
+  .timeline-center .timeline-row-left {
+    margin-right: 50%;
+    padding-right: 2.75rem; }
+  .timeline-center .timeline-row-right {
+    margin-left: 50%;
+    padding-left: 2.75rem; }
+  .timeline-left .timeline-container:before, .timeline-left:before, .timeline-left:after,
+  .timeline-left .timeline-date:before,
+  .timeline-left .timeline-date:after {
+    left: 1.5rem; }
+  .timeline-left .timeline-row,
+  .timeline-left .timeline-date {
+    padding-left: 4.42857rem; }
+  .timeline-right .timeline-container:before, .timeline-right:before, .timeline-right:after,
+  .timeline-right .timeline-date:before,
+  .timeline-right .timeline-date:after {
+    left: auto;
+    right: 1.5rem; }
+  .timeline-right:before, .timeline-right:after,
+  .timeline-right .timeline-date:before,
+  .timeline-right .timeline-date:after {
+    margin-left: 0;
+    margin-right: -1px; }
+  .timeline-right .timeline-row,
+  .timeline-right .timeline-date {
+    padding-right: 4.42857rem; }
+  .timeline-left .timeline-date,
+  .timeline-right .timeline-date {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem; }
+  .timeline-icon {
+    position: absolute;
+    top: 0.625rem; }
+    .timeline-icon:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      height: 2px;
+      width: 1rem;
+      background-color: #ccc;
+      z-index: 1; }
+  .timeline-left .timeline-icon {
+    left: 0; }
+    .timeline-left .timeline-icon:after {
+      left: 100%;
+      margin-left: 4px; }
+  .timeline-right .timeline-icon {
+    right: 0; }
+    .timeline-right .timeline-icon:after {
+      right: 100%;
+      margin-right: 4px; }
+  .timeline-center .timeline-row-left .timeline-icon {
+    left: 100%;
+    margin-left: -1.5rem; }
+    .timeline-center .timeline-row-left .timeline-icon:after {
+      right: 100%;
+      margin-right: 4px; }
+  .timeline-center .timeline-row-right .timeline-icon {
+    right: 100%;
+    margin-right: -1.5rem; }
+    .timeline-center .timeline-row-right .timeline-icon:after {
+      left: 100%;
+      margin-left: 4px; }
+  .timeline-center .timeline-row-full .timeline-icon {
+    position: static; }
+    .timeline-center .timeline-row-full .timeline-icon:after {
+      content: none; }
+  .timeline-time {
+    padding: 0;
+    text-align: inherit;
+    background-color: transparent; }
+    .timeline-time:before {
+      content: none; }
+  .timeline-left .timeline-time,
+  .timeline-right .timeline-time {
+    padding-top: 0.625rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.25rem; }
+  .timeline-right .timeline-time {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 1.25rem; }
+  .timeline-center .timeline-time,
+  .timeline-center .timeline-row-full .timeline-time {
+    position: absolute;
+    left: 100%;
+    top: 0.875rem;
+    width: 100%;
+    padding-left: 2.75rem; }
+  .timeline-center .timeline-row-right .timeline-time,
+  .timeline-center .timeline-row-full .timeline-time {
+    left: auto;
+    right: 100%;
+    padding-left: 0;
+    padding-right: 2.75rem;
+    text-align: right; }
+  .timeline-center .timeline-row-full .timeline-time {
+    right: 50%;
+    top: 4px; } }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Chat layouts
+ *
+ *  Conversation chat styles - layouts, chat elements, colors, options
+ *
+ * ---------------------------------------------------------------------------- */
+.media-chat-scrollable {
+  max-height: 520px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  overflow: auto; }
+  .media-chat-scrollable:not(.flex-column) .media:last-child {
+    margin-top: 1.25rem; }
+  .media-chat-scrollable:not(.flex-column) .media:first-child {
+    margin-top: 0; }
+
+@media (min-width: 576px) {
+  .media-chat .media {
+    margin-right: 20%; }
+    .media-chat .media.media-chat-item-reverse {
+      margin-right: 0;
+      margin-left: 20%; } }
+
+.media-chat-item {
+  position: relative;
+  padding: 0.625rem 1rem;
+  width: auto;
+  display: inline-block;
+  color: #333;
+  border-radius: 0.25rem; }
+  .media-chat-item:not([class*=bg-]) {
+    background-color: #eee;
+    border-color: #eee; }
+  .media-chat-item:before {
+    content: '';
+    left: -5px;
+    top: 1rem;
+    position: absolute;
+    margin-left: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid;
+    border-right-color: inherit;
+    border-bottom: 5px solid transparent; }
+    .media-chat-item-reverse .media-chat-item:before {
+      left: auto;
+      right: -5px;
+      border-right: 0;
+      border-left: 5px solid;
+      border-left-color: inherit; }
+
+.media-chat-item-reverse .media-chat-item {
+  text-align: left;
+  color: #fff; }
+  .media-chat-item-reverse .media-chat-item:not([class*=bg-]) {
+    background-color: #2196F3;
+    border-color: #2196F3; }
+
+.media-chat-item-reverse .media-body {
+  text-align: right; }
+
+.media-chat-inverse .media-chat-item {
+  color: #fff; }
+  .media-chat-inverse .media-chat-item:not([class*=bg-]) {
+    background-color: #2196F3;
+    border-color: #2196F3; }
+
+.media-chat-inverse .media-chat-item-reverse .media-chat-item {
+  color: #333; }
+  .media-chat-inverse .media-chat-item-reverse .media-chat-item:not([class*=bg-]) {
+    background-color: #eee;
+    border-color: #eee; }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Error pages
+ *
+ *  Styles for error and offline pages
+ *
+ * ---------------------------------------------------------------------------- */
+.error-title {
+  color: #fff;
+  font-size: 8.125rem;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  text-stroke: 1px transparent;
+  display: block;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+  @media (min-width: 576px) {
+    .error-title {
+      font-size: 12.5rem; } }
+
+.offline-title {
+  font-size: 6.875rem; }
+  @media (min-width: 576px) {
+    .offline-title {
+      font-size: 10rem; } }
+
+/* ------------------------------------------------------------------------------
+*
+*  # Header elements
+*
+*  Display default and custom components in page header, card header and breadcrumbs
+*
+* ---------------------------------------------------------------------------- */
+.card-header .header-elements {
+  padding-top: 1.25rem; }
+
+.page-header-light .header-elements,
+.page-header-dark .header-elements {
+  padding-bottom: 1.25rem; }
+
+.breadcrumb-line .header-elements {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  padding: 0 1.25rem;
+  border-top: 1px solid #ddd; }
+
+.breadcrumb-line-light .header-elements {
+  border-color: #ddd; }
+
+.breadcrumb-line-dark .header-elements {
+  border-color: rgba(255, 255, 255, 0.25); }
+
+.header-elements .form-group:last-child {
+  margin-bottom: 0; }
+
+.header-elements-toggle,
+.footer-elements-toggle {
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.header-elements-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .header-elements-inline .header-elements {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0; }
+  .header-elements-inline .card-header-tabs .nav-link {
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem; }
+
+@media (min-width: 576px) {
+  .header-elements-sm-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .header-elements-sm-inline .header-elements {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    .header-elements-sm-inline .card-header-tabs .nav-link {
+      padding-top: 1.0625rem;
+      padding-bottom: 1.0625rem; } }
+
+@media (min-width: 768px) {
+  .header-elements-md-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .header-elements-md-inline .header-elements {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    .header-elements-md-inline .card-header-tabs .nav-link {
+      padding-top: 1.0625rem;
+      padding-bottom: 1.0625rem; } }
+
+@media (min-width: 992px) {
+  .header-elements-lg-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .header-elements-lg-inline .header-elements {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    .header-elements-lg-inline .card-header-tabs .nav-link {
+      padding-top: 1.0625rem;
+      padding-bottom: 1.0625rem; } }
+
+@media (min-width: 1200px) {
+  .header-elements-xl-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .header-elements-xl-inline .header-elements {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    .header-elements-xl-inline .card-header-tabs .nav-link {
+      padding-top: 1.0625rem;
+      padding-bottom: 1.0625rem; } }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Helper classes
+ *
+ *  Custom helper classes used in the template.
+ *
+ * ---------------------------------------------------------------------------- */
+.font-size-lg {
+  font-size: 0.9375rem; }
+
+.font-size-base {
+  font-size: 0.875rem; }
+
+.font-size-sm {
+  font-size: 0.8125rem; }
+
+.font-size-xs {
+  font-size: 0.75rem; }
+
+.line-height-lg {
+  line-height: 1.4667; }
+
+.line-height-base {
+  line-height: 1.5715; }
+
+.line-height-sm {
+  line-height: 1.6924; }
+
+.line-height-xs {
+  line-height: 1.8334; }
+
+.line-height-1 {
+  line-height: 1; }
+
+.opacity-75 {
+  opacity: 0.75; }
+
+.opacity-50 {
+  opacity: 0.5; }
+
+.opacity-25 {
+  opacity: 0.25; }
+
+.opacity-0 {
+  opacity: 0; }
+
+.top-0 {
+  top: 0 !important; }
+
+.top-50 {
+  top: 50% !important; }
+
+.top-100 {
+  top: 100% !important; }
+
+.top-auto {
+  top: auto !important; }
+
+.bottom-0 {
+  bottom: 0 !important; }
+
+.bottom-auto {
+  bottom: auto !important; }
+
+.left-0 {
+  left: 0 !important; }
+
+.left-50 {
+  left: 50% !important; }
+
+.left-100 {
+  left: 100% !important; }
+
+.left-auto {
+  left: auto !important; }
+
+.right-0 {
+  right: 0 !important; }
+
+.right-auto {
+  right: auto !important; }
+
+.translate-middle {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.translate-middle-x {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.translate-middle-y {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.cursor-move {
+  cursor: move; }
+
+.cursor-default {
+  cursor: default; }
+
+.cursor-disabled {
+  cursor: default; }
+
+.border-y-0 {
+  border-top: 0 !important;
+  border-bottom: 0 !important; }
+
+.border-x-0 {
+  border-left: 0 !important;
+  border-right: 0 !important; }
+
+.border-2 {
+  border: 2px solid; }
+
+.border-top-2 {
+  border-top: 2px solid; }
+
+.border-bottom-2 {
+  border-bottom: 2px solid; }
+
+.border-left-2 {
+  border-left: 2px solid; }
+
+.border-right-2 {
+  border-right: 2px solid; }
+
+.border-3 {
+  border: 3px solid; }
+
+.border-top-3 {
+  border-top: 3px solid; }
+
+.border-bottom-3 {
+  border-bottom: 3px solid; }
+
+.border-left-3 {
+  border-left: 3px solid; }
+
+.border-right-3 {
+  border-right: 3px solid; }
+
+.border-dashed {
+  border-style: dashed; }
+
+.border-top-dashed {
+  border-top-style: dashed; }
+
+.border-bottom-dashed {
+  border-bottom-style: dashed; }
+
+.border-left-dashed {
+  border-left-style: dashed; }
+
+.border-right-dashed {
+  border-right-style: dashed; }
+
+.border-dotted {
+  border-style: dotted; }
+
+.border-transparent {
+  border-color: transparent !important; }
+
+.border-top-transparent {
+  border-top-color: transparent !important; }
+
+.border-bottom-transparent {
+  border-bottom-color: transparent !important; }
+
+.border-left-transparent {
+  border-left-color: transparent !important; }
+
+.border-right-transparent {
+  border-right-color: transparent !important; }
+
+.bg-body {
+  background-color: #eeeded; }
+
+.rounded-top-pill {
+  border-top-left-radius: 50rem !important;
+  border-top-right-radius: 50rem !important; }
+
+.rounded-bottom-pill {
+  border-bottom-right-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important; }
+
+.rounded-left-pill {
+  border-top-left-radius: 50rem !important;
+  border-bottom-left-radius: 50rem !important; }
+
+.rounded-right-pill {
+  border-top-right-radius: 50rem !important;
+  border-bottom-right-radius: 50rem !important; }
+
+.rounded-top-0 {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important; }
+
+.rounded-bottom-0 {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+.rounded-left-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+.rounded-right-0 {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
+
+.rotate-45 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.rotate-45-inverse {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.rotate-90-inverse {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+
+.rotate-180-inverse {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
+
+.spinner {
+  display: inline-block;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite; }
+
+.spinner-reverse {
+  display: inline-block;
+  -webkit-animation: rotation_reverse 1s linear infinite;
+          animation: rotation_reverse 1s linear infinite; }
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes rotation_reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes rotation_reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+.h-auto {
+  height: auto; }
+
+.w-auto {
+  width: auto !important; }
+
+.w-25 {
+  width: 25% !important; }
+
+.w-50 {
+  width: 50% !important; }
+
+.w-75 {
+  width: 75% !important; }
+
+.w-100 {
+  width: 100% !important; }
+
+.wmin-0 {
+  min-width: 0 !important; }
+
+.wmin-200 {
+  min-width: 200px !important; }
+
+.wmin-250 {
+  min-width: 250px !important; }
+
+.wmin-300 {
+  min-width: 300px !important; }
+
+.wmin-350 {
+  min-width: 350px !important; }
+
+.wmin-400 {
+  min-width: 400px !important; }
+
+.wmin-450 {
+  min-width: 450px !important; }
+
+.wmin-500 {
+  min-width: 500px !important; }
+
+.wmin-550 {
+  min-width: 550px !important; }
+
+.wmin-600 {
+  min-width: 600px !important; }
+
+.flex-0 {
+  -ms-flex: 0 1 auto !important;
+      flex: 0 1 auto !important; }
+
+.flex-1 {
+  -ms-flex: 1 !important;
+      flex: 1 !important; }
+
+.overflow-auto {
+  overflow: auto !important; }
+
+.overflow-visible {
+  overflow: visible !important; }
+
+.border-0 {
+  border: 0 !important; }
+
+.border-top-0 {
+  border-top: 0 !important; }
+
+.border-bottom-0 {
+  border-bottom: 0 !important; }
+
+.border-left-0 {
+  border-left: 0 !important; }
+
+.border-right-0 {
+  border-right: 0 !important; }
+
+.rounded-top {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important; }
+
+.rounded-top-0 {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important; }
+
+.rounded-left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important; }
+
+.rounded-left-0 {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
+
+@media (min-width: 576px) {
+  .w-sm-auto {
+    width: auto !important; }
+  .w-sm-25 {
+    width: 25% !important; }
+  .w-sm-50 {
+    width: 50% !important; }
+  .w-sm-75 {
+    width: 75% !important; }
+  .w-sm-100 {
+    width: 100% !important; }
+  .wmin-sm-0 {
+    min-width: 0 !important; }
+  .wmin-sm-200 {
+    min-width: 200px !important; }
+  .wmin-sm-250 {
+    min-width: 250px !important; }
+  .wmin-sm-300 {
+    min-width: 300px !important; }
+  .wmin-sm-350 {
+    min-width: 350px !important; }
+  .wmin-sm-400 {
+    min-width: 400px !important; }
+  .wmin-sm-450 {
+    min-width: 450px !important; }
+  .wmin-sm-500 {
+    min-width: 500px !important; }
+  .wmin-sm-550 {
+    min-width: 550px !important; }
+  .wmin-sm-600 {
+    min-width: 600px !important; }
+  .flex-sm-0 {
+    -ms-flex: 0 1 auto !important;
+        flex: 0 1 auto !important; }
+  .flex-sm-1 {
+    -ms-flex: 1 !important;
+        flex: 1 !important; }
+  .overflow-sm-auto {
+    overflow: auto !important; }
+  .overflow-sm-visible {
+    overflow: visible !important; }
+  .border-sm-0 {
+    border: 0 !important; }
+  .border-top-sm-0 {
+    border-top: 0 !important; }
+  .border-bottom-sm-0 {
+    border-bottom: 0 !important; }
+  .border-left-sm-0 {
+    border-left: 0 !important; }
+  .border-right-sm-0 {
+    border-right: 0 !important; }
+  .rounded-sm-top {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important; }
+  .rounded-sm-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important; }
+  .rounded-sm-left {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important; }
+  .rounded-sm-left-0 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; } }
+
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important; }
+  .w-md-25 {
+    width: 25% !important; }
+  .w-md-50 {
+    width: 50% !important; }
+  .w-md-75 {
+    width: 75% !important; }
+  .w-md-100 {
+    width: 100% !important; }
+  .wmin-md-0 {
+    min-width: 0 !important; }
+  .wmin-md-200 {
+    min-width: 200px !important; }
+  .wmin-md-250 {
+    min-width: 250px !important; }
+  .wmin-md-300 {
+    min-width: 300px !important; }
+  .wmin-md-350 {
+    min-width: 350px !important; }
+  .wmin-md-400 {
+    min-width: 400px !important; }
+  .wmin-md-450 {
+    min-width: 450px !important; }
+  .wmin-md-500 {
+    min-width: 500px !important; }
+  .wmin-md-550 {
+    min-width: 550px !important; }
+  .wmin-md-600 {
+    min-width: 600px !important; }
+  .flex-md-0 {
+    -ms-flex: 0 1 auto !important;
+        flex: 0 1 auto !important; }
+  .flex-md-1 {
+    -ms-flex: 1 !important;
+        flex: 1 !important; }
+  .overflow-md-auto {
+    overflow: auto !important; }
+  .overflow-md-visible {
+    overflow: visible !important; }
+  .border-md-0 {
+    border: 0 !important; }
+  .border-top-md-0 {
+    border-top: 0 !important; }
+  .border-bottom-md-0 {
+    border-bottom: 0 !important; }
+  .border-left-md-0 {
+    border-left: 0 !important; }
+  .border-right-md-0 {
+    border-right: 0 !important; }
+  .rounded-md-top {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important; }
+  .rounded-md-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important; }
+  .rounded-md-left {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important; }
+  .rounded-md-left-0 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; } }
+
+@media (min-width: 992px) {
+  .w-lg-auto {
+    width: auto !important; }
+  .w-lg-25 {
+    width: 25% !important; }
+  .w-lg-50 {
+    width: 50% !important; }
+  .w-lg-75 {
+    width: 75% !important; }
+  .w-lg-100 {
+    width: 100% !important; }
+  .wmin-lg-0 {
+    min-width: 0 !important; }
+  .wmin-lg-200 {
+    min-width: 200px !important; }
+  .wmin-lg-250 {
+    min-width: 250px !important; }
+  .wmin-lg-300 {
+    min-width: 300px !important; }
+  .wmin-lg-350 {
+    min-width: 350px !important; }
+  .wmin-lg-400 {
+    min-width: 400px !important; }
+  .wmin-lg-450 {
+    min-width: 450px !important; }
+  .wmin-lg-500 {
+    min-width: 500px !important; }
+  .wmin-lg-550 {
+    min-width: 550px !important; }
+  .wmin-lg-600 {
+    min-width: 600px !important; }
+  .flex-lg-0 {
+    -ms-flex: 0 1 auto !important;
+        flex: 0 1 auto !important; }
+  .flex-lg-1 {
+    -ms-flex: 1 !important;
+        flex: 1 !important; }
+  .overflow-lg-auto {
+    overflow: auto !important; }
+  .overflow-lg-visible {
+    overflow: visible !important; }
+  .border-lg-0 {
+    border: 0 !important; }
+  .border-top-lg-0 {
+    border-top: 0 !important; }
+  .border-bottom-lg-0 {
+    border-bottom: 0 !important; }
+  .border-left-lg-0 {
+    border-left: 0 !important; }
+  .border-right-lg-0 {
+    border-right: 0 !important; }
+  .rounded-lg-top {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important; }
+  .rounded-lg-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important; }
+  .rounded-lg-left {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important; }
+  .rounded-lg-left-0 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; } }
+
+@media (min-width: 1200px) {
+  .w-xl-auto {
+    width: auto !important; }
+  .w-xl-25 {
+    width: 25% !important; }
+  .w-xl-50 {
+    width: 50% !important; }
+  .w-xl-75 {
+    width: 75% !important; }
+  .w-xl-100 {
+    width: 100% !important; }
+  .wmin-xl-0 {
+    min-width: 0 !important; }
+  .wmin-xl-200 {
+    min-width: 200px !important; }
+  .wmin-xl-250 {
+    min-width: 250px !important; }
+  .wmin-xl-300 {
+    min-width: 300px !important; }
+  .wmin-xl-350 {
+    min-width: 350px !important; }
+  .wmin-xl-400 {
+    min-width: 400px !important; }
+  .wmin-xl-450 {
+    min-width: 450px !important; }
+  .wmin-xl-500 {
+    min-width: 500px !important; }
+  .wmin-xl-550 {
+    min-width: 550px !important; }
+  .wmin-xl-600 {
+    min-width: 600px !important; }
+  .flex-xl-0 {
+    -ms-flex: 0 1 auto !important;
+        flex: 0 1 auto !important; }
+  .flex-xl-1 {
+    -ms-flex: 1 !important;
+        flex: 1 !important; }
+  .overflow-xl-auto {
+    overflow: auto !important; }
+  .overflow-xl-visible {
+    overflow: visible !important; }
+  .border-xl-0 {
+    border: 0 !important; }
+  .border-top-xl-0 {
+    border-top: 0 !important; }
+  .border-bottom-xl-0 {
+    border-bottom: 0 !important; }
+  .border-left-xl-0 {
+    border-left: 0 !important; }
+  .border-right-xl-0 {
+    border-right: 0 !important; }
+  .rounded-xl-top {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important; }
+  .rounded-xl-top-0 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important; }
+  .rounded-xl-left {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important; }
+  .rounded-xl-left-0 {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important; } }
+
+.no-transitions *, .no-transitions *:before, .no-transitions *:after {
+  transition: none !important; }
+  @media (prefers-reduced-motion: reduce) {
+    .no-transitions *, .no-transitions *:before, .no-transitions *:after {
+      transition: none; } }
+
+.placeholder-light::-webkit-input-placeholder {
+  color: #fff; }
+
+.placeholder-light::-moz-placeholder {
+  color: #fff; }
+
+.placeholder-light:-ms-input-placeholder {
+  color: #fff; }
+
+.placeholder-light::-ms-input-placeholder {
+  color: #fff; }
+
+.placeholder-light::placeholder {
+  color: #fff; }
+
+.outline-0, .outline-0:hover, .outline-0:focus {
+  outline: 0; }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none !important; }
+
+.text-shadow-dark {
+  text-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.5); }
+
+.text-shadow-light {
+  text-shadow: 0 0 0.1875rem rgba(255, 255, 255, 0.5); }
+
+.text-black {
+  color: #000 !important; }
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.shadow-inverse-1 {
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12), 0 -1px 2px rgba(0, 0, 0, 0.24); }
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Demo styles
+ *
+ *  Styles used for demostration purposes only
+ *
+ * ---------------------------------------------------------------------------- */

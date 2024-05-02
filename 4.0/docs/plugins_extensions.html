@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse show">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link active">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Extensions</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Velocity -->
+							<div class="mb-3" id="velocity">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Velocity animations</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/velocity/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									Velocity is an animation engine with the same API as jQuery's <code>$.animate()</code>. It works with and without jQuery. It's incredibly fast, and it features color animation, transforms, loops, easings, SVG support, and scrolling. It is the best of jQuery and CSS transitions combined. Velocity works everywhere — back to IE8 and Android 2.3. Under the hood, it mimics jQuery's <code>$.queue()</code>, and thus interoperates seamlessly with jQuery's <code>$.animate()</code>, <code>$.fade()</code>, and <code>$.delay()</code>. Since Velocity's syntax is identical to <code>$.animate()</code>, your code doesn't need to change.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load library -->
+												&lt;script src="assets/js/vendor/velocity/velocity.min.js">&lt;/script>
+
+												&lt;!-- Load Velocity UI -->
+												&lt;script src="assets/js/vendor/velocity/velocity.ui.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Properties animation
+												const velocityPropsElement = document.querySelectorAll('.velocity-properties');
+												velocityPropsElement.forEach(function(link) {
+													link.addEventListener('click', function (e) {
+														e.preventDefault();
+
+														// Element that we animate
+														const currentElements = link.closest('.card-body').querySelectorAll('.card');
+
+														// Add animation class to panel element
+														Velocity(currentElements, {
+															marginLeft: 20,
+															marginRight: 20,
+															opacity: 0.5
+														});
+														Velocity(currentElements, "reverse", {
+															delay: 1000,
+															complete: function() {
+																currentElements.forEach(function(cards) {
+																	cards.removeAttribute('style');
+																});
+															}
+														});
+													});
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Velocity.js documentation</h3>
+									Complete Velocity.js documentation can be found online on <a href="http://velocityjs.org/" target="_blank">Official library website</a>. It's quite big, actually the whole website is a documentation with examples. Follow the right sidebar to navigate the <a href="http://velocityjs.org/#duration" target="_blank">options</a>, <a href="http://velocityjs.org/#fade" target="_blank">commands</a> and <a href="http://velocityjs.org/#transforms" target="_blank">features</a>. Also check out <a href="http://velocityjs.org/#uiPack" target="_blank">UI Pack documentation</a>.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>velocity.min.js, velocity.ui.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/velocity/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="http://velocityjs.org/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="http://velocityjs.org/#duration" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+														
+														<a href="https://github.com/julianshapiro/velocity" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /velocity -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Prism -->
+							<div class="mb-3 pt-3" id="prism">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Prism syntax highlighter</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">prism.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. Allows you to define new languages or extend existing ones, add new features thanks to Prism’s plugin architecture. Language classes are inherited so you can only define the language once for multiple code snippets.</p>
+
+									<p>Core features:</p>
+									<ul>
+										<li><strong>Only 2KB</strong> minified &amp; gzipped (core). Each language definition adds roughly 300-500 bytes.</li>
+										<li>Encourages good author practices. Other highlighters encourage or even force you to use elements that are semantically wrong,
+											like <code>&lt;pre&gt;</code> (on its own) or <code>&lt;script&gt;</code>.
+											Prism forces you to use the correct element for marking up code: <code>&lt;code&gt;</code>.
+											On its own for inline code, or inside a &lt;pre&gt; for blocks of code.
+											In addition, the language is defined through the way recommended in the HTML5 draft: through a language-xxxx class.</li>
+										<li>The language definition is inherited. This means that if multiple code snippets have the same language, you can just define it once, in one of their common ancestors.</li>
+										<li>Supports <strong>parallelism with Web Workers</strong>, if available. Disabled by default</li>
+										<li>Very easy to extend without modifying the code, due to Prism’s plugin architecture. Multiple hooks are scattered throughout the source.</li>
+										<li>Very easy to define new languages. Only thing you need is a good understanding of regular expressions</li>
+										<li>All styling is done through CSS, with sensible class names rather than ugly namespaced abbreviated nonsense.</li>
+										<li>Wide browser support: IE9+, Firefox, Chrome, Safari, Opera, most Mobile browsers</li>
+										<li>Highlights embedded languages (e.g. CSS inside HTML, JavaScript inside HTML)</li>
+										<li>Highlights inline code as well, not just code blocks</li>
+										<li>Highlights nested languages (CSS in HTML, JavaScript in HTML</li>
+										<li>It doesn’t force you to use any Prism-specific markup, not even a Prism-specific class name, only standard markup you should be using anyway. So, you can just try it for a while, remove it if you don’t like it and leave no traces behind.</li>
+										<li>Highlight specific lines and/or line ranges (requires plugin)</li>
+										<li>Show invisible characters like tabs, line breaks etc (requires plugin)</li>
+										<li>Autolink URLs and emails, use Markdown links in comments (requires plugin)</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/ui/prism.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Prism does its best to encourage good authoring practices. Therefore, it only works with <code>&lt;code></code> elements, since marking up code without a <code>&lt;code></code> element is semantically invalid. According to the HTML5 spec, the recommended way to define a code language is a language-xxxx class, which is what Prism uses. To make things easier however, Prism assumes that this language definition is inherited. Therefore, if multiple <code>&lt;code></code> elements have the same language, you can add the language-xxxx class on one of their common ancestors. This way, you can also define a document-wide default language, by adding a language-xxxx class on the <code>&lt;body></code> or <code>&lt;html></code> element.</p>
+
+										<pre class="mb-3">
+											<code class="language-markup">
+												&lt;!-- Code inside Pre element -->
+												&lt;pre>
+													&lt;code class="language-css">
+														p {
+															color: red;
+														}
+													&lt;/code>
+												&lt;/pre>
+											</code>
+										</pre>
+										<p>If you want to opt-out of highlighting for a <code>&lt;code></code> element that is a descendant of an element with a declared code language, you can add the class language-none to it (or any non-existing language, really).</p>
+									</div>
+
+									<div class="mb-3">
+										<p>If you want to prevent any elements from being automatically highlighted, you can use the attribute data-manual on the <code>&lt;script></code> element you used for prism and use the API. Example:
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Disable highlight -->
+												&lt;script src="prism.js" data-manual>&lt;/script>
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Prism.js documentation</h3>
+									<p>Complete Prism.js documentation can be found online on <a href="https://prismjs.com/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and customization options. Also check out <a href="https://prismjs.com/#plugins" target="_blank">plugins made for Prism.js</a>, <a href="https://prismjs.com/#languages-list" target="_blank">supported languages</a> or make <a href="https://prismjs.com/download.html" target="_blank">your own build</a>.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>prism.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/ui/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://prismjs.com/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://prismjs.com/extending.html" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+														
+														<a href="https://github.com/PrismJS/prism" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /prism -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Moment -->
+							<div class="mb-3 pt-3" id="moment">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Moment</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/ui/moment/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates. Moment was designed to work both in the browser and in Node.js. Currently the following browsers are used for the ci system: IE8, IE9 on Windows 7, stable Chrome on Windows XP, Safari 10.8 on Mac and stable Firefox on Linux.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+									<pre>
+										<code class="language-markup">
+											&lt;!-- Load plugin -->
+											&lt;script src="assets/js/vendor/ui/moment/moment.min.js">&lt;/script>
+
+											&lt;!-- Or load with included locales -->
+											&lt;script src="assets/js/vendor/ui/moment/moment_locales.min.js">&lt;/script>
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Format dates</h3>
+									<pre>
+										<code class="language-javascript">
+											// Format dates example
+											moment().format('MMMM Do YYYY, h:mm:ss a'); // September 21st 2015, 1:31:51 am
+											moment().format('dddd');                    // Monday
+											moment().format("MMM Do YY");               // Sep 21st 15
+											moment().format('YYYY [escaped] YYYY');     // 2015 escaped 2015
+											moment().format();                          // 2015-09-21T01:31:51+02:00
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Relative Time</h3>
+									<pre>
+										<code class="language-javascript">
+											// Relative time example
+											moment("20111031", "YYYYMMDD").fromNow(); // 4 years ago
+											moment("20120620", "YYYYMMDD").fromNow(); // 3 years ago
+											moment().startOf('day').fromNow();        // 2 hours ago
+											moment().endOf('day').fromNow();          // in a day
+											moment().startOf('hour').fromNow();       // 33 minutes ago
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Calendar Time</h3>
+									<pre>
+										<code class="language-javascript">
+											// Calendar time example
+											moment().subtract(10, 'days').calendar(); // 09/11/2015
+											moment().subtract(6, 'days').calendar();  // Last Tuesday at 1:33 AM
+											moment().subtract(3, 'days').calendar();  // Last Friday at 1:33 AM
+											moment().subtract(1, 'days').calendar();  // Yesterday at 1:33 AM
+											moment().calendar();                      // Today at 1:33 AM
+											moment().add(1, 'days').calendar();       // Tomorrow at 1:33 AM
+											moment().add(3, 'days').calendar();       // Thursday at 1:33 AM
+											moment().add(10, 'days').calendar();      // 10/01/2015
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Multiple Locale Support</h3>
+									<pre>
+										<code class="language-javascript">
+											// Multiple locale support example
+											moment().format('L');    // 09/21/2015
+											moment().format('l');    // 9/21/2015
+											moment().format('LL');   // September 21, 2015
+											moment().format('ll');   // Sep 21, 2015
+											moment().format('LLL');  // September 21, 2015 1:33 AM
+											moment().format('lll');  // Sep 21, 2015 1:33 AM
+											moment().format('LLLL'); // Monday, September 21, 2015 1:33 AM
+											moment().format('llll'); // Mon, Sep 21, 2015 1:33 AM
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Moment.js documentation</h3>
+									Complete Moment.js documentation can be found online on <a href="https://momentjs.com/docs/#/use-it/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and customization options. Also check out <a href="https://momentjs.com/docs/#/plugins/" target="_blank">plugins made for Moment.js</a>.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>moment.min.js, moment_locales.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>global_assets/js/plugins/ui/moment/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://momentjs.com/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://momentjs.com/docs/#/use-it/" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+														
+														<a href="https://github.com/moment/moment/" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /moment -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Mark.js -->
+							<div class="mb-3 pt-3" id="markjs">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Mark.js</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">mark.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									Mark.js is a text highlighter written in JavaScript. It can be used to dynamically mark search terms or custom regular expressions and offers you built-in options like diacritics support, separate word search, custom synonyms, iframes support, custom filters, accuracy definition, custom element, custom class name and more.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load library -->
+												&lt;script src="assets/js/vendor/extensions/mark.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Then initialize Mark.js in JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Create an instance of mark.js and pass an argument containing
+												// the DOM object of the context (where to search for matches)
+												const instanceBase = new Mark(document.querySelector(".demo-target-base"));
+
+												// Cache DOM elements
+												const inputBase = document.querySelector("input[name='keyword-basic']");
+
+												// Initialize
+												function performMarkBasic() {
+
+													// Read the keyword
+													const keywordBase = inputBase.value;
+
+													// Remove previous marked elements and mark
+													// the new keyword inside the context
+													instanceBase.unmark({
+														done: function(){
+															instanceBase.mark(keywordBase);
+														}
+													});
+												}
+
+												// Listen to input and option changes
+												inputBase.addEventListener("input", performMarkBasic);
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Mark.js API</h3>
+									
+									<div class="mb-3">
+										<h5 class="fw-bold">General</h5>
+										<div class="mb-3">
+											Each API method below can be called on an instance object. To initialize a new instance you have to use:
+											<pre>
+												<code class="language-javascript">
+													var instance = new Mark(context);
+												</code>
+											</pre>
+										</div>
+
+										<p>The variable context defines where you want mark.js to search for matches. You can pass a single element (e.g. the return value of <code>document.getElementById(...)</code> or <code>document.querySelector(...)</code>), an array containing multiple single elements, or a NodeList (e.g. <code>document.querySelectorAll(...)</code>). Alternatively you can pass a string selector.</p>
+										<p>If for example you'd like to highlight matches in a div with a class context then you'd have to use:</p>
+
+										<pre>
+											<code class="language-javascript">
+												var instance = new Mark(document.querySelector("div.context"));
+												// or
+												var instance = new Mark("div.context");
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">mark()</h5>
+										<p class="mb-3">A method to highlight custom search terms.</p>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Syntax</div>
+											<pre>
+												<code class="language-javascript">
+													var context = document.querySelector(".context");
+													var instance = new Mark(context);
+													instance.mark(keyword [, options]);
+												</code>
+											</pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Options</div>
+											<div class="table-responsive border rounded">
+												<table class="table">
+													<thead class="table-light">
+														<tr>
+															<th class="border-top-0">Option</th>
+															<th class="border-top-0">Type</th>
+															<th class="border-top-0">Default</th>
+															<th class="border-top-0">Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>element</td>
+															<td>string</td>
+															<td>"mark"</td>
+															<td>HTML element to wrap matches, e.g. <code>span</code></td>
+														</tr>
+														<tr>
+															<td>className</td>
+															<td>string</td>
+															<td>""</td>
+															<td>A class name that will be appended to <code>element</code></td>
+														</tr>
+														<tr>
+															<td>exclude</td>
+															<td>array</td>
+															<td>[ ]</td>
+															<td>An array with exclusion selectors. Matches inside these elements will be ignored. Example: <code>"filter": ["h1", ".ignore"]</code></td>
+														</tr>
+														<tr>
+															<td>separateWordSearch</td>
+															<td>boolean</td>
+															<td>true</td>
+															<td>Whether to search for each word separated by a blank instead of the complete term</td>
+														</tr>
+														<tr>
+															<td>accuracy</td>
+															<td>string or object</td>
+															<td>"partially"</td>
+															<td>Either one of the following string values:<ul><li>"partially": When searching for "lor" only "lor" inside "lorem" will be marked</li><li>"complementary": When searching for "lor" the whole word "lorem" will be marked</li><li>"exactly": When searching for "lor" only those exact words with a word boundary will be marked. In this example nothing inside "lorem". This value is equivalent to the previous option <i>wordBoundary</i></li></ul>Or an object containing two properties:<ul><li>"value": One of the above named string values</li><li>"limiters": A custom array of string limiters for accuracy "exactly" or "complementary". Read more about this <a href="#accuracy">in the tutorials section</a></li></ul></td>
+														</tr>
+														<tr>
+															<td>diacritics</td>
+															<td>boolean</td>
+															<td>true</td>
+															<td>If <a href="https://en.wikipedia.org/wiki/Diacritic">diacritic</a> characters should be matched. For example "piękny" would also match "piekny" and "doner" would also match "döner"</td>
+														</tr>
+														<tr>
+															<td>synonyms</td>
+															<td>object</td>
+															<td>{ }</td>
+															<td>An object with synonyms. The key will be a synonym for the value and the value for the key. Example: <code>"synonyms": {"one": "1"}</code> will add the synonym "1" for "one" and vice versa</td>
+														</tr>
+														<tr>
+															<td>iframes</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search also inside iframes. If you don't have permissions to some iframes (e.g. because they have a <a href="https://en.wikipedia.org/wiki/Same-origin_policy">different origin</a>) they will be silently skipped. If you don't want to search inside specific iframes (e.g. facebook share), you can pass an <code>exclude</code> selector that matches these iframes</td>
+														</tr>
+														<tr>
+															<td>iframesTimeout</td>
+															<td>number</td>
+															<td>5000</td>
+															<td>The maximum ms to wait for a <code>load</code> event before skipping an iframe. Especially important when there's no internet connection or a browser "offline" mode is enabled and an iframe has an online <code>src</code> – then the <code>load</code> event is never fired</td>
+														</tr>
+														<tr>
+															<td>acrossElements</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search for matches across elements</td>
+														</tr>
+														<tr>
+															<td>caseSensitive</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search case sensitive</td>
+														</tr>
+														<tr>
+															<td>ignoreJoiners</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to also find matches that contain soft hyphen, zero width space, zero width non-joiner and zero width joiner. They're used to indicate a point for a line break where there isn't enough space to show the full word</td>
+														</tr>
+														<tr>
+															<td>ignorePunctuation</td>
+															<td>array</td>
+															<td>[ ]</td>
+															<td>An array of punctuation mark strings. These punctuation marks can be between any characters, e.g. setting this option to <code>["'"]</code> would match "Worlds", "World's" and "Wo'rlds". One or more apostrophes between the letters would still produce a match (e.g. "W'o''r'l'd's"). A typical setting for this option could be as follows: <code>":;.,-–—‒_(){}[]!'\"+=".split("")</code></td>
+														</tr>
+														<tr>
+															<td>wildcards</td>
+															<td>string</td>
+															<td>"disabled"</td>
+															<td>Set to any of the following string values:<ul><li>"disabled": Disable wildcard usage</li><li>"enabled": When searching for "lor?m", the "?" will match zero or one non-space character (e.g. "lorm", "loram", "lor3m", etc). When searching for "lor*m", the "*" will match zero or more non-space characters (e.g. "lorm", "loram", "lor123m", etc).</li><li>"withSpaces": When searching for "lor?m", the "?" will match zero or one space or non-space character (e.g. "lor m", "loram", etc). When searching for "lor*m", the "*" will match zero or more space or non-space characters (e.g. "lorm", "lore et dolor ipsum", "lor: m", etc).</li></ul></td>
+														</tr>
+														<tr>
+															<td>each</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback for each marked element. Receives the marked DOM element as a parameter</td>
+														</tr>
+														<tr>
+															<td>filter</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback to filter or limit matches. It will be called for each match and receives the following parameters:<ol><li>The text node which includes the match</li><li>The term that has been found</li><li>A counter indicating the total number of all marks at the time of the function call</li><li>A counter indicating the number of marks for the term</li></ol>The function must return false if the mark should be stopped, otherwise true</td>
+														</tr>
+														<tr>
+															<td>noMatch</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function that will be called when there are no matches. Receives the not found term as a parameter</td>
+														</tr>
+														<tr>
+															<td>done</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function after all marks are done. Receives the total number of marks as a parameter</td>
+														</tr>
+														<tr>
+															<td>debug</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Set this option to <code>true</code> if you want to log messages</td>
+														</tr>
+														<tr>
+															<td>log</td>
+															<td>object</td>
+															<td>console</td>
+															<td>Log messages to a specific object (only if <code>debug</code> is true)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">markRegExp()</h5>
+										<p class="mb-3">A method to highlight custom regular expressions.</p>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Syntax</div>
+											<pre>
+												<code class="language-javascript">
+													var context = document.querySelector(".context");
+													var instance = new Mark(context);
+													instance.markRegExp(regexp [, options]);
+												</code>
+											</pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Options</div>
+											<p class="mb-3">The regular expression to be marked. Example: <code>/Lor[^]?m/gmi</code>. Note that groups will be ignored and mark.js will always find all matches, regardless of the g flag.</p>
+											<div class="table-responsive border rounded">
+												<table class="table">
+													<thead class="table-light">
+														<tr>
+															<th class="border-top-0">Option</th>
+															<th class="border-top-0">Type</th>
+															<th class="border-top-0">Default</th>
+															<th class="border-top-0">Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>element</td>
+															<td>string</td>
+															<td>"mark"</td>
+															<td>HTML element to wrap matches, e.g. <code>span</code></td>
+														</tr>
+														<tr>
+															<td>className</td>
+															<td>string</td>
+															<td>""</td>
+															<td>A class name that will be appended to <code>element</code></td>
+														</tr>
+														<tr>
+															<td>exclude</td>
+															<td>array</td>
+															<td>[ ]</td>
+															<td>An array with exclusion selectors. Matches inside these elements will be ignored. Example: <code>"filter": ["h1", ".ignore"]</code></td>
+														</tr>
+														<tr>
+															<td>iframes</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search also inside iframes. If you don't have permissions to some iframes (e.g. because they have a <a href="https://en.wikipedia.org/wiki/Same-origin_policy">different origin</a>) they will be silently skipped. If you don't want to search inside specific iframes (e.g. facebook share), you can pass an <code>exclude</code> selector that matches these iframes</td>
+														</tr>
+														<tr>
+															<td>iframesTimeout</td>
+															<td>number</td>
+															<td>5000</td>
+															<td>The maximum ms to wait for a <code>load</code> event before skipping an iframe. Especially important when there's no internet connection or a browser "offline" mode is enabled and an iframe has an online <code>src</code> – then the <code>load</code> event is never fired</td>
+														</tr>
+														<tr>
+															<td>acrossElements</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search for matches across elements</td>
+														</tr>
+														<tr>
+															<td>ignoreGroups</td>
+															<td>number</td>
+															<td>0</td>
+															<td>Indicates the number of matching groups to ignore in the replacement. Can be used e.g. to implement non-capturing lookbehind groups. Note that when the value is &gt; 0 (when groups should be ignored), it expects a total amount of groups in the RegExp of <code>ignoreGroups</code> + 1</td>
+														</tr>
+														<tr>
+															<td>each</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback for each marked element. Receives the marked DOM element as a parameter</td>
+														</tr>
+														<tr>
+															<td>filter</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback to filter or limit matches. It will be called for each match and receives the following parameters:<ol><li>The text node which includes the match</li><li>The matching string that has been found</li><li>A counter indicating the number of all marks</li></ol>The function must return false if the mark should be stopped, otherwise true</td>
+														</tr>
+														<tr>
+															<td>noMatch</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function that will be called when there are no matches. Receives the not found term as a parameter</td>
+														</tr>
+														<tr>
+															<td>done</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function after all marks are done. Receives the total number of marks as a parameter</td>
+														</tr>
+														<tr>
+															<td>debug</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Set this option to <code>true</code> if you want to log messages</td>
+														</tr>
+														<tr>
+															<td>log</td>
+															<td>object</td>
+															<td>console</td>
+															<td>Log messages to a specific object (only if <code>debug</code> is true)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">markRanges()</h5>
+										<p class="mb-3">A method to mark ranges with a start position and length. They will be applied to text nodes in the specified context.</p>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Syntax</div>
+											<pre>
+												<code class="language-javascript">
+													var context = document.querySelector(".context");
+													var instance = new Mark(context);
+													instance.markRanges(ranges [, options]);
+												</code>
+											</pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Options</div>
+											<p class="mb-3">An array of objects with a <code>start</code> and <code>length</code> property. Note that the start positions must be specified including whitespace characters.</p>
+											<div class="table-responsive border rounded">
+												<table class="table">
+													<thead class="table-light">
+														<tr>
+															<th class="border-top-0">Option</th>
+															<th class="border-top-0">Type</th>
+															<th class="border-top-0">Default</th>
+															<th class="border-top-0">Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>element</td>
+															<td>string</td>
+															<td>"mark"</td>
+															<td>HTML element to wrap matches, e.g. <code>span</code></td>
+														</tr>
+														<tr><td>className</td>
+															<td>string</td>
+															<td>""</td>
+															<td>A class name that will be appended to <code>element</code></td>
+														</tr>
+														<tr><td>exclude</td>
+															<td>array</td>
+															<td>[ ]</td>
+															<td>An array with exclusion selectors. Matches inside these elements will be ignored. Example: <code>"filter": ["h1", ".ignore"]</code></td>
+														</tr>
+														<tr><td>iframes</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search also inside iframes. If you don't have permissions to some iframes (e.g. because they have a [different origin][SOP]) they will be silently skipped. If you don't want to search inside specific iframes (e.g. facebook share), you can pass an <code>exclude</code> selector that matches these iframes</td>
+														</tr>
+														<tr><td>iframesTimeout</td>
+															<td>number</td>
+															<td>5000</td>
+															<td>The maximum ms to wait for a <code>load</code> event before skipping an iframe. Especially important when there's no internet connection or a browser "offline" mode is enabled and an iframe has an online <code>src</code> – then the <code>load</code> event is never fired</td>
+														</tr>
+														<tr><td>each</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback for each marked element. Receives the marked DOM element and the corresponding range as a parameter</td>
+														</tr>
+														<tr><td>filter</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback to filter or limit matches. It will be called for each match and receives the following parameters:<ol><li>The text node which includes the range</li><li>The current range</li><li>The extracted term from the matching range</li><li>A counter indicating the total number of all marks at the time of the function call</li></ol>The function must return false if the mark should be stopped, otherwise true</td>
+														</tr>
+														<tr><td>noMatch</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function that will be called when there are no matches. Receives the not found range as a parameter</td>
+														</tr>
+														<tr><td>done</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function after all marks are done. Receives the total number of marks as a parameter</td>
+														</tr>
+														<tr><td>debug</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Set this option to <code>true</code> if you want to log messages</td>
+														</tr>
+														<tr><td>log</td>
+															<td>object</td>
+															<td>console</td>
+															<td>Log messages to a specific object (only if <code>debug</code> is true)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">unmark()</h5>
+										<p class="mb-3">A method to remove highlights created by mark.js.</p>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Syntax</div>
+											<pre>
+												<code class="language-javascript">
+													var context = document.querySelector(".context");
+													var instance = new Mark(context);
+													instance.unmark(options);
+												</code>
+											</pre>
+										</div>
+
+										<div class="mb-3">
+											<div class="fw-bold mb-3">Options</div>
+											<div class="table-responsive border rounded">
+												<table class="table">
+													<thead class="table-light">
+														<tr>
+															<th class="border-top-0">Option</th>
+															<th class="border-top-0">Type</th>
+															<th class="border-top-0">Default</th>
+															<th class="border-top-0">Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>element</td>
+															<td>string</td>
+															<td>""</td>
+															<td>Will remove only marked elements with this specific element</td>
+														</tr>
+														<tr><td>className</td>
+															<td>string</td>
+															<td>""</td>
+															<td>Will remove only marked elements with this specific class name</td>
+														</tr>
+														<tr><td>exclude</td>
+															<td>array</td>
+															<td>[ ]</td>
+															<td>An array with exclusion selectors. These elements will be ignored. Example: <code>"filter": ["h1", ".ignore"]</code></td>
+														</tr>
+														<tr><td>iframes</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Whether to search also inside iframes. If you don't have permissions to some iframes (e.g. because they have a <a href="https://en.wikipedia.org/wiki/Same-origin_policy">different origin</a>) they will be silently skipped. If you don't want to search inside specific iframes (e.g. facebook share), you can pass an <code>exclude</code> selector that matches these iframes</td>
+														</tr>
+														<tr><td>iframesTimeout</td>
+															<td>number</td>
+															<td>5000</td>
+															<td>The maximum ms to wait for a <code>load</code> event before skipping an iframe. Especially important when there's no internet connection or a browser "offline" mode is enabled and an iframe has an online <code>src</code> – then the <code>load</code> event is never fired</td>
+														</tr>
+														<tr><td>done</td>
+															<td>function</td>
+															<td></td>
+															<td>A callback function after all marked elements were removed</td>
+														</tr>
+														<tr><td>debug</td>
+															<td>boolean</td>
+															<td>false</td>
+															<td>Set this option to <code>true</code> if you want to log messages</td>
+														</tr>
+														<tr><td>log</td>
+															<td>object</td>
+															<td>console</td>
+															<td>Log messages to a specific object (only if <code>debug</code> is true)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>mark.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/extensions/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://markjs.io/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<a href="https://github.com/julmot/mark.js/" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /mark.js -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- i18next -->
+							<div class="mb-3 pt-3" id="i18next">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">i18next</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">i18next.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>I18next is an internationalization-framework written in and for JavaScript. But it's much more than that. i18next goes beyond just providing the standard i18n features such as (plurals, context, interpolation, format). It provides you with a complete solution to localize your product from web to mobile and desktop. Most frameworks leave it to you how translations are being loaded. You are responsible to detect the user language, to load the translations and push them into the framework.</p>
+									<p>i18next takes care of these issue for you. We provide you with plugins to:</p>
+
+									<ul class="list">
+										<li>detect the user language</li>
+										<li>load the translations</li>
+										<li>optionally cache the translations</li>
+										<li>extention, by using post-processing - e.g. to enable sprintf support</li>
+										<li>etc</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load i18next and related plugins -->
+												&lt;script src="assets/js/vendor/internationalization/i18next.min.js">&lt;/script>
+												&lt;script src="assets/js/vendor/internationalization/i18nextHttpBackend.min.js">&lt;/script>
+												&lt;script src="assets/js/vendor/internationalization/i18nextBrowserLanguageDetector.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Create elements:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Create elements -->
+												&lt;ul class="nav">
+													&lt;li>&lt;a href="#" data-i18n="nav.home">&lt;/a>&lt;/li>
+													&lt;li>&lt;a href="#" data-i18n="nav.page1">&lt;/a>&lt;/li>
+													&lt;li>&lt;a href="#" data-i18n="nav.page2">&lt;/a>&lt;/li>
+												&lt;/ul>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Load resource file:</p>
+										<pre>
+											<code class="language-javascript">
+												// JSON or any other file
+												{
+													"app": {
+														"name": "i18next"
+													},
+													"nav": {
+														"home": "Home",
+														"page1": "Page One",
+														"page2": "Page Two"
+													}
+												}
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Finally call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Basic initialization
+												const elements = document.querySelectorAll('.language-switch .dropdown-item'),
+												selector = document.querySelectorAll('[data-i18n]'),
+												englishLangClass = 'en',
+												ukrainianLangClass = 'ua';
+
+												// Add options
+												i18next.use(i18nextHttpBackend).use(i18nextBrowserLanguageDetector).init({
+													backend: {
+														loadPath: '../../../assets/demo/locales/{{lng}}.json'
+													},
+													debug: true,
+													fallbackLng: 'en'
+												},
+												function (err, t) {
+													selector.forEach(function(item) {
+														item.innerHTML = i18next.t(item.getAttribute("data-i18n"));
+													});
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">i18next options and documentation</h3>
+									Full i18next documentation can be found online on <a href="https://i18next.com/" target="_blank">Official library website</a>. It's quite big, with a lot of options, events and methods. Below you can find additional links related to i18next library.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>i18next.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/internationalization/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://i18next.com/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<a href="https://github.com/i18next/i18next" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /i18next -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Session timeout -->
+							<div class="mb-3 pt-3" id="timeout">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Session timeout</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">session_timeput.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>After a set amount of idle time, a Bootstrap warning dialog is shown to the user with the option to either log out, or stay connected. If "Logout" button is selected, the page is redirected to a logout URL. If "Stay Connected" is selected the dialog closes and the session is kept alive. If no option is selected after another set amount of idle time, the page is automatically redirected to a set timeout URL.</p>
+
+									<p>Idle time is defined as no mouse, keyboard or touch event activity registered by the browser.</p>
+
+									As long as the user is active, the (optional) keep-alive URL keeps getting pinged and the session stays alive. If you have no need to keep the server-side session alive via the keep-alive URL, you can also use this plugin as a simple lock mechanism that redirects to your lock-session or log-out URL after a set amount of idle time.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<p>To use session timeout extension, include path to the minified plugin file:</p>
+
+									<div class="mb-3">
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Path to file -->
+												&lt;script src="assets/js/vendor/extensions/session_timeout.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Example of initialization as a session timeout:</p>
+										<pre>
+											<code class="language-javascript">
+												// Session timeout
+												$.sessionTimeout({
+													title: 'Session Timeout',
+													message: 'Your session is about to expire. Do you want to stay connected?',
+													ignoreUserActivity: true,
+													warnAfter: 10000,
+													redirAfter: 30000,
+													redirUrl: 'login_unlock.html',
+													logoutUrl: 'login_advanced.html'
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Example of initialization as an idle timeout:</p>
+										<pre>
+											<code class="language-javascript">
+												// Idle timeout
+												$.sessionTimeout({
+													title: 'Idle Timeout',
+													message: 'Your session is about to expire. Do you want to stay connected?',
+													warnAfter: 5000,
+													redirAfter: 15000,
+													redirUrl: 'login_unlock.html',
+													logoutUrl: 'login_advanced.html'
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Options</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Option</th>
+													<th class="border-top-0" style="width: 250px;">Default</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>title</code></td>
+													<td class="fw-semibold">'Your session is about to expire!'</td>
+													<td>This is the text shown to user via Bootstrap warning dialog after warning period. (modal title)</td>
+												</tr>
+												<tr>
+													<td><code>message</code></td>
+													<td class="fw-semibold">'Your session is about to expire.'</td>
+													<td>This is the text shown to user via Bootstrap warning dialog after warning period</td>
+												</tr>
+												<tr>
+													<td><code>ignoreUserActivity</code></td>
+													<td class="fw-semibold">false</td>
+													<td>If <code>true</code>, this will launch the Bootstrap warning dialog / redirect (or callback functions) in a set amounts of time regardless of user activity</td>
+												</tr>
+												<tr>
+													<td><code>logoutButton</code></td>
+													<td class="fw-semibold">'Logout'</td>
+													<td>This is the text shown to user via Bootstrap warning dialog after warning period in the logout button</td>
+												</tr>
+												<tr class="border-solid">
+													<td><code>keepAliveButton</code></td>
+													<td class="fw-semibold">'Stay Connected'</td>
+													<td>This is the text shown to user via Bootstrap warning dialog after warning period in the Keep Alive button</td>
+												</tr>
+												<tr>
+													<td><code>keepAliveUrl</code></td>
+													<td class="fw-semibold">'/keep-alive'</td>
+													<td>URL to ping via AJAX POST to keep the session alive. This resource should do something innocuous that would keep the session alive, which will depend on your server-side platform</td>
+												</tr>
+												<tr>
+													<td><code>keepAlive</code></td>
+													<td class="fw-semibold">true</td>
+													<td>If <code>true</code>, the plugin keeps pinging the <code>keepAliveUrl</code> for as long as the user is active. The time between two pings is set by the <code>keepAliveInterval</code> option. If you have no server-side session timeout to worry about, feel free to set this one to <code>false</code> to prevent unnecessary network activity</td>
+												</tr>
+												<tr>
+													<td><code>keepAliveInterval</code></td>
+													<td class="fw-semibold">5000</td>
+													<td>Time in milliseconds between two keep-alive pings</td>
+												</tr>
+												<tr class="border-solid">
+													<td><code>ajaxType</code></td>
+													<td class="fw-semibold">'POST'</td>
+													<td>If you need to specify the ajax method</td>
+												</tr>
+												<tr>
+													<td><code>ajaxData</code></td>
+													<td class="fw-semibold">''</td>
+													<td>If you need to send some data via AJAX POST to your <code>keepAliveUrl</code>, you can use this option</td>
+												</tr>
+												<tr class="border-solid">
+													<td><code>redirUrl</code></td>
+													<td class="fw-semibold">'/timed-out'</td>
+													<td>URL to take browser to if no action is take after the warning</td>
+												</tr>
+												<tr>
+													<td><code>logoutUrl</code></td>
+													<td class="fw-semibold">'/log-out'</td>
+													<td>URL to take browser to if user clicks "Logout" on the Bootstrap warning dialog</td>
+												</tr>
+												<tr class="border-solid">
+													<td><code>warnAfter</code></td>
+													<td class="fw-semibold">900000 (15min)</td>
+													<td>Time in milliseconds after page is opened until warning dialog is opened</td>
+												</tr>
+												<tr>
+													<td><code>redirAfter</code></td>
+													<td class="fw-semibold">1200000 (20min)</td>
+													<td>Time in milliseconds after page is opened until browser is redirected to <code>redirUrl</code></td>
+												</tr>
+												<tr class="border-solid">
+													<td><code>countdownSmart</code></td>
+													<td class="fw-semibold">false</td>
+													<td>If <code>true</code>, displays minutes as well as seconds in the countdown timer (e.g. "3m 14s"). Displays only seconds when timer is under one minute (e.g. "42s")</td>
+												</tr>
+												<tr>
+													<td><code>countdownMessage</code></td>
+													<td class="fw-semibold">false</td>
+													<td>If you want a custom sentence to appear in the warning dialog with a timer showing the seconds remaining, use this option. Example: <code>countdownMessage: 'Redirecting in {timer}.'</code> Place the <code>{timer}</code> string where you want the numeric countdown to appear</td>
+												</tr>
+												<tr>
+													<td><code>countdownBar</code></td>
+													<td class="fw-semibold">false</td>
+													<td>If <code>true</code>, ads a countdown bar (uses Bootstrap progress bar) to the warning dialog. Can be combined with countdownMessage option or used independently</td>
+												</tr>
+												<tr class="border-solid">
+													<td><code>onStart</code></td>
+													<td class="fw-semibold">false</td>
+													<td>Optional callback fired when first calling the plugin and every time user refreshes the session (on any mouse, keyboard or touch action). Takes options object as the only argument</td>
+												</tr>
+												<tr>
+													<td><code>onWarn</code></td>
+													<td class="fw-semibold">false</td>
+													<td>Custom callback you can use instead of showing the Bootstrap warning dialog. Takes options object as the only argument</td>
+												</tr>
+												<tr>
+													<td><code>onRedir</code></td>
+													<td class="fw-semibold">false</td>
+													<td>Custom callback you can use instead of redirecting the user to <code>redirUrl</code>. Takes options object as the only argument</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>session_timeout.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/extensions/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<a href="https://github.com/orangehill/bootstrap-session-timeout" class="btn btn-primary btn-labeled btn-labeled-left" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /session timeout -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#velocity" class="nav-link">Velocity animations</a>
+								</li>
+								<li class="nav-item">
+									<a href="#prism" class="nav-link">Prism Syntax Highlighter</a>
+								</li>
+								<li class="nav-item">
+									<a href="#moment" class="nav-link">Moment.js</a>
+								</li>
+								<li class="nav-item">
+									<a href="#markjs" class="nav-link">Mark.js</a>
+								</li>
+								<li class="nav-item">
+									<a href="#i18next" class="nav-link">i18next Translation</a>
+								</li>
+								<li class="nav-item">
+									<a href="#timeout" class="nav-link">Session and Idle Timeout</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

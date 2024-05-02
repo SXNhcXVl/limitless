@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link active">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Helpers</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Content helpers -->
+							<div class="mb-3" id="helpers_content">
+								<h1 class="display-6 fw-bold">Content helpers</h1>
+
+								<p class="mb-3">
+									Besides basic typography classes, helper classes are an extra set of additional predefined classes, that can be applied to different content or layout elements and components. Helper classes are custom additions mostly, written especially for current layout, except common BS helpers. Below is a summarized table with all available classes, descriptions and content type. Flex utilities are moved to a separate page and include various examples.
+								</p>
+
+								<div class="table-responsive border rounded">
+									<table class="table">
+										<thead class="table-light">
+											<tr>
+												<th class="border-top-0">Classes</th>
+												<th class="border-top-0">Usage</th>
+												<th class="border-top-0">Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Borders</span></td>
+											</tr>
+											<tr>
+												<td><code>.border-0</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Use this class to remove <strong>all</strong> borders from an element</td>
+											</tr>
+											<tr>
+												<td><code>.border-[side]-0</code><br><code>.border-[side]-[breakpoint]-0</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Use this class to remove specific borders. Available <strong>[side]</strong> options: <code>start</code>, <code>end</code>, <code>top</code>, <code>bottom</code>.</td>
+											</tr>
+											<tr>
+												<td><code>.border-width-0</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets border width to 0. Useful for inheriting other border properties</td>
+											</tr>
+											<tr>
+												<td><code>.border</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds a border to an element with pre-defined BS's default width and color properties</td>
+											</tr>
+											<tr>
+												<td><code>.border-width-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds the border to an element. Available <strong>[size]</strong> options: 0, 1, 2, 3, 4, 5</td>
+											</tr>
+											<tr>
+												<td><code>.border-width-[side]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Same as <code>.border-[size]</code>, but for specific <strong>[side]</strong>: <code>start</code>, <code>end</code>, <code>top</code>, <code>bottom</code></td>
+											</tr>
+											<tr>
+												<td><code>.border-[color]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes color of all element's borders. Supports all available color classes, including <code>transparent</code> option</td>
+											</tr>
+											<tr>
+												<td><code>.border-[side]-[color]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>If you need to change color of some specific border, use this class combination. Options for <strong>[side]</strong>: <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code></td>
+											</tr>
+											<tr>
+												<td><code>.border-style-[dashed|dotted]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes border style from solid to dashed or dotted. Dashed borders also support top/bottom/left/right options</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Border radius</span></td>
+											</tr>
+											<tr>
+												<td><code>.rounded</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rounds all borders. Default value is defined in <code>$border-radius</code> variable</td>
+											</tr>
+											<tr>
+												<td><code>.rounded-[side]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rounds borders of specific <strong>[side]</strong>: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></td>
+											</tr>
+											<tr>
+												<td><code>.rounded-[side]-[start|end]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rounds borders of 1 corner of specific vertical <strong>[side]</strong>: <code>top</code>, <code>bottom</code></td>
+											</tr>
+											<tr>
+												<td><code>.rounded-0</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes rounded corners from all borders</td>
+											</tr>
+											<tr>
+												<td><code>.rounded-[side]-0</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes rounded corners from specific <strong>[side]</strong>: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></td>
+											</tr>
+											<tr>
+												<td><code>.rounded-pill</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>100rem</code> border radius to all borders</td>
+											</tr>
+											<tr>
+												<td><code>.rounded-[side]-pill</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>100rem</code> border radius to specific <strong>[side]</strong>: <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></td>
+											</tr>
+											<tr>
+												<td><code>.rounded-circle</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>50%</code> border radius to all borders</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Transformations</span></td>
+											</tr>
+											<tr>
+												<td><code>.rotate-cw</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <strong>clockwise</strong>. Options for <strong>[value]</strong>: <code>45</code>, <code>90</code>, <code>180</code> degrees</td>
+											</tr>
+											<tr>
+												<td><code>.rotate-ccw</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Rotates element <strong>counterclockwise</strong>. Options for <strong>[value]</strong>: <code>45</code>, <code>90</code>, <code>180</code> degrees</td>
+											</tr>
+											<tr>
+												<td><code>.spinner</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds infinite clockwise rotation</td>
+											</tr>
+											<tr>
+												<td><code>.spinner-reverse</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds infinite counterclockwise rotation</td>
+											</tr>
+											<tr>
+												<td><code>.translate-middle</code><br><code>.translate-middle-[x|y|start|top]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Centers element vertically and/or horizontally</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Positioning</span></td>
+											</tr>
+											<tr>
+												<td><code>.position-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes element's positiion. Available options for <strong>[value]</strong>: <code>relative</code>, <code>static</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code></td>
+											</tr>
+											<tr>
+												<td><code>.fixed-[top|bottom]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Position an element at the top (bottom) of the viewport, from edge to edge</td>
+											</tr>
+											<tr>
+												<td><code>.sticky-[top|bottom]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Position an element at the top (bottom) of the viewport relatively to its parent</td>
+											</tr>
+											<tr>
+												<td><code>.top-[0|50|100|auto]</code></td>
+												<td class="text-muted">All except static</td>
+												<td>Resets <code>top</code> property for fixed, absolute and relative opsitions</td>
+											</tr>
+											<tr>
+												<td><code>.bottom-[0|50|100|auto]</code></td>
+												<td class="text-muted">All except static</td>
+												<td>Resets <code>bottom</code> property for fixed, absolute and relative opsitions</td>
+											</tr>
+											<tr>
+												<td><code>.start-[0|50|100|auto]</code></td>
+												<td class="text-muted">All except static</td>
+												<td>Resets <code>left</code> property for fixed, absolute and relative opsitions</td>
+											</tr>
+											<tr>
+												<td><code>.end-[0|50|100|auto]</code></td>
+												<td class="text-muted">All except static</td>
+												<td>Resets <code>right</code> property for fixed, absolute and relative opsitions</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Alignment</span></td>
+											</tr>
+											<tr>
+												<td><code>.float-[side]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Element floating. Options for <strong>[side]</strong>: <code>start</code>, <code>end</code> sides</td>
+											</tr>
+											<tr>
+												<td><code>.float-[breakpoint]-[side]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Responsive variations of element floating. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+											</tr>
+											<tr>
+												<td><code>.float-none</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes floating</td>
+											</tr>
+											<tr>
+												<td><code>.clearfix</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Easily clear floats by adding <code>.clearfix</code> to the element</td>
+											</tr>
+											<tr>
+												<td><code>.text-[side]</code></td>
+												<td class="text-muted">Inline element, text</td>
+												<td>Element alignment. Options for <strong>[side]</strong>: <code>left</code>, <code>center</code>, <code>right</code> sides</td>
+											</tr>
+											<tr>
+												<td><code>.text-[breakpoint]-[side]</code></td>
+												<td class="text-muted">Inline element, text</td>
+												<td>Responsive variations of element alignment. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+											</tr>
+											<tr>
+												<td><code>.align-[value]</code></td>
+												<td class="text-muted">Inline element, table</td>
+												<td>Vertical alignment. Options for <strong>[value]</strong>: <code>baseline</code>, <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>text-top</code> and <code>text-bottom</code></td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Images</span></td>
+											</tr>
+											<tr>
+												<td><code>.img-fluid</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element</td>
+											</tr>
+											<tr>
+												<td><code>.img-thumbnail</code></td>
+												<td class="text-muted">Images only</td>
+												<td>Adds grey frame with white background color</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Sizing</span></td>
+											</tr>
+											<tr>
+												<td><code>.wmin-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets a minimum width of the element in pixels. Available options for <strong>[value]</strong>: <code>200</code>, <code>250</code>, <code>300</code>, <code>350</code>, <code>400</code>, <code>450</code>, <code>500</code>, <code>550</code>, <code>600</code> pixels</td>
+											</tr>
+											<tr>
+												<td><code>.wmin-[breakpoint]-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Responsive variations of width utilities. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+											</tr>
+											<tr>
+												<td><code>.mw-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets a maximum width of the element in pixels. Available option for <strong>[value]</strong> is <code>100%</code></td>
+											</tr>
+											<tr>
+												<td><code>.vw-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets viewport container width in <code>vw</code>. Available option for <strong>[value]</strong> is <code>100</code></td>
+											</tr>
+											<tr>
+												<td><code>.min-vw-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets viewport container min-width in <code>vw</code>. Available option for <strong>[value]</strong> is <code>100</code></td>
+											</tr>
+											<tr>
+												<td><code>.w-[responsive value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets a responsive <strong>width</strong> of the element in percents. Values are: [25, 50, 75, 100, auto]. Supports breakpoints</td>
+											</tr>
+											<tr>
+												<td><code>.w-[fixed values]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets a responsive <strong>width</strong> of the element in pixels. Values are: 16px, 24px, 32px, 40px, 48px, 56px, 64px, 72px, 80px</td>
+											</tr>
+											<tr>
+												<td><code>.h-[responsive value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets a responsive <strong>height</strong> of the element in percents. Values are: [25, 50, 75, 100, auto]. Supports breakpoints</td>
+											</tr>
+											<tr>
+												<td><code>.h-[fixed values]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets a responsive <strong>height</strong> of the element in pixels. Values are: 16px, 24px, 32px, 40px, 48px, 56px, 64px, 72px, 80px</td>
+											</tr>
+											<tr>
+												<td><code>.vh-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets viewport container height in <code>vh</code>. Available option for <strong>[value]</strong> is <code>100</code></td>
+											</tr>
+											<tr>
+												<td><code>.min-vh-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Sets viewport container min-height in <code>vh</code>. Available option for <strong>[value]</strong> is <code>100</code></td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Visibility</span></td>
+											</tr>
+											<tr>
+												<td><code>.overflow-[value]</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Content overflow utility. Available options for <strong>[value]</strong>: <code>hidden</code> - hides content, <code>visible</code> - shows content, <strong>auto</strong> - makes content scrollable, <strong>scroll</strong> - always displays scrollbar</td>
+											</tr>
+											<tr>
+												<td><code>.visible</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Makes the element invisible for the user, but visible for screen readers</td>
+											</tr>
+											<tr>
+												<td><code>.invisible</code></td>
+												<td class="text-muted">Containers</td>
+												<td>Can be used to toggle only the visibility of an element, meaning its display is not modified and the element can still affect the flow of the document</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Display</span></td>
+											</tr>
+											<tr>
+												<td><code>.d-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Set of classes for <code>display</code> property. Values are: inline, inline-block, block, grid, table, table-row, table-cell, flex, inline-flex, none</td>
+											</tr>
+											<tr>
+												<td><code>.d-[breakpoint]-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Responsive variations of <code>d-[value]</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Spacing</span></td>
+											</tr>
+											<tr>
+												<td><code>.m-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>margin</code> property to <strong>all</strong> sides. Available <strong>[size]</strong> are: <code>0</code>, <code>1</code> ~ 5px, <code>2</code> ~ 10px, <code>3</code> ~ 20px, <code>4</code> ~ 30px, <code>5</code> ~ 40px, <code>auto</code></td>
+											</tr>
+											<tr>
+												<td><code>.m-[breakpoint]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Responsive variations of <code>.m-[size]</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+											</tr>
+											<tr>
+												<td><code>.m[s,e,t,b,x,y]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>margin</code> property to the specific side: <code>s</code> - left (start), <code>e</code> - right (end), <code>t</code> - top, <code>b</code> - bottom, <code>x</code> - horizontal, <code>y</code> - vertical. Options for the size are the same</td>
+											</tr>
+											<tr>
+												<td><code>.m[s,e,t,b]-[breakpoint]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Same as for <code>.m-[breakpoint]-[size]</code>, except <code>x</code> and <code>y</code> options</td>
+											</tr>
+											<tr>
+												<td><code>.p-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>padding</code> property to <strong>all</strong> sides. Available <strong>[size]</strong> are: <code>0</code>, <code>1</code> ~ 5px, <code>2</code> ~ 10px, <code>3</code> ~ 20px, <code>4</code> ~ 30px, <code>5</code> ~ 40px, <code>auto</code></td>
+											</tr>
+											<tr>
+												<td><code>.p-[breakpoint]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Responsive variations of <code>.p-[size]</code> utility. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+											</tr>
+											<tr>
+												<td><code>.p[s,e,t,b,x,y]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds <code>padding</code> property to the specific side: <code>s</code> - left (start), <code>e</code> - right (end), <code>t</code> - top, <code>b</code> - bottom, <code>x</code> - horizontal, <code>y</code> - vertical. Options for the size are the same</td>
+											</tr>
+											<tr>
+												<td><code>.p[s,e,t,b]-[breakpoint]-[size]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Same as for <code>.p-[breakpoint]-[size]</code>, except <code>x</code> and <code>y</code> options</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Text</span></td>
+											</tr>
+											<tr>
+												<td><code>.font-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Sets/overrides font family. Available <strong>[value]</strong> options: <code>monospace</code>, <code>serif</code></td>
+											</tr>
+											<tr>
+												<td><code>.fs-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Sets/overrides font size. Available <strong>[value]</strong> options: <code>base</code> ~ 14px, <code>xs</code> ~ 12px; <code>sm</code> - 13px, <code>lg</code> ~ 15px</td>
+											</tr>
+											<tr>
+												<td><code>.fw-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Sets/overrides font weight. Available <strong>[value]</strong> options: <code>light</code>, <code>lighter</code>, <code>normal</code>, <code>medium</code>, <code>semibold</code>, <code>bold</code>, <code>bolder</code></td>
+											</tr>
+											<tr>
+												<td><code>.fst-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Sets/overrides font style. Available <strong>[value]</strong> options: <code>italic</code>, <code>normal</code></td>
+											</tr>
+											<tr>
+												<td><code>.lh-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Line height. Available <strong>[value]</strong> options: <code>base</code>, <code>xs</code>; <code>sm</code>, <code>lg</code> and <code>1</code></td>
+											</tr>
+											<tr>
+												<td><code>.text-decoration-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Text decoration. Available <strong>[value]</strong> options: <code>none</code>, <code>underline</code>, <code>line-through</code></td>
+											</tr>
+											<tr>
+												<td><code>.text-[value]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Various text styles. Available <strong>[value]</strong> options: <code>lowercase</code>, <code>uppercase</code>, <code>capitalize</code>, <code>wrap</code>, <code>nowrap</code>, <code>break</code></td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Color</span></td>
+											</tr>
+											<tr>
+												<td><code>.text-[color]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Sets text color. Available <strong>[value]</strong> options: <code>muted</code>, <code>white</code>, <code>dark</code>, <code>black</code>, <code>primary</code>, <code>secondary</code>, <code>danger</code>, <code>success</code>, <code>warning</code>, <code>info</code>, <code>pink</code>, <code>purple</code>, <code>indigo</code>, <code>teal</code>, <code>yellow</code></td>
+											</tr>
+											<tr>
+												<td><code>.link-[color]</code></td>
+												<td class="text-muted">Text</td>
+												<td>Sets text link color. Available <strong>[value]</strong> options: <code>muted</code>, <code>white</code>, <code>dark</code>, <code>black</code>, <code>primary</code>, <code>secondary</code>, <code>danger</code>, <code>success</code>, <code>warning</code>, <code>info</code>, <code>pink</code>, <code>purple</code>, <code>indigo</code>, <code>teal</code>, <code>yellow</code></td>
+											</tr>
+											<tr>
+												<td><code>.bg-[color]</code></td>
+												<td class="text-muted">Block and inline elements</td>
+												<td>Sets background color. Available <strong>[value]</strong> options: <code>muted</code>, <code>white</code>, <code>dark</code>, <code>black</code>, <code>primary</code>, <code>secondary</code>, <code>danger</code>, <code>success</code>, <code>warning</code>, <code>info</code>, <code>pink</code>, <code>purple</code>, <code>indigo</code>, <code>teal</code>, <code>yellow</code></td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Opacity</span></td>
+											</tr>
+											<tr>
+												<td><code>.opacity-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes opacity of an element. Available <strong>[value]</strong> options: 0, 25, 50, 75, 100</td>
+											</tr>
+											<tr>
+												<td><code>.border-opacity-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes border opacity. Supported values are: 0, 10, 15, 20, 25, 50, 75, 100</td>
+											</tr>
+											<tr>
+												<td><code>.text-opacity-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes text opacity. Supported values are: 0, 10, 15, 20, 25, 50, 75, 100</td>
+											</tr>
+											<tr>
+												<td><code>.bg-opacity-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes background color opacity. Supported values are: 0, 10, 15, 20, 25, 50, 75, 100</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Shadow</span></td>
+											</tr>
+											<tr>
+												<td><code>.shadow</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds box shadowto an element</td>
+											</tr>
+											<tr>
+												<td><code>.shadow-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Adds or removes box shadow. Supported values are: none, sm, lg</td>
+											</tr>
+
+											<tr class="table-light">
+												<td colspan="3"><span class="fw-semibold">Misc</span></td>
+											</tr>
+											<tr>
+												<td><code>.user-select-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Enable or disable selection. Available <strong>[value]</strong> options: all, auto, none</td>
+											</tr>
+											<tr>
+												<td><code>.pe-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes pointer events. Available <strong>[value]</strong> options: none, auto</td>
+											</tr>
+											<tr>
+												<td><code>.cursor-[value]</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Changes cursor style. Available <strong>[value]</strong> options: <code>move</code>, <code>pointer</code> and <code>default</code> styles</td>
+											</tr>
+											<tr>
+												<td><code>.filter-none</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes all CSS filters</td>
+											</tr>
+											<tr>
+												<td><code>.transition-none</code></td>
+												<td class="text-muted">Any element</td>
+												<td>Removes all CSS transitions</td>
+											</tr>
+											<tr>
+												<td><code>zindex</code></td>
+												<td class="text-muted">jQuery plugins</td>
+												<td>Resets z-index of an element. Values are: 1, auto</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /content helpers -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Enable flex behaviors -->
+							<div class="mb-3 pt-3" id="helpers_flex">
+								<h1 class="display-6 fw-bold">Flex utilities</h1>
+
+								<div class="mb-3 pt-2" id="helpers_flex_enable">
+									<h3 class="fw-bold">Enable flex behaviors</h3>
+
+									<p class="mb-3">Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties. The <code>.d-flex</code> class makes the flex container a block-level element. The <code>.d-inline-flex</code> class makes the flex container an atomic inline-level element. <strong>Please note:</strong> an anonymous flex item that contains only white space is not rendered, as if it were designated <code>display: none</code>. Also <code>clear</code> and <code>vertical-align</code> properties have no effect on flex items, and <code>float</code> causes the <code>display</code> property of the element to compute to <code>block</code>.</p>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Flexbox container</p>
+
+												<div class="bg-light border rounded p-2">
+													<div class="d-flex bg-secondary text-white py-2 px-3 rounded">
+														I'm a flexbox container!
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Inline flexbox container</p>
+
+												<div class="d-flex bg-light border rounded p-2">
+													<div class="d-inline-flex bg-secondary text-white py-2 px-3 rounded">
+														I'm an inline flexbox container!
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.d-flex</code></td>
+													<td>Displays an element as a <strong>block-level</strong> flex container</td>
+												</tr>
+												<tr>
+													<td><code>.d-[breakpoint]-flex</code></td>
+													<td>Responsive variations of <code>.d-flex</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+												<tr>
+													<td><code>.d-inline-flex</code></td>
+													<td>Displays an element as an <strong>inline-level</strong> flex container</td>
+												</tr>
+												<tr>
+													<td><code>.d-[breakpoint]-inline-flex</code></td>
+													<td>Responsive variations of <code>.d-inline-flex</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_direction">
+									<h3 class="fw-bold">Flex direction</h3>
+
+									<p class="mb-3">Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts). Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side. Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code> to start the vertical direction from the opposite side.</p>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Row direction</p>
+
+												<div class="d-flex flex-row bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 rounded-start">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Reverse row direction</p>
+
+												<div class="d-flex flex-row-reverse bg-light border rounded p-2">
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded-start">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3 mb-xl-0">
+												<p class="fw-semibold">Column direction</p>
+
+												<div class="d-flex flex-column bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 rounded-top">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-top border-white border-opacity-25 py-2 px-3">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white border-top border-white border-opacity-25 py-2 px-3 rounded-bottom">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div>
+												<p class="fw-semibold">Reverse column direction</p>
+
+												<div class="d-flex flex-column-reverse bg-light border rounded p-2">
+													<div class="bg-secondary text-white border-top border-white border-opacity-25 py-2 px-3 rounded-bottom">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-top border-white border-opacity-25 py-2 px-3">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white border-white border-opacity-25 py-2 px-3 rounded-top">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_justify">
+									<h3 class="fw-bold">Justify content</h3>
+
+									<p class="mb-3">Use <code>justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, or <code>around</code> values. The alignment is done after the lengths and auto margins are applied, meaning that, if in a Flexbox layout there is at least one flexible element, with <code>flex-grow</code> different from <code>0</code>, it will have no effect as there won't be any available space.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Beginning (start) of the container</p>
+
+										<div class="d-flex justify-content-start bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Center of the container</p>
+
+										<div class="d-flex justify-content-center bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">End of the container</p>
+
+										<div class="d-flex justify-content-end bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+
+									<div class="mb-3">
+										<p class="fw-semibold">With space between the lines</p>
+
+										<div class="d-flex justify-content-between bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 rounded">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 rounded">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 rounded">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">With space before, between, and after the lines</p>
+
+										<div class="d-flex justify-content-around bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 rounded">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 rounded">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 rounded">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.justify-content-[value]</code></td>
+													<td>Aligns the flex container's items when the items don't use all available space on the main-axis (horizontally). Available options for <strong>[value]</strong>: <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, or <code>around</code>.</td>
+												</tr>
+												<tr>
+													<td><code>.justify-content-[breakpoint]-[value]</code></td>
+													<td>Responsive variations of <code>.justify-content-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_align_items">
+									<h3 class="fw-bold">Align items</h3>
+
+									<p class="mb-3">Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default). Basically it works like <code>justify-content</code>, but in the perpendicular direction. <strong>Tip:</strong> use the <code>align-self</code> property of each item to override the <code>align-items</code> property.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Beginning (start) of the container</p>
+
+										<div class="d-flex align-items-start justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Center of the container</p>
+
+										<div class="d-flex align-items-center justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">End of the container</p>
+
+										<div class="d-flex align-items-end justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+
+									<div class="mb-3">
+										<p class="fw-semibold">WBaseline of the container</p>
+
+										<div class="d-flex align-items-baseline justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Fit the container</p>
+
+										<div class="d-flex align-items-stretch justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.align-items-[value]</code></td>
+													<td>Alignment of items inside flex container. Options for <strong>[value]</strong>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</td>
+												</tr>
+												<tr>
+													<td><code>.align-items-[breakpoint]-[value]</code></td>
+													<td>Responsive variations of <code>.align-items-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_align_self">
+									<h3 class="fw-bold">Align self</h3>
+
+									<p class="mb-3">Use <code>align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as align-items: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default). The property doesn't apply to block-level boxes, or to table cells.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Beginning (start) of the container</p>
+
+										<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white align-self-start border-start border-white border-opacity-25 py-2 px-3">
+												Aligned flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Center of the container</p>
+
+										<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white align-self-center border-start border-white border-opacity-25 py-2 px-3">
+												Aligned flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">End of the container</p>
+
+										<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white align-self-end border-start border-white border-opacity-25 py-2 px-3">
+												Aligned flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+
+									<div class="mb-3">
+										<p class="fw-semibold">Baseline of the container</p>
+
+										<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white align-self-baseline border-start border-white border-opacity-25 py-2 px-3">
+												Aligned flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Fit the container</p>
+
+										<div class="d-flex justify-content-center bg-light border rounded p-2" style="height: 120px;">
+											<div class="bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white align-self-stretch border-start border-white border-opacity-25 py-2 px-3">
+												Aligned flex item
+											</div>
+											<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.align-self-[value]</code></td>
+													<td>Alignment of the selected item inside flex container. Options for <strong>[value]</strong>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</td>
+												</tr>
+												<tr>
+													<td><code>.align-self-[breakpoint]-[value]</code></td>
+													<td>Responsive variations of <code>.align-self-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_fill">
+									<h3 class="fw-bold">Flex fill</h3>
+
+									<p class="mb-3">Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Right auto margin</p>
+
+										<div class="d-flex bg-light border rounded p-2">
+											<div class="flex-fill bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item with a lot of content
+											</div>
+											<div class="flex-fill bg-secondary text-white border-start border-white py-2 px-3">
+												Flex item 2
+											</div>
+											<div class="flex-fill bg-secondary text-white border-start border-white py-2 px-3 rounded-end">
+												Flex item 3
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.flex-fill</code></td>
+													<td>All breakpoints</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-fill</code></td>
+													<td>Responsive variations of <code>.flex-fill</code> class. Options for [breakpoint]: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_stretch">
+									<h3 class="fw-bold">Flex stretch</h3>
+
+									<p class="mb-3">Equivalent to flex: <code>[positive-number]</code> 1 0. Makes the flex item flexible and sets the flex basis to zero, resulting in an item that receives the specified proportion of the free space in the flex container. If all items in the flex container use this pattern, their sizes will be proportional to the specified flex factor. Other words it's similar to <code>.flex-fill</code>, but forces elements to stretch equally regardless content length. To reset <code>.flex-1</code> use <code>.flex-0</code> class.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Example</p>
+
+										<div class="d-flex bg-light border rounded p-2">
+											<div class="flex-1 bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item with a lot of content
+											</div>
+											<div class="flex-1 bg-secondary text-white border-start border-white py-2 px-3">
+												Flex item 2
+											</div>
+											<div class="flex-1 bg-secondary text-white border-start border-white py-2 px-3 rounded-end">
+												Flex item 3
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.flex-0</code></td>
+													<td>All breakpoints. Equivalent to <code>flex: 0 1 0%</code></td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-0</code></td>
+													<td>Responsive variations of <code>.flex-0</code> class. Options for [breakpoint]: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+												</tr>
+												<tr>
+													<td><code>.flex-1</code></td>
+													<td>All breakpoints. Equivalent to <code>flex: 1 1 0%</code></td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-1</code></td>
+													<td>Responsive variations of <code>.flex-1</code> class. Options for [breakpoint]: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_grow_shrink">
+									<h3 class="fw-bold">Grow and shrink</h3>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">Grow</h5>
+										<p class="mb-3">This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor). The remaining space is the size of the flex container minus the size of all flex items' sizes together. In the example below, the <code>.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
+
+										<p class="fw-semibold">Example</p>
+
+										<div class="d-flex bg-light border rounded p-2">
+											<div class="flex-grow-1 bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item 1
+											</div>
+											<div class="bg-secondary text-white border-start border-white py-2 px-3">
+												Flex item 2
+											</div>
+											<div class="bg-secondary text-white border-start border-white py-2 px-3 rounded-end">
+												Flex item 3 with long content
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Shrink</h5>
+										<p class="mb-3">Use <code>.flex-shrink-*</code> utilities to toggle a flex item’s ability to shrink if necessary. In the example below, the second flex item with <code>.flex-shrink-1</code> is forced to wrap its contents to a new line, “shrinking” to allow more space for the previous flex item with <code>.w-100</code>. If it's with <code>.flex-shrink-0</code> class, text won't wrap.</p>
+
+										<p class="fw-semibold">Example</p>
+
+										<div class="d-flex bg-light border rounded p-2">
+											<div class="w-100 bg-secondary text-white py-2 px-3 rounded-start">
+												Flex item 1
+											</div>
+											<div class="flex-shrink-1 bg-secondary text-white border-start border-white py-2 px-3">
+												Text in this item wraps
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.flex-[grow|shrink]-0</code></td>
+													<td>All breakpoints</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[grow|shrink]-1</code></td>
+													<td>All breakpoints</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-[grow|shrink]-0</code></td>
+													<td>Responsive variations of <code>.flex-grow-0</code> and <code>.flex-shrink-0</code> classes to use in 4 breakpoints.</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-[grow|shrink]-1</code></td>
+													<td>Responsive variations of <code>.flex-grow-1</code> and <code>.flex-shrink-1</code> classes to use in 4 breakpoints.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_margins">
+									<h3 class="fw-bold">Auto margins</h3>
+
+									<p class="mb-3">Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.me-auto</code>), and pushing two items to the left (<code>.ms-auto</code>). Unfortunately, IE10 and IE11 do not properly support auto margins on flex items whose parent has a non-default <code>justify-content</code> value.</p>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Right auto margin</p>
+
+												<div class="d-flex bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 rounded me-auto">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-start">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Left auto margin</p>
+
+												<div class="d-flex bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 rounded-start">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 rounded-end">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white border-start border-white border-opacity-25 py-2 px-3 ms-auto rounded">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Bottom auto margin</p>
+
+												<div class="d-flex flex-column bg-light border rounded p-2" style="height: 180px;">
+													<div class="bg-secondary text-white py-2 px-3 rounded mb-auto">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded-top">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white border-top border-white border-opacity-25 py-2 px-3 rounded-bottom">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Top auto margin</p>
+
+												<div class="d-flex flex-column bg-light border rounded p-2" style="height: 180px;">
+													<div class="bg-secondary text-white py-2 px-3 rounded-top">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white border-top border-white border-opacity-25 py-2 px-3 rounded-bottom">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded mt-auto">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.m[t,b,s,e]-auto</code></td>
+													<td>Pushes flex items to specified side, where "s" is left, "e" is right, "t" is top and "b" is bottom.</td>
+												</tr>
+												<tr>
+													<td><code>.m[t,b,s,e]-[breakpoint]-auto</code></td>
+													<td>Responsive variations of <code>.m[t,b,s,e]-auto</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_wrap">
+									<h3 class="fw-bold">Flex wrap</h3>
+
+									<p class="mb-3">The <code>flex-wrap</code> classes specify whether flex items are forced into a single line or can be wrapped onto multiple lines. If wrapping is allowed, this property also enables you to control the direction in which lines are stacked. <strong>Note:</strong> if the elements are not flexible items, the <code>flex-wrap</code> property has no effect. Supports 2 directions: default and reversed.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">No wrap</p>
+
+										<div class="d-flex justify-content-center flex-nowrap bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 d-flex rounded-start" style="flex-grow: 1;">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 d-flex border-start border-white border-opacity-25" style="flex-grow: 1;">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 d-flex border-start border-white border-opacity-25" style="flex-grow: 1;">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 d-flex border-start border-white border-opacity-25 rounded-end" style="flex-grow: 1;">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Wrap - default direction</p>
+
+										<div class="d-flex flex-wrap bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Wrap - reversed direction</p>
+
+										<div class="d-flex flex-wrap-reverse bg-light border rounded p-2">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.flex-nowrap</code></td>
+													<td>The flex items are laid out in a single line - may cause the flex container to overflow</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-nowrap</code></td>
+													<td>Responsive variations of <code>.flex-nowrap</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+												<tr>
+													<td><code>.flex-wrap</code></td>
+													<td>The flex items break into multiple lines</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-wrap</code></td>
+													<td>Responsive variations of <code>.flex-wrap</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+												<tr>
+													<td><code>.flex-wrap-reverse</code></td>
+													<td>Behaves the same as <code>.flex-wrap</code>, but in reverse order</td>
+												</tr>
+												<tr>
+													<td><code>.flex-[breakpoint]-wrap-reverse</code></td>
+													<td>Responsive variations of <code>.flex-wrap-reverse</code> class. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_order">
+									<h3 class="fw-bold">Flex order</h3>
+
+									<p class="mb-3">Change the <span class="fst-italic">visual</span> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As order takes any integer value (e.g., 5), add custom CSS for any additional values needed. Elements with the same order value are laid out in the order in which they appear in the source code. <strong>Note:</strong> If the element is not a flexible item, the order property has no effect.</p>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Default order</p>
+
+												<div class="d-flex justify-content-center bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 rounded">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 mx-2 rounded">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Custom order</p>
+
+												<div class="d-flex justify-content-center bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 mx-2 rounded order-2">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded order-3">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded order-1">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Default order</p>
+
+												<div class="d-flex justify-content-center flex-column bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 rounded">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 my-2 rounded">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-6">
+											<div class="mb-3">
+												<p class="fw-semibold">Custom order</p>
+
+												<div class="d-flex justify-content-center flex-column bg-light border rounded p-2">
+													<div class="bg-secondary text-white py-2 px-3 my-2 rounded order-2">
+														Flex item 1
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded order-3">
+														Flex item 2
+													</div>
+													<div class="bg-secondary text-white py-2 px-3 rounded order-1">
+														Flex item 3
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.order-[value]</code></td>
+													<td>Specify the order used to lay out flex items in their flex container. Values for <strong>[value]</strong>: <code>1</code>, <code>2</code>, ... <code>12</code>.</td>
+												</tr>
+												<tr>
+													<td><code>.order-[breakpoint]-[value]</code></td>
+													<td>Responsive variations of <code>.order-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="helpers_flex_align_content">
+									<h3 class="fw-bold">Align content</h3>
+
+									<p class="mb-3">Use <code>align-content</code> utilities on flexbox containers to align flex items together on the cross axis. Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch</code>. To demonstrate these utilities, we’ve enforced <code>flex-wrap: wrap</code> and increased the number of flex items. <strong>Note:</strong> this property has no effect on single rows of flex items.</p>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Start of the flex container</p>
+
+										<div class="d-flex flex-wrap align-content-start bg-light border rounded p-2" style="min-height: 160px;">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">End of the flex container</p>
+
+										<div class="d-flex flex-wrap align-content-end bg-light border rounded p-2" style="min-height: 160px;">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+
+									<div class="mb-3">
+										<p class="fw-semibold">Center of the flex container</p>
+
+										<div class="d-flex flex-wrap align-content-center bg-light border rounded p-2" style="min-height: 160px;">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Evenly in the flex container</p>
+
+										<div class="d-flex flex-wrap align-content-between bg-light border rounded p-2" style="min-height: 160px;">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+
+									<div class="mb-3">
+										<p class="fw-semibold">Evenly with half-size spaces on either end</p>
+
+										<div class="d-flex flex-wrap align-content-around bg-light border rounded p-2" style="min-height: 160px;">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<p class="fw-semibold">Stretch to take up the remaining space</p>
+
+										<div class="d-flex flex-wrap align-content-stretch bg-light border rounded p-2" style="min-height: 160px;">
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-start">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0">
+												Flex item
+											</div>
+											<div class="bg-secondary text-white py-2 px-3 border border-white border-opacity-25 border-end-0 border-top-0 rounded-end">
+												Flex item
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Classes</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.align-content-[value]</code></td>
+													<td>Similar to align-items, but instead of aligning flex items, it aligns flex lines. Options for <strong>[value]</strong> are similar to <code>.justify-content-[value]</code> classes</td>
+												</tr>
+												<tr>
+													<td><code>.align-content-[breakpoint]-[value]</code></td>
+													<td>Responsive variations of <code>.align-content-[value]</code> classes. Options for <strong>[breakpoint]</strong>: <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, <code>xxl</code> screen sizes</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+				            </div>
+				            <!-- /enable flex behaviors -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#helpers_content" class="nav-link">Content helpers</a>
+								</li>
+								<li class="nav-item">
+									<a href="#helpers_flex" class="nav-link">Flex utilities</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#helpers_flex_enable" class="nav-link">Basic</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_direction" class="nav-link">Direction</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_justify" class="nav-link">Justify content</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_align_items" class="nav-link">Align items</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_align_self" class="nav-link">Align self</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_fill" class="nav-link">Fill</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_stretch" class="nav-link">Stretch</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_grow_shrink" class="nav-link">Grow and shrink</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_margins" class="nav-link">Auto margins</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_wrap" class="nav-link">Wrap</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_order" class="nav-link">Order</a>
+										</li>
+										<li class="nav-item">
+											<a href="#helpers_flex_align_content" class="nav-link">Align content</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

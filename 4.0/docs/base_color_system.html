@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link active">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Colors</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Overview -->
+							<div class="mb-3" id="overview">
+								<h1 class="display-6 fw-bold">Color system</h1>
+
+								<div class="mb-3 pt-2" id="overview_intro">
+									<h3 class="fw-bold">Overview</h3>
+									<p>Custom color system - a set of CSS classes and SCSS variables that allow to change colors on-the-fly directly in markup by changing class name or use color tints and shades in SCSS code. Color system includes 11 color palettes: 6 contextual (primary, secondary, danger, success, warning and info) and 5 secondary colors. The system is fully controlled by variable maps in <code>_variables-core.scss</code> and is a part of Bootstrap core since version 3.0.</p>
+
+									<p>The color system is supported by almost all layout elements and components: sidebar, navbar, content panels, links, text, icons, alerts, dropdown menus, form components, tables, tabs, progress bars, buttons, notifications, popovers, tooltips, badges etc. The system consists of 11 color palettes, each palette includes 1 main color (e.g. <code>.bg-danger</code>) in both HEX and RGB formats, color classes also support alpha transparency that can be set via <code>.bg-opacity-[0|10|20|25|50|75]</code> classes. List fo colors can be easily extended by adding or removing properties in <code>$theme-colors</code> and <code>$dark-theme-colors</code> SASS maps in <code>_variables-core.scss</code> file.</p>
+
+									<p>Available color palettes:</p>
+									<ul class="list mb-3">
+										<li>Primary palette</li>
+										<li>Secondary palette</li>
+										<li>Danger palette</li>
+										<li>Success palette</li>
+										<li>Warning palette</li>
+										<li>Info palette</li>
+										<li>Pink palette</li>
+										<li>Purple palette</li>
+										<li>Indigo palette</li>
+										<li>Teal palette</li>
+										<li>Yellow palette</li>
+									</ul>
+
+									<p>When you add a new color to <code>$theme-colors</code> or <code>$dark-theme-colors</code> SASS maps in <code>_variables-core.scss</code> file, template configuration automatically creates a CSS variable for this color in HEX and RGB format and adds it to the root level.</p>
+
+									<pre class="language-scss">
+										<code>
+											// SCSS input
+											$theme-colors: (
+												"indigo-100": $indigo-100,
+												...
+											);
+
+											// CSS output
+											:root,
+											[data-color-theme=light] {
+												--indigo-100: #eff0f9;
+												--indigo-100-rgb: 239,240,249;
+												...
+											}
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2" id="overview_usage">
+									<h3 class="fw-bold">Basic usage</h3>
+									<p class="mb-3">Usage is very simple, all you need to do is to add one of the color CSS classes to the element. Limitless template includes a bunch of pages with demonstration of how color palette is used - in components, elements and layout parts. Depending on what part of element you want to change, available classes are (<code>primary</code> palette is an example):</p>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Class</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="2" class="table-light">Background</th>
+												</tr>
+												<tr>
+													<td><code>.bg-primary</code></td>
+													<td>Background color. Can be added to dropdown menus, sidebar, navbar, alerts, inputs, cards, selects etc. In certain cases requires <code>.text-white</code> class to inverse text color</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light">Borders</th>
+												</tr>
+												<tr>
+													<td><code>.border-primary</code></td>
+													<td>Border color. Any element that contains border. Can be used in combination with <code>.border</code> class that adds a border to an element</td>
+												</tr>
+												<tr>
+													<td><code>border-top-primary</code></td>
+													<td>Top border only. Any element that contains all sides border or <strong>top</strong> border only. Can be used in combination with <code>.border-top</code> class that adds a top border to an element</td>
+												</tr>
+												<tr>
+													<td><code>border-bottom-primary</code></td>
+													<td>Bottom border only. Any element that contains all sides border or <strong>bottom</strong> border only. Can be used in combination with <code>.border-bottom</code> class that adds a bottom border to an element</td>
+												</tr>
+												<tr>
+													<td><code>border-start-primary</code></td>
+													<td>Left border only. Any element that contains all sides border or <strong>left</strong> border only. Can be used in combination with <code>.border-start</code> class that adds a left border to an element</td>
+												</tr>
+												<tr>
+													<td><code>border-end-primary</code></td>
+													<td>Right border only. Any element that contains all sides border or <strong>right</strong> border only. Can be used in combination with <code>.border-end</code> class that adds a right border to an element</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light">Text</th>
+												</tr>
+												<tr>
+													<td><code>.text-primary</code></td>
+													<td>Text color. Can be used in text, icons and links</td>
+												</tr>
+												<tr>
+													<td><code>.link-primary</code></td>
+													<td>Text link color. Used in links only</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light">Buttons</th>
+												</tr>
+												<tr>
+													<td><code>.btn-primary</code></td>
+													<td>Solid button color</td>
+												</tr>
+												<tr>
+													<td><code>.btn-outline-primary</code></td>
+													<td>Outline button color</td>
+												</tr>
+												<tr>
+													<td><code>.btn-flat-primary</code></td>
+													<td>Flat button color</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light">Alerts</th>
+												</tr>
+												<tr>
+													<td><code>.alert-primary</code></td>
+													<td>Alert color. Can be used in all alert style variations</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light">Table</th>
+												</tr>
+												<tr>
+													<td><code>.table-primary</code></td>
+													<td>Table cell/row color</td>
+												</tr>
+
+												<tr>
+													<th colspan="2" class="table-light">List group</th>
+												</tr>
+												<tr>
+													<td><code>.list-group-item-primary</code></td>
+													<td>Text and links in link group</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="overview_colors">
+									<h3 class="fw-bold">Colors</h3>
+									<p>Color system uses custom color palette generated from 1 primary color (e.g. <code>$blue-500</code>) using SASS color functions: <code>tint-color()</code> for lighter color and <code>shade-color()</code> for lighter colors. Lightness and darkness step varies from 20% to 30%. Colored blocks below demonstrate all color codes and variables used in the template:</p>
+
+									<div class="row">
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #e7f3ff;">100 <span class="ms-auto">$blue-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #9ecdff;">200 <span class="ms-auto">$blue-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #6db5ff;">300 <span class="ms-auto">$blue-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #3d9cff;">400 <span class="ms-auto">$blue-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #0c83ff;">500 <span class="ms-auto">$blue-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #0a69cc;">600 <span class="ms-auto">$blue-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #074f99;">700 <span class="ms-auto">$blue-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #053466;">800 <span class="ms-auto">$blue-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #010d1a;">900 <span class="ms-auto">$blue-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Primary (blue) palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #e9f1f5;">100 <span class="ms-auto">$slate-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #a7c7d5;">200 <span class="ms-auto">$slate-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #7caac1;">300 <span class="ms-auto">$slate-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #508eac;">400 <span class="ms-auto">$slate-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #247297;">500 <span class="ms-auto">$slate-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #1d5b79;">600 <span class="ms-auto">$slate-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #16445b;">700 <span class="ms-auto">$slate-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #0e2e3c;">800 <span class="ms-auto">$slate-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #07171e;">900 <span class="ms-auto">$slate-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Secondary (slate) palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #fdecec;">100 <span class="ms-auto">$red-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #f9b4b4;">200 <span class="ms-auto">$red-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #f58f8f;">300 <span class="ms-auto">$red-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #f26969;">400 <span class="ms-auto">$red-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #EF4444;">500 <span class="ms-auto">$red-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #bf3636;">600 <span class="ms-auto">$red-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #8f2929;">700 <span class="ms-auto">$red-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #601b1b;">800 <span class="ms-auto">$red-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #180707;">900 <span class="ms-auto">$red-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Danger (red) palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #e6f5f0;">100 <span class="ms-auto">$green-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #9bd5c3;">200 <span class="ms-auto">$green-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #69c0a5;">300 <span class="ms-auto">$green-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #37ab87;">400 <span class="ms-auto">$green-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #059669;">500 <span class="ms-auto">$green-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #047854;">600 <span class="ms-auto">$green-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #035a3f;">700 <span class="ms-auto">$green-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #023c2a;">800 <span class="ms-auto">$green-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #010f0b;">900 <span class="ms-auto">$green-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Success (green) palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #fef3ed;">100 <span class="ms-auto">$orange-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #fbcfb5;">200 <span class="ms-auto">$orange-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #f9b690;">300 <span class="ms-auto">$orange-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #f79e6b;">400 <span class="ms-auto">$orange-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #f58646;">500 <span class="ms-auto">$orange-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #c46b38;">600 <span class="ms-auto">$orange-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #93502a;">700 <span class="ms-auto">$orange-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #62361c;">800 <span class="ms-auto">$orange-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #190d07;">900 <span class="ms-auto">$orange-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Warning (orange) palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #e6f5f7;">100 <span class="ms-auto">$cyan-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #9bd7de;">200 <span class="ms-auto">$cyan-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #68c2ce;">300 <span class="ms-auto">$cyan-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #36aebd;">400 <span class="ms-auto">$cyan-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #049aad;">500 <span class="ms-auto">$cyan-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #037b8a;">600 <span class="ms-auto">$cyan-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #025c68;">700 <span class="ms-auto">$cyan-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #023e45;">800 <span class="ms-auto">$cyan-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #000f11;">900 <span class="ms-auto">$cyan-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Info (cyan) palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #feeff3;">100 <span class="ms-auto">$pink-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #fabecf;">200 <span class="ms-auto">$pink-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #f89db6;">300 <span class="ms-auto">$pink-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #f57d9e;">400 <span class="ms-auto">$pink-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #f35c86;">500 <span class="ms-auto">$pink-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #c24a6b;">600 <span class="ms-auto">$pink-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #923750;">700 <span class="ms-auto">$pink-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #612536;">800 <span class="ms-auto">$pink-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #18090d;">900 <span class="ms-auto">$pink-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Pink palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #f4f1f9;">100 <span class="ms-auto">$purple-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #d2c6e6;">200 <span class="ms-auto">$purple-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #bba9da;">300 <span class="ms-auto">$purple-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #a58dcd;">400 <span class="ms-auto">$purple-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #8e70c1;">500 <span class="ms-auto">$purple-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #725a9a;">600 <span class="ms-auto">$purple-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #554374;">700 <span class="ms-auto">$purple-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #392d4d;">800 <span class="ms-auto">$purple-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #0e0b13;">900 <span class="ms-auto">$purple-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Purple palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #eff0f9;">100 <span class="ms-auto">$indigo-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #bec4e6;">200 <span class="ms-auto">$indigo-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #9da6d9;">300 <span class="ms-auto">$indigo-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #7d89cd;">400 <span class="ms-auto">$indigo-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #5C6BC0;">500 <span class="ms-auto">$indigo-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #4a569a;">600 <span class="ms-auto">$indigo-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #374073;">700 <span class="ms-auto">$indigo-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #252b4d;">800 <span class="ms-auto">$indigo-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #090b13;">900 <span class="ms-auto">$indigo-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Indigo palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #e9f6f5;">100 <span class="ms-auto">$teal-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #a8dbd7;">200 <span class="ms-auto">$teal-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #7dcac2;">300 <span class="ms-auto">$teal-300</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #51b8ae;">400 <span class="ms-auto">$teal-400</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #26A69A;">500 <span class="ms-auto">$teal-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #1e857b;">600 <span class="ms-auto">$teal-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #17645c;">700 <span class="ms-auto">$teal-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #0f423e;">800 <span class="ms-auto">$teal-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #04110f;">900 <span class="ms-auto">$teal-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Teal palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #fffbed;">100 <span class="ms-auto">$yellow-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #ffefb6;">200 <span class="ms-auto">$yellow-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #ffe691;">300 <span class="ms-auto">$yellow-300</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #ffde6d;">400 <span class="ms-auto">$yellow-400</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #ffd648;">500 <span class="ms-auto">$yellow-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #ccab3a;">600 <span class="ms-auto">$yellow-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #99802b;">700 <span class="ms-auto">$yellow-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #66561d;">800 <span class="ms-auto">$yellow-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #1a1507;">900 <span class="ms-auto">$yellow-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Yellow palette</div>
+											</div>
+										</div>
+
+										<div class="col-lg-3">
+											<div class="d-flex py-2 px-3 rounded-top" style="background-color: #F9FAFB;">100 <span class="ms-auto">$gray-100</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #F3F4F6;">200 <span class="ms-auto">$gray-200</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #E5E7EB;">300 <span class="ms-auto">$gray-300</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #D1D5DB;">400 <span class="ms-auto">$gray-400</span></div>
+											<div class="d-flex py-2 px-3" style="background-color: #9CA3AF;">500 <span class="ms-auto">$gray-500</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #6B7280;">600 <span class="ms-auto">$gray-600</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #4B5563;">700 <span class="ms-auto">$gray-700</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #374151;">800 <span class="ms-auto">$gray-800</span></div>
+											<div class="d-flex text-white py-2 px-3" style="background-color: #1F2937;">900 <span class="ms-auto">$gray-900</span></div>
+											<div class="card card-body border-top-0 rounded-top-0">
+												<div class="fw-semibold">Gray palette</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2" id="overview_compile">
+									<h3 class="fw-bold">SCSS and CSS</h3>
+									<p>In version 3.0 color system is embedded in the core scss and no longer has separate files: <code>_colors.scss</code> and <code>_palette.scss</code>. Now all color variables are located in <code>_variables-core.scss</code> file in each layout and theme.</p>
+									<p>The code contains a set of 9 variables per each color and each color shade is generated dynamically from 1 main color HEX value. This means if you want to change e.g. primary color, you need to update only 1 variable and re-compile SCSS files, the system will generate all additional colors on-the-fly. You can find all color variables in <code>_variables-core.scss</code> file. This is how it works:</p>
+
+									<pre class="language-scss mb-3">
+										<code>
+											// Define primary colors in HEX format
+											$blue:    #0c83ff;
+											$indigo:  #5C6BC0;
+											$purple:  #8e70c1;
+											$pink:    #f35c86;
+											$red:     #EF4444;
+											$orange:  #f58646;
+											$yellow:  #ffd648;
+											$green:   #059669;
+											$teal:    #26A69A;
+											$cyan:    #049aad;
+											$slate:   #247297;
+
+											// Blue color palette
+											$blue-100: tint-color($blue, 90%);
+											$blue-200: tint-color($blue, 60%);
+											$blue-300: tint-color($blue, 40%);
+											$blue-400: tint-color($blue, 20%);
+											$blue-500: $blue;
+											$blue-600: shade-color($blue, 20%);
+											$blue-700: shade-color($blue, 40%);
+											$blue-800: shade-color($blue, 60%);
+											$blue-900: shade-color($blue, 90%);
+
+											// Indigo color palette
+											$indigo-100: tint-color($indigo, 90%);
+											$indigo-200: tint-color($indigo, 60%);
+											$indigo-300: tint-color($indigo, 40%);
+											$indigo-400: tint-color($indigo, 20%);
+											$indigo-500: $indigo;
+											$indigo-600: shade-color($indigo, 20%);
+											$indigo-700: shade-color($indigo, 40%);
+											$indigo-800: shade-color($indigo, 60%);
+											$indigo-900: shade-color($indigo, 90%);
+
+											[...]
+
+
+											// Light theme colors
+											$theme-colors: (
+											    "indigo":     $indigo,
+											    "purple":     $purple,
+											    "pink":       $pink,
+											    "teal":       $teal,
+											    "yellow":     $yellow,
+											    "primary":    $primary,
+											    "secondary":  $secondary,
+											    "success":    $success,
+											    "info":       $info,
+											    "warning":    $warning,
+											    "danger":     $danger,
+											    "light":      $light,
+											    "dark":       $dark,
+											    "black":      $black,
+											    "white":      $white
+											);
+
+											// Dark theme colors
+											$dark-theme-colors: (
+											  "indigo":     $indigo-300,
+											  "purple":     $purple-300,
+											  "pink":       $pink-300,
+											  "teal":     $teal-300,
+											  "yellow":     $yellow-300,
+											  "primary":    $blue-300,
+											  "secondary":  $slate-300,
+											  "success":    $green-300,
+											  "info":       $cyan-300,
+											  "warning":    $orange-300,
+											  "danger":     $red-300,
+											  "light":      $gray-500,
+											  "dark":       $gray-100
+											);
+
+										</code>
+									</pre>
+
+									<p class="mb-3">As you can see in this example, property is a color class name and value is a color variable. If you add a new line to <code>$theme-colors</code> maps with <code>"teal-400": $teal-400</code> values, the system will generate a set of classes with <code>*-400</code> suffix: <code>.bg-teal-400</code>, <code>.alert-teal-400</code>, <code>.text-teal-400</code>, <code>.link-teal-400</code>, <code>.btn-teal-400</code> etc. Same logic works the other way around as well. It will also generate a set of global CSS variables with the same name.</p>
+									<strong>Please note</strong> - solid background colors now require combination with text color utility classes, e.g.<code>&lt;div class="bg-primary text-white"></code> or <code>&lt;div class="bg-primary bg-opacity-10 text-primary"></code>.
+								</div>
+							</div>
+							<!-- /overview -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#overview_intro" class="nav-link">Overview</a>
+								</li>
+								<li class="nav-item">
+									<a href="#overview_usage" class="nav-link">Basic Usage</a>
+								</li>
+								<li class="nav-item">
+									<a href="#overview_colors" class="nav-link">Colors</a>
+								</li>
+								<li class="nav-item">
+									<a href="#overview_compile" class="nav-link">SCSS and CSS</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

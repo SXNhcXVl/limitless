@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link active">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Getting started</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Getting started -->
+							<div class="mb-3" id="gs">
+								<h1 class="display-6 fw-bold">Getting started</h1>
+
+								<div class="mb-3 pt-2" id="gs_overview">
+									<h3 class="fw-bold">Overview</h3>
+									<p>Limitless template includes 6 layouts - 1 main and 5 child (3 with vertical navigation and 3 with horizontal navigation). All layouts are located in 6 different folders with corresponding name. First layout is the main one - it includes a complete set of pages, all possible variations and examples. All other layouts include only layout specific pages, components are not included and can be cherry picked from the main one since components are the same in all layouts. 
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_layouts.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="gs_dependencies">
+									<h3 class="fw-bold">Dependencies</h3>
+									<p class="mb-3">Starting from version 4.0, Limitless template has only 1 dependency - Bootstrap library. jQuery dependency has been removed in the recent version according to Bootstrap and template core is now fully based on vanilla JS. Current Bootstrap version used in the template - <code>5.*</code>. Another breaking change is dropped IE support. Main dependency path is:</p>
+
+									<pre class="language-markup mb-3">
+										<code>
+											&lt;!-- Bootstrap library -->
+											&lt;script type="text/javascript" src="../../../assets/js/bootstrap/bootstrap.bundle.min.js">&lt;/script>
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2" id="gs_structure">
+									<h3 class="fw-bold">Files structure</h3>
+									Each layout includes a bunch of different files responsible for core and optional functionality. All files related to components and content are the same in all layouts: SCSS files, plugins, extensions, libraries, charts, CSS files, files with demo data etc. Only layout parts are different in all layouts: sidebars, navbars, page header and breadcrumbs. To keep the file structure as simple as possible and make code maintenance simpler, all child layouts include only layout specific pages, because in different layouts default look of breadcrumbs and page headers, as well as sidebars and navbar positions, are different and you won't need to overload markup with additional classes. See the table below for more information about files included in the package:
+								</div>
+
+								<div class="table-responsive border rounded">
+									<table class="table">
+										<thead class="table-light">
+											<tr>
+												<th class="border-top-0" style="width: 25%;">What</th>
+												<th class="border-top-0">Quantity</th>
+												<th class="border-top-0">Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>HTML files</td>
+												<td>395</td>
+												<td>In main layout. Additional layouts have from 60 to 90 files</td>
+											</tr>
+											<tr>
+												<td>CSS files</td>
+												<td>8</td>
+												<td>5 main CSS files, 1 CSS for icon fonts and 1 optional <code>animate.min.css</code> animation library. And <code>all.min.css</code> that includes everything</td>
+											</tr>
+											<tr>
+												<td>SCSS files</td>
+												<td>180</td>
+												<td>All SCSS files, including Bootstrap core</td>
+											</tr>
+											<tr>
+												<td>JS files</td>
+												<td>690</td>
+												<td>All JS files, excluding starter kit and CKEditor folders</td>
+											</tr>
+
+											<tr>
+												<td>JSON files</td>
+												<td>17</td>
+												<td>Different demo data sources. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>CSV files</td>
+												<td>11</td>
+												<td>Mainly for charts based on <code>D3.js</code> library. For demo purposes</td>
+											</tr>
+											<tr>
+												<td>TSV files</td>
+												<td>13</td>
+												<td>Mainly for charts based on <code>D3.js</code> library. For demo purposes</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /getting started -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Folders -->
+							<div class="mb-3 pt-3" id="folders">
+								<h1 class="display-6 fw-bold">Folders structure</h1>
+
+								<div class="mb-3 pt-2" id="folders_root">
+									<h3 class="fw-bold">Root folders</h3>
+									<p class="mb-3">By default, Limitless includes HTML, SCSS, compiled CSS, JS, JSON/TSV/CSV, fonts and image files. All these files are properly commented/named and stored inside separate folders, so if you know what you are looking for, should be relatively easy to find it. Template package root includes 6 main folders. Each folder includes related folders and files that correspond to their purpose. Main folders are:</p>
+
+									<div class="table-responsive border rounded mb-3">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 25%;">Folder name</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>/template/assets/</code></td>
+													<td>all global template assets: SCSS/JS files, common CSS files, fonts, images, demo data files etc.</td>
+												</tr>
+												<tr>
+													<td><code>/html/</code></td>
+													<td>all layouts in HTML format</td>
+												</tr>
+												<tr>
+													<td><code>/html/layout_1/</code></td>
+													<td>main layout, includes all components and layout options</td>
+												</tr>
+												<tr>
+													<td><code>/html/layout_[2|3|4|5|6]/</code></td>
+													<td>optional layouts, includes layout specific pages only</td>
+												</tr>
+												<tr>
+													<td><code>/full/</code></td>
+													<td>includes HTML files with a complete set of examples, mainly for demo purposes</td>
+												</tr>
+												<tr>
+													<td><code>/seed/</code></td>
+													<td>starter kit for developers</td>
+												</tr>
+												<tr>
+													<td><code>/html/layout_*/assets/</code></td>
+													<td>layout specific assets - CSS and JS files</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_root.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="folders_assets">
+									<h3 class="fw-bold">Global assets folder</h3>
+									<p class="mb-3">Assets folder contains 7 sub folders, each folder includes a bunch of subfolders with related files. <code>/demo/</code> folder is used for demo purposes only, it contains JSON/TSV/CSV files with demo data for multi level tree, maps, typeahead, file uploaders, wizard, charts, JS files for pages and internationalization. Main asset subfolders are:</p>
+
+									<div class="table-responsive border rounded mb-3">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 25%;">Folder name</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>/css/</code></td>
+													<td>folder with icon fonts and other <strong>common</strong> CSS files that can be used in all layouts</td>
+												</tr>
+												<tr>
+													<td><code>/demo/</code></td>
+													<td>all JSON/TSV/CSV/JS files with remote data used in data tables, charts, dynamic trees, pages etc.</td>
+												</tr>
+												<tr>
+													<td><code>/images/</code></td>
+													<td>folder with images, doesn't include any demo images from live preview as it's not allowed</td>
+												</tr>
+												<tr>
+													<td><code>/js/</code></td>
+													<td>all core libraries, extensions and plugins are stored inside this folder</td>
+												</tr>
+												<tr>
+													<td><code>/locales</code></td>
+													<td>demo files with translations of main navigation, used in live preview for demo purposes only</td>
+												</tr>
+												<tr>
+													<td><code>/scss</code></td>
+													<td>all SCSS files, grouped by category and component</td>
+												</tr>
+												<tr>
+													<td><code>/fonts/</code></td>
+													<td>local font files used in the template</td>
+												</tr>
+												<tr>
+													<td><code>/icons/</code></td>
+													<td>CSS and font files for icon sets</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_assets.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="folders_css">
+									<h3 class="fw-bold">CSS folder</h3>
+									<p class="mb-3">Some uncategorized 3rd party CSS files that can be used globally. In the current Limitless version contains only 1 file - <code>animate.min.css</code>, a cross-browser library of CSS animations.</p>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_css.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="folders_demo_data">
+									<h3 class="fw-bold">Demo folder</h3>
+									<p class="mb-3">Demo folder includes all file types with remote data sets: JSON/TSV/CSV file types used in charts, maps, dynamic multi level tree, data tables, tag inputs, autocomplete extension, multiple file uploader, form wizard and pages. All these files are for demonstration purposes only. Child folders structure:</p>
+
+									<div class="table-responsive border rounded mb-3">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 25%;">Folder name</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td colspan="2" class="table-light">Data</td>
+												</tr>
+												<tr>
+													<td><code>/data/d3/</code></td>
+													<td>Majority of charts that are based on <code>d3.js</code> library use remote data sources. All of them are stored there</td>
+												</tr>
+												<tr>
+													<td><code>/data/dashboard/</code></td>
+													<td>Dashboard charts - areas, heatmap, streamgraph, bullet charts. Also built with D3.js library</td>
+												</tr>
+												<tr>
+													<td><code>/data/fancytree/</code></td>
+													<td>Dynamic multi level tree. Single JSON file contains multiple levels of data, used to build a file tree without markup</td>
+												</tr>
+												<tr>
+													<td><code>/data/gridjs/</code></td>
+													<td>XML files with demo data for Grid.js library</td>
+												</tr>
+												<tr>
+													<td><code>/data/leaflet/</code></td>
+													<td>Demo data for Leaflet maps</td>
+												</tr>
+												<tr>
+													<td><code>/data/offcanvas/</code></td>
+													<td>Demo data for offcanvas component</td>
+												</tr>
+												<tr>
+													<td><code>/data/tables</code></td>
+													<td>Data table demo data sources: simple JSON data source, nested object data and source with 2500 entries for <code>scroller</code> extension</td>
+												</tr>
+												<tr>
+													<td><code>/data/tags_input</code></td>
+													<td>JSON data source used in <code>tags input</code> plugin to fetch city names</td>
+												</tr>
+												<tr>
+													<td><code>/data/uploader</code></td>
+													<td>Empty JSON file required for Plupload uploader queue</td>
+												</tr>
+												<tr>
+													<td><code>/data/wizard</code></td>
+													<td>HTML files used as wizard steps in Stepy wizard</td>
+												</tr>
+
+												<tr>
+													<td colspan="2" class="table-light">Charts</td>
+												</tr>
+												<tr>
+													<td><code>/charts/d3/</code></td>
+													<td>JS configuration files for D3.js library</td>
+												</tr>
+												<tr>
+													<td><code>/charts/c3/</code></td>
+													<td>JS configuration files for C3.js library</td>
+												</tr>
+												<tr>
+													<td><code>/charts/echarts/</code></td>
+													<td>JS configuration files for echarts.js library</td>
+												</tr>
+												<tr>
+													<td><code>/charts/google/</code></td>
+													<td>JS configuration files for Google Charts library</td>
+												</tr>
+												<tr>
+													<td><code>/charts/pages/</code></td>
+													<td>Specific charts for demo pages (dashboards, timelines, profile etc)</td>
+												</tr>
+
+												<tr>
+													<td colspan="2" class="table-light">Locales</td>
+												</tr>
+												<tr>
+													<td><code>/locales/</code></td>
+													<td>JSON files for i18Next.js localization library</td>
+												</tr>
+
+												<tr>
+													<td colspan="2" class="table-light">Maps</td>
+												</tr>
+												<tr>
+													<td><code>/maps/echarts/</code></td>
+													<td>JS files with ECharts maps configuration</td>
+												</tr>
+												<tr>
+													<td><code>/maps/leaflet/</code></td>
+													<td>JS files with Leaflet maps configuration</td>
+												</tr>
+
+												<tr>
+													<td colspan="2" class="table-light">Demo pages</td>
+												</tr>
+												<tr>
+													<td><code>/pages/</code></td>
+													<td>116 JS files that contain page-specific configuration. Used for reference only</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_demo_data.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="folders_images">
+									<h3 class="fw-bold">Images folder</h3>
+									<p class="mb-3">Images folder mostly needed for live preview to store brands and other demo images. But in the template package it doesn't have all of those, but only a set of flags for language switcher, colored icons, logos, and background images. Other images are removed according to Envato Market rules.</p>
+
+									<div class="table-responsive border rounded mb-3">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 25%;">Folder name</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>/backgrounds</code></td>
+													<td>Background images on boxed layout in 1st and 2nd layouts only</td>
+												</tr>
+												<tr>
+													<td><code>/brands</code></td>
+													<td>Some brand logos for demo preview. In vector format</td>
+												</tr>
+												<tr>
+													<td><code>/browsers</code></td>
+													<td>Browser logos in vector format</td>
+												</tr>
+												<tr>
+													<td><code>/lang</code></td>
+													<td>Basic set of country flang in .png format. And a link to download more</td>
+												</tr>
+												<tr>
+													<td><code>/vendor</code></td>
+													<td>Icons for 3rd party JS libraries</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_images.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="folders_js">
+									<h3 class="fw-bold">JS folder</h3>
+									<p class="mb-3">JS folder includes all files responsible for template functionality - plugins, extensions, core template functionality and libraries. Layout assets folder doesn't include any shared JS files, but includes layout specific files only - <code>app.js</code> file which is used in all template pages and contains basic template functionality.</p>
+
+									<div class="table-responsive border rounded mb-3">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 25%;">Folder name</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>/bootstrap/</code></td>
+													<td>Bootstrap files</td>
+												</tr>
+												<tr>
+													<td><code>/jquery/</code></td>
+													<td>Optional jQuery library</td>
+												</tr>
+												<tr>
+													<td><code>/vendor</code></td>
+													<td>All 3rd-party plugins and extensions in separate folders</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_js.png" alt="" style="max-height: 300px;" class="img-thumbnail img-responsive">
+								</div>
+
+								<div class="mb-3 pt-2" id="folders_scss">
+									<h3 class="fw-bold">SCSS folder</h3>
+									<p class="mb-3">SCSS folder includes all files responsible for template styling - core, layout, components, plugins, page kits etc. All files are properly structured and commented. Includes all themes, layouts, shared files used in all layouts, specific overrides of Bootstrap styles and everything else. The main file that needs to be edited first - <code>_config.scss</code>. This file contains core configuration.</p>
+
+									<div class="table-responsive border rounded mb-3">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 25%;">Folder name</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>/_bootstrap</code></td>
+													<td>All native Bootstrap SASS files, without changes</td>
+												</tr>
+												<tr>
+													<td><code>/_bootstrap_limitless</code></td>
+													<td>Set of Bootstrap overrides. Note: if you remove any of these files, template styling will fallback to default Bootstrap styles</td>
+												</tr>
+												<tr>
+													<td><code>/layouts</code></td>
+													<td>Layout specific set of files: variables, layout and main files for compilation</td>
+												</tr>
+												<tr>
+													<td><code>/layouts/layout_*/[theme]/compile</code></td>
+													<td>This folder contains main files that need to be compiled. Gulp file picks up all SCSS files within this folder and generates CSS files. Keep in mind that the more SCSS you have in this folder, the more CSS files you get. And since version 3.0 gulpfile also generates 1 single concatenated and compressed file (<code>all.min.css</code>) that includes everything.</td>
+												</tr>
+												<tr>
+													<td><code>/layouts/layout_*/[theme]/layout</code></td>
+													<td>Includes core layout styling: sidebar, page header, layout and boxed layout.</td>
+												</tr>
+												<tr>
+													<td><code>/layouts/layout_*/[theme]/variables</code></td>
+													<td>Set of variables: <code>_variables-core.scss</code> includes overrides of default Bootstrap variables and color system, <code>_variables-custom.scss</code> includes all other variables related to components and layouts.</td>
+												</tr>
+												<tr>
+													<td><code>/shared</code></td>
+													<td>Set of SCSS files that don't have any layout specific changes and can be used in all layouts and themes: page loaders, helpers, utilities, page kits etc.</td>
+												</tr>
+												<tr>
+													<td><code>/utils</code></td>
+													<td>Some files with custom helpers and mixins, template specific</td>
+												</tr>
+												<tr>
+													<td><code>/themes/[theme]/vendor</code></td>
+													<td>All components, properly structured and commented. Feel free to edit, no exceptions or special notes here.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<p class="text-muted fs-sm">Screenshot</p>
+									<img src="assets/images/screenshots/u/folder_scss.png" style="max-height: 300px;" alt="" class="img-thumbnail img-responsive">
+								</div>
+							</div>
+							<!-- /folders -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#gs" class="nav-link">Getting started</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#gs_overview" class="nav-link">Overview</a>
+										</li>
+										<li class="nav-item">
+											<a href="#gs_dependencies" class="nav-link">Dependencies</a>
+										</li>
+										<li class="nav-item">
+											<a href="#gs_structure" class="nav-link">Files structure</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="#folders" class="nav-link">Folders</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#folders_root" class="nav-link">Root folders</a>
+										</li>
+										<li class="nav-item">
+											<a href="#folders_assets" class="nav-link">Assets folder</a>
+										</li>
+										<li class="nav-item">
+											<a href="#folders_css" class="nav-link">CSS folder</a>
+										</li>
+										<li class="nav-item">
+											<a href="#folders_demo_data" class="nav-link">Demo data folder</a>
+										</li>
+										<li class="nav-item">
+											<a href="#folders_images" class="nav-link">Images folder</a>
+										</li>
+										<li class="nav-item">
+											<a href="#folders_js" class="nav-link">JS folder</a>
+										</li>
+										<li class="nav-item">
+											<a href="#folders_scss" class="nav-link">SCSS folder</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

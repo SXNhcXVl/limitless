@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse show">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link active">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Tables</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Data tables -->
+							<div class="mb-3" id="data">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Data tables</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/tables/datatables/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables library is compatible with IE6 and newer. The extensions require IE8 or newer. All other <i>evergreen</i> browsers (Chrome, Firefox, Safari, Opera) are fully supported.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load jQuery -->
+												&lt;script src="assets/js/jquery/jquery.min.js">&lt;/script>
+
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/tables/datatables/datatables.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add table markup:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Add table -->
+												&lt;table class="table datatable-basic">
+													&lt;thead>
+														&lt;tr>
+															&lt;th>...&lt;/th>
+															...
+														&lt;/tr>
+													&lt;/thead>
+													&lt;tbody>
+														&lt;tr>
+															&lt;td>...&lt;/td>
+														&lt;/tr>
+														...
+													&lt;/tbody>
+												&lt;/table>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Basic initialization
+												$('.datatable-basic').DataTable({
+													autoWidth: false,
+													dom: '&lt;"datatable-header"fl>&lt;"datatable-scroll"t>&lt;"datatable-footer"ip>',
+													language: {
+														search: '&lt;span class="me-3">Filter:&lt;/span> &lt;div class="form-control-feedback form-control-feedback-end flex-fill">_INPUT_&lt;div class="form-control-feedback-icon">&lt;i class="ph-magnifying-glass opacity-50">&lt;/i>&lt;/div>&lt;/div>',
+														searchPlaceholder: 'Type to filter...',
+														lengthMenu: '&lt;span class="me-3">Show:&lt;/span> _MENU_',
+														paginate: { 'first': 'First', 'last': 'Last', 'next': document.dir == "rtl" ? '&larr;' : '&rarr;', 'previous': document.dir == "rtl" ? '&rarr;' : '&larr;' }
+													}
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Datatables extensions</h3>
+									<p class="mb-3">The features that DataTables provides can be greatly enhanced by the use of the plug-ins available on this page, which give many new user interaction and configuration options. Extensions added to the Limitless configuration:</p>
+
+									<ul class="list">
+										<li>
+											<h6><a href="https://datatables.net/extensions/autofill/">AutoFill extension</a></h6>
+											AutoFill adds an Excel like data fill option to DataTables, allowing click and drag over cells, filling in information and incrementing numbers as needed
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/buttons/">Buttons</a></h6>
+											The Buttons extension for DataTables provides a common set of options, API methods and styling to display buttons on a page that will interact with a DataTable. Modules are also provided for data export, printing and column visibility control
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/colreorder/">ColReorder</a></h6>
+											ColReorder adds the ability for the end user to be able to reorder columns in a DataTable through a click and drag operation. This can be useful when presenting data in a table, letting the user move columns that they wish to compare next to each other for easier comparison.
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/fixedcolumns/">FixedColumns</a></h6>
+											FixedColumns "freezes" in place the left most columns in a scrolling DataTable, to provide a guide to the end user (for example an index column)
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/keytable/">KeyTable</a></h6>
+											KeyTable provides Excel like cell navigation on any table. Events (focus, blur, action etc) can be assigned to individual cells, columns, rows or all cells
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/responsive/">Responsive</a></h6>
+											Responsive will automatically optimise the table's layout for different screen sizes through the dynamic column visibility control, making your tables useful on desktop and mobile screens
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/rowreorder/">RowReorder</a></h6>
+											RowReorder adds the ability for rows in a DataTable to be reordered through user interaction with the table (click and drag / touch and drag). Integration with Editor's multi-row editing feature is also available to update rows immediately
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/scroller/">Scroller</a></h6>
+											A virtual renderer for DataTables, allowing the table to look like it scrolls for the full data set, but actually only drawing the rows required for the current display, for fast operation
+										</li>
+
+										<li>
+											<h6><a href="https://datatables.net/extensions/select/">Select</a></h6>
+											Select adds item selection capabilities to a DataTable. Items can be rows, columns or cells, which can be selected independently, or together. Item selection can be particularly useful in interactive tables where users can perform some action on the table such as editing
+										</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Datatables documentation</h3>
+									<p>Full Datatables documentation can be found online on <a href="https://datatables.net/manual/index" target="_blank">Official library website</a>. It's quite big, with a lot of <a href="https://datatables.net/reference/option/" target="_blank">options</a>, <a href="https://datatables.net/manual/events" target="_blank">events</a> and <a href="https://datatables.net/manual/api" target="_blank">powerful API</a>. Also check out <a href="https://datatables.net/reference/index" target="_blank">Full reference</a> and a <a href="https://datatables.net/manual/index" target="_blank">complete manual</a>. Below you can find additional links related to Datatables library.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>datatables.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/tables/datatables/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://datatables.net" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://datatables.net/manual/index" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+
+														<a href="https://github.com/DataTables/DataTables" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /data tables -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- GridJS -->
+							<div class="mb-3 pt-3" id="gridjs">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">GridJS</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">gridjs.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>Grid.js is a Free and open-source JavaScript table plugin. It works with most JavaScript frameworks, including React, Angular, Vue and VanillaJs. The simplicity of Grid.js API will help you to develop advanced JavaScript tables in a few simple and straightforward steps. Grid.js takes advantage of an advanced pipeline to process data. The pipeline is very easy to extend and improve. Key features:</p>
+
+									<ul>
+										<li>Small. Only 12kb with all plugins (minified and gzipped)</li>
+										<li>Fast! Grid.js has an internal pipeline that takes care of caching and processing data</li>
+										<li>Works with all web frameworks</li>
+										<li>Supports all modern web-browsers</li>
+										<li>No vendor lock-in</li>
+										<li>MIT licensed and Free!</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/tables/gridjs/gridjs.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre>
+												<code class="language-javascript">
+													// Demo data
+													const demoData = [
+														["John", "john@example.com", "(353) 01 222 3333", "Netherlands"],
+														["Mark", "mark@gmail.com", "(01) 22 888 4444", "Switzerland"],
+														["Eoin", "eoin@gmail.com", "0097 22 654 00033", "Germany"],
+														["Sarah", "sarahcdd@gmail.com", "+322 876 1233", "France"],
+														["Afshin", "afshin@mail.com", "(353) 22 87 8356", "Norway"]
+													];
+
+													// Basic example
+													const gridjsBasicElement = document.querySelector(".gridjs-example-basic");
+													if(gridjsBasicElement) {
+														const gridjsBasic = new gridjs.Grid({
+															className: {
+																table: 'table'
+															},
+															columns: ["Name", "Email", "Phone Number", "Country"],
+															data: demoData
+														});
+														gridjsBasic.render(gridjsBasicElement);
+													}
+												</code>
+											</pre>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">GridJS documentation</h3>
+									<p>Full GridJS documentation can be found online on <a href="https://gridjs.io/docs/index" target="_blank">Official library website</a>. It includes <a href="https://gridjs.io/docs/config/data" target="_blank">options</a>, <a href="https://gridjs.io/docs/localization/locales" target="_blank">localization</a> and <a href="https://gridjs.io/docs/plugins/basics" target="_blank">plugins API</a>. Below you can find additional links related to GridJS library.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>gridjs.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/tables/gridjs/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://gridjs.io/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://gridjs.io/docs/examples/hello-world" class="btn btn-teal btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-eye"></i></span>
+																Demonstration
+															</a>
+														</p>
+														
+														<a href="https://gridjs.io/docs/index" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /gridJS -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#data" class="nav-link">Data Tables</a>
+								</li>
+								<li class="nav-item">
+									<a href="#gridjs" class="nav-link">Grid.js library</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

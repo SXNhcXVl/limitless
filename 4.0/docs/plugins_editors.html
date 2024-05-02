@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse show">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link active">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Editors</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Ace code editor -->
+							<div class="mb-3" id="ace">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Ace code editor</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/editors/ace/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. It can be easily embedded in any web page and JavaScript application. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project. Main features:</p>
+
+									<div class="row mb-3">
+										<div class="col-md-6">
+											<ul class="list mb-0">
+				                                <li><a href="https://pcwalton.blogspot.com/2010/11/syntax-highlighting-specification.html">Syntax highlighting</a> for over 110 languages (TextMate/Sublime Text<em>.tmlanguage</em> files can be imported)</li>
+				                                <li>Over 20 themes (TextMate/Sublime Text <em>.tmtheme</em> files can be imported)</li>
+				                                <li>Automatic indent and outdent</li>
+				                                <li>An optional command line</li>
+				                                <li>Handles huge documents (four million lines seems to be the limit!)</li>
+				                                <li>Fully customizable key bindings including vim and Emacs modes</li>
+				                                <li>Search and replace with regular expressions</li>
+				                                <li>Highlight matching parentheses</li>
+				                            </ul>
+				                        </div>
+
+				                        <div class="col-md-6">
+											<ul class="list mb-0">
+				                                <li>Toggle between soft tabs and real tabs</li>
+				                                <li>Displays hidden characters</li>
+				                                <li>Drag and drop text using the mouse</li>
+				                                <li>Line wrapping</li>
+				                                <li>Code folding</li>
+				                                <li>Multiple cursors and selections</li>
+				                                <li>Live syntax checker (currently JavaScript/CoffeeScript/CSS/XQuery)</li>
+				                                <li>Cut, copy, and paste functionality</li>
+				                            </ul>
+				                        </div>
+			                        </div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Ace can be easily embedded into any existing web page. You can either use one of pre-packaged versions of <a href="https://github.com/ajaxorg/ace-builds/" target="_blank">ace</a> (just copy one of <code>src*</code> subdirectories somewhere into your project), or use requireJS to load contents of <a href="https://github.com/ajaxorg/ace/tree/master/lib/ace" target="_blank">lib/ace</a> as ace. By default the editor only supports plain text mode; many other languages are available as separate modules.</p>
+									</div>
+
+									<div class="mb-3">
+										<p>Basic markup is:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Basic markup-->
+												&lt;div id="html_editor">
+
+													&lt;!-- Default card -->
+													&lt;div class="card">
+														&lt;div class="card-header d-md-flex">
+															&lt;h5 class="mb-0">
+																Card title
+																&lt;span class="fw-semibold">Default&lt;/span>
+																&lt;small>Full featured toolbar&lt;/small>
+															&lt;/h5>
+														&lt;/div>
+
+														&lt;div class="card-body">
+															Card body
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /default card -->
+
+												&lt;/div>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Initialize via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// HTML editor
+												var html_editor = ace.edit("html_editor");
+												    html_editor.setTheme("ace/theme/monokai");
+												    html_editor.getSession().setMode("ace/mode/html");
+												    html_editor.setShowPrintMargin(false);
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>ace.js, [modes, extensions, themes]</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>global_assets/js/plugins/editors/ace/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>															
+														<p>
+															<a href="https://ace.c9.io/#nav=about" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<a href="https://github.com/ajaxorg/ace" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /ace code editor -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- CKEditor -->
+							<div class="mb-3 pt-3" id="ckeditor">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">CKEditor</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/vendor/editors/ckeditor/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>The rich text editor for every use case. CKEditor 5 allows users to create any type of content in your application, be it documents, reports, emails, notes or chat messages.</p>
+									<p>CKEditor 5 provides every type of WYSIWYG editing solution imaginable. From editors similar to Google Docs and Medium, to Slack or Twitter-like applications, all is possible within a single editing framework.</p>
+									<p>The editor comes with a well-designed UI and perfect UX, so users can easily manage media and tables as well as use advanced features, such as auto-formatting, mentions, Paste from Word or Markdown support.Core features are:</p>
+
+									<ul class="list">
+										<li>Track Changes</li>
+										<li>Comments</li>
+										<li>Revision History</li>
+										<li>Real-time Collaboration</li>
+										<li>Export to PDF and Word</li>
+										<li>Spell and grammar check</li>
+										<li>Pagination</li>
+										<li>Math equations</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<p>Load JavaScript file locally or from CDN:</p>
+
+									<div class="mb-3">
+										<pre>
+											<code class="language-markup">
+												&lt;!-- CDN -->
+												&lt;script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js">&lt;/script>
+
+												&lt;!-- Load locally -->
+												&lt;script src="assets/js/vendor/editors/ckeditor/ckeditor_classic.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Create <code>textarea</code> or <code>div</code> element:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Target element -->
+												&lt;textarea class="form-control" id="ckeditor_classic_prefilled">...&lt;/textarea>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Finally, run this script after the DOM is ready:</p>
+										<pre>
+											<code class="language-javascript">
+												// Editor with prefilled text
+												ClassicEditor.create(document.querySelector('#ckeditor_classic_prefilled'), {
+												heading: {
+													options: [
+														{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+														{ model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+														{ model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+														{ model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
+														{ model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' },
+														{ model: 'heading5', view: 'h5', title: 'Heading 5', class: 'ck-heading_heading5' },
+														{ model: 'heading6', view: 'h6', title: 'Heading 6', class: 'ck-heading_heading6' }
+													]
+												}
+												}).catch(error => {
+													console.error(error);
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Documentation</h3>
+									<p class="mb-3">CKEditor library has a very extensive documentation with lots of different examples, API reference, configuration parameters, migration guide and other services. Please refer to <a href="https://ckeditor.com/docs/">official CKEditor documentation</a> for more information.</p>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>summernote.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/editors/ckeditor/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>															
+														<p>
+															<a href="https://ckeditor.com/ckeditor-5/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://ckeditor.com/docs/" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+
+														<a href="https://github.com/ckeditor/ckeditor5" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /CKEditor -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Quill editor -->
+							<div class="mb-3" id="quill">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Quill editor</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">quill.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">Quill is a free, open source WYSIWYG editor built for the modern web. With its modular architecture and expressive API, it is completely customizable to fit any need. There are many solutions to choose from, but Quill brings a few modern ideas to consider:</p>
+
+									<ul class="list">
+		                                <li>API Driven Design</li>
+		                                <li>Custom Content and Formatting</li>
+		                                <li>Cross Platform</li>
+		                                <li>Easy to Use</li>
+		                            </ul>
+
+		                            If your application never demands it, you never have to customize Quill—just enjoy the rich and consistent experience that comes out of the box.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<p>Load JavaScript file locally or from CDN:</p>
+
+									<div class="mb-3">
+										<pre>
+											<code class="language-markup">
+												&lt;!-- CDN -->
+												&lt;script src="//cdn.quilljs.com/1.3.6/quill.min.js">&lt;/script>
+
+												&lt;!-- Load plugin -->
+												&lt;script src="assets/js/vendor/editors/quill/quill.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Then initialize via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												const quillFull = new Quill('.quill-full', {
+													modules: {
+														toolbar: [
+															[{ 'font': [] }],
+															[{ 'size': ['small', false, 'large', 'huge'] }],
+															[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+															['bold', 'italic', 'underline', 'strike'],
+															['blockquote', 'code-block'],
+															[{ 'header': 1 }, { 'header': 2 }],
+															[{ 'list': 'ordered'}, { 'list': 'bullet' }],
+															[{ 'script': 'sub'}, { 'script': 'super' }],
+															[{ 'indent': '-1'}, { 'indent': '+1' }],
+															[{ 'direction': 'rtl' }],
+															[{ 'color': [] }, { 'background': [] }],
+															[{ 'align': [] }],
+															[ 'formula', 'image', 'video' ],
+															['clean']
+														]
+													},
+													bounds: '.content-inner',
+													placeholder: 'Please add your text here...',
+													theme: 'snow'
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Configuration</h3>
+									<p class="mb-3">Quill allows several ways to customize it to suit your needs. This section is dedicated to tweaking existing functionality</p>
+									
+									<div class="mb-3">
+										<h5 class="fw-bold">Container</h5>
+										<div class="mb-3">
+											Quill requires a container where the editor will be appended. You can pass in either a CSS selector or a DOM object.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Option 1
+												var editor = new Quill('.editor');  // First matching element will be used
+
+												// Option 2
+												var container = document.getElementById('editor');
+												var editor = new Quill(container);
+
+												// Option 3
+												var container = $('.editor').get(0);
+												var editor = new Quill(container);
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">Options</h5>
+										<div class="mb-3">
+											To configure Quill, pass in an options object:
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												var options = {
+													debug: 'info',
+													modules: {
+														toolbar: '#toolbar'
+													},
+													placeholder: 'Compose an epic...',
+													readOnly: true,
+													theme: 'snow'
+												};
+												var editor = new Quill('#editor', options);
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">bounds</h5>
+										<p>Default: <code>document.body</code></p>
+										DOM Element or a CSS selector for a DOM Element, within which the editor’s ui elements (i.e. tooltips, etc.) should be confined. Currently, it only considers left and right boundaries.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">debug</h5>
+										<p>Default: <code>yarn</code></p>
+										Shortcut for debug. Note debug is a static method and will affect other instances of Quill editors on the page. Only warning and error messages are enabled by default.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">formats</h5>
+										<p>Default: All formats</p>
+										Whitelist of formats to allow in the editor
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">modules</h5>
+										<p>Default: null</p>
+										Collection of modules to include and respective options
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">placeholder</h5>
+										<p>Default: <code>none</code></p>
+										Placeholder text to show when editor is empty.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">readOnly</h5>
+										<p>Default: <code>false</code></p>
+										Whether to instantiate the editor to read-only mode.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">scrollingContainer</h5>
+										<p>Default: <code>null</code></p>
+										DOM Element or a CSS selector for a DOM Element, specifying which container has the scrollbars (i.e. <code>overflow-y: auto</code>), if is has been changed from the default <code>ql-editor</code> with custom CSS. Necessary to fix scroll jumping bugs when Quill is set to auto grow its height, and another ancestor container is responsible from the scrolling.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">theme</h5>
+										<p>Default: <code>snow</code></p>
+										Name of theme to use. The builtin options are “bubble” or “snow”. An invalid or falsy value will load a default minimal theme. Note the theme’s specific stylesheet still needs to be included manually
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">API</h3>
+
+									<h5 class="fw-bold">Content</h5>
+									<div class="mb-3">
+										<h5 class="fw-bold">deleteText</h5>
+										<div class="mb-3">
+											Deletes text from the editor, returning a Delta representing the change. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the source is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												deleteText(index: Number, length: Number, source: String = 'api'): Delta
+
+												// Example
+												quill.deleteText(6, 4);
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">getContents</h5>
+										<div class="mb-3">
+											Retrieves contents of the editor, with formatting data, represented by a Delta object
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												getContents(index: Number = 0, length: Number = remaining): Delta
+
+												// Example
+												var delta = quill.getContents();
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">getLength</h5>
+										<div class="mb-3">
+											Retrieves the length of the editor contents. Note even when Quill is empty, there is still a blank line represented by ‘\n’, so <code>getLength</code> will return 1.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												getLength(): Number
+
+												// Example
+												var length = quill.getLength();
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">getText</h5>
+										<div class="mb-3">
+											Retrieves the string contents of the editor. Non-string content are omitted, so the returned string’s length may be shorter than the editor’s as returned by <code>getLength</code>. Note even when Quill is empty, there is still a blank line in the editor, so in these cases <code>getText</code> will return ‘\n’. The <code>length</code> parameter defaults to the length of the remaining document.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												getText(index: Number = 0, length: Number = remaining): String
+
+												// Example
+												var text = quill.getText(0, 10);
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">insertEmbed</h5>
+										<div class="mb-3">
+											Insert embedded content into the editor, returning a Delta representing the change. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the source is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												insertEmbed(index: Number, type: String, value: any, source: String = 'api'): Delta
+
+												// Example
+												quill.insertEmbed(10, 'image', 'https://quilljs.com/images/cloud.png');
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">insertText</h5>
+										<div class="mb-3">
+											Inserts text into the editor, optionally with a specified format or multiple formats. Returns a Delta representing the change. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												insertText(index: Number, text: String, source: String = 'api'): Delta
+												insertText(index: Number, text: String, format: String, value: any,
+															source: String = 'api'): Delta
+												insertText(index: Number, text: String, formats: { [String]: any },
+															source: String = 'api'): Delta
+
+
+												// Examples
+												quill.insertText(0, 'Hello', 'bold', true);
+
+												quill.insertText(5, 'Quill', {
+													'color': '#ffff00',
+													'italic': true
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">setContents</h5>
+										<div class="mb-3">
+											Overwrites editor with given contents. Contents should end with a newline. Returns a Delta representing the change. This will be the same as the Delta passed in, if given Delta had no invalid operations. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												setContents(delta: Delta, source: String = 'api'): Delta
+
+												// Example
+												quill.setContents([
+													{ insert: 'Hello ' },
+													{ insert: 'World!', attributes: { bold: true } },
+													{ insert: '\n' }
+												]);
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">setText</h5>
+										<div class="mb-3">
+											Sets contents of editor with given text, returing a Delta representing the change. Note Quill documents must end with a newline so one will be added for you if omitted. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												setText(text: String, source: String = 'api'): Delta
+
+												// Example
+												quill.setText('Hello\n');
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">updateContents</h5>
+										<div class="mb-3">
+											Applies Delta to editor contents, returing a Delta representing the change. These Deltas will be the same if the Delta passed in had no invalid operations. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												updateContents(delta: Delta, source: String = 'api'): Delta
+
+												// Example
+												// Assuming editor currently contains [{ insert: 'Hello World!' }]
+												quill.updateContents(new Delta()
+													.retain(6)                  // Keep 'Hello '
+													.delete(5)                  // 'World' is deleted
+													.insert('Quill')
+													.retain(1, { bold: true })  // Apply bold to exclamation mark
+												);
+												// Editor should now be [
+												//	{ insert: 'Hello Quill' },
+												//	{ insert: '!', attributes: { bold: true} }
+												// ]
+											</code>
+										</pre>
+									</div>
+
+
+									<h5 class="fw-bold">Formatting</h5>
+									<div class="mb-3">
+										<h5 class="fw-bold">format</h5>
+										<div class="mb-3">
+											Format text at user’s current selection, returning a Delta representing the change. If the user’s selection length is 0, i.e. it is a cursor, the format will be set active, so the next character the user types will have that formatting. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												format(name: String, value: any, source: String = 'api'): Delta
+
+												// Examples
+												quill.format('color', 'red');
+												quill.format('align', 'right');
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">formatLine</h5>
+										<div class="mb-3">
+											Formats all lines in given range, returning a Delta representing the change. See formats for a list of available formats. Has no effect when called with inline formats. To remove formatting, pass <code>false</code> for the value argument. The user’s selection may not be preserved. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Methods
+												formatLine(index: Number, length: Number, source: String = 'api'): Delta
+												formatLine(index: Number, length: Number, format: String, value: any,
+															source: String = 'api'): Delta
+												formatLine(index: Number, length: Number, formats: { [String]: any },
+															source: String = 'api'): Delta
+
+												// Examples
+												quill.setText('Hello\nWorld!\n');
+
+												quill.formatLine(1, 2, 'align', 'right');   // right aligns the first line
+												quill.formatLine(4, 4, 'align', 'center');  // center aligns both lines
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">formatText</h5>
+										<div class="mb-3">
+											Formats text in the editor, returning a Delta representing the change. For line level formats, such as text alignment, target the newline character or use the <code>formatLine</code> helper. See formats for a list of available formats. To remove formatting, pass false for the value argument. The user’s selection may not be preserved. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												formatText(index: Number, length: Number, source: String = 'api'): Delta
+												formatText(index: Number, length: Number, format: String, value: any,
+															source: String = 'api'): Delta
+												formatText(index: Number, length: Number, formats: { [String]: any },
+															source: String = 'api'): Delta
+
+												// Examples
+												quill.setText('Hello\nWorld!\n');
+
+												quill.formatText(0, 5, 'bold', true);      // bolds 'hello'
+
+												quill.formatText(0, 5, {                   // unbolds 'hello' and set its color to blue
+												  'bold': false,
+												  'color': 'rgb(0, 0, 255)'
+												});
+
+												quill.formatText(5, 1, 'align', 'right');  // right aligns the 'hello' line
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">getFormat</h5>
+										<div class="mb-3">
+											Retrieves common formatting of the text in the given range. For a format to be reported, all text within the range must have a truthy value. If there are different truthy values, an array with all truthy values will be reported. If no range is supplied, the user’s current selection range is used. May be used to show which formats have been set on the cursor. If called with no arguments, the user’s current selection range will be used.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												getFormat(range: Range = current): { [String]: any }
+												getFormat(index: Number, length: Number = 0): { [String]: any }
+
+												// Examples
+												quill.setText('Hello World!');
+												quill.formatText(0, 2, 'bold', true);
+												quill.formatText(1, 2, 'italic', true);
+												quill.getFormat(0, 2);   // { bold: true }
+												quill.getFormat(1, 1);   // { bold: true, italic: true }
+
+												quill.formatText(0, 2, 'color', 'red');
+												quill.formatText(2, 1, 'color', 'blue');
+												quill.getFormat(0, 3);   // { color: ['red', 'blue'] }
+
+												quill.setSelection(3);
+												quill.getFormat();       // { italic: true, color: 'blue' }
+
+												quill.format('strike', true);
+												quill.getFormat();       // { italic: true, color: 'blue', strike: true }
+
+												quill.formatLine(0, 1, 'align', 'right');
+												quill.getFormat();       // { italic: true, color: 'blue', strike: true, align: 'right' }
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">removeFormat</h5>
+										<div class="mb-3">
+											Removes all formatting and embeds within given range, returning a Delta representing the change. Line formatting will be removed if any part of the line is included in the range. The user’s selection may not be preserved. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>. Calls where the <code>source</code> is <code>"user"</code> when the editor is disabled are ignored.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												removeFormat(index: Number, length: Number, source: String = 'api'): Delta
+
+												// Examples
+												quill.setContents([
+													{ insert: 'Hello', { bold: true } },
+													{ insert: '\n', { align: 'center' } },
+													{ insert: { formula: 'x^2' } },
+													{ insert: '\n', { align: 'center' } },
+													{ insert: 'World', { italic: true }},
+													{ insert: '\n', { align: 'center' } }
+												]);
+
+												quill.removeFormat(3, 7);
+												// Editor contents are now
+												// [
+												//   { insert: 'Hel', { bold: true } },
+												//   { insert: 'lo\n\nWo' },
+												//   { insert: 'rld', { italic: true }},
+												//   { insert: '\n', { align: 'center' } }
+												// ]
+											</code>
+										</pre>
+									</div>
+
+
+									<h5 class="fw-bold">Selection</h5>
+									<div class="mb-3">
+										<h5 class="fw-bold">getBounds</h5>
+										<div class="mb-3">
+											Retrieves the pixel position (relative to the editor container) and dimensions of a selection at a given location. The user’s current selection need not be at that index. Useful for calculating where to place tooltips.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												getBounds(index: Number, length: Number = 0): { left: Number, top: Number, height: Number, width: Number }
+
+												// Examples
+												quill.setText('Hello\nWorld\n');
+												quill.getBounds(7);  // Returns { height: 15, width: 0, left: 27, top: 31 }
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">getSelection</h5>
+										<div class="mb-3">
+											Retrieves the user’s selection range, optionally to focus the editor first. Otherwise <code>null</code> may be returned if editor does not have focus.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												getSelection(focus = false): { index: Number, length: Number }
+
+												// Examples
+												var range = quill.getSelection();
+												if (range) {
+													if (range.length == 0) {
+														console.log('User cursor is at index', range.index);
+													} else {
+														var text = quill.getText(range.index, range.length);
+														console.log('User has highlighted: ', text);
+													}
+												} else {
+													console.log('User cursor is not in editor');
+												}
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">setSelection</h5>
+										<div class="mb-3">
+											Sets user selection to given range, which will also focus the editor. Providing <code>null</code> as the selection range will blur the editor. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												setSelection(index: Number, length: Number = 0, source: String = 'api')
+												setSelection(range: { index: Number, length: Number }, source: String = 'api')
+
+												// Examples
+												quill.setSelection(0, 5);
+											</code>
+										</pre>
+									</div>
+
+
+									<h5 class="fw-bold">Editor</h5>
+									<div class="mb-3">
+										<h5 class="fw-bold">blur</h5>
+										<div class="mb-3">
+											Removes focus from the editor.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												blur()
+
+												// Examples
+												quill.blur();
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">enable</h5>
+										<div class="mb-3">
+											Set ability for user to edit, via input devices like the mouse or keyboard. Does not affect capabilities of API calls, when the <code>source</code> is <code>"api"</code> or <code>“silent”</code>.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												enable(enabled: boolean = true)
+
+												// Examples
+												quill.enable();
+												quill.enable(false);   // Disables user input
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">focus</h5>
+										<div class="mb-3">
+											Focuses the editor and restores its last range.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												focus()
+
+												// Examples
+												quill.focus();
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">hasFocus</h5>
+										<div class="mb-3">
+											Checks if editor has focus. Note focus on toolbar, tooltips, does not count as the editor.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												hasFocus(): Boolean
+
+												// Examples
+												quill.hasFocus();
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">update</h5>
+										<div class="mb-3">
+											Synchronously check editor for user updates and fires events, if changes have occurred. Useful for collaborative use cases during conflict resolution requiring the latest up to date state. Source may be <code>"user"</code>, <code>"api"</code>, or <code>"silent"</code>.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												update(source: String = 'user')
+
+												// Examples
+												quill.update();
+											</code>
+										</pre>
+									</div>
+
+
+									<h5 class="fw-bold">Extension</h5>
+									<div class="mb-3">
+										<h5 class="fw-bold">debug</h5>
+										<div class="mb-3">
+											Static method enabling logging messages at a given level: <code>'error'</code>, <code>'warn'</code>, <code>'log'</code>, or <code>'info'</code>. Passing true is equivalent to passing <code>'log'</code>. Passing false disables all messages.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												Quill.debug(level: String | Boolean)
+
+												// Examples
+												Quill.debug('info');
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">import</h5>
+										<div class="mb-3">
+											Static method returning Quill library, format, module, or theme. In general the path should map exactly to Quill source code directory structure. Unless stated otherwise, modification of returned entities may break required Quill functionality and is strongly discouraged.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												Quill.import(path): any
+
+												// Examples
+												var Parchment = Quill.import('parchment');
+												var Delta = Quill.import('delta');
+
+												var Toolbar = Quill.import('modules/toolbar');
+												var Link = Quill.import('formats/link');
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">register</h5>
+										<div class="mb-3">
+											Registers a module, theme, or format(s), making them available to be added to an editor. Can later be retrieved with <code>Quill.import</code>. Use the path prefix of <code>'formats/'</code>, <code>'modules/'</code>, or <code>'themes/'</code> for registering formats, modules or themes, respectively. For formats specifically there is a shorthand to just pass in the format directly and the path will be autogenerated. Will overwrite existing definitions with the same path.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												Quill.register(format: Attributor | BlotDefinintion, supressWarning: Boolean = false)
+												Quill.register(path: String, def: any, supressWarning: Boolean = false)
+												Quill.register(defs: { [String]: any }, supressWarning: Boolean = false)
+
+												// Examples
+												Quill.register({
+												  'formats/custom-format': CustomFormat,
+												  'modules/custom-module-a': CustomModuleA,
+												  'modules/custom-module-b': CustomModuleB,
+												});
+
+												Quill.register(CustomFormat);
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">addContainer</h5>
+										<div class="mb-3">
+											Adds and returns a container element inside the Quill container, sibling to the editor itself. By convention, Quill modules should have a class name prefixed with <code>ql-</code>. Optionally include a refNode where container should be inserted before.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												addContainer(className: String, refNode?: Node): Element
+												addContainer(domNode: Node, refNode?: Node): Element
+
+												// Examples
+												var container = quill.addContainer('ql-custom');
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">getModule</h5>
+										<div class="mb-3">
+											Retrieves a module that has been added to the editor.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Method
+												getModule(name: String): any
+
+												// Examples
+												var toolbar = quill.getModule('toolbar');
+											</code>
+										</pre>
+									</div>
+
+
+									<h5 class="fw-bold">Events</h5>
+									<div class="mb-3">
+										<h5 class="fw-bold">text-change</h5>
+										<div class="mb-3">
+											<p>Emitted when the contents of Quill have changed. Details of the change, representation of the editor contents before the change, along with the source of the change are provided. The source will be <code>"user"</code> if it originates from the users. For example:</p>
+
+											<ul class="mb-3">
+												<li>User types into the editor</li>
+												<li>User formats text using the toolbar</li>
+												<li>User uses a hotkey to undo</li>
+												<li>User uses OS spelling correction</li>
+											</ul>
+
+											<p>Changes may occur through an API but as long as they originate from the user, the provided source should still be <code>"user"</code>. For example, when a user clicks on the toolbar, technically the toolbar module calls a Quill API to effect the change. But source is still <code>"user"</code> since the origin of the change was the user’s click.</p>
+
+											<p>APIs causing text to change may also be called with a <code>"silent"</code> source, in which case <code>text-change</code> will not be emitted. This is not recommended as it will likely break the undo stack and other functions that rely on a full record of text changes.</p>
+
+											Changes to text may cause changes to the selection (ex. typing advances the cursor), however during the <code>text-change</code> handler, the selection is not yet updated, and native browser behavior may place it in an inconsistent state. Use <code>selection-change</code> or <code>editor-change</code> for reliable selection updates.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Callback signature
+												handler(delta: Delta, oldContents: Delta, source: String)
+
+												// Examples
+												quill.on('text-change', function(delta, oldDelta, source) {
+													if (source == 'api') {
+														console.log("An API call triggered this change.");
+													} else if (source == 'user') {
+														console.log("A user action triggered this change.");
+													}
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">selection-change</h5>
+										<div class="mb-3">
+											<p>Emitted when a user or API causes the selection to change, with a range representing the selection boundaries. A null range indicates selection loss (usually caused by loss of focus from the editor). You can also use this event as a focus change event by just checking if the emitted range is null or not.</p>
+
+											APIs causing the selection to change may also be called with a <code>"silent"</code> source, in which case <code>selection-change</code> will not be emitted. This is useful if <code>selection-change</code> is a side effect. For example, typing causes the selection to change but would be very noisy to also emit a <code>selection-change</code> event on every character.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Callback signature
+												handler(range: { index: Number, length: Number }, oldRange: { index: Number, length: Number }, source: String)
+
+												// Examples
+												quill.on('selection-change', function(range, oldRange, source) {
+													if (range) {
+														if (range.length == 0) {
+															console.log('User cursor is on', range.index);
+														} else {
+															var text = quill.getText(range.index, range.length);
+															console.log('User has highlighted', text);
+														}
+													} else {
+														console.log('Cursor not in the editor');
+													}
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">editor-change</h5>
+										<div class="mb-3">
+											Emitted when either <code>text-change</code> or <code>selection-change</code> would be emitted, even when the source is <code>"silent"</code>. The first parameter is the event name, either <code>text-change</code> or <code>selection-change</code>, followed by the arguments normally passed to those respective handlers.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Callback signature
+												handler(name: String, ...args)
+
+												// Examples
+												quill.on('editor-change', function(eventName, ...args) {
+													if (eventName === 'text-change') {
+														// args[0] will be delta
+													} else if (eventName === 'selection-change') {
+														// args[0] will be old range
+													}
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">on</h5>
+										<div class="mb-3">
+											Adds event handler. See text-change or <code>selection-change</code> for more details on the events themselves.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Callback signature
+												on(name: String, handler: Function): Quill
+
+												// Examples
+												quill.on('text-change', function() {
+													console.log('Text change!');
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">once</h5>
+										<div class="mb-3">
+											Adds handler for one emission of an event. See <code>text-change</code> or <code>selection-change</code> for more details on the events themselves.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Callback signature
+												once(name: String, handler: Function): Quill
+
+												// Examples
+												quill.once('text-change', function() {
+													console.log('First text change!');
+												});
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">off</h5>
+										<div class="mb-3">
+											Removes event handler.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												// Callback signature
+												off(name: String, handler: Function): Quill
+
+												// Examples
+												function handler() {
+													console.log('Hello!');
+												}
+
+												quill.on('text-change', handler);
+												quill.off('text-change', handler);
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>quill.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/editors/quill/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>															
+														<p>
+															<a href="https://quilljs.com/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<a href="https://github.com/quilljs/quill" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /quill editor -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Trumbowyg text editor -->
+							<div class="mb-3 pt-3" id="trumbowyg">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Trumbowyg</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">/editors/trumbowyg/</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									Trumbowyg is a lightweight WYSIWYG editor optimized for HTML5 support. Options and design are entirely configurable to suit your needs. However, the default design is compatible with Retina display and optimized for a great and simple user experience. Editor can be extended with additional plugins, supports 30+ languages and custom packages. Trumbowyg is an MIT-licensed open source project and completely free to use.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<p class="mb-3">Installation is fairly simple - just load <code>trumbowyg.min.js</code> after <code>jquery.min.js</code> (minimum required version 1.8), make sure <code>$enable-trumbowyg</code> variable in <code>_config.scss</code> is set to <code>true</code> and initialize plugin in JS:</p>
+
+
+									<div class="mb-3">
+										<p>If you don't already do it, load jQuery at bottom of <code>&lt;body></code> or in <code>&lt;head></code> and load Trumbowyg after it. In addition, load necessary plugins:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Include jQuery -->
+												&lt;script src="assets/js/jquery/jquery.min.js">&lt;/script>
+
+												&lt;!-- Include editor -->
+												&lt;script src="assets/js/vendor/editors/trumbowyg/trumbowyg.min.js">&lt;/script>
+
+												&lt;!-- Plugins -->
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/base64/trumbowyg.base64.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/cleanpaste/trumbowyg.cleanpaste.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/colors/trumbowyg.colors.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/insertaudio/trumbowyg.insertaudio.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/noembed/trumbowyg.noembed.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/preformatted/trumbowyg.preformatted.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/template/trumbowyg.template.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/upload/trumbowyg.upload.js">&lt;/script>
+												&lt;script src="assets/js/vendor/editors/trumbowyg/plugins/pasteimage/trumbowyg.pasteimage.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>This the minimal code to transform a simple div into the amazing WYSIWYG editor which is Trumbowyg. Or if you want to set options to Trumbowyg, add an object which contains your options as parameters:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize default editor
+												$('#trumbowyg-demo').trumbowyg();
+
+												// Initialize with options
+												$('#trumbowyg-demo').trumbowyg({
+												    btns: ['strong', 'em', '|', 'insertImage'],
+												    autogrow: true
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Options</h3>
+									<p class="mb-3">Following is a list of all configuration parameters with their corresponding default values:</p>
+									
+									<div class="mb-3">
+										<strong>Prefix</strong>
+										<div class="fs-sm text-muted mb-2">default: 'trumbowyg'</div>
+										<p>You can change prefix of all class added on elements of Trumbowyg using this option:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('textarea').trumbowyg({
+												    prefix: 'custom-prefix'
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Localization</strong>
+										<div class="fs-sm text-muted mb-2">default: null</div>
+										<p>Your users don't speak english? No problem, Trumbowyg has a language parameter. You have to load the appropriate lang file. Search in <code>/dist/langs</code> folder to see if a language file already exists, if not create it and share it :). Don't forget include the lang file in your pages:</p>
+										<pre class="mb-3">
+											<code class="language-markup">
+												&lt;!-- Include lang file -->
+												&lt;script type="text/javascript" src="js/dist/langs/fr.min.js">&lt;/script>
+											</code>
+										</pre>
+
+										Make sure to include lang file after Trumbowyg and before instantiating the editor!
+
+										<p>Usage of language parameter (English is a fallback lang):</p>
+
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('textarea').trumbowyg({
+												    lang: 'fr'
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Button pane</strong>
+										<div class="fs-sm text-muted mb-2">default: all buttons</div>
+										<p>It's probably the most interesting option, it allows you to choose the buttons that appears in the button pane. This option is an array containing string values representing the buttons or vertical separators (using the pipe character). To create your own custom button pane, define an array and pass it to the <code>btns</code> option:</p>
+										<pre>
+											<code class="language-javascript">
+												// Custom button set
+												$('.simple-editor').trumbowyg({
+												    btns: [['bold', 'italic'], ['link']]
+												});
+
+												// Default button set
+												$('.simple-editor').trumbowyg({
+												    btns: [
+												        ['viewHTML'],
+												        ['undo', 'redo'], // Only supported in Blink browsers
+												        ['formatting'],
+												        ['strong', 'em', 'del'],
+												        ['superscript', 'subscript'],
+												        ['link'],
+												        ['insertImage'],
+												        ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+												        ['unorderedList', 'orderedList'],
+												        ['horizontalRule'],
+												        ['removeformat'],
+												        ['fullscreen']
+												    ]
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Hide button texts</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>You can hide button texts showed when you put <code>svgPath</code> to <code>false</code></p>
+										<pre>
+											<code class="language-javascript">
+												// Globally
+												$.trumbowyg.hideButtonTexts = true
+
+												// Or locally
+												$('.trumbowyg').trumbowyg({
+												    hideButtonTexts: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Semantic</strong>
+										<div class="fs-sm text-muted mb-2">default: true</div>
+										<p>Generates a better, more semantic oriented HTML (i.e. <code>&lt;em></code> instead of <code>&lt;i></code>, <code>&lt;strong></code> instead of <code>&lt;b></code>, etc.). It's just a boolean. This option deactivates the underline button by default because they do not convey any real semantic. If you want to reactivate them, you have to do it explicitly
+										:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    semantic: false
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Reset CSS</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>If you don't want the page style to impact on the look of the text in the editor, you will need to apply a reset-css on the editor. You can activate this with the <code>resetCss</code> option:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    resetCss: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Remove format pasted</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>If you don't want styles pasted from clipboard (from Word or other webpage for example), pass the <code>removeformatPasted</code> option to <code>true</code>. In order to use this option, you need to define a font size in your CSS or use a reset like normalize.</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    removeformatPasted: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Auto grow</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>The text editing zone can extend itself when writing a long text. To activate this feature, use the autogrow option::</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    autogrow: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Auto grow on enter</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>The text editing zone can extend itself when editor get focus and reduce on blur. To activate this feature, use the following option:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    autogrowOnEnter: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Image width modal edit</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>Add a field in image insert/edit modal which allow users to set the image width. To activate this feature, use the following option:</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+													imageWidthModalEdit: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>URL protocol</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>An option to auto-prefix URLs with a protocol. When this option is set to <code>true</code>, URLs missing a protocol will be prefixed with <code>https://</code>. Alternatively, a string can be provided for a custom prefix. For example, a value of true would convert example.com to https://example.com, while a value of ftp converts to ftp://example.com.</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    urlProtocol: true
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Minimal links</strong>
+										<div class="fs-sm text-muted mb-2">default: false</div>
+										<p>Reduce the link overlay to use only <code>url</code> and <code>text</code> fields, omitting <code>title</code> and <code>target</code>.</p>
+										<pre>
+											<code class="language-javascript">
+												// Initialize
+												$('.trumbowyg').trumbowyg({
+												    minimalLinks: true
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Modal box API</h3>
+									<p class="mb-3">When you want create your custom extension for Trumbowyg, you can open and close a modal box with custom inner HTML code, listen events and more:</p>
+
+									<div class="mb-3">
+										<strong>Open and close</strong>
+										<p>For that use the <code>.trumbowyg()</code> method and give parameters <code>'openModal'</code> or <code>'closeModal'</code> like that:</p>
+										<pre class="mb-3">
+											<code class="language-javascript">
+												// Open modal box
+												var $modal = $('#editor').trumbowyg('openModal', {
+												    title: 'A title for modal box',
+												    content: '&lt;p>Content in HTML which you want include in created modal box&lt;/p>'
+												});
+
+												// Close current modal box
+												$('#editor').trumbowyg('closeModal');
+											</code>
+										</pre>
+										An <code>openModal</code> call returns a jQuery object which contains the modal box. You need this object if you want to use listen events (see below)
+									</div>	
+
+									<div class="mb-3">
+										<strong>Events on modal box</strong>
+										<div>Modal boxes in Trumbowy come with two buttons: "Confirm" and "Cancel". An event is associated to each one:
+											<ul class="list">
+												<li>tbwsubmit: trigged when form is submit</li>
+												<li>tbwreset: trigged when user cancel operation</li>
+											</ul>
+										</div>
+										
+										<pre>
+											<code class="language-javascript">
+												// Open modal
+												var $modal = $('#editor').trumbowyg('openModal', {
+												    title: 'A title for modal box',
+												    content: '&lt;p>Content in HTML which you want include in created modal box&lt;/p>'
+												});
+
+												// Listen clicks on modal box buttons
+												$modal.on('tbwconfirm', function(e){
+												    // Save datas
+												    $("#editor").trumbowyg('closeModal');
+												});
+												$modal.on('tbwcancel', function(e){
+												    $('#editor').trumbowyg('closeModal');
+												});
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Only build inputs in modal</strong>
+										<p>If you want only add inputs in the modal box, this function is more simple. Indeed, you do not manage confirm and close buttons, and get all input value on confirm.</p>
+										<pre>
+											<code class="language-javascript">
+												// Config
+												var img = $('img#an-img');
+												$("#editor").trumbowyg('openModalInsert', {
+												    title: 'A title for modal box',
+												    fields: {
+												        url: {
+												            value: img.attr('src')
+												        },
+												        alt: {
+												            label: 'Alt',
+												            name: 'alt',
+												            value: img.attr('alt'),
+												            type: 'text'.
+												            attributes: {}
+												        },
+												        example: {
+												            // Missing label is replaced by the key of this object (here 'example')
+												            // Missing name is the key
+												            // When value is missing, value = ''
+												            // When type is missing, 'text' is assumed. You can use all the input field types,
+												            //   plus checkbox and radio (select and textarea are not supported)
+												            // When attributes is missing, {} is used. Attributes are added as attributes to
+												            //   the input element.
+												            // For radio and checkbox fields, you will need to use attributes if you want it
+												            //   to be checked by default.
+												        }
+												    },
+												    callback: function(values){
+												        img.attr('src', values['url']);
+												        img.attr('alt', values['alt']);
+
+												        return true; // Return true if you have finished with this modal box
+												        // If you do not return anything, you must manage the closing of the modal box yourself
+												    }
+												});
+
+												// You can also listen for modal confirm/cancel events to do some custom things
+												// Note: the openModalInsert callback is called on tbwconfirm
+												$modal.on('tbwconfirm', function(e){
+												    // Do what you want
+												});
+												$modal.on('tbwcancel', function(e){
+												    trumbowyg.closeModal();
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Range</h3>
+									<p class="mb-3">Managing correctly text range, is not so trivial. Trumbowyg has a system to save and restore selection range which does not involves typical getter/setter.</p>
+
+									<div class="mb-3">
+										<strong>Save and get current range</strong>
+										<pre>
+											<code class="language-javascript">
+												// Save current range
+												$('#editor').trumbowyg('saveRange');
+
+												// Restore last saved range
+												$('#editor').trumbowyg('restoreRange');
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Get selection range</strong>
+										<pre>
+											<code class="language-javascript">
+												// Range contains a JavaScript range
+												var range = $('#editor').trumbowyg('getRange');
+											</code>
+										</pre>
+									</div>	
+
+									<div class="mb-3">
+										<strong>Get last saved range text</strong>
+										<pre>
+											<code class="language-javascript">
+												// Get text
+												var text = $('#editor').trumbowyg('getRangeText');
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Manage content</h3>
+									<p>You can set and get current HTML content of the editor with a getter/setter:</p>
+									<pre>
+										<code class="language-javascript">
+											// Get HTML content
+											$('#editor').trumbowyg('html');
+
+											// Set HTML content
+											$('#editor').trumbowyg('html', "&lt;p>Your content here&lt;/p>");
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Empty</h3>
+									<p>You can empty the content of the editor.</p>
+									<pre>
+										<code class="language-javascript">
+											// Clear editor
+											$('#editor').trumbowyg('empty');
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Enable/disable edition</h3>
+									<p>As you can disable editor by using <code>disabled</code> option, you can also switch between enabled and disabled states by using API.</p>
+									<pre>
+										<code class="language-javascript">
+											// States
+											$('#editor').trumbowyg('disable');
+											$('#editor').trumbowyg('enable');
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Toggle between HTML & WYSIWYG modes</h3>
+									<p>You can switch between HTML view and WYSIWYG view via toggle method.</p>
+									<pre>
+										<code class="language-javascript">
+											// Toggle views
+											$('#editor').trumbowyg('toggle');
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Destroy editor</h3>
+									<p>When you wish, you can restore the previous state of the element was used to create the editor.</p>
+									<pre>
+										<code class="language-javascript">
+											// Destroy editor
+											$('#editor').trumbowyg('destroy');
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Events</h3>
+									<div class="mb-2">
+										Some events are fired on the jQuery element which is used to build the editor.
+										<ul class="list">
+											<li>Focus on editor: <code>tbwfocus</code></li>
+											<li>Blur on editor: <code>tbwblur</code></li>
+											<li>Editor is initialized: <code>tbwinit</code></li>
+											<li>Change in editor: <code>tbwchange</code></li>
+											<li>Resize the editor on autogrow: <code>tbwresize</code></li>
+											<li>Paste something in the editor: <code>tbwpaste</code></li>
+											<li>Switch to fullscreen mode: <code>tbwopenfullscreen</code></li>
+											<li>Leave editor's fullscreen mode: <code>tbwclosefullscreen</code></li>
+											<li>Close the editor: <code>tbwclose</code></li>
+										</ul>
+									</div>
+									<pre>
+										<code class="language-javascript">
+											// Events
+											$('#editor')
+											.trumbowyg() // Build Trumbowyg on the #editor element
+											.on('tbwfocus', function(){ console.log('Focus!'); }); // Listen for `tbwfocus` event
+											.on('tbwblur', function(){ console.log('Blur!'); }); // Listen for `tbwblur` event
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>trumbowyg.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>global_assets/js/plugins/editors/trumbowyg/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>															
+														<p>
+															<a href="https://alex-d.github.io/Trumbowyg/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<p>
+															<a href="https://alex-d.github.io/Trumbowyg/documentation/" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+
+														<a href="https://github.com/Alex-D/Trumbowyg" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /trumbowyg text editor -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#ace" class="nav-link">Ace Code Editor</a>
+								</li>
+								<li class="nav-item">
+									<a href="#ckeditor" class="nav-link">CKEditor</a>
+								</li>
+								<li class="nav-item">
+									<a href="#quill" class="nav-link">Quill editor</a>
+								</li>
+								<li class="nav-item">
+									<a href="#trumbowyg" class="nav-link">Trumbowyg Editor</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

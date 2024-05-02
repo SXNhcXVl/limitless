@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse show">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link active">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Pickers</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Color picker -->
+							<div class="mb-3" id="spectrum">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Spectrum - color picker</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">spectrum.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									Spectrum is a jQuery Colorpicker plugin. It is easy to skin and customize the plugin with CSS, and there are a wide range of modes and options to explore. Uses a polyfill for the <code>input[type=color]</code> HTML5 control. This mode needs to work without JavaScript enabled - and fallback to an <code>input[type=text]</code> like other HTML5 inputs. If you don't want this behavior to happen, but still want to use spectrum elsewhere on the page, you can set <code>$.fn.spectrum.load = false;</code> right after loading the script file.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load jQuery -->
+												&lt;script type="text/javascript" src="assets/js/jquery/jquery.min.js">&lt;/script>
+
+												&lt;!-- Load plugin -->
+												&lt;script type="text/javascript" src="assets/js/vendor/pickers/color/spectrum.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add input element with attributes:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Markup example -->
+												&lt;input type="text" class="form-control colorpicker-basic" value="#20BF7E">
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<div class="mb-3">
+											<p>Call the plugin via JavaScript:</p>
+											<pre>
+												<code class="language-javascript">
+													// Basic initialization
+													$(".colorpicker-basic").spectrum({
+														// options
+													});
+												</code>
+											</pre>
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Spectrum options and documentation</h3>
+									Full Spectrum documentation can be found online on <a href="https://bgrins.github.io/spectrum/" target="_blank">Official library website</a>. It's very extensive, with lots of <a href="https://bgrins.github.io/spectrum/#options" target="_blank">options</a>, <a href="https://bgrins.github.io/spectrum/#events" target="_blank">events</a> and <a href="https://bgrins.github.io/spectrum/#methods" target="_blank">methods</a>.
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>spectrum.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/pickers/color/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://bgrins.github.io/spectrum" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+														
+														<p>
+															<a href="https://bgrins.github.io/spectrum/#modes" class="btn btn-secondary btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-file-text"></i></span>
+																Full documentation
+															</a>
+														</p>
+
+														<a href="https://github.com/bgrins/spectrum" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /color picker -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Date range picker -->
+							<div class="mb-3 pt-3" id="daterange">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Date range picker</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">daterangepicker.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									This date range picker component for Bootstrap creates a dropdown menu from which a user can select a range of dates. Features include limiting the selectable date range, localizable strings and date formats, a single date picker mode, optional time picker (for e.g. making appointments or reservations), and styles that match the default Bootstrap 5 theme
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load jQuery -->
+												&lt;script type="text/javascript" src="assets/js/jquery/jquery.min.js">&lt;/script>
+
+												&lt;!-- Load Moment.js extension -->
+												&lt;script type="text/javascript" src="assets/js/vendor/ui/moment/moment.min.js">&lt;/script>
+
+												&lt;!-- Load plugin -->
+												&lt;script type="text/javascript" src="assets/js/vendor/pickers/daterangepicker.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add element with attributes:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Add input field -->
+												&lt;input type="text" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015"> 
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Basic initialization
+												$('.daterange-basic').daterangepicker({
+													parentEl: '.content-inner',
+												    applyClass: 'btn-primary',
+												    cancelClass: 'btn-light'
+												});
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin options</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Option</th>
+													<th class="border-top-0" style="width: 200px;">Type</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>startDate</code></td>
+													<td class="fw-semibold">Date object, moment object or string</td>
+													<td>The start of the initially selected date range</td>
+												</tr>
+												<tr>
+													<td><code>endDate</code></td>
+													<td class="fw-semibold">Date object, moment object or string</td>
+													<td>The end of the initially selected date range</td>
+												</tr>
+												<tr>
+													<td><code>minDate</code></td>
+													<td class="fw-semibold">Date object, moment object or string</td>
+													<td>The earliest date a user may select</td>
+												</tr>
+												<tr>
+													<td><code>maxDate</code></td>
+													<td class="fw-semibold">Date object, moment object or string</td>
+													<td>The latest date a user may select</td>
+												</tr>
+												<tr>
+													<td><code>dateLimit</code></td>
+													<td class="fw-semibold">object</td>
+													<td>The maximum span between the selected start and end dates. Can have any property you can add to a moment object (i.e. days, months)</td>
+												</tr>
+												<tr>
+													<td><code>timeZone</code></td>
+													<td class="fw-semibold">string or number</td>
+													<td>The timezone that will be used to display the <code>startDate</code> and <code>endDate</code> in the calendar. This may be a string such as "08:00" or an offset in minutes from Greenwich Mean Time. Uses <strong>Moment.js</strong> #utcOffset. If the <code>timeZone</code> option is not set, the calendar will use the time zone set on the <code>startDate</code> that has been passed in through the options, if it has one. Defaults to the local time zone</td>
+												</tr>
+												<tr>
+													<td><code>showDropdowns</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Show year and month select boxes above calendars to jump to a specific month and year</td>
+												</tr>
+												<tr>
+													<td><code>showWeekNumbers</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Show week numbers at the start of each week on the calendars</td>
+												</tr>
+												<tr>
+													<td><code>timePicker</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Allow selection of dates with times, not just dates</td>
+												</tr>
+												<tr>
+													<td><code>timePickerIncrement</code></td>
+													<td class="fw-semibold">number</td>
+													<td>Increment of the minutes selection list for times (i.e. 30 to allow only selection of times ending in 0 or 30)</td>
+												</tr>
+												<tr>
+													<td><code>timePicker24Hour</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Use 24-hour instead of 12-hour times, removing the AM/PM selection</td>
+												</tr>
+												<tr>
+													<td><code>timePickerSeconds</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Show seconds in the <code>timePicker</code></td>
+												</tr>
+												<tr>
+													<td><code>ranges</code></td>
+													<td class="fw-semibold">object</td>
+													<td>Set predefined date ranges the user can select from. Each key is the label for the range, and its value an array with two dates representing the bounds of the range</td>
+												</tr>
+												<tr>
+													<td><code>opens</code></td>
+													<td class="fw-semibold">string</td>
+													<td>Whether the picker appears aligned to the left, to the right, or centered under the HTML element it's attached to. Available <code>left</code>, <code>right</code> and <code>center</code></td>
+												</tr>
+												<tr>
+													<td><code>drops</code></td>
+													<td class="fw-semibold">string</td>
+													<td>Whether the picker appears below (default) or above the HTML element it's attached to. Available <code>up</code> and <code>down</code></td>
+												</tr>
+												<tr>
+													<td><code>buttonClasses</code></td>
+													<td class="fw-semibold">array</td>
+													<td>CSS class names that will be added to <strong>all</strong> buttons in the picker</td>
+												</tr>
+												<tr>
+													<td><code>applyClass</code></td>
+													<td class="fw-semibold">string</td>
+													<td>CSS class string that will be added to the <strong>apply</strong> button</td>
+												</tr>
+												<tr>
+													<td><code>cancelClass</code></td>
+													<td class="fw-semibold">string</td>
+													<td>CSS class string that will be added to the <strong>cancel</strong> button</td>
+												</tr>
+												<tr>
+													<td><code>locale</code></td>
+													<td class="fw-semibold">object</td>
+													<td>Allows you to provide localized strings for buttons and labels, customize the date display format, and change the first day of week for the calendars</td>
+												</tr>
+												<tr>
+													<td><code>singleDatePicker</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Show only a single calendar to choose one date, instead of a range picker with two calendars; the <code>start</code> and <code>end</code> dates provided to your callback will be the same single date chosen</td>
+												</tr>
+												<tr>
+													<td><code>autoApply</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Hide the apply and cancel buttons, and automatically apply a new date range as soon as two dates or a predefined range is selected</td>
+												</tr>
+												<tr>
+													<td><code>linkedCalendars</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>When enabled, the two calendars displayed will always be for two sequential months (i.e. January and February), and both will be advanced when clicking the left or right arrows above the calendars. When disabled, the two calendars can be individually advanced and display any month/year</td>
+												</tr>
+												<tr>
+													<td><code>parentEl</code></td>
+													<td class="fw-semibold">string</td>
+													<td>jQuery selector of the parent element that the date range picker will be added to, if not provided this will be <code>'body'</code></td>
+												</tr>
+												<tr>
+													<td><code>isInvalidDate</code></td>
+													<td class="fw-semibold">function</td>
+													<td>A function that is passed each date in the two calendars before they are displayed, and may return true or false to indicate whether that date should be available for selection or not</td>
+												</tr>
+												<tr>
+													<td><code>autoUpdateInput</code></td>
+													<td class="fw-semibold">boolean</td>
+													<td>Indicates whether the date range picker should automatically update the value of an <code>&lt;input></code> element it's attached to at initialization and when the selected dates change</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin methods</h3>
+									<div class="mb-3">
+										<p>You can programmatically update the <code>minDate</code> and <code>maxDate</code> in the picker using the <code>setMinDate</code> and <code>setMaxDate</code> methods. You can access the Date Range Picker object and its functions and properties through data properties of the element you attached it to.</p>
+
+										<p>Example usage:</p>
+										<pre>
+											<code class="language-javascript">
+												// Create a new date range picker
+												$('#daterange').daterangepicker({ minDate: '2022-03-05', maxDate: '2022-03-06' });
+
+												// Change the selected date range of that picker
+												$('#daterange').data('daterangepicker').setMinDate('2022-03-01');
+												$('#daterange').data('daterangepicker').setMaxDate('2022-03-31');
+											</code>
+										</pre>
+									</div>
+
+									<p>Available methods</p>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Option</th>
+													<th class="border-top-0">Type</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>setStartDate()</code></td>
+													<td class="fw-semibold">Date/moment/string</td>
+													<td>Sets the date range picker's currently selected start date to the provided date</td>
+												</tr>
+												<tr>
+													<td><code>setEndDate()</code></td>
+													<td class="fw-semibold">Date/moment/string</td>
+													<td>Sets the date range picker's currently selected end date to the provided date</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin events</h3>
+									<div class="mb-3">
+										<p>Several events are triggered on the element you attach the picker to, which you can listen for.</p>
+
+										<p>Example usage:</p>
+										<pre>
+											<code class="language-javascript">
+												// Event example
+												$('#daterange').on('cancel.daterangepicker', function(ev, picker) {
+													//do something, like clearing an input
+													$('#daterange').val('');
+												});
+											</code>
+										</pre>
+									</div>
+
+									<p>Available events</p>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Event</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>show.daterangepicker</code></td>
+													<td>Triggered when the picker is shown</td>
+												</tr>
+												<tr>
+													<td><code>hide.daterangepicker</code></td>
+													<td>Triggered when the picker is hidden</td>
+												</tr>
+												<tr>
+													<td><code>showCalendar.daterangepicker</code></td>
+													<td>Triggered when the calendar(s) are shown</td>
+												</tr>
+												<tr>
+													<td><code>hideCalendar.daterangepicker</code></td>
+													<td>Triggered when the calendar(s) are hidden</td>
+												</tr>
+												<tr>
+													<td><code>apply.daterangepicker</code></td>
+													<td>Triggered when the apply button is clicked, or when a predefined range is clicked</td>
+												</tr>
+												<tr>
+													<td><code>cancel.daterangepicker</code></td>
+													<td>Triggered when the cancel button is clicked</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>daterangepicker.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/pickers/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://www.daterangepicker.com/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<a href="https://github.com/dangrossman/bootstrap-daterangepicker" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /date range picker -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Date picker -->
+							<div class="mb-3 pt-3" id="datepicker">
+								<div class="d-md-flex align-items-md-baseline">
+									<h1 class="display-6 fw-bold">Date picker</h1>
+									<div class="ms-md-3">
+										<span class="text-muted">datepicker.min.js</span>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p>A vanilla JavaScript remake of bootstrap-datepicker for Bulma and other CSS frameworks. This package is written from scratch as ECMAScript modules/Sass stylesheets to reproduce similar usability to bootstrap-datepicker. It can work either standalone or with CSS framework (e.g. Bootstrap, Foundation), but works best with Bulma as it's developed primarily for Bulma. The package also includes pre-built js/css files for those who like to use it directly on browser.</p>
+
+									<ul class="list">
+										<li>Date picker (input-dropdown, inline), date range picker</li>
+										<li>Keyboard operation support (navigation by arrow keys, editing on input field)</li>
+										<li>i18n support (locales, CSS-based text direction detection)</li>
+										<li>Easily customizable to adapt stylesheet for various CSS frameworks</li>
+										<li>Dependency free</li>
+										<li>Made for modern browsers — no support for IE and Edge Legacy (aka non-Chromium Edge)<br><em>** If you need to support Edge Legacy, <a href="https://www.npmjs.com/package/@webcomponents/webcomponentsjs" target="_blank" rel="noopener">Web Components polyfill</a> will allow this library to run on it.</em></li>
+										<li>Lightweight (well, relatively…) — 34kB (minified, uncompressed)</li>
+									</ul>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Usage</h3>
+									<div class="mb-3">
+										<p>Include the following lines of code in the <code>&lt;head></code> section of your HTML:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Load plugin -->
+												&lt;script type="text/javascript" src="assets/js/vendor/pickers/datepicker.min.js">&lt;/script>
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Add element with attributes:</p>
+										<pre>
+											<code class="language-markup">
+												&lt;!-- Add input field -->
+												&lt;input type="text" class="form-control datepicker-basic" placeholder="Pick a date">
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3">
+										<p>Call the plugin via JavaScript:</p>
+										<pre>
+											<code class="language-javascript">
+												// Basic initialization
+												const dpBasicElement = document.querySelector('.datepicker-basic');
+												if(dpBasicElement) {
+													const dpBasic = new Datepicker(dpBasicElement, {
+														container: '.content-inner',
+														buttonClass: 'btn',
+														prevArrow: document.dir == 'rtl' ? '&rarr;' : '&larr;',
+														nextArrow: document.dir == 'rtl' ? '&larr;' : '&rarr;'
+													});
+												}
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Options</h3>
+
+									<div class="mb-3 pt-2">
+										<p>There are 2 kinds of config options: the Datepicker options and the DateRangePicker options. The former are for <code>DatePicker</code> object and the latter are for <code>DateRangePicker</code> object.</p>
+
+										<p>Datepicker options can be used with date range picker. And when doing so, you can pass them mixing with <code>DateRangePicker</code> options into one "options" object. Datepicker options passed to date range picker are applied to its start- and end-date pickers.</p>
+
+										Aside from a couple of exceptions, config options can be updated dynamically using the <code>setOptions()</code> method.
+									</div>
+									
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">autohide</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>false</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to hide the date picker immediately after a date is selected. Not available in inline picker
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">beforeShowDay</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											<p>Function to customize the day cells in the days view. The function is called when each day cell is rendered.</p>
+											<ul>
+												<li>Arguments:
+													<ul>
+														<li><code>date</code>: {<code>Date</code>} - Date associated with the cell</li>
+													</ul>
+												</li>
+												<li>Return:
+													<ul>
+														<li>{<code>Object</code>} - Things to customize. Available properties are:
+															<ul>
+																<li><code>enabled</code>: {<code>Boolean</code>} - whether the cell is selectable</li>
+																<li><code>classes</code>: {<code>String</code>} - space-separated additional CSS classes for the cell element</li>
+																<li><code>content</code>: {<code>String</code>} - HTML for the cell element's child nodes</li>
+															</ul>
+														</li>
+														<li>{<code>String</code>} - additional classes — same as returning <code>{ classes: additionalClasses }</code></li>
+														<li>{<code>Boolean</code>} - whether the cell is selectable — same as returning <code>{ enabled: isSelectable }</code></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												function (date) {
+													let isSelectable, additionalClasses, htmlFragment;
+													//...your customization logic
+
+													return {
+														enabled: isSelectable,
+														classes: additionalClasses,
+														content: htmlFragment,
+													};
+													// Or
+													return additionalClasses;
+													// Or
+													return isSelectable;
+												}
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">beforeShowDecade</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											Function to customize the decade cells in the decades view. The function is called when each decade cell is rendered. See <code>beforeShowDay</code> for the function details.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">beforeShowMonth</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											Function to customize the month cells in the months view. The function is called when each month cell is rendered. See <code>beforeShowDay</code> for the function details.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">beforeShowYear</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											Function to customize the year cells in the years view. The function is called when each year cell is rendered. See <code>beforeShowDay</code> for the function details.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">buttonClass</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>'button'</code></div>
+										</div>
+										<div class="mb-3">
+											CSS class for <code>&lt;button></code> elements. (view switch, prev/next buttons, clear and today buttons). This option should be changed to match the button element class of the CSS framework. (e.g. 'btn' for Bootstrap). For constructor only. Cannot be used with <code>setOptions()</code>.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">calendarWeeks</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>false</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to show the week number (ISO week) on week rows.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">clearBtn</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>false</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to show the clear button.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">container</h5>
+										<div class="mb-3">
+											<div>Type: <code>String | HTMLElement</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											The element or CSS selector for the element to append the date picker. By default, date picker is inserted after the associated input field. This option is for changing where to add the date picker. (e.g. to prevent date picker from being clipped when the input field is inside an element styled with overflow: hidden). On inline picker, this option is ignored and overwritten to the associated element. For constructor only, cannot be used with <code>setOptions()</code>.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">dateDelimiter</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>','</code></div>
+										</div>
+										<div class="mb-3">
+											Delimiter string to separate the dates in a multi-date string. The delimiter must not be included in date format string.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datesDisabled</h5>
+										<div class="mb-3">
+											<div>Type: <code>Array</code></div>
+											<div>Default: <code>[]</code></div>
+										</div>
+										<div class="mb-3">
+											Dates to disable. Array of date strings, Date objects, time values or mix of those. Multi-date string cannot be used. Use multiple single-date strings instead. Given dates are processed to match the <code>pickLevel</code> at the time. If <code>pickLevel</code> is changed dynamically and independently, this option will be reset. This option should be changed together when changing <code>pickLevel</code> dynamically.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">daysOfWeekDisabled</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number[]</code></div>
+											<div>Default: <code>[]</code></div>
+										</div>
+										<div class="mb-3">
+											Days of the week to disable. <code>0</code>:Sunday – <code>6</code>:Saturday, up to 6 items. Ignored when pickLevel is not <code>0</code>:date.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">daysOfWeekHighlighted</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number[]</code></div>
+											<div>Default: <code>[]</code></div>
+										</div>
+										<div class="mb-3">
+											Days of the week to highlight. <code>0</code>:Sunday – <code>6</code>:Saturday, up to 6 items.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">defaultViewDate</h5>
+										<div class="mb-3">
+											<div>Type: <code>String|Date|Number</code></div>
+											<div>Default: current date</div>
+										</div>
+										<div class="mb-3">
+											The date to be focused when the date picker opens with no selected date(s).
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">format</h5>
+										<div class="mb-3">
+											<div>Type: <code>String|Object</code></div>
+											<div>Default: <code>'mm/dd/yyyy'</code></div>
+										</div>
+										<div class="mb-3">
+											Date format string. The format string must not include the <code>dateDelimiter</code> string. This option is used to override the one set in the locale specified by <code>language</code>. Alternatively, object that contains custom parser and formatter functions can be used.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												{
+													format: {
+														toValue(date, format, locale) {
+															let dateObject;
+															//...your custom parse logic
+															return dateObject;
+														},
+														toDisplay(date, format, locale) {
+															let dateString;
+															//...your custom format logic
+															return dateString;
+														},
+													},
+												}
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">getCalendarWeek</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											Allows to customize the algorithm how calendar week numbers are calculated. The type of the <code>getCalendarWeek</code> function has to be <code>(date: Date, weekStart: number) => number</code>, where <code>date</code> is the date for which the calendar week number shall be calculated and <code>weekStart</code> is the first day of the week represented by a number between <code>0</code> and <code>6</code> (<code>0</code> means Sunday, <code>1</code> means Monday, ..., <code>6</code> means Saturday). The return value is the calendar week number (<code>1</code> to <code>53</code>).
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">language</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>'en'</code></div>
+										</div>
+										<div class="mb-3">
+											The language code of the language used by the date picker. For languages other than <code>en</code> to work, their locales must be loaded into your project/program.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">maxDate</h5>
+										<div class="mb-3">
+											<div>Type: <code>String|Date|Number</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											Maximum limit to selectable date. No limit is applied if <code>null</code> is set. Given date is processed to match the <code>pickLevel</code> at the time. If <code>pickLevel</code> is changed dynamically to higher level independently, this option will be adjusted automatically to the last day of the month or December 31st of the year. This option should be changed together when changing <code>pickLevel</code> to lower level dynamically.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">maxNumberOfDates</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number</code></div>
+											<div>Default: <code>1</code></div>
+										</div>
+										<div class="mb-3">
+											Maximum number of dates users can select. No limit is applied if <code>0</code> is set. Not available for date range picker.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">maxView</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number</code></div>
+											<div>Default: <code>3</code></div>
+										</div>
+										<div class="mb-3">
+											Maximum limit to the view that the date picker displays. <code>0</code>:days – <code>3</code>:decades.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">minDate</h5>
+										<div class="mb-3">
+											<div>Type: <code>String|Date|Number</code></div>
+											<div>Default: <code>null</code></div>
+										</div>
+										<div class="mb-3">
+											Minimum limit to selectable date. No limit is applied if null is set. Given date is processed to match the <code>pickLevel</code> at the time. If <code>pickLevel</code> is changed dynamically to higher level independently, this option will be adjusted automatically to the 1st of the month or January 1st of the year. This option should be changed together when changing <code>pickLevel</code> to lower level dynamically.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">nextArrow</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>'»'</code></div>
+										</div>
+										<div class="mb-3">
+											HTML (or plain text) for the button label of the "Next" button.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">orientation</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>'auto'</code></div>
+										</div>
+										<div class="mb-3">
+											Space-separated string for date picker's horizontal and vertical placement to the associated input field. <code>left|right|auto</code> for horizontal and <code>top|bottom|auto</code> for vertical.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">pickLevel</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number</code></div>
+											<div>Default: <code>0</code></div>
+										</div>
+										<div class="mb-3">
+											The level that the date picker allows to pick. <code>0</code>:date, <code>1</code>: month or <code>2</code>:year. When this option is <code>1</code>, the selected date becomes the 1st of the month or, if the date picker is the end-date picker of date range picker, the last day of the month. When this option is <code>2</code>, the selected date becomes January 1st of the year or, if the date picker is the end-date picker of date range picker, December 31st of the year.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">prevArrow</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>'«'</code></div>
+										</div>
+										<div class="mb-3">
+											HTML (or plain text) for the button label of the "Prev" button.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">showDaysOfWeek</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>true</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to show the day names of the week.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">showOnClick</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>true</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to show the date picker when the associated input filed is clicked.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">showOnFocus</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>true</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to show the date picker automatically when the associated input filed receives focus.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">startView</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number</code></div>
+											<div>Default: <code>0</code></div>
+										</div>
+										<div class="mb-3">
+											The view displayed when the date picker opens. <code>0</code>:days – <code>3</code>:decades.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">title</h5>
+										<div class="mb-3">
+											<div>Type: <code>String</code></div>
+											<div>Default: <code>''</code></div>
+										</div>
+										<div class="mb-3">
+											Title string shown in the date picker's title bar. The title bar is not displayed if the title is empty.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">todayBtn</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>false</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to show the today button.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">todayBtnMode</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number</code></div>
+											<div>Default: <code>0</code></div>
+										</div>
+										<div class="mb-3">
+											The mode how the today button behaves. If number is <code>0</code> - move the focused date to the current date without changing the selection. If number is <code>1</code> - select (or toggle the selection of) the current date
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">todayHighlight</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>false</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to highlight the current date.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">updateOnBlur</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>true</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to update the selected date(s) with the input field's value when the input field is losing focus. When this option is <code>false</code>, if the user edits the date string in input field, it will be parsed and applied only when the user presses the <kbd>Enter</kbd> key. If the edit is left unparsed, it will be discarded when input field becomes unfocused (by <kbd>Tab</kbd> key press or click outside the picker element/input field).
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">weekStart</h5>
+										<div class="mb-3">
+											<div>Type: <code>Number</code></div>
+											<div>Default: <code>0</code></div>
+										</div>
+										<div class="mb-3">
+											Start day of the week. <code>0</code>:Sunday – <code>6</code>:Saturday. This option is used to override the one set in the locale specified by <code>language</code>
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">allowOneSidedRange</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+											<div>Default: <code>false</code></div>
+										</div>
+										<div class="mb-3">
+											Whether to allow one side of the date-range to be blank. When this option is <code>false</code>, if the user selects a date on one side while the other side is blank, the date range picker complements the blank side with the same date as the selected side. Similarly, if the user clears one side of the date-range, the date range picker also clears the other side automatically.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">inputs</h5>
+										<div class="mb-3">
+											<div>Type: <code>Element[]</code></div>
+											<div>Default: <code>input</code> elements inside the associated block element</div>
+										</div>
+										<div class="mb-3">
+											Input fields to attach start- and end-date pickers. Must contain 2 items. For constructor only, cannot be used with <code>setOptions()</code>.
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Static properties</h3>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">Datepicker.locales</h5>
+										<div class="mb-3">
+											<div>Type: <code>Object</code></div>
+										</div>
+										<div class="mb-3">
+											Installed locales in <code>[languageCode]: localeObject</code> format. <code>en</code>:English (US) is pre-installed.
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Static methods</h3>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">Datepicker.formatDate()</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+										</div>
+										<div class="mb-3">
+											Format a Date object or a time value using given format and language
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												Datepicker.formatDate( date , format [, lang ] )
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">Datepicker.parseDate()</h5>
+										<div class="mb-3">
+											<div>Type: <code>Function</code></div>
+										</div>
+										<div class="mb-3">
+											Parse date string (or Date/time value) using given format and language
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												Datepicker.parseDate( dateStr , format [, lang ] )
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Instance properties</h3>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">datepicker.active</h5>
+										<div class="mb-3">
+											<div>Type: <code>Boolean</code></div>
+										</div>
+										<div class="mb-3">
+											Whether the picker element is shown (Read-only)
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.pickerElement</h5>
+										<div class="mb-3">
+											<div>Type: <code>HTMLDivElement</code></div>
+										</div>
+										<div class="mb-3">
+											DOM object of picker element (Read-only)
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.rangepicker</h5>
+										<div class="mb-3">
+											<div>Type: <code>DateRangePicker</code></div>
+										</div>
+										<div class="mb-3">
+											DateRangePicker instance that the datepicker belongs to. Only avalable when the datepicker is a part of date range picker (Read-only)
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Instance methods</h3>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">datepicker.destroy()</h5>
+										<div class="mb-3">
+											Destroy the Datepicker instance
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.destroy()
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.getDate()</h5>
+										<div class="mb-3">
+											Get selected date(s). The method returns a Date object of selected date by default, and returns an array of selected dates in multidate mode. If format string is passed, it returns date string(s) formatted in given format.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.getDate( [ format ] )
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.hide()</h5>
+										<div class="mb-3">
+											Hide the picker element. Not available on inline picker
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.hide()
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.refresh()</h5>
+										<div class="mb-3">
+											Refresh the picker element and the associated input field
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.refresh( [ target ], [ forceRender ] )
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.setDate()</h5>
+										<div class="mb-3">
+											<p>Set selected date(s). In multidate mode, you can pass multiple dates as a series of arguments or an array. (Since each date is parsed individually, the type of the dates doesn't have to be the same.). The given dates are used to toggle the select status of each date. The number of selected dates is kept from exceeding the length set to <code>maxNumberOfDates</code>.</p>
+
+											<p>With <code>clear: true</code> option, the method can be used to clear the selection and to replace the selection instead of toggling in multidate mode. If the option is passed with no date arguments or an empty dates array, it works as "clear" (clear the selection then set nothing), and if the option is passed with new dates to select, it works as "replace" (clear the selection then set the given dates).</p>
+
+											<p>When <code>render: false</code> option is used, the method omits re-rendering the picker element. In this case, you need to call <code>refresh()</code> method later in order for the picker element to reflect the changes. The input field is refreshed always regardless of this option.</p>
+
+											When invalid (unparsable, repeated, disabled or out-of-range) dates are passed, the method ignores them and applies only valid ones. In the case that all the given dates are invalid, which is distinguished from passing no dates, the method considers it as an error and leaves the selection untouched. (The input field also remains untouched unless <code>revert: true</code> option is used.)
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.setDate( date1 [, date2 [, ... dateN ]][, options ] )
+												datepicker.setDate( dates [, options ] )
+												datepicker.setDate( [ options ] )
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.setOptions()</h5>
+										<div class="mb-3">
+											Set new values to the config options
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.setOptions( options )
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.show()</h5>
+										<div class="mb-3">
+											Show the picker element
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.show()
+											</code>
+										</pre>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">datepicker.update()</h5>
+										<div class="mb-3">
+											Update the selected date(s) with input field's value. Not available on inline picker. The input field will be refreshed with properly formatted date string. In the case that all the entered dates are invalid (unparsable, repeated, disabled or out-of-range), whixh is distinguished from empty input field, the method leaves the input field untouched as well as the selection by default. If <code>revert: true</code> option is used in this case, the input field is refreshed with the existing selection.
+										</div>
+
+										<pre>
+											<code class="language-javascript">
+												datepicker.update( [ options ] )
+											</code>
+										</pre>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Events</h3>
+
+									<div class="mb-3"> 
+										All Datepicker-event objects are CustomEvent instances and dispatched to the associated &lt;input> element (for inline picker, the block element). They include the following extra data in the detail property.
+
+										<ul>
+											<li><code>date</code>: {<code>Date</code>} - Selected date(s)</li>
+											<li><code>viewDate</code>: {<code>Date</code>} - Focused date</li>
+											<li><code>viewId</code>: {<code>Number</code>} - ID of the current view</li>
+											<li><code>datepicker</code>: {<code>Datepicker</code>} - Datepicker instance</li>
+										</ul>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">changeDate</h5>
+										<div class="mb-3">
+											Fired when the selected dates are changed
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">changeMonth</h5>
+										<div class="mb-3">
+											Fired when the focused date is changed to a different month's date.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">changeView</h5>
+										<div class="mb-3">
+											Fired when the current view is changed.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">changeYear</h5>
+										<div class="mb-3">
+											Fired when the focused date is changed to a different year's date.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">hide</h5>
+										<div class="mb-3">
+											Fired when the date picker becomes hidden.
+										</div>
+									</div>
+
+									<div class="mb-3 pt-2">
+										<h5 class="fw-bold">show</h5>
+										<div class="mb-3">
+											Fired when the date picker becomes visible.
+										</div>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Date format</h3>
+
+									<div class="mb-3">
+										Date format must be declared using the combination of the predefined tokens and separators.
+									</div>
+
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0">Token</th>
+													<th class="border-top-0">Description</th>
+													<th class="border-top-0">Example</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>d</code></td>
+													<td>day of the month without leading zero</td>
+													<td>1, 2, ..., 31</td>
+												</tr>
+												<tr>
+													<td><code>dd</code></td>
+													<td>day of the month with leading zero</td>
+													<td>01, 02, ..., 31</td>
+												</tr>
+												<tr>
+													<td><code>D</code></td>
+													<td>shortened day name of the week</td>
+													<td>Sum, Mon, ..., Sat</td>
+												</tr>
+												<tr>
+													<td><code>DD</code></td>
+													<td>full day name of the week</td>
+													<td>Sunday, Monday, ..., Saturday</td>
+												</tr>
+												<tr>
+													<td><code>m</code></td>
+													<td>numeric month without leading zero</td>
+													<td>1, 2, ..., 12</td>
+												</tr>
+												<tr>
+													<td><code>mm</code></td>
+													<td>numeric month with leading zero</td>
+													<td>01, 02, ..., 12</td>
+												</tr>
+												<tr>
+													<td><code>M</code></td>
+													<td>shortened month name</td>
+													<td>Jan, Feb, ..., Dec</td>
+												</tr>
+												<tr>
+													<td><code>MM</code></td>
+													<td>full month name</td>
+													<td>January, February, ..., December</td>
+												</tr>
+												<tr>
+													<td><code>y</code></td>
+													<td>year without leading zero</td>
+													<td>1, 645, 1900, 2020</td>
+												</tr>
+												<tr>
+													<td><code>yy</code></td>
+													<td>2-digit year with leading zero</td>
+													<td>01, 45, 00, 20</td>
+												</tr>
+												<tr>
+													<td><code>yyyy</code></td>
+													<td>4-digit year with leading zero</td>
+													<td>0001, 0645, 1900, 2020</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Date string</h3>
+
+									<div class="mb-3">
+										Date strings are expected to be formatted in the date format set in the <code>format</code> config option (default: <code>mm/dd/yyyy</code>), but it isn't necessary to match the format strictly.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">How Built-in Parser parses</h5>
+										
+										<p>The built-in parser uses the format string only to determine the sequence in which the date parts (year/month/day/day-of-the-week) and separators appear in the date string. The differences in separator characters, whether to have leading zeros and whether month name (full or short) or month number is used are ignored. Therefore, as long as the parts of a date string appear in the same order as the format's, the variations of the same date's date string are equally parsed to the same date.</p>
+
+										<p>There are some cases the parser treats the parts in specific way:</p>
+										<ul class="list mb-3">
+											<li>year is treated as full year <em>(1-/2-digit years are not mapped to nearby century's)</em></li>
+											<li>month number not between 1 and 12 is treated in the similar way to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth" target="_blank" rel="noopener"><code>Date.prototype.setMonth()</code></a></li>
+											<li>month name is evaluated in case-insensitive begin-with match</li>
+											<li>day not between 1 and last-day-of-the-month is treated in the same way as <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate" target="_blank" rel="noopener"><code>Date.prototype.setDate()</code></a></li>
+											<li>day-of-the-week is not evaluated <em>(not totally ignored, the existence is respected)</em></li>
+											<li>if a part is omitted from the format, missing in the date string or parsed unsuccessfully, current date's value is used to complement.</li>
+										</ul>
+
+										<p>Here are some examples of how irregular date strings are parsed.</p>
+										<ul>
+											<li>Different separators from the format:
+												<ul>
+													<li>if format is <code>yyyy-mm-dd</code>, <code>2020/04/22</code> ⟹ <em>April 22nd, 2020</em></li>
+													<li>if format is <code>m.d.y</code>, <code>1/15 (2018)</code> ⟹ <em>January 15th, 2018</em></li>
+												</ul>
+											</li>
+											<li>With/without leading zeros:
+												<ul>
+													<li>if format is <code>d/m/y</code>, <code>05/06/07</code> ⟹ <em>June 5th, 0007</em></li>
+													<li>if format is <code>yyyy-mm-dd</code>, <code>20-5-4</code> ⟹ <em>May 4th, 0020</em></li>
+												</ul>
+											</li>
+											<li>Number for the month name:
+												<ul>
+													<li>if format is <code>M-d-y</code>, <code>7-14-2020</code> ⟹ <em>July 14th, 2020</em></li>
+												</ul>
+											</li>
+											<li>Incomplete month name/full name for short name:
+												<ul>
+													<li>if format is <code>M-d-y</code>,
+														<ul>
+															<li><code>ap-22-2020</code> ⟹ <em>April 22nd, 2020</em></li>
+															<li><code>sept-22-2020</code> ⟹ <em>September 22nd, 2020</em></li>
+															<li><code>Ju-4-2020</code> ⟹ <em>June 4th, 2020</em></li>
+															<li><code>July-4-2020</code> ⟹ <em>July 4th, 2020</em></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>Month/day outside the normal range:
+												<ul>
+													<li>if format is <code>mm/dd/yyyy</code>,
+														<ul>
+															<li><code>14/31/2019</code> ⟹ <em>March 2nd, 2020</em></li>
+															<li><code>0/0/2020</code> ⟹ <em>November 30th, 2019</em></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>Omitted/missing/invalid parts:
+												<ul>
+													<li>if format is <code>mm/yyyy</code> and current date is <em>January 15th, 2020</em>,
+														<ul>
+															<li><code>04/2022</code> ⟹ <em>April 15th, 2022</em></li>
+														</ul>
+													</li>
+													<li>if format is <code>m/d/y</code> and current date is <em>January 15th, 2020</em>,
+														<ul>
+															<li><code>4/22</code> ⟹ <em>April 22nd, 2020</em></li>
+															<li><code>/22/2016</code> ⟹ <em>January 22nd, 2016</em></li>
+															<li><code>7/xx/2016</code> ⟹ <em>July 15th, 2016</em></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>Day-of-the-week:
+												<ul>
+													<li>if format is <code>D m/d y</code> and current date is <em>January 15th, 2020</em>,
+														<ul>
+															<li><code>xx 5/4 2022</code> ⟹ <em>May 4th, 2022</em></li>
+															<li><code>5/4 2022</code> ⟹ <em>October 13th, 2025 (= April 2022nd, 2020)</em></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">'Today' shortcut</h5>
+										You can use <code>'today'</code> as a shortcut to the current date.
+									</div>
+
+									<div class="mb-3">
+										<h5 class="fw-bold">Multiple dates</h5>
+										You can combine multiple dates into a single date string by joining the dates with the delimiter set in the <code>dateDelimiter</code> config option.
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Plugin info</h3>
+									<div class="table-responsive border rounded">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 250px;">Property</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="fw-semibold">File name</td>
+													<td>datepicker.min.js</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Location</td>
+													<td>assets/js/vendor/pickers/</td>
+												</tr>
+												<tr>
+													<td class="fw-semibold">Links</td>
+													<td>
+														<p>
+															<a href="https://mymth.github.io/vanillajs-datepicker/#/" class="btn btn-danger btn-labeled btn-labeled-start" target="_blank">
+																<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-at"></i></span>
+																Official plugin website
+															</a>
+														</p>
+
+														<a href="https://github.com/mymth/vanillajs-datepicker" class="btn btn-primary btn-labeled btn-labeled-start" target="_blank">
+															<span class="btn-labeled-icon bg-black bg-opacity-20"><i class="ph-github-logo"></i></span>
+															Github project page
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- /date picker -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#spectrum" class="nav-link">Spectrum color picker</a>
+								</li>
+								<li class="nav-item">
+									<a href="#daterange" class="nav-link">Date Range picker</a>
+								</li>
+								<li class="nav-item">
+									<a href="#datepicker" class="nav-link">Datepicker</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

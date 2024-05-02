@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/main/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="assets/js/plugins/prism.min.js"></script>
+	<script src="assets/js/main/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar header -->
+			<div class="sidebar-section border-bottom">
+				<div class="sidebar-logo d-flex justify-content-center align-items-center">
+					<a href="index.html" class="d-inline-flex align-items-center py-2">
+						<img src="assets/images/logo_icon.svg" class="sidebar-logo-icon" alt="">
+						<h4 class="sidebar-resize-hide text-body lh-1 mb-0 ms-3">Limitless</h4>
+					</a>
+
+					<div class="sidebar-resize-hide ms-auto">
+						<span class="badge bg-danger bg-opacity-10 text-danger rounded-pill">v4.0</span>
+						<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none ms-2">
+							<i class="ph-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- /sidebar header -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				<div class="sidebar-section">
+					<div class="sidebar-section-body pb-0">
+						<a href="https://demo.interface.club/limitless/" class="btn btn-yellow w-100" target="_blank">
+							Live preview
+							<i class="ph-arrow-square-out ms-2"></i>
+						</a>
+					</div>
+					<ul class="nav nav-sidebar py-2" data-nav-type="accordion">
+						<li class="nav-item-header mt-1"><div class="text-uppercase fs-sm lh-sm opacity-50">Main</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+						<li class="nav-item"><a href="main_getting_started.html" class="nav-link">Getting started</a></li>
+						<li class="nav-item"><a href="main_starter_kit.html" class="nav-link">Starter kit</a></li>
+						<li class="nav-item"><a href="main_rtl.html" class="nav-link">RTL layout</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Basic functionality</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">SCSS and CSS</a></li>
+						<li class="nav-item"><a href="base_css_variables.html" class="nav-link">CSS variables</a></li>
+						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">Compiling SCSS</a></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">Plugins</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="plugins_forms.html" class="nav-link">Forms</a></li>
+								<li class="nav-item"><a href="plugins_editors.html" class="nav-link">Editors</a></li>
+								<li class="nav-item"><a href="plugins_uploaders.html" class="nav-link">Uploaders</a></li>
+								<li class="nav-item"><a href="plugins_extensions.html" class="nav-link">Extensions</a></li>
+								<li class="nav-item"><a href="plugins_notifications.html" class="nav-link">Notifications</a></li>
+								<li class="nav-item"><a href="plugins_pickers.html" class="nav-link">Pickers</a></li>
+								<li class="nav-item"><a href="plugins_tables.html" class="nav-link">Tables</a></li>
+								<li class="nav-item"><a href="plugins_ui.html" class="nav-link">UI</a></li>
+								<li class="nav-item"><a href="plugins_vis.html" class="nav-link">Visualization</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="base_icons.html" class="nav-link">Icons</a></li>
+
+						<li class="nav-item"><a href="base_bootstrap.html" class="nav-link">Bootstrap</a></li>
+						<li class="nav-item"><a href="base_color_system.html" class="nav-link">Color system</a></li>
+						<li class="nav-item"><a href="base_helpers.html" class="nav-link">Helpers</a></li>
+						<li class="nav-item"><a href="base_themes.html" class="nav-link">Themes</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Layout options</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="layout_overview.html" class="nav-link">Layouts</a></li>
+						<li class="nav-item"><a href="layout_sidebars.html" class="nav-link active">Sidebars</a></li>
+						<li class="nav-item"><a href="layout_navbars.html" class="nav-link">Navbars</a></li>
+						<li class="nav-item"><a href="layout_v_nav.html" class="nav-link">Vertical navigation</a></li>
+						<li class="nav-item"><a href="layout_h_nav.html" class="nav-link">Horizontal navigation</a></li>
+						<li class="nav-item"><a href="layout_page_header.html" class="nav-link">Page header</a></li>
+
+						<li class="nav-item-header mt-2"><div class="text-uppercase fs-sm lh-sm opacity-50">Other</div> <i class="ph-dots-three sidebar-resize-show"></i></li>
+						<li class="nav-item"><a href="other_migration.html" class="nav-link">Migration to v4.0</a></li>
+						<li class="nav-item"><a href="other_credits.html" class="nav-link">Sources and credits</a></li>
+						<li class="nav-item"><a href="other_changelog.html" class="nav-link">Changelog</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /sidebar content -->
+
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Main navbar -->
+			<div class="navbar navbar-expand-lg navbar-static border-bottom">
+				<div class="container-fluid">
+					<div class="d-flex d-lg-none flex-fill me-2">
+						<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+							<i class="ph-list"></i>
+						</button>
+					</div>
+
+					<div class="hstack gap-1 d-none d-lg-flex me-2 mb-0">
+						<a href="index.html" class="text-body fw-semibold d-inline-flex align-items-center gap-2"><i class="ph-house-line"></i> Documentation</a> - <span class="text-muted">Sidebars</span>
+					</div>
+
+					<ul class="nav hstack gap-sm-1 ms-auto">
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328/comments" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-chats"></i>
+									<span class="d-none d-lg-inline-block">Comments</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/reviews/13080328" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-star"></i>
+									<span class="d-none d-lg-inline-block">Reviews</span>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded-pill" target="_blank">
+								<div class="hstack gap-2 mx-lg-1">
+									<i class="ph-lifebuoy"></i>
+									<span class="d-none d-lg-inline-block">Support</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="ms-1 ms-lg-3">
+						<label class="btn btn-light btn-icon border-transparent rounded-pill" for="btncheck1">
+							<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+							<i class="ph-moon"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- /main navbar -->
+
+
+			<!-- Inner content -->
+			<div class="content-inner" data-bs-spy="scroll" data-bs-target="#page_nav" tabindex="0">			
+
+				<!-- Content area -->
+				<div class="content container">
+
+					<!-- Inner container -->
+					<div class="d-flex align-items-stretch align-items-lg-start flex-column flex-lg-row">
+
+						<!-- Left content -->
+						<div class="flex-1 order-2 order-lg-1 wmin-0">
+
+							<!-- Sidebars overview -->
+							<div class="mb-3" id="overview">
+								<h1 class="display-6 fw-bold">Sidebars</h1>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									Sidebar - vertical area that displays onscreen and presents widget components and website navigation menu in a text-based hierarchical form. All sidebars are css-driven - just add one of css classes to the <code>.sidebar</code> container, and sidebar will change its width and color. No js, css only. Although sidebar type is based on css, buttons do their job with JS - they switch necessary classes in <code>.sidebar</code> container. Below you'll find summarized tables with all available <code>button</code> and <code>sidebar</code> container classes. By default, the template includes 6 different sidebar types and combinations. Table below describes all sidebar types and combinations available:
+								</div>
+
+								<div class="table-responsive border rounded">
+									<table class="table">
+										<thead class="table-light">
+											<tr>
+												<th class="border-top-0" style="width: 250px;">Type</th>
+												<th class="border-top-0">Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="fw-semibold">Default sidebar</td>
+												<td>Default template sidebar has <code>300px</code> (~18.75rem) width, aligned to the left (to the right in RTL version) and has dark blue background color. All navigation levels are based on accordion <strong>or</strong> collapsible functionality, open on click. Supports 2 versions: fixed (default) and static (in static layout only). Both versions use default browser scrollbars, but support custom scrollbars such as <code>perfect scrollbar</code> component.</td>
+											</tr>
+											<tr>
+												<td class="fw-semibold">Mini sidebar</td>
+												<td>Mini sidebar has <code>56px</code> width, which is calculated dynamically (icon size + double padding). No text in parent level of menu items, aligned to the left (to the right in RTL version) and has dark blue background color. Sidebar changes the width on hover, no additional changes. It is <strong>required</strong> to add <code>.sidebar-main-resized</code> class to the <code>.sidebar</code> container if you want to have it collapsed by default. This class is responsible for sidebar width and main navigation. By default all components except main navigation are hidden in mini sidebar. Can be used with main sidebar only.</td>
+											</tr>
+											<tr>
+												<td class="fw-semibold">Secondary sidebar</td>
+												<td>Main sidebar has <code>300px</code> width or <code>56px</code> (if <code>.sidebar-main-resized</code> class added). Secondary sidebar has the same fixed width of <code>300px</code>, which is similar to default and right sidebars, so different sidebar components can be used in all sidebar types. Main and secondary sidebars can contain any content - menu, navigation, buttons, lists, tabs etc. Secondary sidebar can be either collapsed or hidden.</td>
+											</tr>
+											<tr>
+												<td class="fw-semibold">Right sidebar</td>
+												<td>Right sidebar layout includes additional sidebar displayed on the right (left in RTL direction) side. It is displayed as an additional component with 100% height, similar to other sidebars. Right sidebar is visible by default, but can be collapsed or hidden.</td>
+											</tr>
+											<tr>
+												<td class="fw-semibold">Right and secondary sidebars</td>
+												<td>Secondary and Right sidebars can be used together, so basically it is a 4 column layout. The width of any sidebar doesn't affect other layout columns, they all have independent width controls. Refer to the table below for more information.</td>
+											</tr>
+											<tr>
+												<td class="fw-semibold">Content sidebar</td>
+												<td>Usually sidebar is not a part of content and mainly used for navigation. Limitless allows you to use sidebar outside and inside content area. Content sidebar isn't based on grid and has the same width as other sidebars, this means all sidebar components can be placed inside content sidebar. Supports left and right positioning and can be either stretched to fill all available height or height that depends on sidebar content height.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- /sidebars overview -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Sidebar markup -->
+							<div class="mb-3 pt-3">
+								<h1 class="display-6 fw-bold" id="markup">Sidebar markup</h1>
+
+								<div class="mb-3">
+									<p>Sidebar markup is the same in layout variations. First and second layouts use the same markup for main and content sidebars, while other layouts don't have optional content sidebars as main sidebars are detached by default. All sidebars support sections and all section components, including header/footer elements. All sections can be collapsed, removed and sorted.</p>
+
+									<p>Main sidebar is different. Although its markup is similar to other sidebars, functionality is different - only main sidebar can be resized using <code>.sidebar-main-resized</code> class added to <code>.sidebar</code> container and collapsed. In resized sidebar only user info block and navigation are visible and adapted to smaller width. Collapsed and hidden states share the same logic, but collapsed displays the full height button that allows you to expand sidebar to full width. You can also control component visibility in resized sidebar by using 2 class names in elements: <code>.sidebar-resize-hide</code> to hide element when sidebar is resized; <code>.sidebar-resize-show</code> to show element when sidebar is resized.</p>
+								</div>
+
+								<div class="mb-3 pt-2" id="markup_main_resizable">
+									<h3 class="fw-bold">Main sidebar markup (resizable)</h3>
+									<p class="mb-3">Main sidebar includes block with user information and main navigation:</p>
+									<pre class="language-markup">
+										<code>
+											&lt;!-- Main sidebar -->
+											&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+												&lt;!-- Sidebar content -->
+												&lt;div class="sidebar-content">
+
+													&lt;!-- Sidebar header -->
+													&lt;div class="sidebar-section">
+														&lt;div class="sidebar-section-body d-flex justify-content-center">
+															&lt;h5 class="sidebar-resize-hide flex-grow-1 my-auto">Navigation&lt;/h5>
+
+															&lt;div>
+																&lt;button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+																	&lt;i class="ph-arrows-left-right">&lt;/i>
+																&lt;/button>
+
+																&lt;button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
+																	&lt;i class="ph-x">&lt;/i>
+																&lt;/button>
+															&lt;/div>
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /sidebar header -->
+
+
+													&lt;!-- Main navigation -->
+													&lt;div class="sidebar-section">
+														...
+													&lt;/div>
+													&lt;!-- /main navigation -->
+
+												&lt;/div>
+												&lt;!-- /sidebar content -->
+
+											&lt;/div>
+											&lt;!-- /main sidebar -->
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2" id="markup_main_collapsible">
+									<h3 class="fw-bold">Main sidebar markup (collapsible)</h3>
+									<p class="mb-3">Main sidebar can be also collapsed or completely hidden. To hide sidebar, remove the <code>.btn-sidebar-expand</code> element:</p>
+									<pre class="language-markup">
+										<code>
+											&lt;!-- Main sidebar -->
+											&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+												&lt;!-- Expand button -->
+												&lt;button type="button" class="btn btn-sidebar-expand sidebar-control sidebar-main-toggle h-100">
+													&lt;i class="ph-caret-right">&lt;/i>
+												&lt;/button>
+												&lt;!-- /expand button -->
+
+
+												&lt;!-- Sidebar content -->
+												&lt;div class="sidebar-content">
+
+													&lt;!-- Sidebar header -->
+													&lt;div class="sidebar-section">
+														&lt;div class="sidebar-section-body d-flex justify-content-center">
+															&lt;h5 class="sidebar-resize-hide flex-grow-1 my-auto">Navigation&lt;/h5>
+
+															&lt;div>
+																&lt;button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-control sidebar-main-toggle d-none d-lg-inline-flex">
+																	&lt;i class="ph-arrows-left-right">&lt;/i>
+																&lt;/button>
+
+																&lt;button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
+																	&lt;i class="ph-x">&lt;/i>
+																&lt;/button>
+															&lt;/div>
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /sidebar header -->
+
+
+													&lt;!-- Main navigation -->
+													&lt;div class="sidebar-section">
+														...
+													&lt;/div>
+													&lt;!-- /main navigation -->
+
+												&lt;/div>
+												&lt;!-- /sidebar content -->
+
+											&lt;/div>
+											&lt;!-- /main sidebar -->
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2" id="markup_secondary">
+									<h3 class="fw-bold">Secondary sidebar markup</h3>
+									<p class="mb-3">Usually secondary sidebar is light and comes after main sidebar and may include alternative navigation and sidebar components:</p>
+									<pre class="language-markup">
+										<code>
+											&lt;!-- Secondary sidebar -->
+											&lt;div class="sidebar sidebar-secondary sidebar-expand-lg">
+
+												&lt;!-- Expand button -->
+												&lt;button type="button" class="btn btn-sidebar-expand sidebar-control sidebar-secondary-toggle h-100">
+													&lt;i class="ph-caret-right">&lt;/i>
+												&lt;/button>
+												&lt;!-- /expand button -->
+
+
+												&lt;!-- Sidebar content -->
+												&lt;div class="sidebar-content">
+
+													&lt;!-- Header -->
+													&lt;div class="sidebar-section sidebar-section-body d-flex align-items-center pb-0">
+														&lt;h5 class="mb-0">Sidebar&lt;/h5>
+														&lt;div class="ms-auto">
+															&lt;button type="button" class="btn btn-light border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-secondary-toggle d-none d-lg-inline-flex">
+																&lt;i class="ph-arrows-left-right">&lt;/i>
+															&lt;/button>
+
+															&lt;button type="button" class="btn btn-light border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-secondary-toggle d-lg-none">
+																&lt;i class="ph-x">&lt;/i>
+															&lt;/button>
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /header -->
+
+
+													&lt;!-- Sidebar section -->
+													&lt;div class="sidebar-section">
+														&lt;div class="sidebar-section-body">&lt;/div>
+													&lt;/div>
+													&lt;!-- /sidebar section -->
+
+												&lt;/div>
+												&lt;!-- /sidebar content -->
+
+											&lt;/div>
+											&lt;!-- /secondary sidebar -->
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2" id="markup_right">
+									<h3 class="fw-bold">Right sidebar markup</h3>
+									<p class="mb-3">Right sidebar appears on the right side from content area. Supports all available sidebar components, can be either dark or white and supports alternative navigation:</p>
+									<pre class="language-markup">
+										<code>
+											&lt;!-- Right sidebar -->
+											&lt;div class="sidebar sidebar-end sidebar-expand-lg">
+
+												&lt;!-- Expand button -->
+												&lt;button type="button" class="btn btn-sidebar-expand sidebar-control sidebar-end-toggle h-100">
+													&lt;i class="ph-caret-left">&lt;/i>
+												&lt;/button>
+												&lt;!-- /expand button -->
+
+
+												&lt;!-- Sidebar content -->
+												&lt;div class="sidebar-content">
+
+													&lt;!-- Header -->
+													&lt;div class="sidebar-section sidebar-section-body d-flex align-items-center pb-0">
+														&lt;h5 class="mb-0">Sidebar&lt;/h5>
+														&lt;div class="ms-auto">
+															&lt;button type="button" class="btn btn-light border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-end-toggle d-none d-lg-inline-flex">
+																&lt;i class="ph-arrows-left-right">&lt;/i>
+															&lt;/button>
+
+															&lt;button type="button" class="btn btn-light border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-end-toggle d-lg-none">
+																&lt;i class="ph-x">&lt;/i>
+															&lt;/button>
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /header -->
+
+
+													&lt;!-- Sidebar section -->
+													&lt;div class="sidebar-section">
+														&lt;div class="sidebar-section-body">&lt;/div>
+													&lt;/div>
+													&lt;!-- /sidebar section -->
+
+												&lt;/div>
+												&lt;!-- /sidebar content -->
+
+											&lt;/div>
+											&lt;!-- /right sidebar -->
+										</code>
+									</pre>
+								</div>
+
+								<div class="mb-3 pt-2" id="markup_content">
+									<h3 class="fw-bold">Content sidebar markup</h3>
+									<p class="mb-3">Detached sidebar is available in 1st, 2nd amd 6th layouts only. Detached sidebar has a bit different markup and supports both left and right positions:</p>
+									<pre class="language-markup">
+										<code>
+											&lt;!-- Content sidebar -->
+											&lt;div class="sidebar sidebar-component sidebar-expand-lg border rounded shadow-sm me-lg-3 mb-3">
+
+												&lt;!-- Sidebar content -->
+												&lt;div class="sidebar-content">
+
+													&lt;!-- Header -->
+													&lt;div class="sidebar-section sidebar-section-body d-flex align-items-center d-lg-none pb-2">
+														&lt;h5 class="mb-0">Sidebar&lt;/h5>
+														&lt;div class="ms-auto">
+															&lt;button type="button" class="btn btn-light border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-component-toggle">
+																&lt;i class="ph-x">&lt;/i>
+															&lt;/button>
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /header -->
+
+
+													&lt;!-- Sidebar section -->
+													&lt;div class="sidebar-section">
+														&lt;div class="sidebar-section-header">
+															...
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /sidebar section -->
+
+												&lt;/div>
+												&lt;!-- /sidebar content -->
+
+											&lt;/div>
+											&lt;!-- /content sidebar -->
+										</code>
+									</pre>
+								</div>
+							</div>
+							<!-- /sidebar markup -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Sidebar classes -->
+							<div class="mb-3 pt-3" id="classes_sidebars">
+								<h1 class="display-6 fw-bold">Sidebar classes</h1>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">This table demonstrates all classes for <code>sidebar</code> container, responsible for the sidebar width and color. Almost all of these classes are mandatory, some of them are responsible for proper styling or have a specific code attached to this class (like <code>.sidebar-main</code> class, which has collapsible functionality). All classes can be combined depending on the type of sidebar:</p>
+									<div class="table-responsive border rounded mb-4">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 300px">Body class</th>
+													<th class="border-top-0">Description</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.sidebar</code></td>
+													<td>Default sidebar class, should be added in all layout types.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-main</code></td>
+													<td>Defines <strong>main</strong> sidebar. Mini sidebar (<code>.sidebar-main-resized</code> class) takes effect only if sidebar has <code>.sidebar-main</code> class. By default, all components except main navigation are hidden in mini sidebar.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-main-resized</code></td>
+													<td>Defines <strong>main</strong> sidebar in <code>collapsed</code> state</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-secondary</code></td>
+													<td>Defines <strong>secondary</strong> sidebar. Has fixed <code>270px</code> width and usually comes after main sidebar.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-secondary-collapsed</code></td>
+													<td>Defines <strong>secondary</strong> sidebar in <code>collapsed</code> state</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-end</code></td>
+													<td>Defines <strong>right</strong> sidebar. Has fixed <code>270px</code> width and appears on the right side from the main sidebar.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-end-collapsed</code></td>
+													<td>Defines <strong>right</strong> sidebar in <code>collapsed</code> state</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-component</code></td>
+													<td>This class is required in <strong>content</strong> (or component) sidebar. Also requires <code>.sidebar-component-left</code> or <code>.sidebar-component-right</code> classes for proper spacing.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-component-collapsed</code></td>
+													<td>Defines <strong>content</strong> sidebar in collapsed state</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-dark</code></td>
+													<td>Defines <strong>dark</strong> sidebar. This class can be applied to all sidebar types and positions. This class is also required for custom colors (see below).</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-dark.bg-*</code></td>
+													<td>Defines sidebar background color. According to the custom color system, sidebar background color can be changed to one of the available colors by adding a proper class to the main sidebar container.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-expand-[breakpoint]</code></td>
+													<td>This class specifies when sidebar needs to be collapsed, basically when sidebar switches to mobile mode. Breakpoint should always be similar to <strong>navbar</strong> breakpoint for proper matching. Available breakpoints are: xl, lg, md and sm. This class is required.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-main-unfold</code></td>
+													<td>This class gets added when user hovers on mini sidebar. It controls resizable behaviour when main sidebar is collapsed. Has no effect on mobile since all sidebars on mobile have same width.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Example Markup</h3>
+									<p>Default left aligned sidebar markup:</p>
+									<pre class="language-markup mb-3" data-line="15">
+										<code>
+											&lt;!-- Default sidebar layout -->
+											&lt;body>
+
+												&lt;!-- Navbar -->
+												&lt;div class="navbar navbar-dark navbar-expand-lg">
+													...
+												&lt;/div>
+												&lt;!-- /navbar -->
+
+
+												&lt;!-- Page container -->
+												&lt;div class="page-content">
+
+													&lt;!-- Main sidebar -->
+													&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+														&lt;div class="sidebar-content">
+															...
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /main sidebar -->
+
+													&lt;!-- Main content -->
+													&lt;div class="content-wrapper">
+														...
+													&lt;/div>
+													&lt;!-- /main content -->
+
+												&lt;/div>
+												&lt;!-- /page content -->
+
+											&lt;/body>
+											&lt;!-- /default sidebar layout -->
+										</code>
+									</pre>
+
+									<p>Mini sidebar markup. The only difference is <code>.sidebar-main-resized</code> class:</p>
+									<pre class="language-markup" data-line="15">
+										<code>
+											&lt;!-- Mini sidebar layout -->
+											&lt;body>
+
+												&lt;!-- Navbar -->
+												&lt;div class="navbar navbar-dark navbar-expand-lg">
+													...
+												&lt;/div>
+												&lt;!-- /navbar -->
+
+
+												&lt;!-- Page container -->
+												&lt;div class="page-content">
+
+													&lt;!-- Main sidebar -->
+													&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg sidebar-main-resized">
+														&lt;div class="sidebar-content">
+															...
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /main sidebar -->
+
+													&lt;!-- Main content -->
+													&lt;div class="content-wrapper">
+														...
+													&lt;/div>
+													&lt;!-- /main content -->
+
+												&lt;/div>
+												&lt;!-- /page content -->
+
+											&lt;/body>
+											&lt;!-- /mini sidebar layout -->
+										</code>
+									</pre>
+								</div>
+							</div>
+							<!-- /sidebar classes -->
+
+
+							<div class="pt-3"><hr></div>
+
+
+							<!-- Button classes -->
+							<div class="mb-3 pt-3" id="classes_buttons">
+								<h1 class="display-6 fw-bold">Button classes</h1>
+
+								<div class="mb-3 pt-2">
+									<h3 class="fw-bold">Overview</h3>
+									<p class="mb-3">This table displays all optional <code>button</code> classes, responsible for the sidebar appearance. Depending on the sidebar type, add one of these classes to any button or link and this element will handle sidebar control. Multiple controls are also available - add as many sidebar controls as you wish. Please note: these classes don't change sidebar markup, only CSS rules.</p>
+									<div class="table-responsive border rounded mb-4">
+										<table class="table">
+											<thead class="table-light">
+												<tr>
+													<th class="border-top-0" style="width: 300px;">Button class</th>
+													<th class="border-top-0">Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><code>.sidebar-main-resize</code></td>
+													<td>Resizable sidebar. Changes main sidebar width from default to mini. This button is added to all pages by default.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-main-toggle</code></td>
+													<td>Collapses/expands and/or hides/shows <code>main</code> sidebar. Used mostly in dual sidebar type to hide main sidebar.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-end-toggle</code></td>
+													<td>Toggles right sidebar - if right sidebar is shown, main sidebar width remains the same, whether it's in default or mini mode.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-secondary-toggle</code></td>
+													<td>Hides/shows or collapses/expands <code>secondary</code> sidebar. Secondary sidebar supports only toggle functionality and always has fixed width of <code>300px</code>.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-component-toggle</code></td>
+													<td>Hides/shows <code>content</code> sidebars. Content sidebars aren't connected with other sidebars, so this is the only button that controls their visibility.</td>
+												</tr>
+												<tr class="border-top-width-2">
+													<td><code>.sidebar-mobile-main-toggle</code></td>
+													<td>Toggles <code>main</code> sidebar on mobile - slides from left to right.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-mobile-secondary-toggle</code></td>
+													<td>Toggles <code>secondary</code> sidebar on mobile - slides from left to right.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-mobile-end-toggle</code></td>
+													<td>Toggles <code>right</code> sidebar on mobile - slides from right to left.</td>
+												</tr>
+												<tr>
+													<td><code>.sidebar-mobile-component-toggle</code></td>
+													<td>Toggles <code>content</code> sidebar on mobile - has full width by default, has no animation.</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="mb-3 pt-2">
+									<h6>Example Markup</h6>
+									<p class="mb-3">Default placement of sidebar control buttons is sidebar header:</p>
+									<pre class="language-markup mb-3" data-line="13-19">
+										<code>
+											&lt;!-- Main sidebar -->
+											&lt;div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+												&lt;!-- Sidebar content -->
+												&lt;div class="sidebar-content">
+
+													&lt;!-- Header -->
+													&lt;div class="sidebar-section">
+														&lt;div class="sidebar-section-body d-flex justify-content-center">
+															&lt;h6 class="sidebar-resize-hide flex-grow-1 my-auto">Navigation&lt;/h6>
+
+															&lt;div>
+																&lt;button type="button" class="[button classes]">
+																	&lt;i class="ph-arrows-left-right">&lt;/i>
+																&lt;/button>
+
+																&lt;button type="button" class="[button classes]">
+																	&lt;i class="ph-x">&lt;/i>
+																&lt;/button>
+															&lt;/div>
+														&lt;/div>
+													&lt;/div>
+													&lt;!-- /header -->
+
+													[other content]
+
+												&lt;/div>
+												&lt;!-- /sidebar content -->
+
+											&lt;/div>
+											&lt;!-- /main sidebar -->
+										</code>
+									</pre>
+
+									<p>Here is an example of button inside navbar:</p>
+									<pre class="language-markup" data-line="7-9">
+										<code>
+											&lt;!-- Navbar placement -->
+											&lt;div class="navbar navbar-expand navbar-dark">
+												&lt;div class="navbar-brand">...&lt;/div>
+
+												&lt;ul class="navbar-nav">
+													&lt;li class="nav-item">
+														&lt;a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle">
+															&lt;i class="ph-arrows-left-right">&lt;/i>
+														&lt;/a>
+													&lt;/li>
+													...
+												&lt;/ul>
+											&lt;/div>
+											&lt;!-- /navbar placement -->
+										</code>
+									</pre>
+								</div>
+							</div>
+							<!-- /button classes -->
+
+						</div>
+						<!-- /left content -->
+
+
+						<!-- Right sidebar component -->
+						<div class="sticky-lg-top order-1 order-lg-2 wmin-lg-300 ms-lg-4 mb-3">
+							<h6 class="fw-semibold mt-lg-3 mb-3">On this page</h6>
+
+							<ul class="nav nav-scrollspy flex-column" id="page_nav">
+								<li class="nav-item">
+									<a href="#overview" class="nav-link">Sidebars overview</a>
+								</li>
+								<li class="nav-item">
+									<a href="#markup" class="nav-link">Markup</a>
+									<ul class="nav nav-scrollspy flex-column">
+										<li class="nav-item">
+											<a href="#markup_main_resizable" class="nav-link">Main resizable</a>
+										</li>
+										<li class="nav-item">
+											<a href="#markup_main_collapsible" class="nav-link">Main collapsible</a>
+										</li>
+										<li class="nav-item">
+											<a href="#markup_secondary" class="nav-link">Secondary sidebar</a>
+										</li>
+										<li class="nav-item">
+											<a href="#markup_right" class="nav-link">Right sidebar</a>
+										</li>
+										<li class="nav-item">
+											<a href="#markup_content" class="nav-link">Content sidebar</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="#classes_sidebars" class="nav-link">Sidebar classes</a>
+								</li>
+								<li class="nav-item">
+									<a href="#classes_buttons" class="nav-link">Button classes</a>
+								</li>
+							</ul>
+			            </div>
+						<!-- /right sidebar component -->
+
+					</div>
+					<!-- /inner container -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>
