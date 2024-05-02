@@ -6,3 +6,8 @@ Main layout includes a full set of elements, components, extensions, custom page
 
 ![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_main.png?raw=true)
 
+![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_2.png?raw=true)
+![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_3.png?raw=true)
+![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_4.png?raw=true)
+![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_5.png?raw=true)
+![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_6.png?raw=true)
