@@ -4,6 +4,8 @@ A powerful, scalable and flexible web application kit. One style, 6 layouts, hun
 Limitless - main layout preview
 Main layout includes a full set of elements, components, extensions, custom pages, widgets, charts and layout options. Child layouts are shells and include only layout related pages, but support all available components from the main layout. SCSS files are well structured so that you can easily find necessary one, whether it's a component or layout.
 
+https://cdn.jsdelivr.net/gh/SXNhcXVl/limitless@2.0.1/dist/css/bootstrap.css
+
 ![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_main.png?raw=true)
 ### Child layout #1
 The most popular modern layout with main light navbar, transparent page header and full height dark sidebar. Logo has 2 options depending on sidebar width.
