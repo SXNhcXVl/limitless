@@ -20,3 +20,10 @@ Layout with multiple navbar and dark page header in between. All top components 
 ### Child layout #5
 Layout with single navbar, tabbed horizonta navigation and boxed layout. Supports up to 6 columns and is fully responsive.
 ![alt text](https://github.com/SXNhcXVl/limitless/blob/main/layout_6.png?raw=true)
+
+https://cdn.jsdelivr.net/gh/SXNhcXVl/limitless@4.0/dist/css/all.min.css
+https://cdn.jsdelivr.net/gh/SXNhcXVl/limitless@4.0/dist/icons/phosphor/2.0.3/styles.min.css
+https://cdn.jsdelivr.net/gh/SXNhcXVl/limitless@4.0/dist/fonts/inter/inter.min.css
+https://cdn.jsdelivr.net/gh/SXNhcXVl/limitless@4.0/dist/js/bootstrap/bootstrap.bundle.min.js
+https://cdn.jsdelivr.net/gh/SXNhcXVl/limitless@4.0/dist/js/chart.min.js
+
